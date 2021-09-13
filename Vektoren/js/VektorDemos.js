@@ -20,7 +20,7 @@ function simulate(canvas, context) {
     canvas.addEventListener("mousemove", function (event) {
         let mousePos = getMousePosInCanvas(canvas, event);
 
-        springPoint.setX(event.x);
+        springPoint.setX(mousePos.x);
         springPoint.setY(mousePos.y);
     });
 
