@@ -1,5 +1,5 @@
 // https://github.com/bit101/CodingMath/blob/master/episode16/utils.js
-var utils = {
+let utils = {
     norm: function (value, min, max) {
         return (value - min) / (max - min);
     },
