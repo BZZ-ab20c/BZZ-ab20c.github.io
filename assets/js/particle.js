@@ -1,5 +1,5 @@
 // https://github.com/bit101/CodingMath/blob/master/episode16/particle.js
-var particle = {
+let particle = {
     position: null,
     velocity: null,
     mass: 1,
