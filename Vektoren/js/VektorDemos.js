@@ -54,11 +54,16 @@ function simulate(canvas, context) {
 
         weight.doBounce(width, height, 1);
 
+        context.beginPath();
+        context.lineWidth = "3";
+        context.rect(0, 0, width, height);
+        context.stroke();
+
         requestAnimationFrame(update);
     }
 }
 
-function createChartVektor(canvasId, initialization, chartType) {
+function createChartVektor(canvasId, initialization, label, chartType) {
     let canvasElement = document.getElementById(canvasId);
     let ctx = canvasElement.getContext('2d');
 
@@ -71,7 +76,7 @@ function createChartVektor(canvasId, initialization, chartType) {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Anzahl gesendeter Antworten',
+                    label: label,
                     data: amounts,
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',

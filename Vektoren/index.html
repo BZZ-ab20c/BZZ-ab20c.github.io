@@ -91,7 +91,7 @@
                     <p>Dreieck</p>
                 </div>
                 <div class="row ratio ratio-4x3">
-                    <canvas id="dreieckDemoCanvas"></canvas>
+                    <canvas id="dreieckDemoCanvas">Your browser does not support the HTML 5 Canvas</canvas>
                 </div>
             </div>
             <div class="col-6">
@@ -99,25 +99,25 @@
                     <p>Demo 2</p>
                 </div>
                 <div class="row ratio ratio-4x3">
-                    <canvas id="demo2Canvas"></canvas>
+                    <canvas id="demo2Canvas">Your browser does not support the HTML 5 Canvas</canvas>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="row">
-                    <p>Dreieck</p>
+                    <p>Chart 1</p>
                 </div>
                 <div class="row ratio ratio-4x3">
-                    <canvas id="chart1"></canvas>
+                    <canvas id="chart1" class="withBorder">Your browser does not support the HTML 5 Canvas</canvas>
                 </div>
             </div>
             <div class="col-6">
                 <div class="row">
-                    <p>Demo 2</p>
+                    <p>Chart 2</p>
                 </div>
                 <div class="row ratio ratio-4x3">
-                    <canvas id="chart2"></canvas>
+                    <canvas id="chart2" class="withBorder">Your browser does not support the HTML 5 Canvas</canvas>
                 </div>
             </div>
         </div>
@@ -128,6 +128,6 @@
 <script>
     simulateWithId("dreieckDemoCanvas");
     simulateWithId("demo2Canvas");
-    createChartVektor('chart1',true, 'line');
+    createChartVektor('chart1', true, "Test", 'line');
 </script>
 </html>
