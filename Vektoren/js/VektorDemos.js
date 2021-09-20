@@ -20,7 +20,7 @@ function simulate(canvas, context) {
     weight.friction = 0.9;
 
     canvas.addEventListener("mousemove", function (event) {
-        let mousePos = getMousePosInCanvas(canvas, event);
+        let mousePos = getMousePosInCanvasWithScale(canvas, event);
 
         springPoint.setX(mousePos.x);
         springPoint.setY(mousePos.y);
