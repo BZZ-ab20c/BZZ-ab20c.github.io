@@ -1,108 +1,41 @@
-let chart = undefined;
+let canvas = new fabric.Canvas('demo', { selection: false });
+let grid = 50;
 
-function simulateWithId(canvasId) {
-    let canvas = document.getElementById(canvasId),
-        context = canvas.getContext("2d");
+// create grid
 
-    canvas.style.position = 'absolute';
-    simulate(canvas, context);
+for (let i = 0; i < (600 / grid); i++) {
+    canvas.add(new fabric.Line([ i * grid, 0, i * grid, 600], { stroke: '#ccc', selectable: false }));
+    canvas.add(new fabric.Line([ 0, i * grid, 600, i * grid], { stroke: '#ccc', selectable: false }))
 }
 
-function simulate(canvas, context) {
-    let divParent = canvas.parentElement;
-    let width = canvas.width = divParent.clientWidth,
-        height = canvas.height = 3 * width / 4,
-        springPoint = vector.create(width / 2, height / 2),
-        weight = particle.create(Math.random() * width, Math.random() * height,
-            50, Math.random() * Math.PI * 2, 0.1);
+// add objects
 
-    weight.radius = 20;
-    weight.friction = 0.9;
+canvas.add(new fabric.Rect({
+    left: 100,
+    top: 100,
+    width: 50,
+    height: 50,
+    fill: '#faa',
+    originX: 'left',
+    originY: 'top',
+    centeredRotation: true
+}));
 
-    canvas.addEventListener("mousemove", function (event) {
-        let mousePos = getMousePosInCanvas(canvas, event);
+canvas.add(new fabric.Circle({
+    left: 300,
+    top: 300,
+    radius: 50,
+    fill: '#9f9',
+    originX: 'left',
+    originY: 'top',
+    centeredRotation: true
+}));
 
-        springPoint.setX(mousePos.x);
-        springPoint.setY(mousePos.y);
+// snap to grid
+
+canvas.on('object:moving', function(options) {
+    options.target.set({
+        left: Math.round(options.target.left / grid) * grid,
+        top: Math.round(options.target.top / grid) * grid
     });
-
-    update();
-
-    function update() {
-        context.clearRect(0, 0, width, height);
-
-        let distance = springPoint.subtract(weight.position);
-        distance.setLength(distance.getLength() - 100);
-        let springForce = distance.multiply(0.1);
-
-        weight.velocity.addTo(springForce);
-
-        weight.update();
-
-        context.beginPath();
-        context.arc(weight.position.getX(), weight.position.getY(), weight.radius, 0, Math.PI * 2, false);
-        context.fill();
-
-        context.beginPath();
-        context.arc(springPoint.getX(), springPoint.getY(), 4, 0, Math.PI * 2, false);
-        context.fill();
-
-        context.beginPath();
-        context.moveTo(weight.position.getX(), weight.position.getY());
-        context.lineTo(springPoint.getX(), springPoint.getY());
-        context.stroke();
-
-        weight.doBounce(width, height, 1);
-
-        requestAnimationFrame(update);
-    }
-}
-
-function createChartVektor(canvasId, initialization, chartType) {
-    let canvasElement = document.getElementById(canvasId);
-    let ctx = canvasElement.getContext('2d');
-
-    let labels = ['x', 'y', 'z'];
-    let amounts = [2, 9, 4];
-
-    if (initialization) {
-        chart = new Chart(ctx, {
-            type: chartType,
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Anzahl gesendeter Antworten',
-                    data: amounts,
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    } else {
-        chart.data.datasets[0].data = amounts;
-        chart.data.labels = labels;
-        chart.update();
-    }
-}
+});
