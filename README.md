@@ -1,1 +1,1 @@
-# BZZ-ab20c.githib.io
+# BZZ-ab20c.github.io
