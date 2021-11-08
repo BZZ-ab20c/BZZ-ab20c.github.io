@@ -39,8 +39,8 @@ canvas.on('object:moving', function (options) {
 });
 
 canvas.on('object:scaling', function (options) {
-   let width = options.target.width * options.target.scaleX;
-   options.target.set({
-
-   })
+    let width = options.target.width * options.target.scaleX;
+    options.target.set({
+        strokeWidth: Math.round(options.target.left / grid) * grid
+    })
 });
