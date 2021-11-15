@@ -11,11 +11,12 @@
             crossorigin="anonymous"></script>
     <!--Custom-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <script src="../assets/js/getMousePos.js" type="text/javascript"></script>
-    <script src="../assets/js/utils.js" type="text/javascript"></script>
+    <script src="../assets/js/utils/getMousePos.js" type="text/javascript"></script>
+    <script src="../assets/js/utils/utils.js" type="text/javascript"></script>
     <script src="../assets/js/vector.js" type="text/javascript"></script>
     <script src="../assets/js/particle.js" type="text/javascript"></script>
     <script src="../assets/js/chart.js" type="text/javascript"></script>
+    <script src="../assets/js/fabric.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -67,66 +68,30 @@
     </nav>
 </header>
 <main>
-    <div class="container-fluid p-0">
-        <h1>Vektoren</h1>
-        <div class="row">
-            <div class="col">
-                <p>In der Geometrie versteht man unter einem Vektor ein Objekt,
-                    das eine Parallelverschiebung in der Ebene oder im Raum beschreibt.
-                    Eine Verschiebung kann durch einen Pfeil, der einen Urbildpunkt mit seinem Bildpunkt verbindet,
-                    dargestellt werden. Pfeile, die parallel, gleich lang und gleich gerichtet sind,
-                    beschreiben dieselbe Verschiebung und stellen somit denselben Vektor dar.
-                </p>
-                <p class="source"><a href="https://de.wikipedia.org/wiki/Vektor#Definition" target="_blank">Wikipedia -
-                    Vektoren</a>
-                </p>
+    <div class="container">
+        <div class="container-fluid p-0">
+            <h1>Vektoren</h1>
+            <div class="row">
+                <div class="col">
+                    <p>In der Geometrie versteht man unter einem Vektor ein Objekt,
+                        das eine Parallelverschiebung in der Ebene oder im Raum beschreibt.
+                        Eine Verschiebung kann durch einen Pfeil, der einen Urbildpunkt mit seinem Bildpunkt verbindet,
+                        dargestellt werden. Pfeile, die parallel, gleich lang und gleich gerichtet sind,
+                        beschreiben dieselbe Verschiebung und stellen somit denselben Vektor dar.
+                    </p>
+                    <p class="source"><a href="https://de.wikipedia.org/wiki/Vektor#Definition" target="_blank">Wikipedia
+                        -
+                        Vektoren</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <p>Dreieck</p>
-                </div>
-                <div class="row ratio ratio-4x3">
-                    <canvas id="dreieckDemoCanvas"></canvas>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <p>Demo 2</p>
-                </div>
-                <div class="row ratio ratio-4x3">
-                    <canvas id="demo2Canvas"></canvas>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <p>Dreieck</p>
-                </div>
-                <div class="row ratio ratio-4x3">
-                    <canvas id="chart1"></canvas>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <p>Demo 2</p>
-                </div>
-                <div class="row ratio ratio-4x3">
-                    <canvas id="chart2"></canvas>
-                </div>
-            </div>
-        </div>
+        <canvas id="demo">Your browser does not support the HTML 5 Canvas</canvas>
     </div>
 </main>
 </body>
 <script src="js/VektorDemos.js" type="text/javascript"></script>
 <script>
-    simulateWithId("dreieckDemoCanvas");
-    simulateWithId("demo2Canvas");
 </script>
 </html>

@@ -1,5 +1,5 @@
 // https://github.com/bit101/CodingMath/blob/master/episode16/vector.js
-var vector = {
+let vector = {
     _x: 1,
     _y: 0,
 

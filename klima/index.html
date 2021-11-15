@@ -11,6 +11,22 @@
             crossorigin="anonymous"></script>
     <!--Custom-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #smallNav {
+            background-color: rgba(194, 193, 193, 0.25);}
+    </style>
 </head>
 <body>
 <header>
@@ -63,7 +79,52 @@
 </header>
 <div class="container">
     <h1>Klima</h1>
-    
+    <p>Klima beschreibt, wie das Wetter über einen langen Zeitraum aussieht.
+        <br>Wenn es in einer Gegend über viele Jahre regnet, spricht man von einem feuchten Klima.
+        <br>Wenn die Temperaturen sich über viele Jahre verändern, spricht man vom Klimawandel.</p>
+    <br>
+    <div class="row">
+        <div id="smallNav" class="col-3 card">
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#wasIstKlima" class="link-dark">Was ist Klima?</a></li>
+                    <li><a href="#natuerlicheAenderung" class="link-dark">Natürliche Änderungen</a></li>
+                    <li><a href="#menschlicheAenderung" class="link-dark">Menschliche Änderungen</a></li>
+                    <li><a href="#klimaWandel" class="link-dark">Klima Wandel</a></li>
+                </ul>
+            </nav>
+            <br>
+        </div>
+        <div class="col-4">
+
+        </div>
+        <div class="col-3">
+            <img src="img/climate-change.png" style="position: absolute" height="250px" alt="Klima_Image1">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div style="background-color: #fcfcfc" id="wasIstKlima" class="card col-7">
+                <h3>Was ist Klima?</h3>
+            <p>Klima ist die....</p>
+        </div>
+    </div>
+    <div class="row">
+        <div style="background-color: #eeeeee" id="natuerlicheAenderung" class="card col-7">
+                <h3>Natürliche Änderungen</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div style="background-color: #fcfcfc" id="menschlicheAenderung" class="card col-7">
+                <h3>Menschliche Änderungen</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div style="background-color: #eeeeee" id="klimaWandel" class="card col-7">
+                <h3>Klima Wandel</h3>
+        </div>
+    </div>
 </div>
 </body>
 </html>
