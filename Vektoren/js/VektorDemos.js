@@ -21,10 +21,10 @@ canvas.add(new fabric.Rect({
 }));
 
 canvas.add(new fabric.Line(
-    [0, 0, 80, 0],
+    [0, 0, 100, 0],
     {
         stroke: 'green',
-        strokeWidth: 20,
+        strokeWidth: grid,
         lockScalingFlip: true,
         lockScalingY: true,
     }
@@ -41,6 +41,6 @@ canvas.on('object:moving', function (options) {
 canvas.on('object:scaling', function (options) {
     let width = options.target.width * options.target.scaleX;
     options.target.set({
-        strokeWidth: Math.round(options.target.left / grid) * grid
+        width: Math.round(width / grid) * grid
     })
 });
