@@ -1,4 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.css';
+
 import { TitleSeite } from "./containers/TitleSeite";
+
 
 function App() {
   return (
