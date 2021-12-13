@@ -71,10 +71,17 @@
     <h1>Kühlschrank</h1>
     <br>
 </div>
+
 <div class="container d-flex flex-column align-items-center justify-content-center">
-    <p>
-        Neben Infos
-    </p>
+    <img id="myImage" src="img/KühlschrankZu.jpg" style="width:100px">
+</div>
+
+<div class="container d-flex align-items-center justify-content-center">
+<button onclick="document.getElementById('myImage').src='img/KühlschrankOffen.jpg'">Kühlschrank öffnen</button>
+<button onclick="document.getElementById('myImage').src='img/KühlschrankZu.jpg'">Kühlschrank schliessen</button>
+</div>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
     <br>
     <button onclick="myFunction()">Warum gibt ein Kühlschrank mehr Wärme als Kälte ab?</button>
     <br>
@@ -124,6 +131,26 @@
 </div>
 <br>
 <br>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <br>
+    <button onclick="myFunction4()">Wo ist der Siedepunkt?</button>
+    <br>
+    <p id="lösung4"></p>
+    <script>
+        function myFunction4() {
+            document.getElementById("lösung4").innerHTML =
+                "Bei einer Mischung von Wasser und Frostschutzmittel " +
+                "im Verhältnis 1:1 liegt der Siedepunkt des Kühlmittels " +
+                "bei etwa 107° C und bietet dem Kühlsystem somit eine " +
+                "enorme Leistungsreserve."
+        }
+    </script>
+    <br>
+</div>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -145,8 +172,33 @@
 
 <div class="container d-flex flex-column align-items-center justify-content-center">
     <ol>
-        <p>1. Das was kühlt, ist flüssiges Kühlmittel. </p>
-        <p>2. Das Gas (kommt vom Kühlschrank das am Schluss kalt ist) wird zusammengedrückt, somit wird es </p>
+        <p>1. An der inneren Rückwand des Kühlschrankes befindet sich ein schlangenförmiges Rohr, das von
+            unten nach oben verläuft. Darin befindet sich die Kühlflüssigkeit.
+        </p>
+        <p>2. Sobald im Kühlschrank Wärme entsteht, wird die Kühlflüssigkeit ebenfalls wärmer, erreicht
+            den Siedepunkt und verdampft. Der Dampf steigt im Rohr nach oben.
+        </p>
+        <p>3. Wenn der Dampf oben angekommen ist, wird er in den Kompressor geleitet. Darin wird er stark
+            verdichtet. Es entsteht wieder eine Flüssigkeit, die durch den hohen Verdichtungsgrad einen
+            weit höheren Siedepunkt hat.
+        </p>
+        <p>4. Eine an der Kompressor angeschlossene Pumpe leitet die Flüssigkeit in ein schlangenförmiges
+            Rohrsystem auf der hinteren Außenwand des Kühlschranks. Darin kühlt die Flüssigkeit wieder ab und
+            gibt die Wärme, die sie im Inneren aufgenommen hat, nach außen ab.
+        </p>
+        <p>5. Unten angekommen, gelangt die Flüssigkeit in ein Drosselventil. Dieses zerstäubt die Flüssigkeit
+            wieder, damit der Siedepunkt wieder sehr niedrig wird.
+        </p>
+        <p>
+            6. Immer wenn im Inneren des Kühlschranks Wärme entsteht, zum Beispiel wenn die Tür geöffnet wird
+            oder wenn etwas Warmes hineingestellt wird, verdampft ein Teil der Kühlflüssigkeit. Genau diese Menge
+            Flüssigkeit wird vom Drosselventil wieder in das innere Rohr hineingespritzt.
+        </p>
+        <p>
+            7. Der Kreislauf ist damit abgeschlossen. Erkennen können Sie den Vorgang am Brummen des Kühlschranks,
+            das manchmal einsetzt. Immer wenn es im Kühlschrank zu warm wird, verdampft ein Teil der Flüssigkeit und
+            Kompressor sowie Pumpe werden aktiviert.
+        </p>
     </ol>
 </div>
 
