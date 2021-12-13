@@ -1,13 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import Layout from './hoc/Layout/Layout';
 
 import { TitleSeite } from "./containers/TitleSeite";
 
 
 function App() {
   return (
-    <div className="App">
+    <Layout className="App">
       <TitleSeite />
-    </div>
+    </Layout>
   );
 }
 
