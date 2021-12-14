@@ -1,6 +1,11 @@
+import Navigation from "../components/Navigation";
+
 const Vektoren = () => {
     return (
-        <div>HALLO VEKTOREN</div>
+        <div className={"wrapper"}>
+            <Navigation/>
+            <div>HALLO VEKTOREN</div>
+        </div>
     );
 }
 
