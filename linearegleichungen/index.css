@@ -1,0 +1,79 @@
+html, body {
+    background-color: #fff;
+}
+
+
+/*--------- Banner's ---------*/
+#banner {
+    background-color: #dde8fc;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    
+}
+
+.sb-div-left{
+    width: 50%;
+    float:left;
+}
+
+
+/*--------- section second banner ---------*/
+
+
+
+/*--------- button ---------*/
+
+
+/*--------- img ---------*/
+.sb-div-right-img{
+    width: 50%;
+}
+
+.math-img{
+    float: right;
+}
+
+.wave-img{
+    width: 100%!important;
+}
+
+
+
+/*--------- Colors ---------*/
+
+
+/*--------- Fonts ---------*/
+h1{
+    width: auto!important;
+    font-family: "Century Gothic", CenturyGothic;
+}
+
+h2{
+    padding-top: 3%;
+    width: 50%!important;
+    font-family: "Bahnschrift";
+    font-size: 25px;
+    font-weight:lighter;
+}
+
+/*--------- Tags ---------*/
+.tag-01{
+    background-color: #000;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: "Century Gothic", CenturyGothic;
+}
+
+/*--------- Links ---------*/
+#link-01{
+    color: #fff;
+    text-decoration: none;
+}
+#link-01:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
