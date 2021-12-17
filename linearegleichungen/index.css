@@ -57,7 +57,7 @@ html, body {
 }
 
 .btn-01-1:hover{
-    transform: transition(1.2);
+    transform: scale(1.2);
 }
 
 .btn-02-2:hover {
