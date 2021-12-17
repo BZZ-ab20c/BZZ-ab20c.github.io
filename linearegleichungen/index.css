@@ -18,11 +18,42 @@ html, body {
 }
 
 
-/*--------- section second banner ---------*/
+/*--------- section btn title ---------*/
+.sys-title{
+    text-align: center;
+}
+
+.tag-02{
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    font-family: "Bahnschrift";
+    font-size: 25px;
+    font-weight:lighter;
+}
+
+.tag-03{
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: center;
+}
+
+/*--------- section btn  ---------*/
+.btn-01 , .btn-02{
+    padding: 10%;
+    text-align: center;
+}
+
+.btn-01-1, .btn-02-2 {
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-01-1-txt, .btn-02-2-txt{
+    padding: 7%;
+}
 
 
-
-/*--------- button ---------*/
 
 
 /*--------- img ---------*/
@@ -40,9 +71,6 @@ html, body {
 
 
 
-/*--------- Colors ---------*/
-
-
 /*--------- Fonts ---------*/
 h1{
     width: auto!important;
@@ -57,13 +85,13 @@ h2{
     font-weight:lighter;
 }
 
-/*--------- Tags ---------*/
 .tag-01{
     background-color: #000;
     padding-left: 8px;
     padding-right: 8px;
     font-family: "Century Gothic", CenturyGothic;
 }
+
 
 /*--------- Links ---------*/
 #link-01{
