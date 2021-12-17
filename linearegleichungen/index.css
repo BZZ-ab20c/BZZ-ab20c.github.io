@@ -47,10 +47,21 @@ html, body {
 .btn-01-1, .btn-02-2 {
     background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: transfrom.5s;
 }
 
 .btn-01-1-txt, .btn-02-2-txt{
     padding: 7%;
+    font-family: "Bahnschrift", monospace;
+    position: relative;
+}
+
+.btn-01-1:hover{
+    transform: transition(1.2);
+}
+
+.btn-02-2:hover {
+    transform: scale(1.2);
 }
 
 
