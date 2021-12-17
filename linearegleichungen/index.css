@@ -1,3 +1,4 @@
+
 html, body {
     background-color: #fff;
 }
@@ -6,17 +7,44 @@ html, body {
 /*--------- Banner's ---------*/
 #banner {
     background-color: #dde8fc;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 2.5%;
     text-align: center;
     
 }
 
+#link-01{
+    color: #fff;
+    text-decoration: none;
+}
+
+#link-01:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------- img ---------*/
+.sb-div-right-img{
+    width: 50%;
+}
+
+.math-img{
+    float: right;
+}
+
+.wave-img{
+    width: 100%!important;
+}
+
+/*--------- section second banner  ---------*/
+/* In dieser Section ist h2 benutzt worde welcher in fonts gestaltet ist*/
+
+
+/*--------- section txt  ---------*/
 .sb-div-left{
     width: 50%;
     float:left;
 }
-
 
 /*--------- section btn title ---------*/
 .sys-title{
@@ -50,11 +78,30 @@ html, body {
     transition: transfrom.5s;
 }
 
+.btn-01-1:hover{
+    box-shadow: rgb(190, 209, 249) 0px 13px 27px -5px, rgb(190, 209, 249) 0px 8px 16px -8px;
+}
+
+.btn-02-2:hover{
+    box-shadow: rgb(190, 209, 249) 0px 13px 27px -5px, rgb(190, 209, 249) 0px 8px 16px -8px;
+}
+
 .btn-01-1-txt, .btn-02-2-txt{
     padding: 7%;
     font-family: "Bahnschrift", monospace;
     position: relative;
+    text-decoration: none;
 }
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover{
+    color: #000;
+}
+
 
 .btn-01-1:hover{
     transform: scale(1.2);
@@ -64,21 +111,6 @@ html, body {
     transform: scale(1.2);
 }
 
-
-
-
-/*--------- img ---------*/
-.sb-div-right-img{
-    width: 50%;
-}
-
-.math-img{
-    float: right;
-}
-
-.wave-img{
-    width: 100%!important;
-}
 
 
 
@@ -102,17 +134,3 @@ h2{
     padding-right: 8px;
     font-family: "Century Gothic", CenturyGothic;
 }
-
-
-/*--------- Links ---------*/
-#link-01{
-    color: #fff;
-    text-decoration: none;
-}
-#link-01:hover{
-    color: #fff;
-    text-decoration: none;
-}
-
-
-
