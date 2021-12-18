@@ -1,14 +1,16 @@
 import React from 'react';
 
-import './NavigationItems.css';
-import NavigationItem from './NavigationItem/NavigationItem';
+import './NavItems.css';
+import NavItem from 'NavItem/NavItem';
 
-export const navigationItems = () => (
+const navigationItems = () => (
     <ul className="">
-        <NavigationItem link="/" exact>Home</NavigationItem>
-        <NavigationItem link="/orders">Generator</NavigationItem>
-        <NavigationItem link="/orders">Wasserkraftwerk</NavigationItem>
-        <NavigationItem link="/orders">Solar</NavigationItem>
-        <NavigationItem link="/orders">Kraftwerk</NavigationItem>
+        <NavItem link="/" exact>Home</NavItem>
+        <NavItem link="/orders">Generator</NavItem>
+        <NavItem link="/orders">Wasserkraftwerk</NavItem>
+        <NavItem link="/orders">Solar</NavItem>
+        <NavItem link="/orders">Kraftwerk</NavItem>
     </ul>
 );
+
+export default navigationItems;
