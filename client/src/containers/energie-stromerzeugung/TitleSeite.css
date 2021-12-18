@@ -1,0 +1,21 @@
+.Background{
+   width: 100%;
+   height: 400px;
+   background-image: url(src/img/titlepicture.jpg);
+   opacity: .6;
+}
+
+.Title{
+   color: rgb(255, 255, 255);
+   position: absolute;
+   top: 235px;
+   left: 28%;
+   font-size: 50px;
+}
+
+@media (max-width: 950px) {
+   .Title{
+      left: 22%;
+      font-size: 45px;
+   }
+}

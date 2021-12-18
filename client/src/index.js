@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Vektoren from "./pages/Vektoren";
+import EnergieStromerzeugung from "./pages/Energie-stromerzeugung";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -11,6 +12,7 @@ ReactDOM.render(
             <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path="/vektoren" element={<Vektoren/>}/>
+                <Route path="/energie-stromerzeugung" element={<EnergieStromerzeugung/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
