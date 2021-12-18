@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import SideDrawer from '../../../containers/energie-stromerzeugung/Navigation/Nav/SideDrawer/SideDrawer';
 import Toolbar from '../../../containers/energie-stromerzeugung/Navigation/Nav/Toolbar/Toolbar';
-import aux from '../Auxiliary/Auxiliary';
 
 class Layout extends Component {
 

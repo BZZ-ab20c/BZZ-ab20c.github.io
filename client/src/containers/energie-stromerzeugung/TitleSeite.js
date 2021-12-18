@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 
-import {Navigation} from './Navigation/Navigation';
 import './TitleSeite.css';
-
+import Navigation from "../../components/Navigation";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const TitleSeite = (props) => {
     return (
