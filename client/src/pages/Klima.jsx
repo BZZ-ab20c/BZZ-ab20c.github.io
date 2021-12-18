@@ -1,6 +1,9 @@
+import Navigation from "../components/Navigation";
+
 const Klima = () => {
     return (
         <div className="container">
+            <Navigation/>
             <h1>Klima</h1>
             <p>Klima beschreibt, wie das Wetter über einen langen Zeitraum aussieht.
                 <br/>Wenn es in einer Gegend über viele Jahre regnet, spricht man von einem feuchten Klima.
@@ -25,12 +28,13 @@ const Klima = () => {
 
                 </div>
                 <div className="col-3">
-                    <img src="img/climate-change.png" style="position: absolute" height="250px" alt="Klima_Image1"/>
+                    <img src="../img/klima/climate-change.png" style={{position: 'absolute'}} height={250}
+                         alt={"Klima_Image1"}/>
                 </div>
             </div>
             <br/>
             <div className="row">
-                <div style="background-color: #fcfcfc; padding: 25px; margin-bottom: 10px" id="wasIstKlima"
+                <div style={{backgroundColor: '#fcfcfc', padding: 25, marginBottom: 10}} id="wasIstKlima"
                      className="card col-7">
                     <h3>Was ist Klima?</h3>
                     <p>Das Klima ist das langfristige Muster des Wetters in einem Gebiet, typischerweise
@@ -40,21 +44,21 @@ const Klima = () => {
                 </div>
             </div>
             <div className="row">
-                <div style="background-color: #eeeeee;  padding: 25px; margin-bottom: 10px"
+                <div style={{backgroundColor: '#eeeeee', padding: 25, marginBottom: 10}}
                      id="natuerlicheAenderung"
                      className="card col-7">
                     <h3>Natürliche Änderungen</h3>
                 </div>
             </div>
             <div className="row">
-                <div style="background-color: #fcfcfc;  padding: 25px; margin-bottom: 10px"
+                <div style={{backgroundColor: '#fcfcfc', padding: 25, marginBottom: 10}}
                      id="menschlicheAenderung"
                      className="card col-7">
                     <h3>Menschliche Änderungen</h3>
                 </div>
             </div>
             <div className="row">
-                <div style="background-color: #eeeeee; padding: 25px; margin-bottom: 10px" id="klimaWandel"
+                <div style={{backgroundColor: '#eeeeee', padding: 25, marginBottom: 10}} id="klimaWandel"
                      className="card col-7">
                     <h3>Klima Wandel</h3>
                     <p>Der Klimawandel beschreibt eine Veränderung der durchschnittlichen Bedingungen - wie
@@ -64,12 +68,12 @@ const Klima = () => {
                         viele der wärmsten Jahre
                         seit Beginn der Aufzeichnungen fanden in den letzten 20 Jahren statt.</p>
                     <h5>Treibhauseffekt</h5>
-                    <p style="font-weight: bold">Kurz definiert:</p>
+                    <p style={{fontWeight: 'bold'}}>Kurz definiert:</p>
                     <p>Der Treibhauseffekt ist wenn Gase in der Erdatmosphäre die Wärme der Sonne einfangen.
                         <br/>Durch diesen Prozess wird die Erde viel wärmer, als sie es ohne Atmosphäre wäre.</p>
                 </div>
                 <div id="img" className="col">
-                    <img src="img/greenhouseEffect.png" style="width:375px"/>
+                    <img src="../img/klima/greenhouseEffect.png" width={375} alt={'greenhouseEffect'}/>
                 </div>
             </div>
         </div>
