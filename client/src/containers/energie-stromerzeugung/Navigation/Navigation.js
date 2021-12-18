@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 export const Navigation = () => {
       return(
       <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mainNav" >
