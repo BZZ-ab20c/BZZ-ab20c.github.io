@@ -1,5 +1,4 @@
 import Navigation from "../components/Navigation";
-import index from "css/index.css";
 
 const index = () => {
     return (
