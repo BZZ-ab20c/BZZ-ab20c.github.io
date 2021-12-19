@@ -15,6 +15,7 @@ ReactDOM.render(
                 <Route path="/vektoren" element={<Vektoren/>}/>
                 <Route path="/energie-stromerzeugung" element={<EnergieStromerzeugung/>}/>
                 <Route path="/klima" element={<Klima/>}/>
+                <Route path="/linearegelichungen" element={<Linearegleichungen/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
