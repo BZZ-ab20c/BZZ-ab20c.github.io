@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation";
-import Bootstrap from bootstrap;
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ClimateChange from "../img/klima/climate-change.png";
 import GreenHouseEffect from "../img/klima/greenhouseEffect.png";
 
