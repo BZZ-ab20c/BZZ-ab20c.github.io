@@ -1,4 +1,7 @@
 import Navigation from "../components/Navigation";
+import Bootstrap from bootstrap;
+import ClimateChange from "../img/klima/climate-change.png";
+import GreenHouseEffect from "../img/klima/greenhouseEffect.png";
 
 const Klima = () => {
     return (
@@ -28,7 +31,7 @@ const Klima = () => {
 
                 </div>
                 <div className="col-3">
-                    <img src="../img/klima/climate-change.png" style={{position: 'absolute'}} height={250}
+                    <img src={ClimateChange} style={{position: 'absolute'}} height={250}
                          alt={"Klima_Image1"}/>
                 </div>
             </div>
@@ -73,7 +76,7 @@ const Klima = () => {
                         <br/>Durch diesen Prozess wird die Erde viel wärmer, als sie es ohne Atmosphäre wäre.</p>
                 </div>
                 <div id="img" className="col">
-                    <img src="../img/klima/greenhouseEffect.png" width={375} alt={'greenhouseEffect'}/>
+                    <img src={GreenHouseEffect} width={375} alt={'greenhouseEffect'}/>
                 </div>
             </div>
         </div>

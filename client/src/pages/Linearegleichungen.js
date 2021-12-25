@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
 
-const index = () => {
+const Linearegleichungen = () => {
     return (
         <div className="container">
             <Navigation/>
@@ -13,7 +13,8 @@ const index = () => {
                         <div class="w-100"></div>
                         <div class="col">
                             Willkommen beim
-                            <span class="tag-01"><a id="link-01" href="https://www.bzz.ch/" target="_blank">BZZ</a></span>
+                            <span class="tag-01"><a id="link-01" href="https://www.bzz.ch/"
+                                                    target="_blank">BZZ</a></span>
                         </div>
                     </div>
                 </div>
@@ -25,7 +26,7 @@ const index = () => {
                 <div class="container">
                     <div class="col-01">
                         <p>
-                        <h2>Inhalt</h2>
+                            <h2>Inhalt</h2>
                         </p>
                     </div>
                 </div>
@@ -35,17 +36,23 @@ const index = () => {
                     <div class="row">
                         <div class="sb-div-left">
                             <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut
                                 labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata
                                 sanctus est Lorem ipsum dolor sit amet.
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut
                                 labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata
                                 sanctus est Lorem ipsum dolor sit amet.
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut
                                 labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                                sea takimata
                                 sanctus est Lorem ipsum dolor sit amet.
                             </p>
                         </div>
@@ -66,9 +73,11 @@ const index = () => {
                     </div>
                     <div class="row">
                         <div class="tag-03">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
                             labore et
-                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum.
                         </div>
                     </div>
                 </div>
@@ -101,4 +110,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Linearegleichungen;

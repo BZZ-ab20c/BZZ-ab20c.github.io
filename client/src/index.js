@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Vektoren from "./pages/Vektoren";
 import EnergieStromerzeugung from "./pages/Energie-stromerzeugung";
 import Klima from "./pages/Klima";
+import Linearegleichungen from "./pages/Linearegleichungen";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -15,7 +16,7 @@ ReactDOM.render(
                 <Route path="/vektoren" element={<Vektoren/>}/>
                 <Route path="/energie-stromerzeugung" element={<EnergieStromerzeugung/>}/>
                 <Route path="/klima" element={<Klima/>}/>
-                <Route path="/linearegelichungen" element={<Linearegleichungen/>}/>
+                <Route path="/linearegeleichungen" element={<Linearegleichungen/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
