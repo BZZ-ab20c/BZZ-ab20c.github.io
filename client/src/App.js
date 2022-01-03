@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "./components/Navigation";
 
 function App() {
     return (
-        <div className="wrapper">
+        <div className="container">
             <Navigation/>
-            <div className="wrapper">
-                <h1>ICH BIN APP JUNGE</h1>
-            </div>
+            <h1>Website der Klasse AB20C</h1>
         </div>
     );
 }
