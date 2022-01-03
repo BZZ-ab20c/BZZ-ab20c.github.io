@@ -1,10 +1,21 @@
 import Wave01 from "../../img/lineargleichungen/wave-01.png";
+import Arr from "../../img/lineargleichungen/arr.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../styles/lineareGleichungen/sbs.css'
+
 
 const SUBM = () => {
     return (
         <div className={"container"}>
             {/*Banner*/}
             <section id="banner">
+                <div class="back-btn" >  
+                    <a href="index.html"> {/*Link richtig machen*/}
+                        <div class="btn">
+                        <img className="arr-img" src={Arr} alt={"arr img"}></img>
+                        </div>
+                    </a>  
+                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col">
