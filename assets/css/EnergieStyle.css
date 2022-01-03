@@ -1,0 +1,28 @@
+dl {
+    width: 100%;
+}
+
+.antworten{
+    width: 30rem;
+}
+
+.top-right {
+    position: absolute;
+    top: 64px;
+    right: 128px;
+}
+
+.top-left {
+    position: absolute;
+    top: 64px;
+    left: -160px;
+}
+
+.title-section{
+    position: relative;
+}
+
+.fade-left{
+    -webkit-mask-image:-webkit-gradient(linear, right bottom, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
