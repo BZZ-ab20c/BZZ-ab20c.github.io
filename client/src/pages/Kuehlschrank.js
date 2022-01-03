@@ -3,6 +3,7 @@ import React from 'react';
 import kuehlschrankZu from "../img/kuehlschrank/KühlschrankZu.jpg";
 import kuehlschrankOffen from "../img/kuehlschrank/KühlschrankOffen.jpg";
 import imagineSelberZeichne from "../img/kuehlschrank/ImagineSelberZeichne.jpg";
+import Navigation from "../components/Navigation";
 
 function closeFridge() {
     document.getElementById('myImage').setAttribute('src', kuehlschrankZu);
@@ -23,6 +24,8 @@ function toggleVisibility(element) {
 const Kuehlschrank = () => {
     return (
         <div>
+            <Navigation/>
+
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <h1>Kühlschrank</h1>
                 <br/>
