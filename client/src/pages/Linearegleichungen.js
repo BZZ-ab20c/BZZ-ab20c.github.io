@@ -22,7 +22,7 @@ const Linearegleichungen = () => {
                 </div>
             </section>
             <div className="wave-01">
-                <img className="wave-img" src={Wave01}/>
+                <img className="wave-img" src={Wave01} alt={"Wave img idk"}/>
             </div>
             <section id="second-banner">
                 <div className="container">
@@ -59,7 +59,7 @@ const Linearegleichungen = () => {
                             </p>
                         </div>
                         <div className="sb-div-right-img">
-                            <img className="math-img" src={MathImg}/>
+                            <img className="math-img" src={MathImg} alt={"Math img or something idk"}/>
                         </div>
                     </div>
                 </div>
