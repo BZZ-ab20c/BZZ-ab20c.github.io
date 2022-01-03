@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Vektoren from "./pages/Vektoren";
-import EnergieStromerzeugung from "./pages/Energie-stromerzeugung";
+import EnergieStromerzeugung from "./pages/energie-stromerzeugung/containers/NavItems/NavItems";
 import Klima from "./pages/Klima";
 import Linearegleichungen from "./pages/Linearegleichungen";
 import AM from "./pages/lineareGleichungenSubPages/am";

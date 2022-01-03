@@ -1,0 +1,50 @@
+.ExtraImg{
+   position: relative;
+   top: 8%;
+   margin: auto;
+   max-width: 550px;
+}
+
+.GifLeft{
+   position: relative;
+   top: 30%;
+   left: 13%;
+   margin: auto;
+   max-width: 360px;
+}
+
+.GifRight{
+   position: relative;
+   top: 32%;
+   left: 20%;
+   margin: auto;
+   max-width: 360px;
+}
+
+@media (min-width: 1250px) {
+   .GifLeft{
+      top: 22%;
+      left: 13%;
+      max-width: 460px;
+   }
+   
+   .GifRight{
+      top: 25%;
+      left: 20%;
+      max-width: 460px;
+   }
+}
+
+@media (min-width: 1650px) {
+   .GifLeft{
+      top: 20%;
+      left: 13%;
+      max-width: 520px;
+   }
+   
+   .GifRight{
+      top: 23%;
+      left: 20%;
+      max-width: 520px;
+   }
+}

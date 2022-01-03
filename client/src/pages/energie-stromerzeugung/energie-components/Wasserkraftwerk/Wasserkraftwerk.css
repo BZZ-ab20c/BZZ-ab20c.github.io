@@ -1,0 +1,44 @@
+.ExtraRow{
+   width: 100%;
+   height: 750px;
+   background-color: rgb(255, 255, 255);
+}
+
+.ExtraTextLeft{
+   position: relative;
+   top: 30%;
+   left: 20%;
+}
+
+.ExtraImgRight{
+   position: relative;
+   top: 35%;
+   bottom: 30%;
+   left: 18%;
+   margin: auto;
+   max-width: 310px;
+}
+
+@media (min-width: 950px) {
+   .ExtraImgRight{
+      position: relative;
+      top: 35%;
+      bottom: 30%;
+      left: 18%;
+      margin: auto;
+      max-width: 350px;
+   }
+   
+}
+
+@media (min-width: 1150px) {
+   .ExtraImgRight{
+      position: relative;
+      top: 35%;
+      bottom: 30%;
+      left: 18%;
+      margin: auto;
+      max-width: 450px;
+   }
+   
+}
