@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/energie/style.css'
+import '../styles/energie/EnergieStyle.css'
 import Navigation from "../components/Navigation";
 import titleImage from "../img/energie/titleImage.jpg";
 import bewegungsEnergie from "../img/energie/bewegungsEnergieImage.png";
@@ -802,20 +805,25 @@ const Energie = () => {
                             genau?
                         </td>
                         <td className="antworten">
-                <span style="display: none" id="antwort-1">
+                <span style={{display: "none"}} id="antwort-1">
                     <b>Masse und Höhe &#8594; W pot = m * h * g</b>
                     <br/>
                     <b>g = konstante</b>
                 </span>
                         </td>
                         <td>
-                            <button
-                                id="button-1"
-                                type="button"
-                                className="btn btn-primary"
-                                onClick="toggleAnswer('antwort-1', this.id)">
-                                <img src={visibilityImage}
-                                     alt={"Auge Symbol"}/>
+                            <button id="button-1" type="button" className="btn btn-primary" onClick={function () {
+                                const ANSWER = document.getElementById("antwort-1");
+                                ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                const BUTTON_IMG = document.getElementById("button-1");
+                                if (BUTTON_IMG.src.includes('_off')) {
+                                    BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                } else {
+                                    BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                }
+                            }}>
+                                <img src={visibilityImage} alt={"Auge Symbol"}/>
                             </button>
                         </td>
                     </tr>
@@ -833,7 +841,7 @@ const Energie = () => {
                             Wärmeenergie?
                         </td>
                         <td className="antworten">
-                <span style="display: none" id="antwort-2">
+                <span style={{display: "none"}} id="antwort-2">
                     <b>Stoffe unterschiedlich gut aufnehmen, Wärmekapazität c</b>
                     <br/>
                     <b>Q Wärmeenergie = m * c * DeltaT</b>
@@ -844,7 +852,17 @@ const Energie = () => {
                                 id="button-2"
                                 type="button"
                                 className="btn btn-primary"
-                                onClick="toggleAnswer('antwort-2', this.id)">
+                                onClick={function () {
+                                    const ANSWER = document.getElementById("antwort-2");
+                                    ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                    const BUTTON_IMG = document.getElementById("button-2");
+                                    if (BUTTON_IMG.src.includes('_off')) {
+                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                    } else {
+                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                    }
+                                }}>
                                 <img src={visibilityImageOff}
                                      alt="Auge Symbol"/>
                             </button>
@@ -865,7 +883,7 @@ const Energie = () => {
                             Beispiel?
                         </td>
                         <td className="antworten">
-                <span style="display: none" id="antwort-3">
+                <span style={{display: "none"}} id="antwort-3">
                     <b>Bewegungsenergie= &#189; * m * v2</b>
                 </span>
                         </td>
@@ -874,7 +892,17 @@ const Energie = () => {
                                 id="button-3"
                                 type="button"
                                 className="btn btn-primary"
-                                onClick="toggleAnswer('antwort-3', this.id)">
+                                onClick={function () {
+                                    const ANSWER = document.getElementById("antwort-3");
+                                    ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                    const BUTTON_IMG = document.getElementById("button-3");
+                                    if (BUTTON_IMG.src.includes('_off')) {
+                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                    } else {
+                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                    }
+                                }}>
                                 <img src={visibilityImage} alt="Auge Symbol"/>
                             </button>
                         </td>
