@@ -20,9 +20,22 @@ const SUBM = () => {
                 </div>
             </section>
             <div className="wave-01">
-                <img className="wave-img" src={Wave01} alt={"wave img idk"}/>
+                <img className="wave-img" src={Wave01} alt={"wave img"}/>
             </div>
+            <section id="math">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="m-div-left">
+                            heloo
+                        </div>
+                        <div class="m-div-right">
+                            hello
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        
     );
 }
 
