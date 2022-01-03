@@ -9,7 +9,7 @@ const Navigation = () => {
                 <li><Link to='/Vektoren'>Vektoren</Link></li>
                 <li><Link to='/klima'>Klima</Link></li>
                 <li><Link to='/energie-stromerzeugung'>Energie-Stromerzeugung</Link></li>
-                <li><Link to='/linearegleichungen'>Linearegleichungen</Link></li>
+                <li><Link to='/linearegeleichungen'>Linearegleichungen</Link></li>
             </ul>
         </div>
     );
