@@ -1,10 +1,11 @@
 import Navigation from "../components/Navigation";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Vektoren = () => {
     return (
-        <div className={"wrapper"}>
+        <div className={"container"}>
             <Navigation/>
-            <div>HALLO VEKTOREN</div>
+            
         </div>
     );
 }
