@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kühlschrank</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    <!--Custom-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">AB20c</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../energie-stromerzeugung/">Energie Stromerzeugung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../klima/">Klima</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Lineare Funktionen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../linearefunktionen/">Lineare Funktionen</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Unterseite 1</a></li>
+                            <li><a class="dropdown-item" href="#">Unterseite 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lineare Gleichungen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Temperatur/">Temperatur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Vektoren/">Vektoren</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Kühlschrank/">Kühlschrank</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../energie/">Energie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <h1>Kühlschrank</h1>
+    <br>
+</div>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <img id="myImage" src="img/KühlschrankZu.jpg" style="width:100px">
+</div>
+
+<div class="container d-flex align-items-center justify-content-center">
+    <button onclick="document.getElementById('myImage').src='img/KühlschrankOffen.jpg'">Kühlschrank öffnen</button>
+    <button onclick="document.getElementById('myImage').src='img/KühlschrankZu.jpg'">Kühlschrank schliessen</button>
+</div>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <br>
+    <button onclick="myFunction()">Warum gibt ein Kühlschrank mehr Wärme als Kälte ab?</button>
+    <br>
+    <p id="lösung1"></p>
+    <script>
+        function myFunction() {
+            document.getElementById("lösung1").innerHTML = "Der Kühlschrank transportiert also nicht nur Wärme nach außen, " +
+                "sondern muss an der Außenseite gewissermaßen für zusätzliche Hitze sorgen, " +
+                "damit die Wärmeabgabe funktioniert – und damit der Kreislauf des Kühlens. Das ist der Grund," +
+                " warum ein Eisschrank nach außen mehr Wärme abgibt, als er dem Innenraum entzieht."
+        }
+    </script>
+    <br>
+</div>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <br>
+    <button onclick="myFunction2()">Wie viel wärme gibt ein Kühlschrank ab?</button>
+    <br>
+    <p id="lösung2"></p>
+    <script>
+        function myFunction2() {
+            document.getElementById("lösung2").innerHTML = "Die meisten Kühlschränke werden von einem " +
+                "Kondensatormotor mit ca. 90 W angetrieben. Also wird der Motor alleine deutlich weniger" +
+                " als 90 W in Wärme umsetzen. Und solange durch die Türe keine fremde Wärmenergie in den Kühlschrank " +
+                "reinkommt, wird der auch nicht viel mehr Wärme erzeugen."
+        }
+    </script>
+    <br>
+</div>
+
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <br>
+    <button onclick="myFunction3()">Wie viel arten von Kühlschrank gibt es?</button>
+    <br>
+    <p id="lösung3"></p>
+    <script>
+        function myFunction3() {
+            document.getElementById("lösung3").innerHTML =
+                "Kompressorkühlschrank, " +
+                "Absorberkühlschrank und " +
+                "Thermoelektrischer Kühlschrank"
+        }
+    </script>
+    <br>
+</div>
+<br>
+<br>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <br>
+    <button onclick="myFunction4()">Wo ist der Siedepunkt?</button>
+    <br>
+    <p id="lösung4"></p>
+    <script>
+        function myFunction4() {
+            document.getElementById("lösung4").innerHTML =
+                "Bei einer Mischung von Wasser und Frostschutzmittel " +
+                "im Verhältnis 1:1 liegt der Siedepunkt des Kühlmittels " +
+                "bei etwa 107° C und bietet dem Kühlsystem somit eine " +
+                "enorme Leistungsreserve."
+        }
+    </script>
+    <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <img src="img/ImagineSelberZeichne.jpg" style="position: absolute" height="350px" alt="Kühlschrank_Image1">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <ol>
+        <p>1. An der inneren Rückwand des Kühlschrankes befindet sich ein schlangenförmiges Rohr, das von
+            unten nach oben verläuft. Darin befindet sich die Kühlflüssigkeit.
+        </p>
+        <p>2. Sobald im Kühlschrank Wärme entsteht, wird die Kühlflüssigkeit ebenfalls wärmer, erreicht
+            den Siedepunkt und verdampft. Der Dampf steigt im Rohr nach oben.
+        </p>
+        <p>3. Wenn der Dampf oben angekommen ist, wird er in den Kompressor geleitet. Darin wird er stark
+            verdichtet. Es entsteht wieder eine Flüssigkeit, die durch den hohen Verdichtungsgrad einen
+            weit höheren Siedepunkt hat.
+        </p>
+        <p>4. Eine an der Kompressor angeschlossene Pumpe leitet die Flüssigkeit in ein schlangenförmiges
+            Rohrsystem auf der hinteren Außenwand des Kühlschranks. Darin kühlt die Flüssigkeit wieder ab und
+            gibt die Wärme, die sie im Inneren aufgenommen hat, nach außen ab.
+        </p>
+        <p>5. Unten angekommen, gelangt die Flüssigkeit in ein Drosselventil. Dieses zerstäubt die Flüssigkeit
+            wieder, damit der Siedepunkt wieder sehr niedrig wird.
+        </p>
+        <p>
+            6. Immer wenn im Inneren des Kühlschranks Wärme entsteht, zum Beispiel wenn die Tür geöffnet wird
+            oder wenn etwas Warmes hineingestellt wird, verdampft ein Teil der Kühlflüssigkeit. Genau diese Menge
+            Flüssigkeit wird vom Drosselventil wieder in das innere Rohr hineingespritzt.
+        </p>
+        <p>
+            7. Der Kreislauf ist damit abgeschlossen. Erkennen können Sie den Vorgang am Brummen des Kühlschranks,
+            das manchmal einsetzt. Immer wenn es im Kühlschrank zu warm wird, verdampft ein Teil der Flüssigkeit und
+            Kompressor sowie Pumpe werden aktiviert.
+        </p>
+    </ol>
+</div>
+
+
+</body>
+</html>
