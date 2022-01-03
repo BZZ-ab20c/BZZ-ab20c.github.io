@@ -14,10 +14,13 @@ function openFridge() {
     document.getElementById('myImage').setAttribute('alt', 'Kühlschrank offen');
 }
 
-const Kuehlschrank = () => {
-    const [showResults, setShowResults] = React.useState(false)
-    const onClick = () => setShowResults(true)
+function toggleVisibility(element) {
+    console.log(element)
 
+    return null;
+}
+
+const Kuehlschrank = () => {
     return (
         <div>
             <div className="container d-flex flex-column align-items-center justify-content-center">
@@ -36,71 +39,64 @@ const Kuehlschrank = () => {
 
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <br/>
-                <button onClick={
-                    function () {
-                        const loesung = document.getElementById("lösung1");
-                        loesung.style.display = (loesung.style.display === "none") ? "block" : "none";
-                    }
-                }>Warum gibt ein Kühlschrank mehr Wärme als Kälte ab?
+                <button onClick={function () {
+                    const loesung = document.getElementById("lösung1");
+                    loesung.style.display = (loesung.style.display === "none") ? "block" : "none";
+                }}>Warum gibt ein Kühlschrank mehr Wärme als Kälte ab?
                 </button>
                 <br/>
                 <p id="lösung1" style={{display: "none"}}>
-                    Der Kühlschrank transportiert also nicht nur Wärme nach außen, " +
-                    "sondern muss an der Außenseite gewissermaßen für zusätzliche Hitze sorgen, " +
-                    "damit die Wärmeabgabe funktioniert – und damit der Kreislauf des Kühlens. Das ist der Grund," +
-                    " warum ein Eisschrank nach außen mehr Wärme abgibt, als er dem Innenraum entzieht.
+                    Der Kühlschrank transportiert also nicht nur Wärme nach außen, sondern muss an der Außenseite
+                    gewissermaßen für zusätzliche Hitze sorgen, damit die Wärmeabgabe funktioniert – und damit der
+                    Kreislauf des Kühlens. Das ist der Grund, warum ein Eisschrank nach außen mehr Wärme abgibt, als er
+                    dem Innenraum entzieht.
                 </p>
                 <br/>
             </div>
 
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <br/>
-                <button onClick="myFunction2()">Wie viel wärme gibt ein Kühlschrank ab?</button>
+                <button onClick={function () {
+                    const loesung = document.getElementById("lösung2");
+                    loesung.style.display = (loesung.style.display === "none") ? "block" : "none";
+                }}>Wie viel wärme gibt ein Kühlschrank ab?
+                </button>
                 <br/>
-                <p id="lösung2"/>
-                <script>
-                    function myFunction2() {
-                    document.getElementById("lösung2").innerHTML = "Die meisten Kühlschränke werden von einem " +
-                        "Kondensatormotor mit ca. 90 W angetrieben. Also wird der Motor alleine deutlich weniger" +
-                        " als 90 W in Wärme umsetzen. Und solange durch die Türe keine fremde Wärmenergie in den Kühlschrank " +
-                        "reinkommt, wird der auch nicht viel mehr Wärme erzeugen."
-                }
-                </script>
+                <p id="lösung2" style={{display: "none"}}>
+                    Die meisten Kühlschränke werden von einem Kondensatormotor mit ca. 90 W angetrieben. Also wird der
+                    Motor alleine deutlich weniger als 90 W in Wärme umsetzen. Und solange durch die Türe keine fremde
+                    Wärmenergie in den Kühlschrank reinkommt, wird der auch nicht viel mehr Wärme erzeugen.
+                </p>
                 <br/>
             </div>
 
-
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <br/>
-                <button onClick="myFunction3()">Wie viel arten von Kühlschrank gibt es?</button>
+                <button onClick={function () {
+                    const loesung = document.getElementById("lösung3");
+                    loesung.style.display = (loesung.style.display === "none") ? "block" : "none";
+                }}>Wie viel arten von Kühlschrank gibt es?
+                </button>
                 <br/>
-                <p id="lösung3"/>
-                <script>
-                    function myFunction3() {
-                    document.getElementById("lösung3").innerHTML =
-                        "Kompressorkühlschrank, " +
-                        "Absorberkühlschrank und " +
-                        "Thermoelektrischer Kühlschrank"
-                }
-                </script>
+                <p id="lösung3" style={{display: "none"}}>
+                    Kompressorkühlschrank, Absorberkühlschrank und Thermoelektrischer Kühlschrank
+                </p>
                 <br/>
             </div>
             <br/>
             <br/>
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <br/>
-                <button onClick="myFunction4()">Wo ist der Siedepunkt?</button>
+                <button onClick={function () {
+                    const loesung = document.getElementById("lösung4");
+                    loesung.style.display = (loesung.style.display === "none") ? "block" : "none";
+                }}>Wo ist der Siedepunkt?
+                </button>
                 <br/>
-                <p id="lösung4"/>
-                <script>
-                    function myFunction4() {
-                    document.getElementById("lösung4").innerHTML =
-                        "Bei einer Mischung von Wasser und Frostschutzmittel " +
-                        "im Verhältnis 1:1 liegt der Siedepunkt des Kühlmittels " +
-                        "bei etwa 107° C und bietet dem Kühlsystem somit eine " +
-                        "enorme Leistungsreserve."
-                }
-                </script>
+                <p id="lösung4" style={{display: "none"}}>
+                    Bei einer Mischung von Wasser und Frostschutzmittel im Verhältnis 1:1 liegt der Siedepunkt des
+                    Kühlmittels bei etwa 107° C und bietet dem Kühlsystem somit eine enorme Leistungsreserve.
+                </p>
                 <br/>
             </div>
             <br/>
