@@ -16,7 +16,10 @@ const LineareFunktionen = () => {
                 </p>
             </div>
 
-            <iframe title={"Lineare Funktionen"} src={'/pages/lineareFunktionenSubPages/Tool.html'}/>
+            <div style={{height: "100vh"} }>
+                <iframe title={"Lineare Funktionen"} src={'https://bzz-ab20c.github.io/'}
+                        style={{width: "100%", height: "100%"}}/>
+            </div>
         </div>
     );
 }
