@@ -3,6 +3,7 @@ import MathImg from "../img/lineargleichungen/math-img.jpg";
 import Wave01 from "../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/lineareGleichungen/index.css'
+import {Link} from "react-router-dom";
 
 const Linearegleichungen = () => {
     return (
@@ -91,20 +92,20 @@ const Linearegleichungen = () => {
                     <div className="row">
                         <div className="col">
                             <div className="btn-01">
-                                <a className="link" href="am.html">
+                                <Link to={"/linearegeleichungen/AM"}>
                                     <div className="btn-01-1">
                                         <p className="btn-01-1-txt">Additionsmethode</p>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col">
                             <div className="btn-02">
-                                <a className="link" href="subm.html">
+                                <Link to={"/linearegeleichungen/SUBM"}>
                                     <div className="btn-02-2">
                                         <p className="btn-02-2-txt">Subtitutionsmethode</p>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
