@@ -1,6 +1,11 @@
+import Navigation from "../components/Navigation";
+
 const LineareFunktionen = () => {
     return (
-        <div className={"container"}>LineareFunktionen</div>
+        <div>
+            <Navigation/>
+            <div className={"container"}>LineareFunktionen</div>
+        </div>
     );
 }
 
