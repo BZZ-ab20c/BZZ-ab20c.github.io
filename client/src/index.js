@@ -9,18 +9,25 @@ import Klima from "./pages/Klima";
 import Linearegleichungen from "./pages/Linearegleichungen";
 import AM from "./pages/lineareGleichungenSubPages/am";
 import SUBM from "./pages/lineareGleichungenSubPages/subm";
+import Energie from "./pages/Energie";
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App/>}/>
+
                 <Route path="/vektoren" element={<Vektoren/>}/>
+
                 <Route path="/energie-stromerzeugung" element={<EnergieStromerzeugung/>}/>
+
                 <Route path="/klima" element={<Klima/>}/>
+
                 <Route path="/linearegeleichungen" element={<Linearegleichungen/>}/>
                 <Route path="/linearegeleichungen/AM" element={<AM/>}/>
                 <Route path="/linearegeleichungen/SUBM" element={<SUBM/>}/>
+
+                <Route path="/energie" element={<Energie/>}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
