@@ -10,6 +10,7 @@ const Navigation = () => {
                 <li><Link to='/klima'>Klima</Link></li>
                 <li><Link to='/energie-stromerzeugung'>Energie-Stromerzeugung</Link></li>
                 <li><Link to='/linearegeleichungen'>Linearegleichungen</Link></li>
+                <li><Link to='/linearefunktionen'>Linearefunktionen</Link></li>
                 <li><Link to='/energie'>Energie</Link></li>
                 <li><Link to='/kuehlschrank'>Kühlschrank</Link></li>
             </ul>

@@ -11,6 +11,7 @@ import AM from "./pages/lineareGleichungenSubPages/am";
 import SUBM from "./pages/lineareGleichungenSubPages/subm";
 import Energie from "./pages/Energie";
 import Kuehlschrank from "./pages/Kuehlschrank";
+import LineareFunktionen from "./pages/LineareFunktionen";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -27,6 +28,8 @@ ReactDOM.render(
                 <Route path="/linearegeleichungen" element={<Linearegleichungen/>}/>
                 <Route path="/linearegeleichungen/AM" element={<AM/>}/>
                 <Route path="/linearegeleichungen/SUBM" element={<SUBM/>}/>
+
+                <Route path="/linearefunktionen" element={<LineareFunktionen/>}/>
 
                 <Route path="/energie" element={<Energie/>}/>
 
