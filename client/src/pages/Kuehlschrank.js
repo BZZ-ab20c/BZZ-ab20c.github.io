@@ -15,12 +15,6 @@ function openFridge() {
     document.getElementById('myImage').setAttribute('alt', 'Kühlschrank offen');
 }
 
-function toggleVisibility(element) {
-    console.log(element)
-
-    return null;
-}
-
 const Kuehlschrank = () => {
     return (
         <div>
