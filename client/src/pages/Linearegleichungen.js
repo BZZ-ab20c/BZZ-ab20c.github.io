@@ -16,7 +16,7 @@ const Linearegleichungen = () => {
                         <div className="col">
                             Willkommen beim
                             <span className="tag-01"><a id="link-01" href="https://www.bzz.ch/"
-                                                    target="_blank">BZZ</a></span>
+                                                        target="_blank">BZZ</a></span>
                         </div>
                     </div>
                 </div>
