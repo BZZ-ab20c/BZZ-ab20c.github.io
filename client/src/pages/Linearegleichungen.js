@@ -81,15 +81,15 @@ const Linearegleichungen = () => {
                     </div>
                 </div>
                 <section id="btn-title">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                             <div class="btn-txt-1"><b>Additionsmethode</b><br></br> (Verfahren gleicher Koeffizienten) <br></br>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                             <div className="btn-txt-1"><b>Additionsmethode</b><br></br> (Verfahren gleicher Koeffizienten) <br></br>
                                     Wenn zwei "entgegengesetzte Summanden" vorkommen.
                                 </div>
                             </div>
-                            <div class="col">
-                            <div class="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
+                            <div className="col">
+                            <div className="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
                                 Wenn beide Gleichungen nach der selben Variable aufgelöst werden.
                             </div>
                         </div>

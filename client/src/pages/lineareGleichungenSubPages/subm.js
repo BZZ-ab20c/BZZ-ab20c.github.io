@@ -9,9 +9,9 @@ const SUBM = () => {
         <div className={"container"}>
             {/*Banner*/}
             <section id="banner">
-                <div class="back-btn" >  
+                <div className="back-btn" >  
                     <a href="index.html"> {/*Link richtig machen*/}
-                        <div class="btn">
+                        <div className="btn">
                         <img className="arr-img" src={Arr} alt={"arr img"}></img>
                         </div>
                     </a>  
@@ -34,12 +34,12 @@ const SUBM = () => {
                 <img className="wave-img" src={Wave01} alt={"wave img"}/>
             </div>
             <section id="math">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="m-div-left">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="m-div-left">
                             heloo
                         </div>
-                        <div class="m-div-right">
+                        <div className="m-div-right">
                             hello
                         </div>
                     </div>
