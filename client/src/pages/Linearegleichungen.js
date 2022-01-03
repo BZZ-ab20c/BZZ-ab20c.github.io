@@ -1,6 +1,8 @@
 import Navigation from "../components/Navigation";
 import MathImg from "../img/lineargleichungen/math-img.jpg";
 import Wave01 from "../img/lineargleichungen/wave-01.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/lineareGleichungen/index.css'
 
 const Linearegleichungen = () => {
     return (
