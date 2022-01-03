@@ -41,24 +41,18 @@ const Linearegleichungen = () => {
                     <div className="row">
                         <div className="sb-div-left">
                             <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                sea takimata
-                                sanctus est Lorem ipsum dolor sit amet.
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                sea takimata
-                                sanctus est Lorem ipsum dolor sit amet.
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut
-                                labore et dolore magna aliquyam erat, sed diam voluptua.
-                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                                sea takimata
-                                sanctus est Lorem ipsum dolor sit amet.
+                            Das erste was man sich fragt wenn man LGS hört, ist :<strong> Was ist LGS?</strong><br></br>
+                            LGS heisst ausgeschrieben «<b>L</b>ineare <b>G</b>leichungs<b>s</b>ysteme». Unter einem Gleichungssystem versteht man zwei oder mehr Gleichungen, welche gemeinsam gelöst werden müssen.
+                            Gleichungen setzen sich aus gemeinsamen Unbekannten (Variablen) zusammen. Linear heißt, dass jede Variable höchstens mit dem Exponenten 1 auftaucht!
+                            <br></br><br></br>
+                            Besitzt ein Gleichungssystem mehr Gleichungen als unbekannte Variablen, kann dieses meist nicht eindeutig gelöst werden, 
+                            Zum Beispiel gibt es drei Unbekannte aber nur zwei Gleichungen. In diesem Fall spricht man von einem <b>unterbestimmten Gleichungssystem</b>.
+                            Es kann vorkommen das bei diesen Gleichungssystem keine Lösung berechnet werden kann.
+                            <br></br><br></br>
+                            Bei einem Gleichungssystem, welches genau gleich viele unbekannte Variablen wie Gleichungen besitzt, kann im Allgemeinen exakt eine Lösung bestimmt werden, 
+                            das Gleichungssystem ist also <b>eindeutig lösbar</b>. Dies ist der Normalfall.
+                            <br></br><br></br>
+                            <b></b>Ziel bei der Berechnung ist es, für jede Variable eine Zahl zu finden, die alle Gleichungen korrekt löst.
                             </p>
                         </div>
                         <div className="sb-div-right-img">
@@ -78,14 +72,30 @@ const Linearegleichungen = () => {
                     </div>
                     <div className="row">
                         <div className="tag-03">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut
-                            labore et
-                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                            et ea rebum.
+                            Um diese Gleichungen lösen zu können, braucht man ein Lösungsverfahren. Insgesamt gibt es drei, hier werden wir zwei etwas genauer anschauen.
+                            Einmal die Additionsmethode und die Substitutionsmethode.
+                            <br></br>
+                            Wann ein bestimmtes Verfahren benutzt wird, ist abhängig vom Gleichungssystem. Das entscheidet nur den Rechenaufwand. 
+                            Schlussendlich führen alle zur richtigen Lösung (natürlich, solange man richtig rechnet).
                         </div>
                     </div>
                 </div>
+                <section id="btn-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                             <div class="btn-txt-1"><b>Additionsmethode</b><br></br> (Verfahren gleicher Koeffizienten) <br></br>
+                                    Wenn zwei "entgegengesetzte Summanden" vorkommen.
+                                </div>
+                            </div>
+                            <div class="col">
+                            <div class="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
+                                Wenn beide Gleichungen nach der selben Variable aufgelöst werden.
+                            </div>
+                        </div>
+                        </div>
+                     </div>
+                </section>
             </section>
             <section id="section-btn">
                 <div className="container">
@@ -112,6 +122,7 @@ const Linearegleichungen = () => {
                 </div>
             </section>
         </div>
+    
     );
 }
 
