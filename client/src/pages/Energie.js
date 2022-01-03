@@ -9,6 +9,10 @@ import visibilityImage from "../img/energie/visibility.svg";
 import visibilityImageOff from "../img/energie/visibility_off.svg";
 
 const Energie = () => {
+    let button1Visible = false;
+    let button2Visible = false;
+    let button3Visible = false;
+
     return (
         <div>
             <Navigation/>
@@ -805,25 +809,29 @@ const Energie = () => {
                             genau?
                         </td>
                         <td className="antworten">
-                <span style={{display: "none"}} id="antwort-1">
-                    <b>Masse und Höhe &#8594; W pot = m * h * g</b>
-                    <br/>
-                    <b>g = konstante</b>
-                </span>
+                            <span style={{display: "none"}} id="antwort-1">
+                                <b>Masse und Höhe &#8594; W pot = m * h * g</b>
+                                <br/>
+                                <b>g = konstante</b>
+                            </span>
                         </td>
                         <td>
                             <button id="button-1" type="button" className="btn btn-primary" onClick={function () {
                                 const ANSWER = document.getElementById("antwort-1");
                                 ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
 
-                                const BUTTON_IMG = document.getElementById("button-1");
-                                if (BUTTON_IMG.src.includes('_off')) {
-                                    BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                const BUTTON_IMAGE = document.getElementById('button1_image');
+
+                                if (button1Visible) {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
                                 } else {
-                                    BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
                                 }
+                                button1Visible = !button1Visible;
                             }}>
-                                <img src={visibilityImage} alt={"Auge Symbol"}/>
+                                <img id="button1_image" src={visibilityImage} alt={"Auge Symbol"}/>
                             </button>
                         </td>
                     </tr>
@@ -856,14 +864,18 @@ const Energie = () => {
                                     const ANSWER = document.getElementById("antwort-2");
                                     ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
 
-                                    const BUTTON_IMG = document.getElementById("button-2");
-                                    if (BUTTON_IMG.src.includes('_off')) {
-                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                    const BUTTON_IMAGE = document.getElementById('button2_image');
+
+                                    if (button2Visible) {
+                                        BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                        BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
                                     } else {
-                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                        BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                        BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
                                     }
+                                    button2Visible = !button2Visible;
                                 }}>
-                                <img src={visibilityImageOff}
+                                <img id="button2_image" src={visibilityImage}
                                      alt="Auge Symbol"/>
                             </button>
                         </td>
@@ -896,14 +908,18 @@ const Energie = () => {
                                     const ANSWER = document.getElementById("antwort-3");
                                     ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
 
-                                    const BUTTON_IMG = document.getElementById("button-3");
-                                    if (BUTTON_IMG.src.includes('_off')) {
-                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('_off', '');
+                                    const BUTTON_IMAGE = document.getElementById('button3_image');
+
+                                    if (button3Visible) {
+                                        BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                        BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
                                     } else {
-                                        BUTTON_IMG.src = BUTTON_IMG.src.replace('.svg', '_off.svg');
+                                        BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                        BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
                                     }
+                                    button3Visible = !button3Visible;
                                 }}>
-                                <img src={visibilityImage} alt="Auge Symbol"/>
+                                <img id="button3_image" src={visibilityImage} alt="Auge Symbol"/>
                             </button>
                         </td>
                     </tr>
