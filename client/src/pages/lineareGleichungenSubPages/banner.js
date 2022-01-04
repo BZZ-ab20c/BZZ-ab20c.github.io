@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const LineareGleichungenBanner = (props) => {
     const backbutton = props.backbutton;
-    if(backbutton) {
+    if (backbutton) {
         return (
             <section id="banner">
                 <div className="back-btn">
