@@ -12,6 +12,11 @@ import SUBM from "./pages/lineareGleichungenSubPages/subm";
 import Energie from "./pages/Energie";
 import Kuehlschrank from "./pages/Kuehlschrank";
 import LineareFunktionen from "./pages/LineareFunktionen";
+import {Kernkraftwerk} from "./pages/energie-stromerzeugung/energie-components/Kernkraftwerk/Kernkraftwerk";
+import {Solar} from "./pages/energie-stromerzeugung/energie-components/Solar/Solar";
+import {Wasserkraftwerk} from "./pages/energie-stromerzeugung/energie-components/Wasserkraftwerk/Wasserkraftwerk";
+import {Generator} from "./pages/energie-stromerzeugung/energie-components/Generator/Generator";
+import Home from "./pages/energie-stromerzeugung/energie-components/Home/Home";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -21,7 +26,12 @@ ReactDOM.render(
 
                 <Route path="/vektoren" element={<Vektoren/>}/>
 
-                <Route path="/energie-stromerzeugung" element={<EnergieStromerzeugung/>}/>
+                <Route path="/energie-stromerzeugung/" element={<Home/>}/>
+                {/*<Route path="/energie-stromerzeugung/kernkraftwerk" element={<Kernkraftwerk/>}/>*/}
+                {/*<Route path="/energie-stromerzeugung/solar" element={<Solar/>}/>*/}
+                {/*<Route path="/energie-stromerzeugung/wasserkraftwerk" element={<Wasserkraftwerk/>}/>*/}
+                {/*<Route path="/energie-stromerzeugung/generator" element={<Generator/>}/>*/}
+                {/*<Route path="/energie-stromerzeugung/home" element={<Home/>}/>*/}
 
                 <Route path="/klima" element={<Klima/>}/>
 
