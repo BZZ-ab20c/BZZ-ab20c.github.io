@@ -1,193 +1,195 @@
-.Background{
-   height: 400px;
-   background-image: url(../../img/energie-stromerzeugung/titlepicture.jpg);
+.Background {
+    height: 400px;
+    background-image: url(../../img/energie-stromerzeugung/titlepicture.jpg);
 }
 
-.Title{
-   color: #ffffff;
-   position: absolute;
-   top: 230px;
-   left: 16%;
-   font-size: 45px;
+.Title {
+    color: #ffffff;
+    position: absolute;
+    top: 230px;
+    left: 16%;
+    font-size: 45px;
 }
 
 @media (min-width: 732px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 160px;
-      left: 21%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 160px;
+        left: 21%;
+        font-size: 45px;
+    }
 }
 
 @media (min-width: 902px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 160px;
-      left: 24%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 160px;
+        left: 24%;
+        font-size: 45px;
+    }
 }
 
 @media (min-width: 992px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 160px;
-      left: 27%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 160px;
+        left: 27%;
+        font-size: 45px;
+    }
 }
 
 @media (min-width: 1202px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 160px;
-      left: 29%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 160px;
+        left: 29%;
+        font-size: 45px;
+    }
 }
 
 @media (min-width: 1402px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 270px;
-      left: 32%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 270px;
+        left: 32%;
+        font-size: 45px;
+    }
 }
 
 @media (min-width: 1502px) {
-   .Title{
-      color: #ffffff;
-      position: absolute;
-      top: 270px;
-      left: 33%;
-      font-size: 45px;
-   }
+    .Title {
+        color: #ffffff;
+        position: absolute;
+        top: 270px;
+        left: 33%;
+        font-size: 45px;
+    }
 }
 
-.introduction{
-   text-align: center;
+.introduction {
+    text-align: center;
 }
 
-.div{
-   margin: 10%;
-   position: relative;
+.div {
+    margin: 10%;
+    position: relative;
 }
 
-.WhiteRow{
-   height: 450px;
-   background-color: rgb(255, 255, 255);
+.WhiteRow {
+    height: 450px;
+    background-color: rgb(255, 255, 255);
 }
 
-.GreenRow{
-   height: 450px;
-   background-color: rgba(116, 193, 128, 0.299);
+.GreenRow {
+    height: 450px;
+    background-color: rgba(116, 193, 128, 0.299);
 }
 
-.BlueRow{
-   height: 450px;
-   background-color: rgba(161, 201, 241, 0.796);
+.BlueRow {
+    height: 450px;
+    background-color: rgba(161, 201, 241, 0.796);
 }
 
-.YellowRow{
-   height: 450px;
-   background-color: rgb(255, 242, 183);
+.YellowRow {
+    height: 450px;
+    background-color: rgb(255, 242, 183);
 }
 
-.GrayRow{
-   height: 450px;
-   background-color: rgba(172, 186, 185, 0.496);
+.GrayRow {
+    height: 450px;
+    background-color: rgba(172, 186, 185, 0.496);
 }
 
-.RedRow{
-   height: 450px;
-   background-color: rgba(209, 126, 111, 0.51);
+.RedRow {
+    height: 450px;
+    background-color: rgba(209, 126, 111, 0.51);
 }
 
-.H2{
-   text-align: center;
-   border-bottom: 3px solid #ccc;
-   padding-bottom: 1rem;
-   width: 80%;
-   margin: auto;
+.H2 {
+    text-align: center;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 1rem;
+    width: 80%;
+    margin: auto;
 }
 
-.H4{
-   position: relative;
-   top: 70px;
-   text-align: center;
-   border-bottom: 3px solid rgb(132, 132, 132);
-   padding-bottom: 1rem;
-   width: 40%;
-   margin: auto;
+.H4 {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    border-bottom: 3px solid rgb(132, 132, 132);
+    padding-bottom: 1rem;
+    width: 40%;
+    margin: auto;
 }
 
-.Con{
-   position: relative;
-   top: 20%;
+.Con {
+    position: relative;
+    top: 20%;
 }
 
-.TextLeft{
-   position: relative;
-   top: 30%;
-   left: 20%;
+.TextLeft {
+    position: relative;
+    top: 30%;
+    left: 20%;
 }
 
-.TextRight{
-   position: relative;
-   top: 25%;
+.TextRight {
+    position: relative;
+    top: 25%;
 }
 
-.ImgRight{
-   position: relative;
-   top: 27%;
-   left: 15%;
-   margin: auto;
-   max-width: 310px;
+.ImgRight {
+    position: relative;
+    top: 27%;
+    left: 15%;
+    margin: auto;
+    max-width: 310px;
 }
 
-.ImgLeft{
-   position: relative;
-   top: 25%;
-   left: 5%;
-   margin: auto;
-   max-width: 310px;
+.ImgLeft {
+    position: relative;
+    top: 25%;
+    left: 5%;
+    margin: auto;
+    max-width: 310px;
 }
 
 @media (min-width: 950px) {
-   .ImgRight{
-      position: relative;
-      max-width: 380px;
-      top: 25%;
-      left: 16%;
-   }
-   .ImgLeft{
-      position: relative;
-      max-width: 350px;
-      top: 21%;
-      left: 15%;
-   }
+    .ImgRight {
+        position: relative;
+        max-width: 380px;
+        top: 25%;
+        left: 16%;
+    }
+
+    .ImgLeft {
+        position: relative;
+        max-width: 350px;
+        top: 21%;
+        left: 15%;
+    }
 }
 
 @media (min-width: 1250px) {
-   .ImgRight{
-      position: relative;
-      max-width: 450px;
-      top: 20%;
-      left: 26%;
-   }
-   .ImgLeft{
-      position: relative;
-      max-width: 450px;
-      top: 18%;
-      left: 21%;
-   }
+    .ImgRight {
+        position: relative;
+        max-width: 450px;
+        top: 20%;
+        left: 26%;
+    }
+
+    .ImgLeft {
+        position: relative;
+        max-width: 450px;
+        top: 18%;
+        left: 21%;
+    }
 }
 
 

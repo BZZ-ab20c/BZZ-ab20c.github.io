@@ -1,5 +1,4 @@
 import Wave01 from "../../img/lineargleichungen/wave-01.png";
-import Arr from "../../img/lineargleichungen/arr.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css'
 import LineareGleichungenBanner from "./banner";
@@ -25,7 +24,7 @@ const SUBM = () => {
                 </div>
             </section>
         </div>
-        
+
     );
 }
 

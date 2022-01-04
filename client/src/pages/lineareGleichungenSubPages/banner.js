@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const LineareGleichungenBanner = () => {
     return (
         <section id="banner">
-            <div className="back-btn" >
+            <div className="back-btn">
                 <Link to={"/"}> {/*Link richtig machen*/}
                     <div className="btn">
                         <img className="arr-img" src={Arr} alt={"arr img"}/>
@@ -19,7 +19,8 @@ const LineareGleichungenBanner = () => {
                     <div className="w-100"/>
                     <div className="col">
                         Lernset vom
-                        <span className="tag-01"><a id="link-01" href="https://www.bzz.ch/" target="_blank">BZZ</a></span>
+                        <span className="tag-01"><a id="link-01" href="https://www.bzz.ch/"
+                                                    target="_blank">BZZ</a></span>
                         {/*Todo: Kennzeichnung das BZZ ein Link ist*/}
                     </div>
                 </div>
