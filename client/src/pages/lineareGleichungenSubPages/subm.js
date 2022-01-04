@@ -7,7 +7,7 @@ const SUBM = () => {
     return (
         <div className={"container"}>
             {/*Banner*/}
-            <LineareGleichungenBanner/>
+            <LineareGleichungenBanner backbutton={true}/>
             <div className="wave-01">
                 <img className="wave-img" src={Wave01} alt={"wave img"}/>
             </div>

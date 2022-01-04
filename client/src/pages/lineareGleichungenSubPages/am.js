@@ -3,7 +3,7 @@ import LineareGleichungenBanner from "./banner";
 const AM = () => {
     return (
         <div className={"container"}>
-            <LineareGleichungenBanner/>
+            <LineareGleichungenBanner backbutton={true}/>
         </div>
     );
 }

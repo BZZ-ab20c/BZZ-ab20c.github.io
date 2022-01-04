@@ -8,7 +8,7 @@ import LineareGleichungenBanner from "./lineareGleichungenSubPages/banner";
 const Linearegleichungen = () => {
     return (
         <div className="container">
-            <LineareGleichungenBanner/>
+            <LineareGleichungenBanner backbutton={false}/>
             <div className="wave-01">
                 <img className="wave-img" src={Wave01} alt={"Wave img idk"}/>
             </div>
