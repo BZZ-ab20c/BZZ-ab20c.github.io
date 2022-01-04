@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {NavLink, Route, Routes} from 'react-router-dom';
 import {Row} from 'react-bootstrap';
-import Home from '../../energie-components/Home/Home';
 import {Generator} from '../../energie-components/Generator/Generator';
 import {Solar} from '../../energie-components/Solar/Solar';
 import {Kernkraftwerk} from '../../energie-components/Kernkraftwerk/Kernkraftwerk';
 import {Wasserkraftwerk} from '../../energie-components/Wasserkraftwerk/Wasserkraftwerk';
 
 import './NavItems.css';
+import Home from "../../energie-components/Home/Home";
 
 class NavItems extends Component {
 
@@ -20,8 +20,7 @@ class NavItems extends Component {
                     <nav>
                         <ul>
                             <li><NavLink
-                                to="/energie-stromerzeugung/home/"
-                                exact
+                                to="/energie-stromerzeugung/"
                                 activeStyle={{
                                     color: '#fa923f',
                                     textDecoration: 'underline'
@@ -54,10 +53,11 @@ class NavItems extends Component {
                     </nav>
                 </header>
                 <Routes>
-                    <Route path="/energie-stromerzeugung/kernkraftwerk" element={<Kernkraftwerk/>}/>
-                    <Route path="/energie-stromerzeugung/solar" element={<Solar/>}/>
-                    <Route path="/energie-stromerzeugung/wasserkraftwerk" element={<Wasserkraftwerk/>}/>
-                    <Route path="/energie-stromerzeugung/generator" element={<Generator/>}/>
+                    <Route path="/energie-stromerzeugung/" element={<Home/>}/>
+                    <Route path="/energie-stromerzeugung/kernkraftwerk/" element={<Kernkraftwerk/>}/>
+                    <Route path="/energie-stromerzeugung/solar/" element={<Solar/>}/>
+                    <Route path="/energie-stromerzeugung/wasserkraftwerk/" element={<Wasserkraftwerk/>}/>
+                    <Route path="/energie-stromerzeugung/generator/" element={<Generator/>}/>
                 </Routes>
                 <Row className="Footer">
                 </Row>

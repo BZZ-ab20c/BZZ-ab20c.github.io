@@ -1,4 +1,3 @@
-import Navigation from "../components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/klima/style.css'
 import ClimateChange from "../img/klima/climate-change.png";
@@ -6,7 +5,6 @@ import ClimateChange from "../img/klima/climate-change.png";
 const Klima = () => {
     return (
         <div className="container">
-            <Navigation/>
             {/*Grid*/}
             <div className="container d-flex justify-content-center" style={{padding: '24px'}}>
                 <h1>Klima</h1>

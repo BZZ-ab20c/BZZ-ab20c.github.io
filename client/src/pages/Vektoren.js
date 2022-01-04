@@ -1,11 +1,9 @@
-import Navigation from "../components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ClimateChange from "../img/klima/climate-change.png";
 
 const Vektoren = () => {
     return (
         <div className={"container"}>
-            <Navigation/>
             <div className="container d-flex justify-content-center" style={{padding: '24px'}}>
                 <h1>Klima</h1>
             </div>

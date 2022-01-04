@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/energie/style.css'
 import '../styles/energie/EnergieStyle.css'
-import Navigation from "../components/Navigation";
 import titleImage from "../img/energie/titleImage.jpg";
 import bewegungsEnergie from "../img/energie/bewegungsEnergieImage.png";
 import verbrennungsProzessImage from "../img/energie/verbrennungsprozesseImage.jpg";
@@ -15,7 +14,6 @@ const Energie = () => {
 
     return (
         <div>
-            <Navigation/>
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <div className="title-section">
                     <img draggable="false" src={titleImage} alt={"Bild zur darstellung der Energie"}
