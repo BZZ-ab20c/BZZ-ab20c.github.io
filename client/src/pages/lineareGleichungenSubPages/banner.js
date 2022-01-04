@@ -1,11 +1,13 @@
 import Arr from "../../img/lineargleichungen/arr.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../styles/lineareGleichungen/sbs.css'
 import {Link} from "react-router-dom";
 
 const LineareGleichungenBanner = () => {
     return (
         <section id="banner">
             <div className="back-btn">
-                <Link to={"/"}> {/*Link richtig machen*/}
+                <Link to={"/"}> {/*todo: Link richtig machen*/}
                     <div className="btn">
                         <img className="arr-img" src={Arr} alt={"arr img"}/>
                     </div>
