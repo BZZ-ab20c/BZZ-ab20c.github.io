@@ -11,3 +11,6 @@ Danach `npm start` eingeben. Die Seite sollte sich automatisch im Browser öffne
 
 In der Konsole `npm run build` eingeben. Danach `npm start` eingeben. Die Webseite kann jetzt
 unter "http://localhost:3001/" geöffnet werden.
+
+### Arbeitszeit
+Tim: [![wakatime](https://wakatime.com/badge/user/ad34b885-f946-4aca-a150-27035a8db272/project/b768c408-1684-4e1f-b73d-58f136842b81.svg)](https://wakatime.com/badge/user/ad34b885-f946-4aca-a150-27035a8db272/project/b768c408-1684-4e1f-b73d-58f136842b81)
