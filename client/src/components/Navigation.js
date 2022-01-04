@@ -1,4 +1,4 @@
-import {Link, Route, Routes} from "react-router-dom";
+import {NavLink, Route, Routes} from "react-router-dom";
 import Vektoren from "../pages/Vektoren";
 import NavItems from "../pages/energie-stromerzeugung/containers/NavItems/NavItems";
 import Klima from "../pages/Klima";
@@ -14,27 +14,57 @@ import {Solar} from "../pages/energie-stromerzeugung/energie-components/Solar/So
 import {Wasserkraftwerk} from "../pages/energie-stromerzeugung/energie-components/Wasserkraftwerk/Wasserkraftwerk";
 import {Generator} from "../pages/energie-stromerzeugung/energie-components/Generator/Generator";
 import "../pages/energie-stromerzeugung/containers/NavItems/NavItems.css";
+import MainPage from "../pages/MainPage";
 
 const Navigation = () => {
+    const style = {
+        color: '#fa923f',
+        textDecoration: 'underline'
+    }
+
     return (
         <div>
             <div className="Blog">
                 <nav>
                     <ul>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/vektoren'>Vektoren</Link></li>
-                        <li><Link to='/klima'>Klima</Link></li>
-                        <li><Link to='/energie-stromerzeugung/home/'>Energie-Stromerzeugung</Link></li>
-                        <li><Link to='/linearegeleichungen'>Linearegleichungen</Link></li>
-                        <li><Link to='/linearefunktionen'>Linearefunktionen</Link></li>
-                        <li><Link to='/energie'>Energie</Link></li>
-                        <li><Link to='/kuehlschrank'>Kühlschrank</Link></li>
+
+                        <li><NavLink
+                            to="/"
+                            activeStyle={style}>Home</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/vektoren"
+                            activeStyle={style}>Vektoren</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/klima"
+                            activeStyle={style}>Klima</NavLink></li>
+                        <li><NavLink
+                            to="/energie-stromerzeugung/home/"
+                            activeStyle={style}>Energie-Stromerzeugung</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/linearegeleichungen"
+                            activeStyle={style}>Linearegleichungen</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/linearefunktionen"
+                            activeStyle={style}>Linearefunktionen</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/energie"
+                            activeStyle={style}>Energie</NavLink>
+                        </li>
+                        <li><NavLink
+                            to="/kuehlschrank"
+                            activeStyle={style}>Kühlschrank</NavLink>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<MainPage/>}/>
 
                 <Route path="/vektoren" element={<Vektoren/>}/>
 
