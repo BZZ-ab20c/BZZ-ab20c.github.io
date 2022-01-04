@@ -1,6 +1,10 @@
+import LineareGleichungenBanner from "./banner";
+
 const AM = () => {
     return (
-        <div className={"container"}>AM</div>
+        <div className={"container"}>
+            <LineareGleichungenBanner/>
+        </div>
     );
 }
 
