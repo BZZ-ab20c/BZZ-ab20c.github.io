@@ -1,4 +1,5 @@
 import LineareGleichungenBanner from "./banner";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AM = () => {
     return (

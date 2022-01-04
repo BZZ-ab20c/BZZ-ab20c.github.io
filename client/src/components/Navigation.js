@@ -15,6 +15,7 @@ import {Wasserkraftwerk} from "../pages/energie-stromerzeugung/energie-component
 import {Generator} from "../pages/energie-stromerzeugung/energie-components/Generator/Generator";
 import "../pages/energie-stromerzeugung/containers/NavItems/NavItems.css";
 import MainPage from "../pages/MainPage";
+import Temperatur from "../pages/Temperatur";
 
 const Navigation = () => {
     const style = {
@@ -27,7 +28,6 @@ const Navigation = () => {
             <div className="Blog">
                 <nav>
                     <ul>
-
                         <li><NavLink
                             to="/"
                             activeStyle={style}>Home</NavLink>
@@ -59,6 +59,10 @@ const Navigation = () => {
                             to="/kuehlschrank"
                             activeStyle={style}>Kühlschrank</NavLink>
                         </li>
+                        <li><NavLink
+                            to="/temperatur"
+                            activeStyle={style}>Temperatur</NavLink>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -87,6 +91,8 @@ const Navigation = () => {
                 <Route path="/energie" element={<Energie/>}/>
 
                 <Route path="/kuehlschrank" element={<Kuehlschrank/>}/>
+
+                <Route path="/temperatur" element={<Temperatur/>}/>
             </Routes>
         </div>
     );
