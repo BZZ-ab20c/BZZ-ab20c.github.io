@@ -8,9 +8,11 @@ import lottieJson from './temperatur/lottie.json'
 const Temperatur = () => {
     const lottieRef = react.useRef(null);
     const [play, setPlay] = useState(false);
+
     function startPlay() {
         setPlay(true);
     }
+
     function stopPlay() {
         setPlay(false);
     }
@@ -341,7 +343,8 @@ const Temperatur = () => {
                             </div>
                         </div>
                         {questions[currentQuestion].antwortOptionen.map((answerOption) => (
-                            <div className="fragen-container card" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+                            <div className="fragen-container card"
+                                 onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
                                 <p className={"antwort-prefix"}>{answerOption.char}</p>
                                 <p className="antwort-text">{answerOption.text}</p>
                             </div>
