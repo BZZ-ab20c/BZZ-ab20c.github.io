@@ -3,6 +3,7 @@ import React from 'react';
 import kuehlschrankZu from "../img/kuehlschrank/KühlschrankZu.jpg";
 import kuehlschrankOffen from "../img/kuehlschrank/KühlschrankOffen.jpg";
 import imagineSelberZeichne from "../img/kuehlschrank/ImagineSelberZeichne.jpg";
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 function closeFridge() {
     document.getElementById('myImage').setAttribute('src', kuehlschrankZu);
@@ -15,6 +16,8 @@ function openFridge() {
 }
 
 const Kuehlschrank = () => {
+    useDocumentTitle('Kühlschrank');
+
     return (
         <div>
             <div className="container d-flex flex-column align-items-center justify-content-center">

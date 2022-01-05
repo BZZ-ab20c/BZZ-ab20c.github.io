@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/klima/style.css'
 import ClimateChange from "../img/klima/climate-change.png";
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Klima = () => {
+    useDocumentTitle('Klima');
+
     return (
         <div className="container">
             {/*Grid*/}

@@ -13,8 +13,11 @@ import druckwasserreaktor from '../../../../img/energie-stromerzeugung/kernkraft
 import sidewasserreaktor from '../../../../img/energie-stromerzeugung/kernkraftwerk/sidewasserreaktor.gif';
 import nasskuehlturm from '../../../../img/energie-stromerzeugung/kernkraftwerk/nasskuehlturm.jpg';
 import hybridkuehlturm from '../../../../img/energie-stromerzeugung/kernkraftwerk/hybridkuehlturm.jpg';
+import useDocumentTitle from "../../../../utils/UseDocumentTitle";
 
 export const Kernkraftwerk = () => {
+    useDocumentTitle('Energie-Stromerzeugung | Kernkraftwerk');
+
     return (
         <div>
             <Container fluid>

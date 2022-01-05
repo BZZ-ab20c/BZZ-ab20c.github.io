@@ -6,8 +6,11 @@ import bewegungsEnergie from "../img/energie/bewegungsEnergieImage.png";
 import verbrennungsProzessImage from "../img/energie/verbrennungsprozesseImage.jpg";
 import visibilityImage from "../img/energie/visibility.svg";
 import visibilityImageOff from "../img/energie/visibility_off.svg";
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Energie = () => {
+    useDocumentTitle('Energie');
+
     let button1Visible = false;
     let button2Visible = false;
     let button3Visible = false;

@@ -12,8 +12,11 @@ import mitteldruckwerk from '../../../../img/energie-stromerzeugung/wasserkraftw
 import hochdruckwerk from '../../../../img/energie-stromerzeugung/wasserkraftwerk/hochdruckwerk.jpg';
 import funktionsweise1 from '../../../../img/energie-stromerzeugung/wasserkraftwerk/funktionsweise1.jpg';
 import funktionsweise2 from '../../../../img/energie-stromerzeugung/wasserkraftwerk/funktionsweise2.jpg';
+import useDocumentTitle from "../../../../utils/UseDocumentTitle";
 
 export const Wasserkraftwerk = () => {
+    useDocumentTitle('Energie-Stromerzeugung | Wasserkraftwerk');
+
     return (
         <div>
             <Container fluid>

@@ -7,8 +7,11 @@ import '../../../../styles/energie-stromerzeugung/style.css';
 import strom from '../../../../img/energie-stromerzeugung/home/strom.jpg';
 import dynamo from '../../../../img/energie-stromerzeugung/home/dynamo.jpg';
 import erzeugen from '../../../../img/energie-stromerzeugung/home/erzeugen.jpg';
+import useDocumentTitle from "../../../../utils/UseDocumentTitle";
 
 const TitleSeite = () => {
+    useDocumentTitle('Energie-Stromerzeugung | Home');
+
     return (
         <div>
             <Container fluid>

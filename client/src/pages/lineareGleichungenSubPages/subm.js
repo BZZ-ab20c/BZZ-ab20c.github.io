@@ -2,8 +2,11 @@ import Wave01 from "../../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css'
 import LineareGleichungenBanner from "./banner";
+import useDocumentTitle from "../../utils/UseDocumentTitle";
 
 const SUBM = () => {
+    useDocumentTitle('Linearegleichungen | SUBM');
+
     return (
         <div className={"container"}>
             {/*Banner*/}

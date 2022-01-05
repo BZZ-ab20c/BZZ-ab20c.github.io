@@ -1,4 +1,8 @@
+import useDocumentTitle from "../utils/UseDocumentTitle";
+
 const LineareFunktionen = () => {
+    useDocumentTitle('Linearefunktionen');
+
     return (
         <div>
             <div className={"container"}>

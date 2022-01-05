@@ -12,8 +12,11 @@ import scheibe from '../../../../img/energie-stromerzeugung/solar/scheibe.jpg';
 import silizium from '../../../../img/energie-stromerzeugung/solar/silizium.jpg';
 import solarzelle1 from '../../../../img/energie-stromerzeugung/solar/solarzelle1.jpg';
 import solarzelle2 from '../../../../img/energie-stromerzeugung/solar/solarzelle2.jpg';
+import useDocumentTitle from "../../../../utils/UseDocumentTitle";
 
 export const Solar = () => {
+    useDocumentTitle('Energie-Stromerzeugung | Solar');
+
     return (
         <div>
             <Container fluid>

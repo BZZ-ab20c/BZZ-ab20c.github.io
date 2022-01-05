@@ -4,8 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/lineareGleichungen/index.css'
 import {Link} from "react-router-dom";
 import LineareGleichungenBanner from "./lineareGleichungenSubPages/banner";
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Linearegleichungen = () => {
+    useDocumentTitle('Linearegleichungen');
+
     return (
         <div className="container">
             <LineareGleichungenBanner backbutton={false}/>

@@ -4,8 +4,11 @@ import Lottie from 'react-lottie-player'
 import react, {useState} from "react";
 import "../styles/temperatur/style.css"
 import lottieJson from './temperatur/lottie.json'
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Temperatur = () => {
+    useDocumentTitle('Temperatur');
+
     const [play, setPlay] = useState(false);
 
     function startPlay() {

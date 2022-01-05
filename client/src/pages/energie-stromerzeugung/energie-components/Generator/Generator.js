@@ -5,8 +5,11 @@ import {Col, Container, Row} from 'react-bootstrap';
 import generator from '../../../../img/energie-stromerzeugung/generator/generator.jpg';
 import drehgenerator from '../../../../img/energie-stromerzeugung/generator/drehgenerator.jpg';
 import drehgeneratorGif from '../../../../img/energie-stromerzeugung/generator/drehgenerator.gif';
+import useDocumentTitle from "../../../../utils/UseDocumentTitle";
 
 export const Generator = () => {
+    useDocumentTitle('Energie-Stromerzeugung | Generator');
+
     return (
         <div>
             <Container fluid>
