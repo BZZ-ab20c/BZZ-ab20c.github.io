@@ -1,10 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import thermometer from '../img/temperatur/thermometer.png'
 import Lottie from 'react-lottie-player'
-import {useState} from "react";
+import react, {useState} from "react";
 import "../styles/temperatur/style.css"
+import lottieJson from './temperatur/lottie.json'
 
 const Temperatur = () => {
+    const lottieRef = react.useRef(null);
+    const [play, setPlay] = useState(false);
+    function startPlay() {
+        setPlay(true);
+    }
+    function stopPlay() {
+        setPlay(false);
+    }
+
     const questions = [
         {
             id: 1,
@@ -163,15 +173,16 @@ const Temperatur = () => {
                         </div>
 
                         <div className="row content">
-                            <div className="col-md-5">
+                            <div className="col-md-5" onMouseEnter={startPlay} onMouseLeave={stopPlay}>
                                 <Lottie
                                     className={"img-fluid"}
-                                    src={"https://assets3.lottiefiles.com/packages/lf20_buzt1erl.json"}
-                                    loop
-                                    hover
+                                    animationData={lottieJson}
                                     mode={"bounce"}
                                     speed={2}
+                                    play={play}
+                                    loop
                                     style={{width: "400px", height: "400px", background: "#FFFFFF"}}
+                                    ref={lottieRef}
                                 />
 
                             </div>
