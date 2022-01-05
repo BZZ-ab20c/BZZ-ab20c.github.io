@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import thermometer from '../img/temperatur/thermometer.png'
 import Lottie from 'react-lottie-player'
 import {useState} from "react";
+import "../styles/temperatur/style.css"
 
 const Temperatur = () => {
     const questions = [
@@ -328,16 +329,12 @@ const Temperatur = () => {
                                 <h1 id="frage">{questions[currentQuestion].frage}</h1>
                             </div>
                         </div>
-                        <div className={"antworten-halter"}>
-                            {questions[currentQuestion].antwortOptionen.map((answerOption) => (
-                                <div className="fragen-container card">
-                                    <button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
-                                        <p className={"antwort-prefix"}>{answerOption.char}</p>
-                                        <p className="antwort-text">{answerOption.text}</p>
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
+                        {questions[currentQuestion].antwortOptionen.map((answerOption) => (
+                            <div className="fragen-container card" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
+                                <p className={"antwort-prefix"}>{answerOption.char}</p>
+                                <p className="antwort-text">{answerOption.text}</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
             </main>
