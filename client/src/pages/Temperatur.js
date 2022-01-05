@@ -6,7 +6,6 @@ import "../styles/temperatur/style.css"
 import lottieJson from './temperatur/lottie.json'
 
 const Temperatur = () => {
-    const lottieRef = react.useRef(null);
     const [play, setPlay] = useState(false);
 
     function startPlay() {
@@ -184,7 +183,6 @@ const Temperatur = () => {
                                     play={play}
                                     loop
                                     style={{width: "400px", height: "400px", background: "#FFFFFF"}}
-                                    ref={lottieRef}
                                 />
 
                             </div>
