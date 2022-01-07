@@ -1,3 +1,40 @@
 .myCard {
     padding: 10px;
 }
+
+a, span {
+    text-decoration: none;
+}
+
+.vectorList {
+    display: flex;
+    align-items: center;
+}
+
+.vectorList ul {
+    padding: 0;
+}
+
+.vectorList ul li {
+    list-style: none;
+}
+
+.twoDimVectorList:before {
+    content: '[';
+    color: #000000;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 10px;
+
+    margin-bottom: 30px;
+}
+
+.twoDimVectorList:after {
+    content: ']';
+    color: #000000;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 10px;
+
+    margin-bottom: 30px;
+}

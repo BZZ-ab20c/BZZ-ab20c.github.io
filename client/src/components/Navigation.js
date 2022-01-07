@@ -13,7 +13,6 @@ import {Kernkraftwerk} from "../pages/energie-stromerzeugung/energie-components/
 import {Solar} from "../pages/energie-stromerzeugung/energie-components/Solar/Solar";
 import {Wasserkraftwerk} from "../pages/energie-stromerzeugung/energie-components/Wasserkraftwerk/Wasserkraftwerk";
 import {Generator} from "../pages/energie-stromerzeugung/energie-components/Generator/Generator";
-import "../pages/energie-stromerzeugung/containers/NavItems/NavItems.css";
 import MainPage from "../pages/MainPage";
 import Temperatur from "../pages/Temperatur";
 

@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/vektoren/style.css'
 import useDocumentTitle from "../utils/UseDocumentTitle";
 import vectorsDontChangePerspective from '../img/vektoren/vectorsDontChangePerspective.gif'
+import vectorArrow from '../img/vektoren/vectorArrow.png'
+import vectorList from '../img/vektoren/vectorList.png'
 
 const Vektoren = () => {
     useDocumentTitle('Vektoren');
@@ -120,10 +122,12 @@ const Vektoren = () => {
                             </p>
                             <div className={"row"}>
                                 <div className={"col"}>
-                                    --->
+                                    <img style={{width: "150px"}} src={vectorArrow}
+                                         alt={"Vektor als Pfeil dargestellt"}/>
                                 </div>
                                 <div className={"col"}>
-                                    [1, 2]
+                                    <img style={{width: "150px"}} src={vectorList}
+                                         alt={"Vektor als Liste dargestellt"}/>
                                 </div>
                             </div>
                             <p>
@@ -136,7 +140,7 @@ const Vektoren = () => {
                                 <br/>
                                 Wer ein Vektor mit einem Pfeil darstellt würde einfach einen Pfeil machen der nach oben
                                 rechts schaut und entsprechend der Entfernung lang ist.
-                                Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen.
+                                Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen:
                                 <br/>
                                 [2, 3]
                                 <br/>
@@ -146,7 +150,8 @@ const Vektoren = () => {
                                 also einen dreidimensionalen Vektor zu haben fügt man einfach eine dritte Zahl, die
                                 Z-Achse hinzu.
                                 <br/>
-                                Aber am Ende kann man diese Liste auch wieder als Pfeil darstellen, oder den Pfeil als Liste.
+                                Aber am Ende kann man diese Liste auch wieder als Pfeil darstellen, oder den Pfeil als
+                                Liste.
                             </p>
                         </div>
                     </div>
@@ -160,13 +165,39 @@ const Vektoren = () => {
                         <div className={"container"}>
                             <p>
                                 Mit Vektoren zu rechnen ist eigentlich ganz einfach. Folgend werden die
-                                unterschiedlichen Methoden erklärt
+                                unterschiedlichen Methoden erklärt.
+                                <br/>
+                                Die Vektoren werden am einfachsten als Liste dargestellt um zu rechnen.
                             </p>
 
-                            <h4>Addieren/Subtrahieren</h4>
-                            <p>
-                                Addieren und Subtrahieren funktionieren ganz einfach
-                            </p>
+                            <div className={"row"}>
+                                <div className={"col"}>
+                                    <h4>Addieren/Subtrahieren</h4>
+                                    <p>
+                                        Wie beim normalen Rechnen brauchen wir hier mindestens zwei Vektoren um diese
+                                        zusammen addieren oder subtrahieren zu können.
+                                        <br/>
+                                        Beim Addieren oder Subtrahieren wird jeweils die Zahl beim einen Vektor mit der
+                                        Zahl an der selben Stelle beim anderen Vektor zusammen addiert oder subtrahiert.
+                                        <br/>
+                                        Gehen wir also von zwei zweidimensionalen Vektoren aus. Beide haben also ein X
+                                        und ein Y. Wenn wir beide Vektoren addieren wollen addieren wir jeweils beide X
+                                        und beide Y zusammen, das selbe beim subtrahieren.
+                                    </p>
+                                    <div className={"vectorList twoDimVectorList"}>
+                                        <ul>
+                                            <li>2</li>
+                                            <li>3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className={"col"}>
+                                    <h4>Multiplizieren/Dividieren</h4>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
