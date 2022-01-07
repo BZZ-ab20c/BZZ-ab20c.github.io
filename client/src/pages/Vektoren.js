@@ -4,6 +4,8 @@ import useDocumentTitle from "../utils/UseDocumentTitle";
 import vectorsDontChangePerspective from '../img/vektoren/vectorsDontChangePerspective.gif'
 import vectorArrow from '../img/vektoren/vectorArrow.png'
 import vectorList from '../img/vektoren/vectorList.png'
+import VektorenFragen from "./vektorenSubpages/VektorenFragen";
+import Vektor from "./vektorenSubpages/Vektor";
 
 const Vektoren = () => {
     useDocumentTitle('Vektoren');
@@ -49,6 +51,11 @@ const Vektoren = () => {
                         <li className="listPadding">
                             <a href="#mathWithVectors">
                                 <span style={inhaltStyle}>Mit Vektoren rechnen</span><br/>
+                            </a>
+                        </li>
+                        <li className="listPadding">
+                            <a href="#quizStart">
+                                <span style={inhaltStyle}>Übungsaufgaben</span><br/>
                             </a>
                         </li>
                         <li className="listPadding">
@@ -142,12 +149,7 @@ const Vektoren = () => {
                                 rechts schaut und entsprechend der Entfernung lang ist.
                                 Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen:
                             </p>
-                            <div className={"vectorList twoDimVectorList"}>
-                                <ul>
-                                    <li>2</li>
-                                    <li>3</li>
-                                </ul>
-                            </div>
+                            <Vektor x={2} y={3}/>
                             <p>
                                 Die erste Zahl ist X und das zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
                                 der X Achse und drei Distanzeinheiten auf der Y Achse gelaufen.
@@ -193,68 +195,38 @@ const Vektoren = () => {
                                     <div className={"row"}>
                                         <h5>Addieren</h5>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>+</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>2</li>
-                                                    <li>2</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={2} y={2}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>=</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>7</li>
-                                                    <li>5</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={7} y={5}/>
                                         </div>
                                     </div>
 
                                     <div className={"row"}>
                                         <h5>Subtrahieren</h5>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>-</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>2</li>
-                                                    <li>2</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={2} y={2}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>=</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>3</li>
-                                                    <li>1</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={3} y={1}/>
                                         </div>
                                     </div>
                                 </div>
@@ -279,35 +251,20 @@ const Vektoren = () => {
                                             <span className={"centeredChild"}>*</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>=</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>10</li>
-                                                    <li>6</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={10} y={6}/>
                                         </div>
                                     </div>
 
                                     <div className={"row"}>
                                         <h5>Vektor mit Skalar dividieren</h5>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>/</span>
@@ -319,12 +276,7 @@ const Vektoren = () => {
                                             <span className={"centeredChild"}>=</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>2.5</li>
-                                                    <li>1.5</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={2.5} y={1.5}/>
                                         </div>
                                     </div>
                                 </div>
@@ -345,23 +297,13 @@ const Vektoren = () => {
 
                                     <div className={"row"}>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>*</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>2</li>
-                                                    <li>4</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={2} y={4}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>=</span>
@@ -390,23 +332,13 @@ const Vektoren = () => {
 
                                     <div className={"row"}>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>5</li>
-                                                    <li>3</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={5} y={3}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>und</span>
                                         </div>
                                         <div className={"col"}>
-                                            <div className={"vectorList twoDimVectorList"}>
-                                                <ul>
-                                                    <li>2</li>
-                                                    <li>4</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={2} y={4}/>
                                         </div>
                                     </div>
 
@@ -421,13 +353,7 @@ const Vektoren = () => {
 
                                     <div className={"row"}>
                                         <div className={"col"}>
-                                            <div className={"vectorList threeDimVectorList"}>
-                                                <ul>
-                                                    <li>5 * 4</li>
-                                                    <li>-</li>
-                                                    <li>3 * 2</li>
-                                                </ul>
-                                            </div>
+                                            <Vektor x={'5 * 4'} y={'-'} z={'3 * 2'}/>
                                         </div>
                                         <div className={"col centered"}>
                                             <span className={"centeredChild"}>=</span>
@@ -440,6 +366,16 @@ const Vektoren = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={"myCard"} id={"quizStart"}>
+                        <div className={"container"}>
+                            <h3>Übungsaufgaben</h3>
+                        </div>
+
+                        <div className={"container"}>
+                            <VektorenFragen/>
                         </div>
                     </div>
 
