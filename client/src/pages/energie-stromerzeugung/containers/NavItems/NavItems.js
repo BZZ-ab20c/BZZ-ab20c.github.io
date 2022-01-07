@@ -6,6 +6,11 @@ import './NavItems.css';
 
 class NavItems extends Component {
     render() {
+        const navStyle = {
+            color: '#fa923f',
+            textDecoration: 'underline'
+        }
+
         return (
             <div className="Blog">
                 <header>
@@ -15,34 +20,19 @@ class NavItems extends Component {
                         <ul>
                             <li><NavLink
                                 to="/energie-stromerzeugung/home/"
-                                activeStyle={{
-                                    color: '#fa923f',
-                                    textDecoration: 'underline'
-                                }}>Home</NavLink></li>
+                                activeStyle={navStyle}>Home</NavLink></li>
                             <li><NavLink
                                 to="/energie-stromerzeugung/generator/"
-                                activeStyle={{
-                                    color: '#fa923f',
-                                    textDecoration: 'underline'
-                                }}>Generator</NavLink></li>
+                                activeStyle={navStyle}>Generator</NavLink></li>
                             <li><NavLink
                                 to="/energie-stromerzeugung/wasserkraftwerk/"
-                                activeStyle={{
-                                    color: '#fa923f',
-                                    textDecoration: 'underline'
-                                }}>Wasserkraftwerk</NavLink></li>
+                                activeStyle={navStyle}>Wasserkraftwerk</NavLink></li>
                             <li><NavLink
                                 to="/energie-stromerzeugung/solar/"
-                                activeStyle={{
-                                    color: '#fa923f',
-                                    textDecoration: 'underline'
-                                }}>Solar</NavLink></li>
+                                activeStyle={navStyle}>Solar</NavLink></li>
                             <li><NavLink
                                 to="/energie-stromerzeugung/kernkraftwerk/"
-                                activeStyle={{
-                                    color: '#fa923f',
-                                    textDecoration: 'underline'
-                                }}>Kernkraftwerk</NavLink></li>
+                                activeStyle={navStyle}>Kernkraftwerk</NavLink></li>
                         </ul>
                     </nav>
                 </header>
