@@ -1,3 +1,14 @@
+.centered {
+    position: relative;
+}
+
+.centered .centeredChild {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .myCard {
     padding: 10px;
 }
@@ -9,6 +20,7 @@ a, span {
 .vectorList {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .vectorList ul {

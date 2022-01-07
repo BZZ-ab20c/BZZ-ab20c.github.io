@@ -141,9 +141,12 @@ const Vektoren = () => {
                                 Wer ein Vektor mit einem Pfeil darstellt würde einfach einen Pfeil machen der nach oben
                                 rechts schaut und entsprechend der Entfernung lang ist.
                                 Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen:
-                                <br/>
-                                [2, 3]
-                                <br/>
+                                <div className={"vectorList twoDimVectorList"}>
+                                    <ul>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
                                 Die erste Zahl ist X und das zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
                                 der X Achse und drei Distanzeinheiten auf der Y Achse gelaufen.
                                 Das ist ein zweidimensionaler Vektor. Die Dimension wird anhand der Zahlen bestimmt. Um
@@ -184,11 +187,71 @@ const Vektoren = () => {
                                         und ein Y. Wenn wir beide Vektoren addieren wollen addieren wir jeweils beide X
                                         und beide Y zusammen, das selbe beim subtrahieren.
                                     </p>
-                                    <div className={"vectorList twoDimVectorList"}>
-                                        <ul>
-                                            <li>2</li>
-                                            <li>3</li>
-                                        </ul>
+
+                                    <div className={"row"}>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>+</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>2</li>
+                                                    <li>2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>7</li>
+                                                    <li>5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={"row"}>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>-</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>2</li>
+                                                    <li>2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>3</li>
+                                                    <li>1</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={"col"}>
