@@ -22,7 +22,7 @@ const Vektoren = () => {
                         <p>
                             Physiker, Fluglotsen und Spieleentwickler haben alle mindestens etwas gemeinsam.
                             <br/>
-                            <p style={{fontSize: "24px"}}><b>Vektoren</b></p>
+                            <span style={{fontSize: "24px"}}><b>Vektoren</b></span>
                         </p>
                     </div>
                 </div>
