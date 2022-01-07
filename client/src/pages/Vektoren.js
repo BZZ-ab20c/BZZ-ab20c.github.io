@@ -189,6 +189,7 @@ const Vektoren = () => {
                                     </p>
 
                                     <div className={"row"}>
+                                        <h5>Addieren</h5>
                                         <div className={"col"}>
                                             <div className={"vectorList twoDimVectorList"}>
                                                 <ul>
@@ -222,6 +223,7 @@ const Vektoren = () => {
                                     </div>
 
                                     <div className={"row"}>
+                                        <h5>Subtrahieren</h5>
                                         <div className={"col"}>
                                             <div className={"vectorList twoDimVectorList"}>
                                                 <ul>
