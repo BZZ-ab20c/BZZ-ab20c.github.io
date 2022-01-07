@@ -116,19 +116,54 @@ const VektorenFragen = () => {
         }
     ]
 
+    class VektorNumeral {
+        constructor(x, y) {
+            this._x = x;
+            this._y = y;
+        }
+
+        compare(other) {
+            return (other.x === this.x && other.y === this.y)
+        }
+
+        get x() {
+            return this._x;
+        }
+
+        set x(value) {
+            this._x = value;
+        }
+
+        get y() {
+            return this._y;
+        }
+
+        set y(value) {
+            this._y = value;
+        }
+    }
+
     const amountQuestions = 5;
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [questionsDone, setQuestionsDone] = useState(false);
     const [score, setScore] = useState(0);
 
-    const handleAnswerOptionClick = (isCorrect) => {
-        if (isCorrect) {
-            setScore(score + 1);
+    const handleAnswerOptionClick = (resultType, solution, userSolution) => {
+        if (resultType === 'vektor') {
+            if(userSolution.compare(solution)) {
+                setScore(score + 1);
+            }
+        } else {
+            if(solution === userSolution) {
+                setScore(score + 1);
+            }
         }
 
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < amountQuestions) {
             setCurrentQuestion(nextQuestion);
+
+
         } else {
             setQuestionsDone(true);
         }

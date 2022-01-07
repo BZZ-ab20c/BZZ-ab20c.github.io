@@ -369,15 +369,15 @@ const Vektoren = () => {
                         </div>
                     </div>
 
-                    <div className={"myCard"} id={"quizStart"}>
-                        <div className={"container"}>
-                            <h3>Übungsaufgaben</h3>
-                        </div>
+                    {/*<div className={"myCard"} id={"quizStart"}>*/}
+                    {/*    <div className={"container"}>*/}
+                    {/*        <h3>Übungsaufgaben</h3>*/}
+                    {/*    </div>*/}
 
-                        <div className={"container"}>
-                            <VektorenFragen/>
-                        </div>
-                    </div>
+                    {/*    <div className={"container"}>*/}
+                    {/*        <VektorenFragen/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                     <div className="myCard" id={"videoSources"}>
                         <div className={"container"}>
