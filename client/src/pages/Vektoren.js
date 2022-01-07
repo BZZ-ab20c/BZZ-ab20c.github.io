@@ -141,12 +141,14 @@ const Vektoren = () => {
                                 Wer ein Vektor mit einem Pfeil darstellt würde einfach einen Pfeil machen der nach oben
                                 rechts schaut und entsprechend der Entfernung lang ist.
                                 Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen:
-                                <div className={"vectorList twoDimVectorList"}>
-                                    <ul>
-                                        <li>2</li>
-                                        <li>3</li>
-                                    </ul>
-                                </div>
+                            </p>
+                            <div className={"vectorList twoDimVectorList"}>
+                                <ul>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ul>
+                            </div>
+                            <p>
                                 Die erste Zahl ist X und das zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
                                 der X Achse und drei Distanzeinheiten auf der Y Achse gelaufen.
                                 Das ist ein zweidimensionaler Vektor. Die Dimension wird anhand der Zahlen bestimmt. Um
@@ -174,7 +176,7 @@ const Vektoren = () => {
                             </p>
 
                             <div className={"row"}>
-                                <div className={"col"}>
+                                <div className={"col colBorderRight"}>
                                     <h4>Addieren/Subtrahieren</h4>
                                     <p>
                                         Wie beim normalen Rechnen brauchen wir hier mindestens zwei Vektoren um diese
@@ -257,10 +259,185 @@ const Vektoren = () => {
                                     </div>
                                 </div>
                                 <div className={"col"}>
-                                    <h4>Multiplizieren/Dividieren</h4>
+                                    <h4>Multiplizieren/Dividieren mit einem Skalar</h4>
                                     <p>
-
+                                        Beim Multiplizieren und Dividieren gibt es unterschiedliche Möglichkeiten wie.
+                                        Hier schauen wir uns die einfache Möglichkeit an, bei welchem wir einfach eine
+                                        Zahl, einen Skalar, mit einem Vektor multiplizieren oder dividieren.
+                                        <br/>
+                                        Wenn man einen Vektor mit einer Zahl multiplizieren oder dividieren will, nimmt
+                                        man einfach jeden Wert im Vektor und multipliziert oder dividiert diesen mit der
+                                        Zahl.
                                     </p>
+
+                                    <div className={"row"}>
+                                        <h5>Vektor mit Skalar multiplizieren</h5>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>2</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>*</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>10</li>
+                                                    <li>6</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={"row"}>
+                                        <h5>Vektor mit Skalar dividieren</h5>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>/</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>2</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>2.5</li>
+                                                    <li>1.5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={"row rowBorderUp"}>
+                                <div className={"col colBorderRight"}>
+                                    <h4>Skalarprodukt</h4>
+                                    <p>
+                                        Man kann auch einen Vektor mit einem anderen Vektor multiplizieren.
+                                        <br/>
+                                        Vektor * Vektor ist das sogenannte Skalarprodukt.
+                                        <br/>
+                                        Um das Skalarprodukt zu erhalten, multipliziert ein Wert mit dem Wert beim
+                                        anderen Vektor welcher an der selben Stelle liegt und addiert dann alle
+                                        zusammen.
+                                    </p>
+
+                                    <div className={"row"}>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>*</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>2</li>
+                                                    <li>4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>
+                                                (5*2)+(3*4)
+                                            </span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild bold"}>22</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={"col"}>
+                                    <h4>Kreuz- oder Vektorprodukt</h4>
+                                    <p>
+                                        Um das sogenannte Kreuz- oder auch Vektorprodukt zu bekommen muss man zwei
+                                        Vektoren miteinander kreuzen.
+                                        <br/>
+                                        Wir haben also z.B. folgende zwei Vektoren:
+                                    </p>
+
+                                    <div className={"row"}>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>5</li>
+                                                    <li>3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>und</span>
+                                        </div>
+                                        <div className={"col"}>
+                                            <div className={"vectorList twoDimVectorList"}>
+                                                <ul>
+                                                    <li>2</li>
+                                                    <li>4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Diese zwei kreuzen wir jetzt.
+                                        <br/>
+                                        Beim Kreuzen multiplizieren wir zwei Werte von beiden Vektoren und subtrahieren
+                                        diese von zwei anderen multiplizierten Werten.
+                                        <br/>
+                                        Das sieht dann wie folgt aus:
+                                    </p>
+
+                                    <div className={"row"}>
+                                        <div className={"col"}>
+                                            <div className={"vectorList threeDimVectorList"}>
+                                                <ul>
+                                                    <li>5 * 4</li>
+                                                    <li>-</li>
+                                                    <li>3 * 2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>=</span>
+                                        </div>
+                                        <div className={"col centered"}>
+                                            <span className={"centeredChild"}>
+                                                (5*4) - (3 * 2) = <span className={"bold"}>14</span>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -272,8 +449,8 @@ const Vektoren = () => {
                                 Videos um Vektoren besser zu verstehen
                             </h3>
                         </div>
+                        <h4>Deutsch</h4>
                         <div className={"row"}>
-                            <h4>Deutsch</h4>
                             <div className={"col"}>
                                 <p><b>Vektor, Vektoren, Definition</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/9C1OOlLng2Q"
@@ -289,9 +466,25 @@ const Vektoren = () => {
                                         allowFullScreen/>
                             </div>
                         </div>
-
                         <div className={"row"}>
-                            <h4>Englisch</h4>
+                            <div className={"col"}>
+                                <p><b>Skalarprodukt und Länge (Betrag) eines Vektors, Vektorgeometrie</b></p>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/4O8-1zdXkEw"
+                                        title="YouTube video player" frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen/>
+                            </div>
+                            <div className={"col"}>
+                                <p><b>Vektorprodukt, Kreuzprodukt, vektorielles, äußeres Produkt, Formel</b></p>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/63FWetdwNb8"
+                                        title="YouTube video player" frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen/>
+                            </div>
+                        </div>
+
+                        <h4 className={"rowBorderUp"} style={{paddingTop: "20px"}}>Englisch</h4>
+                        <div className={"row"}>
                             <div className={"col"}>
                                 <p><b>Was ist ein Vektor?</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/ml4NSzCQobk"
