@@ -87,11 +87,10 @@ const Linearegleichungen = () => {
                                     Wenn zwei "entgegengesetzte Summanden" vorkommen.
                                 </div>
                             </div>
-                            <div className="col">
-                                <div className="btn-txt-2">
-                                    <b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
-                                    Wenn beide Gleichungen nach der selben Variable aufgelöst werden.
-                                </div>
+                            <div className="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
+                                <div className="red" >
+                                        Text überarbeitung
+                                    </div>
                             </div>
                         </div>
                     </div>
