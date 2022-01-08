@@ -178,7 +178,6 @@ const VektorenFragen = () => {
 
         setQuestionType(questionType);
         const result = typeInfoQuestion.result[index].name;
-        console.log(questionType)
         const operator = typeInfoQuestion.allowedOperators[index].operator;
         setQuestionText('Berechnen Sie ' + result);
 
@@ -253,6 +252,14 @@ const VektorenFragen = () => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    const restartQuiz = () => {
+        setScore(0);
+        setCurrentQuestion(0);
+        setQuestionsDone(false);
+
+        generateQuestion();
+    }
+
     const handleAnswerOptionClick = () => {
         if (!questionsDone) {
             if (resultType === 'vektor') {
@@ -295,46 +302,53 @@ const VektorenFragen = () => {
                     <p className={"bold"}>{score}</p>
                 </div>
             </div>
-            
-            <div>
-                <Frage title={questionType.name} question={questionText} questionPart1={questionPart1}
-                       questionPart2={questionPart2} questionPart3={questionPart3}/>
-            </div>
-            <div>
-                {JSON.stringify(solution)}
-            </div>
-            <div>
-                <h5>Antwort</h5>
+            {questionsDone ? (
                 <div className={"row"}>
                     <div className={"col"}>
-                        {simpleNumber ? (
-                            <input onInput={e => setUserSolution(e.target.value)} type={"number"}/>
-                        ) : (
-                            <>
-                                <div className={"row"}>
-                                    <div className={"col-2"}>
-                                        <p>X: </p>
-                                    </div>
-                                    <div className={"col"}>
-                                        <input onInput={e => setUserX(e.target.value)} type={"number"}/>
-                                    </div>
-                                </div>
-                                <div className={"row"}>
-                                    <div className={"col-2"}>
-                                        <p>Y: </p>
-                                    </div>
-                                    <div className={"col"}>
-                                        <input onInput={e => setUserY(e.target.value)} type={"number"}/>
-                                    </div>
-                                </div>
-                            </>
-                        )}
-                    </div>
-                    <div className={"col"}>
-                        <button onClick={handleAnswerOptionClick}>Überprüfen</button>
+                        <h6>Gratulation! Du hast {score} Punkte erreicht!</h6>
+                        <button onClick={restartQuiz}>Neustarten</button>
                     </div>
                 </div>
-            </div>
+            ) : (
+                <>
+                    <div>
+                        <Frage title={questionType.name} question={questionText} questionPart1={questionPart1}
+                               questionPart2={questionPart2} questionPart3={questionPart3}/>
+                    </div>
+                    <div>
+                        <h5>Antwort</h5>
+                        <div className={"row"}>
+                            <div className={"col"}>
+                                {simpleNumber ? (
+                                    <input onInput={e => setUserSolution(e.target.value)} type={"number"}/>
+                                ) : (
+                                    <>
+                                        <div className={"row"}>
+                                            <div className={"col-2"}>
+                                                <p>X: </p>
+                                            </div>
+                                            <div className={"col"}>
+                                                <input onInput={e => setUserX(e.target.value)} type={"number"}/>
+                                            </div>
+                                        </div>
+                                        <div className={"row"}>
+                                            <div className={"col-2"}>
+                                                <p>Y: </p>
+                                            </div>
+                                            <div className={"col"}>
+                                                <input onInput={e => setUserY(e.target.value)} type={"number"}/>
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                            <div className={"col"}>
+                                <button onClick={handleAnswerOptionClick}>Überprüfen</button>
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
         </div>
     )
 }
