@@ -41,8 +41,8 @@ const Navigation = () => {
                             to="/klima"
                             activeStyle={style}>Klima</NavLink></li>
                         <li><NavLink
-                            to="/energie-stromerzeugung/"
-                            isActive={() => ['/kernkraft/','/solar/','/wasserkraftwerk/','/generator/'].includes(pathname)}
+                            to="/energie-stromerzeugung"
+                            isActive={() => ['kernkraft/','solar/','wasserkraftwerk/','generator/'].includes(pathname)}
                             activeStyle={style}>Energie-Stromerzeugung</NavLink>
                         </li>
                         <li><NavLink

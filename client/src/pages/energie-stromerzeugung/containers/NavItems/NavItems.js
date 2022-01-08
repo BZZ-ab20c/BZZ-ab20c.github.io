@@ -18,8 +18,7 @@ class NavItems extends Component {
                     <h1 className="Title">Energie Stromerzeugung</h1>
                     <nav>
                         <ul>
-                            <li><NavLink
-                                to="/energie-stromerzeugung/"
+                            <li><NavLink end to="/energie-stromerzeugung"
                                 activeStyle={navStyle}>Home</NavLink></li>
                             <li><NavLink
                                 to="/energie-stromerzeugung/generator/"
