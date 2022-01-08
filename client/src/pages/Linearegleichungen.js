@@ -74,7 +74,7 @@ const Linearegleichungen = () => {
             <section id="section-btn-title">
                 <div className="container">
                     <div className="row">
-                        <div className="tag-02">
+                        <div className="tag-title">
                             <p>
                                 Systeme
                             </p>
@@ -101,11 +101,13 @@ const Linearegleichungen = () => {
                                     Wenn zwei "entgegengesetzte Summanden" vorkommen.
                                 </div>
                             </div>
+                            <div class="col">
                             <div className="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
                                 <div className="red" >
                                         Text überarbeitung
                                     </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </section>
@@ -115,7 +117,7 @@ const Linearegleichungen = () => {
                     <div className="row">
                         <div className="col">
                             <div className="btn-01">
-                                <Link to={"/linearegeleichungen/AM"}>
+                                <Link to={"/linearegeleichungen/AM"} className="link">
                                     <div className="btn-01-1">
                                         <p className="btn-01-1-txt">Additionsmethode</p>
                                     </div>
@@ -124,7 +126,7 @@ const Linearegleichungen = () => {
                         </div>
                         <div className="col">
                             <div className="btn-02">
-                                <Link to={"/linearegeleichungen/SUBM"}>
+                                <Link to={"/linearegeleichungen/SUBM"} className="link">
                                     <div className="btn-02-2">
                                         <p className="btn-02-2-txt">Subtitutionsmethode</p>
                                     </div>
