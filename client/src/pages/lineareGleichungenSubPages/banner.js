@@ -9,7 +9,7 @@ const LineareGleichungenBanner = (props) => {
         <section id="banner">
             {backbutton ? (
                 <div className="back-btn">
-                    <Link to={"/"}> {/*todo: Link richtig machen*/}
+                    <Link to={"/linearegeleichungen"}> {/*todo: Link richtig machen*/}
                         <div className="btn">
                             <img className="arr-img" src={Arr} alt={"arr img"}/>
                         </div>

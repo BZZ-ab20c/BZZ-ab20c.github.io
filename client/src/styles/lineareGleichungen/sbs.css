@@ -78,13 +78,16 @@ h2{
     font-family: "Century Gothic", CenturyGothic;
 }
 
+.tag-02{
+    font-family: Lucida Calligraphy;
+    text-align: center;
+    font-size: larger;
+}
+
 
 /*--------- section math  -------------------------------------------------------------------------------------------------------------------*/
-.m-div-left{
-    max-width: 30%;
-}
 
-.m-div-right{
-    max-width: 70%;
-}
+.double_underline{  
+	border-bottom: 3px double;  
+} 
 
