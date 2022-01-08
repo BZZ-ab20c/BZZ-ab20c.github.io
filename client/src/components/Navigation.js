@@ -1,4 +1,4 @@
-import {NavLink, Route, Routes} from "react-router-dom";
+import {NavLink, Route, Routes, useLocation} from "react-router-dom";
 import Vektoren from "../pages/Vektoren";
 import NavItems from "../pages/energie-stromerzeugung/containers/NavItems/NavItems";
 import Klima from "../pages/Klima";
@@ -22,6 +22,8 @@ const Navigation = () => {
         textDecoration: 'underline'
     }
 
+    const { pathname } = useLocation();
+
     return (
         <div>
             <div className="Blog">
@@ -39,7 +41,8 @@ const Navigation = () => {
                             to="/klima"
                             activeStyle={style}>Klima</NavLink></li>
                         <li><NavLink
-                            to="/energie-stromerzeugung/home/"
+                            to="/energie-stromerzeugung"
+                            isActive={() => ['/home/','/kernkraft/','/solar/','/wasserkraftwerk/','/generator/'].includes(pathname)}
                             activeStyle={style}>Energie-Stromerzeugung</NavLink>
                         </li>
                         <li><NavLink
