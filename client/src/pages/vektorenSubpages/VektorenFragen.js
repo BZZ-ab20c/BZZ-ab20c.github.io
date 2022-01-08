@@ -1,4 +1,6 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import React from 'react';
+import Frage from "./Frage";
 
 const VektorenFragen = () => {
     const questionTypes = [
@@ -122,10 +124,6 @@ const VektorenFragen = () => {
             this._y = y;
         }
 
-        compare(other) {
-            return (other.x === this.x && other.y === this.y)
-        }
-
         get x() {
             return this._x;
         }
@@ -141,6 +139,10 @@ const VektorenFragen = () => {
         set y(value) {
             this._y = value;
         }
+
+        compare(other) {
+            return (other.x === this.x && other.y === this.y)
+        }
     }
 
     const amountQuestions = 5;
@@ -148,13 +150,35 @@ const VektorenFragen = () => {
     const [questionsDone, setQuestionsDone] = useState(false);
     const [score, setScore] = useState(0);
 
+    const [questionType,setQuestionType] = useState('undefined');
+    const [resultType, setResultType] = useState('undefined');
+    const [operator, setOperator] = useState('undefined');
+
+    const generateQuestion = () => {
+        let max = questionTypes.length - 1;
+        const questionTypeInfos = questionTypes[getRandomNum(0, max)];
+        const index = getRandomNum(0, questionTypeInfos.type.length - 1);
+
+        setQuestionType(questionTypeInfos.type[index]);
+        setResultType(questionTypeInfos.result[index]);
+        setOperator(questionTypeInfos.allowedOperators[index]);
+
+        // for (let question of questionTypes) {
+        //
+        // }
+    }
+
+    const getRandomNum = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     const handleAnswerOptionClick = (resultType, solution, userSolution) => {
         if (resultType === 'vektor') {
-            if(userSolution.compare(solution)) {
+            if (userSolution.compare(solution)) {
                 setScore(score + 1);
             }
         } else {
-            if(solution === userSolution) {
+            if (solution === userSolution) {
                 setScore(score + 1);
             }
         }
@@ -163,14 +187,33 @@ const VektorenFragen = () => {
         if (nextQuestion < amountQuestions) {
             setCurrentQuestion(nextQuestion);
 
-
+            // todo generate new question
         } else {
             setQuestionsDone(true);
         }
     };
 
+    useEffect(() => {
+        generateQuestion();
+    }, [])
+
     return (
-        <div>Ich bin ne übung lol</div>
+        <div>
+            <div className={"row"}>
+                <div className={"col-4"}>
+                    <h4>Frage</h4>
+                    <p className={"bold"}>{currentQuestion + 1}/{amountQuestions}</p>
+                </div>
+                <div className={"col-4"}/>
+                <div className={"col-4"}>
+                    <h4>Punkte</h4>
+                    <p className={"bold"}>{score}</p>
+                </div>
+            </div>
+            <div>
+                <Frage frage={questionType.name}/>
+            </div>
+        </div>
     )
 }
 
