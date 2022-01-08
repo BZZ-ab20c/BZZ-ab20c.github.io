@@ -115,8 +115,8 @@ export const Kernkraftwerk = () => {
                 </Row>
                 <h4 className='H4'>Hybrid-Kühltürme</h4>
                 <Row className="WhiteRow">
-                    <img className="ExtraImg" src={hybridkuehlturm} alt={"hybridkuehlturm"}/>
-                    <div className="introduction">
+                    <img className="ExtraImgHybrid" src={hybridkuehlturm} alt={"hybridkuehlturm"}/>
+                    <div className="ExtraTextHybrid">
                         Daneben gibt es auch Hybrid-Kühltürme. Sie sind wesentlich
                         niedriger als ein Naturzug-Nasskühlturm und erzeugen praktisch
                         keine Nebelfahnen, sodass sie das Landschaftsbild kaum

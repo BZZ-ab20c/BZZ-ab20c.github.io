@@ -2,10 +2,32 @@
    position: relative;
    top: 10%;
    bottom: 30%;
-   left: 5%;
    margin: auto;
    max-width: 650px;
 }
+
+@media (min-width: 1050px) {
+   .ExtraImg{
+      position: relative;
+      top: 10%;
+      bottom: 30%;
+      margin: auto;
+      max-width: 750px;
+   }
+   
+}
+
+@media (min-width: 1250px) {
+   .ExtraImg{
+      position: relative;
+      top: 10%;
+      bottom: 30%;
+      margin: auto;
+      max-width: 850px;
+   }
+   
+}
+
 
 .ExtraRow{
    width: 100%;
@@ -17,6 +39,7 @@
    position: relative;
    top: 30%;
    left: 20%;
+   text-align: left;
 }
 
 .ExtraImgRight{

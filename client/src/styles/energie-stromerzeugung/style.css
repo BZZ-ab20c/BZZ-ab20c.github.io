@@ -138,26 +138,24 @@
     margin: auto;
 }
 
-.Con {
-    position: relative;
-    top: 20%;
-}
-
 .TextLeft {
     position: relative;
     top: 30%;
     left: 20%;
+    text-align: left;
 }
 
 .TextRight {
     position: relative;
     top: 25%;
+    left: 6%;
+    text-align: left;
 }
 
 .ImgRight {
     position: relative;
     top: 27%;
-    left: 15%;
+    left: 12%;
     margin: auto;
     max-width: 310px;
 }
@@ -175,7 +173,7 @@
         position: relative;
         max-width: 380px;
         top: 25%;
-        left: 16%;
+        left: 13%;
     }
 
     .ImgLeft {
@@ -191,7 +189,7 @@
         position: relative;
         max-width: 450px;
         top: 20%;
-        left: 26%;
+        left: 14%;
     }
 
     .ImgLeft {
@@ -201,5 +199,3 @@
         left: 21%;
     }
 }
-
-

@@ -1,11 +1,47 @@
-.ExtraImg{
+.ExtraImgHybrid {
    position: relative;
-   top: 8%;
-   margin: auto;
-   max-width: 550px;
+   top: 13%;
+   margin: auto; 
+   max-width: 650px;
 }
 
-.GifLeft{
+.ExtraTextHybrid {
+   position: relative;
+   text-align: center;
+   top: 50px;
+}
+
+@media (min-width: 1250px) {
+   .ExtraImgHybrid {
+      position: relative;
+      top: 13%;
+      margin: auto; 
+      max-width: 850px;
+   }
+   
+   .ExtraTextHybrid {
+      position: relative;
+      text-align: center;
+      top: 50px;
+   }
+}
+
+@media (min-width: 1550px) {
+   .ExtraImgHybrid {
+      position: relative;
+      top: 13%;
+      margin: auto; 
+      max-width: 950px;
+   }
+   
+   .ExtraTextHybrid {
+      position: relative;
+      text-align: center;
+      top: 50px;
+   }
+}
+
+.GifLeft {
    position: relative;
    top: 30%;
    left: 13%;
@@ -16,7 +52,7 @@
 .GifRight{
    position: relative;
    top: 32%;
-   left: 20%;
+   left: 8%;
    margin: auto;
    max-width: 360px;
 }
@@ -30,7 +66,7 @@
    
    .GifRight{
       top: 25%;
-      left: 20%;
+      left: 8%;
       max-width: 460px;
    }
 }
@@ -44,7 +80,7 @@
    
    .GifRight{
       top: 23%;
-      left: 20%;
+      left: 10%;
       max-width: 520px;
    }
 }

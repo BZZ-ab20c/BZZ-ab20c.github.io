@@ -97,7 +97,6 @@ export const Solar = () => {
                             die freigesetzte Ladungen lediglich mittels Sonnenlichtes passieren
                             können. In diesem Kern der Solarzelle entsteht durch Elektronenbewegungen
                             ein elektrisches Feld, das auch p-n-Übergang genannt wird.
-
                         </div>
                         <img className="ExtraImgRight" src={solarzelle2} alt={"solarzelle2"}/>
                     </Col>
@@ -108,7 +107,7 @@ export const Solar = () => {
                         <img className="ImgLeft" src={daumenRunter} alt={"daumenrunter"}/>
                     </Col>
                     <Col>
-                        <div className="Con">
+                        <div className="TextRight">
                             <li>
                                 Sonnenenergie ermöglicht aufgrund der wetter-, tages- und
                                 jahreszeitabhängigen Sonneneinstrahlung keine konstante bzw.
