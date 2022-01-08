@@ -13,7 +13,7 @@ const VektorenFragen = () => {
             ],
             result: [
                 {
-                    name: "Skalarprodukt"
+                    name: "das Skalarprodukt"
                 }
             ],
             resultType: "zahl",
@@ -38,10 +38,10 @@ const VektorenFragen = () => {
             ],
             result: [
                 {
-                    name: "Kreuzprodukt"
+                    name: "das Kreuzprodukt"
                 },
                 {
-                    name: "Vektorprodukt"
+                    name: "das Vektorprodukt"
                 }
             ],
             resultType: "zahl",
@@ -66,10 +66,10 @@ const VektorenFragen = () => {
             ],
             result: [
                 {
-                    name: "Summe"
+                    name: "die Summe"
                 },
                 {
-                    name: "Differenz"
+                    name: "die Differenz"
                 }
             ],
             resultType: "vektor",
@@ -97,10 +97,10 @@ const VektorenFragen = () => {
             ],
             result: [
                 {
-                    name: "Produkt"
+                    name: "das Produkt"
                 },
                 {
-                    name: "Quotient"
+                    name: "den Quotient"
                 }
             ],
             resultType: "vektor",
@@ -156,43 +156,125 @@ const VektorenFragen = () => {
 
     const [solution, setSolution] = useState(undefined);
     const [questionType, setQuestionType] = useState('undefined');
+    const [questionText, setQuestionText] = useState('undefined');
     const [resultType, setResultType] = useState('undefined');
-    const [operator, setOperator] = useState('undefined');
+    const [simpleNumber, setSimpleNumber] = useState(false);
+    const [userSolution, setUserSolution] = useState(-1);
+
+    const [questionPart1, setQuestionPart1] = useState(undefined);
+    const [questionPart2, setQuestionPart2] = useState(undefined);
+    const [questionPart3, setQuestionPart3] = useState(undefined);
+
+    const [userX, setUserX] = useState(-1);
+    const [userY, setUserY] = useState(-1);
 
     const generateQuestion = () => {
         let max = questionTypes.length - 1;
-        const questionTypeInfos = questionTypes[getRandomNum(0, max)];
-        const index = getRandomNum(0, questionTypeInfos.type.length - 1);
+        const typeInfoQuestion = questionTypes[getRandomNum(0, max)];
+        const resultType = typeInfoQuestion.resultType;
+        setResultType(resultType);
+        const index = getRandomNum(0, typeInfoQuestion.type.length - 1);
+        const questionType = typeInfoQuestion.type[index].name;
 
-        setQuestionType(questionTypeInfos.type[index]);
-        setResultType(questionTypeInfos.result[index]);
-        setOperator(questionTypeInfos.allowedOperators[index]);
+        setQuestionType(questionType);
+        const result = typeInfoQuestion.result[index].name;
+        console.log(questionType)
+        const operator = typeInfoQuestion.allowedOperators[index].operator;
+        setQuestionText('Berechnen Sie ' + result);
 
+        const min = 1;
+        max = 12;
+        let x1 = getRandomNum(min, max);
+        let y1 = getRandomNum(min, max);
+        let x2 = getRandomNum(min, max);
+        let y2;
 
+        const amtVectors = typeInfoQuestion.neededVectors;
+        if (amtVectors === 2) {
+            y2 = getRandomNum(min, max);
+        }
+
+        const simpleNumber = resultType === 'zahl';
+        setSimpleNumber(simpleNumber);
+
+        switch (operator) {
+            case '+': {
+                if (!simpleNumber) {
+                    setSolution(new VektorNumeral(x1 + x2, y1 + y2))
+                }
+                break;
+            }
+            case '-': {
+                if (!simpleNumber) {
+                    setSolution(new VektorNumeral(x1 - x2, y1 - y2))
+                }
+                break;
+            }
+            case '*': {
+                if (questionType === 'Kreuzprodukt' || questionType === 'Kreuzprodukt') {
+                    setSolution((x1 * y2) - (x2 - y1));
+                } else {
+                    if (simpleNumber) {
+                        setSolution((x1 * x2) + (y1 * y2));
+                    } else {
+                        setSolution(new VektorNumeral(x1 * x2, y1 * x2));
+                    }
+                }
+                break;
+            }
+            case '/': {
+                setSolution(new VektorNumeral(x1 / x2, y1 / x2))
+                break;
+            }
+        }
+
+        setQuestionPart1((
+            <div className={"col"}>
+                <Vektor x={x1} y={y1}/>
+            </div>
+        ));
+        setQuestionPart2((
+            <div className={"col centered"}>
+                <span className={"centeredChild"}>{operator}</span>
+            </div>
+        ));
+        setQuestionPart3((amtVectors === 2) ? (
+            <div className={"col"}>
+                <Vektor x={x2} y={y2}/>
+            </div>
+        ) : (
+            <div className={"col centered"}>
+                <span className={"centeredChild"}>{x2}</span>
+            </div>
+        ));
     }
 
     const getRandomNum = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const handleAnswerOptionClick = (userSolution) => {
-        if (resultType === 'vektor') {
-            if (userSolution.compare(solution)) {
-                setScore(score + 1);
-            }
-        } else {
-            if (solution === userSolution) {
-                setScore(score + 1);
-            }
-        }
+    const handleAnswerOptionClick = () => {
+        if (!questionsDone) {
+            if (resultType === 'vektor') {
+                const userVector = new VektorNumeral(+userX, +userY);
 
-        const nextQuestion = currentQuestion + 1;
-        if (nextQuestion < amountQuestions) {
-            setCurrentQuestion(nextQuestion);
+                if (userVector.compare(solution)) {
+                    setScore(score + 1);
+                }
+            } else {
+                if (solution === +userSolution) {
+                    setScore(score + 1);
+                }
+            }
 
-            // todo generate new question
-        } else {
-            setQuestionsDone(true);
+            const nextQuestion = currentQuestion + 1;
+            if (nextQuestion < amountQuestions) {
+                setCurrentQuestion(nextQuestion);
+
+                generateQuestion();
+            } else {
+                setQuestionsDone(true);
+            }
         }
     };
 
@@ -213,8 +295,45 @@ const VektorenFragen = () => {
                     <p className={"bold"}>{score}</p>
                 </div>
             </div>
+            
             <div>
-                <Frage frage={questionType.name}/>
+                <Frage title={questionType.name} question={questionText} questionPart1={questionPart1}
+                       questionPart2={questionPart2} questionPart3={questionPart3}/>
+            </div>
+            <div>
+                {JSON.stringify(solution)}
+            </div>
+            <div>
+                <h5>Antwort</h5>
+                <div className={"row"}>
+                    <div className={"col"}>
+                        {simpleNumber ? (
+                            <input onInput={e => setUserSolution(e.target.value)} type={"number"}/>
+                        ) : (
+                            <>
+                                <div className={"row"}>
+                                    <div className={"col-2"}>
+                                        <p>X: </p>
+                                    </div>
+                                    <div className={"col"}>
+                                        <input onInput={e => setUserX(e.target.value)} type={"number"}/>
+                                    </div>
+                                </div>
+                                <div className={"row"}>
+                                    <div className={"col-2"}>
+                                        <p>Y: </p>
+                                    </div>
+                                    <div className={"col"}>
+                                        <input onInput={e => setUserY(e.target.value)} type={"number"}/>
+                                    </div>
+                                </div>
+                            </>
+                        )}
+                    </div>
+                    <div className={"col"}>
+                        <button onClick={handleAnswerOptionClick}>Überprüfen</button>
+                    </div>
+                </div>
             </div>
         </div>
     )
