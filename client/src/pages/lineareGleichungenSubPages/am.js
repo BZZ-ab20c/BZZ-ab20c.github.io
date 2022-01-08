@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import useDocumentTitle from "../../utils/UseDocumentTitle";
 import React from 'react';
-import Collapsible from 'react-collapsible';
-import { Accordion } from "react-bootstrap";
+
 
 const AM = () => {
     useDocumentTitle('Linearegleichungen | AM');
@@ -19,6 +18,7 @@ const AM = () => {
             </div>
             <section id="math">
             <div className="container">  
+
                     <h2>Additonsverfahren einfaches Beispiel</h2>    
                     <p>Als erstes schauen wir uns ein einfaches Beispiel des Additonsverfahrens an.</p>
             
