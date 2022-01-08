@@ -1,7 +1,7 @@
 import MathImg from "../img/lineargleichungen/math-img.jpg";
 import Wave01 from "../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/lineareGleichungen/index.css'
+import '../styles/lineareGleichungen/index.css';
 import {Link} from "react-router-dom";
 import LineareGleichungenBanner from "./lineareGleichungenSubPages/banner";
 import useDocumentTitle from "../utils/UseDocumentTitle";
@@ -10,8 +10,22 @@ const Linearegleichungen = () => {
     useDocumentTitle('Linearegleichungen');
 
     return (
-        <div className="container">
-            <LineareGleichungenBanner backbutton={false}/>
+        <div>
+            <section id="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Lineare Gleichungssysteme</h1>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            Willkommen beim
+                            <span class="tag-01"><a id="link-01" href="https://www.bzz.ch/" target="_blank">BZZ</a></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div className="wave-01">
                 <img className="wave-img" src={Wave01} alt={"Wave img idk"}/>
             </div>
