@@ -79,7 +79,7 @@
 
     <div>
         <h4>
-            Wird der Raum wärmer wen man den Kühlschrank offen lässt?
+            Wird der Raum kälter wen man den Kühlschrank offen lässt?
         </h4>
     </div>
 
@@ -90,16 +90,27 @@
             left: 0;
         }
 
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
         .image1 {
             position: relative;
             top: 0;
             left: 0;
         }
 
+        .image3 {
+            position: relative;
+            top: 0;
+            left: 32%;
+        }
+
         .image2 {
             position: absolute;
-            top: 30px;
-            left: 220px;
+            top: 10%;
+            left: 37%;
         }
     </style>
 
@@ -108,14 +119,113 @@
         <img class="image1" src="img/emptyRoom.png" alt="Bild von einem leeren Raum">
         <img class="image2" id="myImage" src="img/KühZuGesch.jpg" height="250">
 
+
+        <script>
+            function callGif() {
+                document.getElementById('callGif').src = 'img/TemperaturMesser.gif'
+                document.getElementById('callText').innerText = 'Nein der Raum wird wärmer!!'
+            }
+
+            function hideGif() {
+                document.getElementById('callGif').src = ''
+                document.getElementById('callText').innerText = ''
+
+            }
+        </script>
     </div>
 
+
     <div>
-        <button onclick="document.getElementById('myImage').src='img/KühOffGesch.jpg'">Kühlschrank öffnen</button>
-        <button onclick="document.getElementById('myImage').src='img/KühZuGesch.jpg'">Kühlschrank schliessen</button>
+        <button onclick="document.getElementById('myImage').src='img/KühOffGesch.jpg';callGif()">Kühlschrank öffnen
+        </button>
+        <button onclick="document.getElementById('myImage').src='img/KühZuGesch.jpg';hideGif()">Kühlschrank schliessen
+        </button>
     </div>
 
     <br>
+
+    <div>
+        <img class="image3" id="callGif" src="" height="150">
+        <br>
+        <br>
+        <h4 style="color: #d32f2f" id="callText"></h4>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <h2>Wie ein Kühlschrank funktioniert</h2>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <p>1. An der inneren Rückwand des Kühlschrankes befindet sich ein
+                schlangenförmiges Rohr, das von unten nach oben verläuft. Darin
+                befindet sich die Kühlflüssigkeit. (Blau)
+            </p>
+            <p>2. Sobald im Kühlschrank Wärme entsteht, wird die Kühlflüssigkeit
+                ebenfalls wärmer, erreicht den Siedepunkt und verdampft. Der
+                Dampf steigt im Rohr nach oben.
+            </p>
+            <p>3. Wenn der Dampf oben angekommen ist, wird er in den Kompressor
+                geleitet. Darin wird er stark verdichtet. Es entsteht wieder
+                eine Flüssigkeit, die durch den hohen Verdichtungsgrad einen
+                weit höheren Siedepunkt hat.
+            </p>
+            <p>4. Eine an der Kompressor angeschlossene Pumpe leitet die Flüssigkeit
+                in ein schlangenförmiges Rohrsystem auf der hinteren Außenwand des
+                Kühlschranks. Darin kühlt die Flüssigkeit wieder ab und gibt die
+                Wärme, die sie im Inneren aufgenommen hat, nach außen ab.
+            </p>
+            <p>5. Unten angekommen, gelangt die Flüssigkeit in ein Drosselventil.
+                Dieses zerstäubt die Flüssigkeit wieder, damit der Siedepunkt
+                wieder sehr niedrig wird.
+            </p>
+            <p>
+                6. Immer wenn im Inneren des Kühlschranks Wärme entsteht, zum Beispiel wenn die Tür geöffnet wird
+                oder wenn etwas Warmes hineingestellt wird, verdampft ein Teil der Kühlflüssigkeit. Genau diese
+                Menge Flüssigkeit wird vom Drosselventil wieder in das innere Rohr hineingespritzt.
+            </p>
+
+        </div>
+        <div class="col-6">
+            <img src="img/ImagineSelberZeichne.jpg" height="500px" alt="Kühlschrank_Image1">
+            <p>
+                7. Der Kreislauf ist damit abgeschlossen. Erkennen können Sie
+                den Vorgang am Brummen des Kühlschranks, das manchmal einsetzt.
+                Immer wenn es im Kühlschrank zu warm wird, verdampft ein Teil
+                der Flüssigkeit und Kompressor sowie Pumpe werden aktiviert.
+            </p>
+
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <h2>Kühlmittel</h2>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <img src="img/Isobutan.png" style="position: center" height="300px" alt="Kühlschrank_Image2">
+        </div>
+        <div class="col-6">
+            <h6>Für was braucht man Isobutan?</h6>
+            <p>Isobutan weist einen sehr niedrigen Treibhauseffekt auf (GWP 3) und wird deswegen in Kühlschränken als Kältemittel eingesetzt.</p>
+            <br>
+            <h6>Wo ist der Siedepunkt?</h6>
+            <p>
+                Der Siedepunkt ist bei ca. -30°C. Das Kühlmittel gelangt in flüssiger Form bei ca. 1 bar in den Kühlschrank.
+            </p>
+        </div>
+    </div>
     <br>
     <br>
     <br>
@@ -123,37 +233,36 @@
     <div class="row">
         <div class="col-6">
             <h6>Warum gibt ein Kühlschrank mehr Wärme als Kälte ab?</h6>
-            <p>Der Kühlschrank transportiert also nicht nur Wärme nach außen,<br>
-                sondern muss an der Außenseite gewissermaßen für zusätzliche <br>
-                Hitze sorgen, damit die Wärmeabgabe funktioniert und damit der<br>
-                Kreislauf des Kühlens. Das ist der Grund, warum ein Eisschrank<br>
+            <p>Der Kühlschrank transportiert also nicht nur Wärme nach außen,
+                sondern muss an der Außenseite gewissermaßen für zusätzliche
+                Hitze sorgen, damit die Wärmeabgabe funktioniert und damit der
+                Kreislauf des Kühlens. Das ist der Grund, warum ein Eisschrank
                 nach außen mehr Wärme abgibt, als er dem Innenraum entzieht.
             </p>
             <br>
             <br>
-            <h6>Wo ist der Siedepunkt?</h6>
-            <p>Bei einer Mischung von Wasser und Frostschutzmittel im <br>
-                Verhältnis 1:1 liegt der Siedepunkt des Kühlmittels bei <br>
-                etwa 107° C und bietet dem Kühlsystem somit eine enorme <br>
-                Leistungsreserve.
+            <h6>Wie viel arten von Kühlschranke gibt es?</h6>
+            <p>Es gibt den Kompressor Kühlschrank, Absorber Kühlschrank und Thermoelektrischer Kühlschrank
             </p>
-
             <br>
             <br>
         </div>
         <div class="col-6">
             <h6>Wie viel wärme gibt ein Kühlschrank ab?</h6>
-            <p>Die meisten Kühlschränke werden von einem Kondensatormotor <br>
-                mit ca. 90 W angetrieben. Also wird der Motor alleine deutlich <br>
-                weniger als 90 W in Wärme umsetzen. Und solange durch die Türe <br>
-                keine fremde Wärmenergie in den Kühlschrank reinkommt, wird <br>
-                der auch nicht viel mehr Wärme erzeugen.
+            <p>Die meisten Kühlschränke werden von einem Kondensatormotor
+                mit ca. 90 W angetrieben. Also wird der Motor alleine deutlich
+                weniger als 90 W in Wärme umsetzen. Und solange durch die Türe
+                keine fremde Wärmenergie in den Kühlschrank reinkommt, wird der
+                auch nicht viel mehr Wärme erzeugen.
             </p>
             <br>
-            <h6>Wie viel arten von Kühlschranke gibt es?</h6>
-            <p>Es gibt den Kompressor Kühlschrank, <br>
-                Absorber Kühlschrank und <br>
-                Thermoelektrischer Kühlschrank
+            <br>
+            <br>
+            <h6>Warum wird der Raum wärmer wen man den Kühlschrank offen lässt?</h6>
+            <p>Wen die Tür des Kühlschrankes geöffnet ist, wird es im Raum wärmer
+                nicht kälter. Die Erklärung ist ganz einfach. Die Aufgabe eines Kühlschranks
+                ist es, die wärme aus dem Kühlschrank zu entfernen. Somit wird der
+                Raum gewärmt von dem Kühlschrank.
             </p>
         </div>
     </div>
@@ -161,59 +270,7 @@
     <br>
     <br>
     <br>
-    <div class="row">
-        <div class="col-6">
-            <p>1. An der inneren Rückwand des Kühlschrankes befindet sich ein <br>
-                schlangenförmiges Rohr, das von unten nach oben verläuft. Darin <br>
-                befindet sich die Kühlflüssigkeit.
-            </p>
-            <p>2. Sobald im Kühlschrank Wärme entsteht, wird die Kühlflüssigkeit <br>
-                ebenfalls wärmer, erreicht den Siedepunkt und verdampft. Der <br>
-                Dampf steigt im Rohr nach oben.
-            </p>
-            <p>3. Wenn der Dampf oben angekommen ist, wird er in den Kompressor <br>
-                geleitet. Darin wird er stark verdichtet. Es entsteht wieder <br>
-                eine Flüssigkeit, die durch den hohen Verdichtungsgrad einen <br>
-                weit höheren Siedepunkt hat.
-            </p>
-            <p>4. Eine an der Kompressor angeschlossene Pumpe leitet die Flüssigkeit <br>
-                in ein schlangenförmiges Rohrsystem auf der hinteren Außenwand des <br>
-                Kühlschranks. Darin kühlt die Flüssigkeit wieder ab und gibt die <br>
-                Wärme, die sie im Inneren aufgenommen hat, nach außen ab.
-            </p>
-            <p>5. Unten angekommen, gelangt die Flüssigkeit in ein Drosselventil. <br>
-                Dieses zerstäubt die Flüssigkeit wieder, damit der Siedepunkt <br>
-                wieder sehr niedrig wird.
-            </p>
-            <p>
-                7. Der Kreislauf ist damit abgeschlossen. Erkennen können Sie <br>
-                den Vorgang am Brummen des Kühlschranks, das manchmal einsetzt. <br>
-                Immer wenn es im Kühlschrank zu warm wird, verdampft ein Teil <br>
-                der Flüssigkeit und Kompressor sowie Pumpe werden aktiviert.
-            </p>
-
-        </div>
-        <div class="col-6">
-            <img src="img/ImagineSelberZeichne.jpg" style="position: center" height="500px" alt="Kühlschrank_Image1">
-            <p>
-                6. Immer wenn im Inneren des Kühlschranks Wärme entsteht, zum Beispiel wenn die Tür geöffnet wird
-                oder wenn etwas Warmes hineingestellt wird, verdampft ein Teil der Kühlflüssigkeit. Genau diese Menge
-                Flüssigkeit wird vom Drosselventil wieder in das innere Rohr hineingespritzt.
-            </p>
-
-        </div>
-    </div>
-
     <br>
-    <br>
-    <br>
-    <br>
-    <div>
-        <ol>
-
-
-        </ol>
-    </div>
 </div>
 </body>
 </html>
