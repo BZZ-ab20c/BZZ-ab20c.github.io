@@ -179,7 +179,7 @@ const VektorenFragen = () => {
         setQuestionType(questionType);
         const result = typeInfoQuestion.result[index].name;
         const operator = typeInfoQuestion.allowedOperators[index].operator;
-        setQuestionText('Berechnen Sie ' + result);
+        setQuestionText('Berechnen Sie ' + result + ' (nur die ersten zwei Zahlen nach dem Komma)');
 
         const min = 1;
         max = 12;
@@ -222,7 +222,7 @@ const VektorenFragen = () => {
                 break;
             }
             case '/': {
-                setSolution(new VektorNumeral(x1 / x2, y1 / x2))
+                setSolution(new VektorNumeral((x1 / x2).toFixed(2), (y1 / x2).toFixed(2)))
                 break;
             }
         }
