@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
-import React from 'react';
+import React, {useEffect, useState} from "react";
 import Frage from "./Frage";
+import Vektor from "./Vektor";
 
 const VektorenFragen = () => {
     const questionTypes = [
@@ -143,6 +143,10 @@ const VektorenFragen = () => {
         compare(other) {
             return (other.x === this.x && other.y === this.y)
         }
+
+        toHtml() {
+            return (<Vektor x={this.x} y={this.y}/>)
+        }
     }
 
     const amountQuestions = 5;
@@ -150,7 +154,8 @@ const VektorenFragen = () => {
     const [questionsDone, setQuestionsDone] = useState(false);
     const [score, setScore] = useState(0);
 
-    const [questionType,setQuestionType] = useState('undefined');
+    const [solution, setSolution] = useState(undefined);
+    const [questionType, setQuestionType] = useState('undefined');
     const [resultType, setResultType] = useState('undefined');
     const [operator, setOperator] = useState('undefined');
 
@@ -163,16 +168,14 @@ const VektorenFragen = () => {
         setResultType(questionTypeInfos.result[index]);
         setOperator(questionTypeInfos.allowedOperators[index]);
 
-        // for (let question of questionTypes) {
-        //
-        // }
+
     }
 
     const getRandomNum = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    const handleAnswerOptionClick = (resultType, solution, userSolution) => {
+    const handleAnswerOptionClick = (userSolution) => {
         if (resultType === 'vektor') {
             if (userSolution.compare(solution)) {
                 setScore(score + 1);
