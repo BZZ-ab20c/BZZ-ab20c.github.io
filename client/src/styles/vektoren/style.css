@@ -1,0 +1,84 @@
+.colBorderRight {
+    border-right: 1px solid #ccc;
+}
+
+.rowBorderUp {
+    border-top: 1px solid #ccc;
+}
+
+.centered {
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.centered .centeredChild {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myCard {
+    padding: 10px;
+}
+
+a, span {
+    text-decoration: none;
+}
+
+.vectorList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vectorList ul {
+    padding: 0;
+}
+
+.vectorList ul li {
+    list-style: none;
+}
+
+.threeDimVectorList:before {
+    content: '[';
+    color: #000000;
+    font-size: 90px;
+    text-align: right;
+    padding-right: 10px;
+
+    margin-bottom: 40px;
+}
+
+.threeDimVectorList:after {
+    content: ']';
+    color: #000000;
+    font-size: 90px;
+    text-align: left;
+    padding-left: 10px;
+
+    margin-bottom: 40px;
+}
+
+.twoDimVectorList:before {
+    content: '[';
+    color: #000000;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 10px;
+
+    margin-bottom: 30px;
+}
+
+.twoDimVectorList:after {
+    content: ']';
+    color: #000000;
+    font-size: 60px;
+    text-align: left;
+    padding-left: 10px;
+
+    margin-bottom: 30px;
+}

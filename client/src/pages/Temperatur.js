@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import thermometer from '../img/temperatur/thermometer.png'
 import Lottie from 'react-lottie-player'
-import react, {useState} from "react";
+import {useState} from "react";
 import "../styles/temperatur/style.css"
 import lottieJson from './temperatur/lottie.json'
 import useDocumentTitle from "../utils/UseDocumentTitle";
