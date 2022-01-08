@@ -12,15 +12,15 @@ const Linearegleichungen = () => {
     return (
         <div>
             <section id="banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
                             <h1>Lineare Gleichungssysteme</h1>
                         </div>
-                        <div class="w-100"></div>
-                        <div class="col">
+                        <div className="w-100"></div>
+                        <div className="col">
                             Willkommen beim
-                            <span class="tag-01"><a id="link-01" href="https://www.bzz.ch/" target="_blank">BZZ</a></span>
+                            <span className="tag-01"><a id="link-01" href="https://www.bzz.ch/" target="_blank">BZZ</a></span>
                             
                         </div>
                     </div>
@@ -101,7 +101,7 @@ const Linearegleichungen = () => {
                                     Wenn zwei "entgegengesetzte Summanden" vorkommen.
                                 </div>
                             </div>
-                            <div class="col">
+                            <div className="col">
                             <div className="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
                                 <div className="red" >
                                         Text überarbeitung

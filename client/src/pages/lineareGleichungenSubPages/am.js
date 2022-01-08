@@ -54,7 +54,7 @@ const AM = () => {
                     <p>Nun können wir es wieder berechnen und danach Auflösen. Hierbei wir die Zahl wo vorher y stand mit der Zahl in der Klammer nun Multipliziert.</p>
                     <p className="tag-02">(I) 2x + 3 = 9</p>
                     <p className="tag-02">2x + 3 = 9 |-3</p>
-                    <p class="tag-02">2x = 6 |:2</p>
+                    <p className="tag-02">2x = 6 |:2</p>
                     <p className="tag-02"><span className="double_underline">x = 3 </span></p>
 
                     <p><b>Überprüfung: </b>Die Überprüfung mit Term II. Hier wir der selbe Durchgang angwendet wie bei <b>Schritt 5 !</b></p>
