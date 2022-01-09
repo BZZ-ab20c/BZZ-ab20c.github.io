@@ -199,15 +199,19 @@ const Klima = () => {
                     </div>
                     <div className="myCard">
                         <img src={ClimateChange} alt="climate-change" style={{width: '72%', margin: '10px'}}/>
-                        <div style={{height: '50px'}}/>
+                        <div style={{height: '60px'}}/>
                         <p>Meeresströmungen:</p>
                         <img src={WaterCurrent} alt="Conveyor Belt" style={{width: '80%', margin: '10px'}}/>
+                        <div style={{height: '60px'}}/>
                         <p>Erdwinkel:</p>
                         <img src={Orbit} alt="ErdWinkel" style={{width: '60%', margin: '10px'}}/>
-
-                        <div style={{height: '1000px'}}/>
+                        </div>
+                        <div style={{height: '840px'}}/>
+                        <div className="myCard">
+                        <div style={{height: '200px'}}/>
                         <p>Treibhauseffekt:</p>
                         <img src={GreenHouseEffect} alt="Treibhauseffekt" style={{width: '100%', margin: '10px'}}/>
+                        <div style={{height: '250px'}}/>
                     </div>
                 </div>
             </div>
