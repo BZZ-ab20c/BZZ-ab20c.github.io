@@ -4,12 +4,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import useDocumentTitle from "../../utils/UseDocumentTitle";
 import '../../styles/lineareGleichungen/index.css';
+import { saveAs } from "file-saver";
 import React from 'react';
 
 
 
 const AM = () => {
     useDocumentTitle('Linearegleichungen | AM');
+
+    const saveFile = () => {
+        saveAs(
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/%C3%9Cbungen_Ad.pdf?csf=1&web=1&e=MrcfZV",
+          "Aufgaben_Ad.pdf"
+        );
+      };
+
+      const saveFile1 = () => {
+        saveAs(
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sungen_Ad.pdf?csf=1&web=1&e=sfzTFg",
+          "Loesung_Ad.pdf.pdf"
+        );
+      };
+      
     return (
         <div>
             {/*Banner*/}
@@ -188,7 +204,7 @@ const AM = () => {
                                 </div>
                                 <div className="button-box">
                                     <p>
-                                        <a href="./files/Aufgaben_Ad.pdf" className="button" download>Download Arbeitsblatt</a>
+                                    <a onClick={saveFile} className="button" download>Download Arbeitsblatt</a>
                                     </p>
                                 </div>
                             </div>
@@ -198,13 +214,13 @@ const AM = () => {
                                 </div>
                                     <div className="button-box">
                                     <p>
-                                        <a href="./files/Loesungen_Ad.pdf" className="button" download>Download Lösungsblatt</a>
+                                        <a onClick={saveFile1} className="button" download>Download Lösungsblatt</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                 <div className="box">
-                        <p className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanale welche dein Verständnis vertiefen können.</p>
+                        <p className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanäle welche dein Verständnis vertiefen können.</p>
                         <a target="_blank" href="https://www.youtube.com/channel/UCy0FxMgGUlRnkxCoNZUNRQQ">Lehrerschmidt - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/beckuplearning">Mathe by Daniel Jung - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/TheSimpleMaths">Mathe - simpleclub - Youtube</a>
