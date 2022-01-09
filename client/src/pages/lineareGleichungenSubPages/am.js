@@ -3,7 +3,7 @@ import Wave01 from "../../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import useDocumentTitle from "../../utils/UseDocumentTitle";
-import {QuizData} from './Quizdata';
+import '../../styles/lineareGleichungen/index.css';
 import React from 'react';
 
 
@@ -17,7 +17,7 @@ const AM = () => {
             <div className="wave-01">
                 <img className="wave-img" src={Wave01} alt={"wave img"}/>
             </div>
-            <div section="einleitung">
+            <section className="einleitung">
                 <div className="container">
                 <div className="row">
                         <div className="tag-title">
@@ -32,7 +32,7 @@ const AM = () => {
                             Was lernst du alles auf dieser Seite über das Additonsverfahren?
                             <br></br>
                             Als erstes kannst du ein einfaches Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses ist Schritt für Schritt beschrieben und erklärt und einfach zu verstehen.<br></br>
-                            Als zweites kannst du eine schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst<br></br>
+                            Als zweites kannst du ein schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst<br></br>
                             And dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben das du lösen kannst. Die Lösung wird nach dem Klicken auf die Antwort angezeigt.<br></br>
                             Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. AUch kannst du dir dazu die Lösungen herunterladen.<br></br>
                             Auch findest du noch Hiflreiche Webseiten sowie Youtube Kanale um dein Wissen zu vertiefen.
@@ -43,7 +43,7 @@ const AM = () => {
                         </div> 
                     </div>
                 </div>
-            </div>
+            </section>
             <br></br>
             <section id="math">
             <div className="container">  
@@ -61,7 +61,7 @@ const AM = () => {
                     <h2 className="describtion-math">Additonsverfahren einfaches Beispiel</h2>    
                     <p className="describtion-math">Als erstes schauen wir uns ein einfaches Beispiel des Additonsverfahrens an.</p>
             
-                    <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei linearefunktionen. Ach entscheiden wir uns im <u>ersten Schritt y herauszufinden.</u></p>
+                    <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei Gleichungen. Auch entscheiden wir uns im <u>ersten Schritt y herauszufinden.</u></p>
                     <p className="tag-02">(I) 2x + 3y = 9</p>
                     <p className="tag-02">(II) 3x - 4y = 5</p>
 
@@ -74,12 +74,12 @@ const AM = () => {
                     <p className="tag-02">(I) 6x + 9y = 27</p>
                     <p className="tag-02">(II) -6x + 8y = -10 </p>
 
-                    <p className="describtion-math"><b>Schritt 3: </b>Nun können wur (I) 6x und (II) -6x <b><font color="red">auflösen </font></b>. Das ist der Sinn des Additionsverfahren, da man jetzt den Rest zusammenfassen kann.</p>
+                    <p className="describtion-math"><b>Schritt 3: </b>Nun können wir (I) 6x und (II) -6x <b><font color="red">auflösen </font></b>. Das ist der Sinn des Additionsverfahren, da man jetzt den Rest zusammenfassen kann.</p>
                     <p className="tag-02">(I) <font color="red">6x </font> + 9y = 27</p> 
                     <p className="tag-02">(II) <font color="red">-6x </font> + 8y = -10 </p>
                     <p className="tag-02">17y = 17</p>
 
-                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nurnoch beides geteilt durch 17 zu rechen. Danach bekommen wir y den ersten Schnittpunt von P.<br></br>
+                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides geteilt durch 17 zu rechen. Danach bekommen wir y den ersten Schnittpunt von P.<br></br>
                     Rechnung: </p>
                     <p className="tag-02 ">17y = 17 |:17</p>
                     <p className="tag-02"><span className="double_underline">y = 1</span></p>
@@ -105,7 +105,7 @@ const AM = () => {
                     <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch etwas wichtiges was während
                     der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
-                    <p><b>Der Schnittpunkt von I und II liegt bei Punkkt P(3|1)</b></p>
+                    <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(3|1)</b></p>
                     </p>
 
                     &nbsp;
@@ -167,13 +167,11 @@ const AM = () => {
         </section>
         <section id="Quiz">
             <div className="container">
-                <div className="tag-title">
-                    <p>
-                        Quiz
-                    </p>
-                </div>
-                <div className="box">
+            <h2>Additionsverfahren Quiz</h2>
+                <div className="container">
+                   
                 
+                  
                 </div>
             </div>
         </section>
@@ -183,8 +181,45 @@ const AM = () => {
                     <p>
                         Weiteres
                     </p>
+                </div><div className="row">
+                            <div className="col">
+                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
+                                    Übungsblatt mit Aufgaben.
+                                </div>
+                                <div class="columns download">
+                                <p>
+                                    <a href="../../pages/Lösung_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Übungsblatt</a>
+                                </p>
+                            </div>
+                            </div>
+                            <div className="col">
+                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
+                                    Lösungsblatt.
+                                </div>
+                                <div class="columns download">
+                                <p>
+                                    <a href="../../pages/Übungen_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Lösungsblatt</a>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                <div className="box">
+                        <p className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanale welche dein Verständnis vertiefen können.</p>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCy0FxMgGUlRnkxCoNZUNRQQ">Lehrerschmidt - Youtube</a><br></br>
+                        <a target="_blank" href="https://www.youtube.com/user/beckuplearning">Mathe by Daniel Jung - Youtube</a><br></br>
+                        <a target="_blank" href="https://www.youtube.com/user/TheSimpleMaths">Mathe - simpleclub - Youtube</a>
+                        <br></br>
+                        <br></br>
+                        <a target="_blank" href="https://studyflix.de/mathematik/lineare-gleichungssysteme-2904">Studyflix - Website</a><br></br>
+                        <a target="_blank" href="https://www.lehrer-schmidt.de/mathematik/lineare-gleichungssysteme/">Lehrer-schmidt - Website</a><br></br>
+                        <a target="_blank" href="https://www.maths2mind.com/schluesselwoerter/lineares-gleichungssystem-mit-2-variablen">math2mind - Website</a><br></br>
+                        <br></br>
+                        <br></br>
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
         </section>
         </div>
         
