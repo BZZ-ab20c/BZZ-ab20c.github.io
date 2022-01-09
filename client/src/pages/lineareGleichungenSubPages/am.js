@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import useDocumentTitle from "../../utils/UseDocumentTitle";
 import '../../styles/lineareGleichungen/index.css';
+import {Link} from "react-router-dom";
 import { saveAs } from "file-saver";
 import React from 'react';
 
@@ -49,7 +50,6 @@ const AM = () => {
                             <br></br>
                             Als erstes kannst du ein einfaches Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses ist Schritt für Schritt beschrieben und erklärt und einfach zu verstehen.<br></br>
                             Als zweites kannst du ein schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst.<br></br>
-                            An dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben die du lösen kannst.<br></br>
                             Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. Auch kannst du dir dazu die Lösungen herunterladen.<br></br>
                             Auch findest du noch Hiflreiche Webseiten sowie Youtube Kanäle um dein Wissen zu vertiefen.
                             <br></br>
@@ -180,16 +180,6 @@ const AM = () => {
                     </p>
               </div>
             <br></br>
-        </section>
-        <section id="Quiz">
-            <div className="container">
-            <h2>Additionsverfahren Quiz</h2>
-                <div className="container">
-                   
-                
-                  
-                </div>
-            </div>
         </section>
         <section id="weiters">
             <div className="container">

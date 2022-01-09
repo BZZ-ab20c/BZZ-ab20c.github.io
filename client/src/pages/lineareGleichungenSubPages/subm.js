@@ -44,8 +44,6 @@ const SUBM = () => {
                             Was lernst du alles auf dieser Seite über das Substitutionsmethode?
                             <br></br>
                             Als erstes kannst du ein erstes Beispiel mit dem Lösungsverfahren Substitutionsmethode anschauen. Dieses ist Schritt für Schritt beschrieben und erklärt und einfach zu verstehen.<br></br>
-                            Als zweites kannst du ein zweites Beispiel mit dem Lösungsverfahren Substitutionsmethode anschauen. Dieses benötigt die Grundkenntnisse der Substitutionsmethode damit du diese verstehst<br></br>
-                            An dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben das du lösen kannst.<br></br>
                             Wer sich noch eine etwas kompliziertere Aufgabe anschauen möchte kann das gerne machen. Diese findest du unter 'schwereres Beispiel'.<br/>
                             Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. Auch kannst du dir dazu die Lösungen herunterladen.<br></br>
                             Auch findest du noch Hilfreiche Webseiten sowie Youtube Kanale um dein Wissen zu vertiefen.
@@ -204,16 +202,6 @@ const SUBM = () => {
                     </p>
               </div>
             <br></br>
-        </section>
-        <section id="Quiz">
-            <div className="container">
-            <h2>Substitutionsmethode Quiz</h2>
-                <div className="container">
-                   
-                
-                  
-                </div>
-            </div>
         </section>
         <section id="weiters">
             <div className="container">
