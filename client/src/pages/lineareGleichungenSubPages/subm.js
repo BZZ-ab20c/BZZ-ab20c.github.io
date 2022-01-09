@@ -224,7 +224,7 @@ const SUBM = () => {
                 </div>
                 <div className="row">
                             <div className="col">
-                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
+                                <div className="btn-txt-1"><b>Substitutionsmethode</b><br></br>
                                     Übungsblatt mit Aufgaben.
                                 </div>
                                 <div className="button-box">
@@ -234,7 +234,7 @@ const SUBM = () => {
                                 </div>
                             </div>
                             <div className="col">
-                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
+                                <div className="btn-txt-1"><b>Substitutionsmethode</b><br></br>
                                     Lösungsblatt.
                                 </div>
                                     <div className="button-box">

@@ -106,7 +106,7 @@ const Linearegleichungen = () => {
                             <div className="col">
                             <div className="btn-txt-2"><b>Substitutionsmethode</b><br></br> (Einsetzungsverfahren) <br></br>
                                 <div className="red" >
-                                        Text überarbeitung
+                                        Dabei wird eine der Gleichungen nach einer Variabl aufgelöst.
                                     </div>
                             </div>
                         </div>
