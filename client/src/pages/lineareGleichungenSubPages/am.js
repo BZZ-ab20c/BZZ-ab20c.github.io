@@ -48,10 +48,10 @@ const AM = () => {
                             Was lernst du alles auf dieser Seite über das Additonsverfahren?
                             <br></br>
                             Als erstes kannst du ein einfaches Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses ist Schritt für Schritt beschrieben und erklärt und einfach zu verstehen.<br></br>
-                            Als zweites kannst du ein schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst<br></br>
-                            And dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben das du lösen kannst. Die Lösung wird nach dem Klicken auf die Antwort angezeigt.<br></br>
-                            Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. AUch kannst du dir dazu die Lösungen herunterladen.<br></br>
-                            Auch findest du noch Hiflreiche Webseiten sowie Youtube Kanale um dein Wissen zu vertiefen.
+                            Als zweites kannst du ein schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst.<br></br>
+                            An dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben die du lösen kannst.<br></br>
+                            Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. Auch kannst du dir dazu die Lösungen herunterladen.<br></br>
+                            Auch findest du noch Hiflreiche Webseiten sowie Youtube Kanäle um dein Wissen zu vertiefen.
                             <br></br>
                             <br></br>
                             <b>Viel Spass beim lernen!</b>       
@@ -82,7 +82,7 @@ const AM = () => {
                     <p className="tag-02">(II) 3x - 4y = 5</p>
 
                     <p className="describtion-math"><b>Schritt 2: </b>Als nächstes überlegen wir uns, wie wir die Zahlen: (I) 2x und (II) 3x dargestellt bekommen, damit sich diese gegenseitig
-                        addieren un dabei auflösen. Dafür rechnen wir beim Term (I) |x3 und bei Term (II) |x(-2) .</p>
+                        addieren uns dabei auflösen. Dafür rechnen wir beim Term (I) |x3 und bei Term (II) |x(-2) .</p>
                     <p className="tag-02">(I) 2x + 3y = 9 |x3</p>
                     <p className="tag-02">(II) 3x - 4y = 5 |x(-2)</p>
 
