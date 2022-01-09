@@ -131,12 +131,17 @@ h2{
  .button{
      text-decoration: none!important;
      color: black;
+     text-align: center;
+     
  }
 
  .button-box{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     margin-top: 2%;
     margin-bottom: 4%;
+    text-align: center;
  }
+
+ 
 
 

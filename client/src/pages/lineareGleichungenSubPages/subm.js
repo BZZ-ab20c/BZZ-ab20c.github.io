@@ -2,10 +2,25 @@ import Wave01 from "../../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import LineareGleichungenBanner from "./banner";
+import { saveAs } from "file-saver";
 import useDocumentTitle from "../../utils/UseDocumentTitle";
 
 const SUBM = () => {
     useDocumentTitle('Linearegleichungen | SUBM');
+
+    const saveFile = () => {
+        saveAs(
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/%C3%9Cbungen_Sv.pdf?csf=1&web=1&e=fwAvJn",
+          "Aufgaben_Sv.pdf"
+        );
+      };
+
+      const saveFile1 = () => {
+        saveAs(
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sungen_Ad.pdf?csf=1&web=1&e=sfzTFg",
+          "Loesung_Sv.pdf.pdf"
+        );
+      };
 
     return (
         <div>
@@ -18,7 +33,7 @@ const SUBM = () => {
                 <div className="container">
                 <div className="row">
                         <div className="tag-title">
-                            <p>
+                            <p style={{textAlign: "center"}}>
                                 Inhalt
                             </p>
                         </div>
@@ -46,7 +61,7 @@ const SUBM = () => {
             <section id="math">
             <div className="container">  
             <div className="tag-title">
-                <p>
+                <p style={{textAlign: "center"}}>
                     Aufgaben
                 </p>
             </div>
@@ -203,33 +218,34 @@ const SUBM = () => {
         <section id="weiters">
             <div className="container">
                 <div className="tag-title">
-                    <p>
+                    <p style={{textAlign: "center"}}>
                         Weiteres
                     </p>
-                </div><div className="row">
+                </div>
+                <div className="row">
                             <div className="col">
-                                <div className="btn-txt-1"><b>Substitutionsmethode</b><br></br>
+                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
                                     Übungsblatt mit Aufgaben.
                                 </div>
-                                <div class="columns download">
-                                <p>
-                                    <a href="../../pages/Lösung_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Übungsblatt</a>
-                                </p>
-                            </div>
+                                <div className="button-box">
+                                    <p style={{textAlign: "center"}}>
+                                    <a onClick={saveFile} className="button" download>Download Arbeitsblatt</a>
+                                    </p>
+                                </div>
                             </div>
                             <div className="col">
-                                <div className="btn-txt-1"><b>Substitutionsmethode</b><br></br>
+                                <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
                                     Lösungsblatt.
                                 </div>
-                                <div class="columns download">
-                                <p>
-                                    <a href="../../pages/Übungen_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Lösungsblatt</a>
-                                </p>
-                            </div>
+                                    <div className="button-box">
+                                    <p style={{textAlign: "center"}}>
+                                        <a className="button" onClick={saveFile1}  download>Download Lösungsblatt</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                 <div className="box">
-                        <p className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanale welche dein Verständnis vertiefen können.</p>
+                        <p style={{textAlign: "center"}} className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanale welche dein Verständnis vertiefen können.</p>
                         <a target="_blank" href="https://www.youtube.com/channel/UCy0FxMgGUlRnkxCoNZUNRQQ">Lehrerschmidt - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/beckuplearning">Mathe by Daniel Jung - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/TheSimpleMaths">Mathe - simpleclub - Youtube</a>

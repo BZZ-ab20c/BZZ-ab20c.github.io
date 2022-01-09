@@ -76,8 +76,8 @@ const Linearegleichungen = () => {
             <section id="section-btn-title">
                 <div className="container">
                     <div className="row">
-                        <div className="tag-title">
-                            <p>
+                        <div className="tag-title ">
+                            <p style={{textAlign: "center"}}>
                                 Systeme
                             </p>
                         </div>
@@ -121,7 +121,7 @@ const Linearegleichungen = () => {
                             <div className="btn-01">
                                 <Link to={"/linearegeleichungen/AM"} className="link">
                                     <div className="btn-01-1">
-                                        <p className="btn-01-1-txt">Additionsmethode</p>
+                                        <p style={{textAlign: "center"}} className="btn-01-1-txt">Additionsmethode</p>
                                     </div>
                                 </Link>
                             </div>
@@ -130,7 +130,7 @@ const Linearegleichungen = () => {
                             <div className="btn-02">
                                 <Link to={"/linearegeleichungen/SUBM"} className="link">
                                     <div className="btn-02-2">
-                                        <p className="btn-02-2-txt">Subtitutionsmethode</p>
+                                        <p style={{textAlign: "center"}} className="btn-02-2-txt">Subtitutionsmethode</p>
                                     </div>
                                 </Link>
                             </div>

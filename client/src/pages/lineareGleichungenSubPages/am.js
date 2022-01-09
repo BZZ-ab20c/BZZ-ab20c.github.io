@@ -37,7 +37,7 @@ const AM = () => {
                 <div className="container">
                 <div className="row">
                         <div className="tag-title">
-                            <p>
+                            <p style={{textAlign: "center"}}>
                                 Inhalt
                             </p>
                         </div>
@@ -64,7 +64,7 @@ const AM = () => {
             <section id="math">
             <div className="container">  
             <div className="tag-title">
-                <p>
+                <p style={{textAlign: "center"}}>
                     Aufgaben
                 </p>
             </div>
@@ -194,16 +194,17 @@ const AM = () => {
         <section id="weiters">
             <div className="container">
                 <div className="tag-title">
-                    <p>
+                    <p style={{textAlign: "center"}}>
                         Weiteres
                     </p>
-                </div><div className="row">
+                </div>
+                <div className="row">
                             <div className="col">
                                 <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
                                     Übungsblatt mit Aufgaben.
                                 </div>
                                 <div className="button-box">
-                                    <p>
+                                    <p style={{textAlign: "center"}}>
                                     <a onClick={saveFile} className="button" download>Download Arbeitsblatt</a>
                                     </p>
                                 </div>
@@ -213,14 +214,14 @@ const AM = () => {
                                     Lösungsblatt.
                                 </div>
                                     <div className="button-box">
-                                    <p>
-                                        <a onClick={saveFile1} className="button" download>Download Lösungsblatt</a>
+                                    <p style={{textAlign: "center"}}>
+                                        <a className="button" onClick={saveFile1}  download>Download Lösungsblatt</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                 <div className="box">
-                        <p className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanäle welche dein Verständnis vertiefen können.</p>
+                        <p style={{textAlign: "center"}}className="box-inhalt">Wie oben schon erwähnt sind hier Youtube Kanäle welche dein Verständnis vertiefen können.</p>
                         <a target="_blank" href="https://www.youtube.com/channel/UCy0FxMgGUlRnkxCoNZUNRQQ">Lehrerschmidt - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/beckuplearning">Mathe by Daniel Jung - Youtube</a><br></br>
                         <a target="_blank" href="https://www.youtube.com/user/TheSimpleMaths">Mathe - simpleclub - Youtube</a>
