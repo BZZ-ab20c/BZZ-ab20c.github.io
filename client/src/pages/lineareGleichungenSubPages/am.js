@@ -188,7 +188,7 @@ const AM = () => {
                                 </div>
                                 <div className="button-box">
                                     <p>
-                                        <a href="files/Aufgaben_Ad.pdf" className="button" download>Download Arbeitsblatt</a>
+                                        <a href="./files/Aufgaben_Ad.pdf" className="button" download>Download Arbeitsblatt</a>
                                     </p>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@ const AM = () => {
                                 </div>
                                     <div className="button-box">
                                     <p>
-                                        <a href="files/Lösungen_Ad.pdf" className="button" download>Download Lösungsblatt</a>
+                                        <a href="./files/Loesungen_Ad.pdf" className="button" download>Download Lösungsblatt</a>
                                     </p>
                                 </div>
                             </div>
