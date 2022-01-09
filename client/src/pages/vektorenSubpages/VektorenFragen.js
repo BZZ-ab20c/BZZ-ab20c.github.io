@@ -178,74 +178,81 @@ const VektorenFragen = () => {
 
         setQuestionType(questionType);
         const result = typeInfoQuestion.result[index].name;
-        const operator = typeInfoQuestion.allowedOperators[index].operator;
-        setQuestionText('Berechnen Sie ' + result + ' (nur die ersten zwei Zahlen nach dem Komma)');
 
-        const min = 1;
-        max = 12;
-        let x1 = getRandomNum(min, max);
-        let y1 = getRandomNum(min, max);
-        let x2 = getRandomNum(min, max);
-        let y2;
+        const error = typeInfoQuestion.allowedOperators[index] === undefined;
+        if (!error) {
+            const operator = typeInfoQuestion.allowedOperators[index].operator;
+            setQuestionText('Berechnen Sie ' + result + ' (gerundet auf zwei Zahlen nach dem Komma)');
 
-        const amtVectors = typeInfoQuestion.neededVectors;
-        if (amtVectors === 2) {
-            y2 = getRandomNum(min, max);
-        }
+            const min = 1;
+            max = 12;
+            let x1 = getRandomNum(min, max);
+            let y1 = getRandomNum(min, max);
+            let x2 = getRandomNum(min, max);
+            let y2;
 
-        const simpleNumber = resultType === 'zahl';
-        setSimpleNumber(simpleNumber);
-
-        switch (operator) {
-            case '+': {
-                if (!simpleNumber) {
-                    setSolution(new VektorNumeral(x1 + x2, y1 + y2))
-                }
-                break;
+            const amtVectors = typeInfoQuestion.neededVectors;
+            if (amtVectors === 2) {
+                y2 = getRandomNum(min, max);
             }
-            case '-': {
-                if (!simpleNumber) {
-                    setSolution(new VektorNumeral(x1 - x2, y1 - y2))
-                }
-                break;
-            }
-            case '*': {
-                if (questionType === 'Kreuzprodukt' || questionType === 'Kreuzprodukt') {
-                    setSolution((x1 * y2) - (x2 - y1));
-                } else {
-                    if (simpleNumber) {
-                        setSolution((x1 * x2) + (y1 * y2));
-                    } else {
-                        setSolution(new VektorNumeral(x1 * x2, y1 * x2));
+
+            const simpleNumber = resultType === 'zahl';
+            setSimpleNumber(simpleNumber);
+
+            switch (operator) {
+                case '+': {
+                    if (!simpleNumber) {
+                        setSolution(new VektorNumeral(x1 + x2, y1 + y2))
                     }
+                    break;
                 }
-                break;
+                case '-': {
+                    if (!simpleNumber) {
+                        setSolution(new VektorNumeral(x1 - x2, y1 - y2))
+                    }
+                    break;
+                }
+                case '*': {
+                    if (questionType === 'Kreuzprodukt' || questionType === 'Kreuzprodukt') {
+                        setSolution((x1 * y2) - (x2 - y1));
+                    } else {
+                        if (simpleNumber) {
+                            setSolution((x1 * x2) + (y1 * y2));
+                        } else {
+                            setSolution(new VektorNumeral(x1 * x2, y1 * x2));
+                        }
+                    }
+                    break;
+                }
+                case '/': {
+                    setSolution(new VektorNumeral((Math.round(((x1 / x2) + Number.EPSILON) * 100) / 100), (Math.round(((y1 / x2) + Number.EPSILON) * 100) / 100)));
+                    break;
+                }
             }
-            case '/': {
-                setSolution(new VektorNumeral((x1 / x2).toFixed(2), (y1 / x2).toFixed(2)))
-                break;
-            }
-        }
 
-        setQuestionPart1((
-            <div className={"col"}>
-                <Vektor x={x1} y={y1}/>
-            </div>
-        ));
-        setQuestionPart2((
-            <div className={"col centered"}>
-                <span className={"centeredChild"}>{operator}</span>
-            </div>
-        ));
-        setQuestionPart3((amtVectors === 2) ? (
-            <div className={"col"}>
-                <Vektor x={x2} y={y2}/>
-            </div>
-        ) : (
-            <div className={"col centered"}>
-                <span className={"centeredChild"}>{x2}</span>
-            </div>
-        ));
+            setQuestionPart1((
+                <div className={"col"}>
+                    <Vektor x={x1} y={y1}/>
+                </div>
+            ));
+            setQuestionPart2((
+                <div className={"col centered"}>
+                    <span className={"centeredChild"}>{operator}</span>
+                </div>
+            ));
+            setQuestionPart3((amtVectors === 2) ? (
+                <div className={"col"}>
+                    <Vektor x={x2} y={y2}/>
+                </div>
+            ) : (
+                <div className={"col centered"}>
+                    <span className={"centeredChild"}>{x2}</span>
+                </div>
+            ));
+        } else {
+            console.log("GOT ERROR! RETRY")
+            generateQuestion();
+        }
     }
 
     const getRandomNum = (min, max) => {
@@ -315,6 +322,9 @@ const VektorenFragen = () => {
                         <Frage title={questionType.name} question={questionText} questionPart1={questionPart1}
                                questionPart2={questionPart2} questionPart3={questionPart3}/>
                     </div>
+                    {/*<div>*/}
+                    {/*    {JSON.stringify(solution)}*/}
+                    {/*</div>*/}
                     <div>
                         <h5>Antwort</h5>
                         <div className={"row"}>
