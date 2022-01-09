@@ -3,7 +3,10 @@ import Wave01 from "../../img/lineargleichungen/wave-01.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/lineareGleichungen/sbs.css';
 import useDocumentTitle from "../../utils/UseDocumentTitle";
+import {QuizData} from './Quizdata';
 import React from 'react';
+
+
 
 const AM = () => {
     useDocumentTitle('Linearegleichungen | AM');
@@ -14,9 +17,47 @@ const AM = () => {
             <div className="wave-01">
                 <img className="wave-img" src={Wave01} alt={"wave img"}/>
             </div>
-            
+            <div section="einleitung">
+                <div className="container">
+                <div className="row">
+                        <div className="tag-title">
+                            <p>
+                                Inhalt
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="box">
+                            <div className="box-inhalt">
+                            Was lernst du alles auf dieser Seite über das Additonsverfahren?
+                            <br></br>
+                            Als erstes kannst du ein einfaches Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses ist Schritt für Schritt beschrieben und erklärt und einfach zu verstehen.<br></br>
+                            Als zweites kannst du eine schweres Beispiel mit dem Lösungsverfahren Additonsverfahren anschauen. Dieses benötigt die Grundkenntnisse der Additionsmethode damit du diese verstehst<br></br>
+                            And dritter Stelle findest du ein Quiz mit verschiedenen Fragen sowie Aufgaben das du lösen kannst. Die Lösung wird nach dem Klicken auf die Antwort angezeigt.<br></br>
+                            Als letztes kannst du noch eine Blatt herunterladen welches weitere Aufgaben zum Lösen hat. AUch kannst du dir dazu die Lösungen herunterladen.<br></br>
+                            Auch findest du noch Hiflreiche Webseiten sowie Youtube Kanale um dein Wissen zu vertiefen.
+                            <br></br>
+                            <br></br>
+                            <b>Viel Spass beim lernen!</b>       
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <br></br>
             <section id="math">
             <div className="container">  
+            <div className="tag-title">
+                <p>
+                    Aufgaben
+                </p>
+            </div>
+                <button className="collapsible" onClick={function () {
+                    const inhalt = document.getElementById("inhalt");
+                    inhalt.style.display = (inhalt.style.display === "none") ? "block" : "none";}}>
+                    Additonsverfahren einfaches Beispiel
+                </button>           
+                <p id="inhalt" style={{display: "none"}}>
                     <h2 className="describtion-math">Additonsverfahren einfaches Beispiel</h2>    
                     <p className="describtion-math">Als erstes schauen wir uns ein einfaches Beispiel des Additonsverfahrens an.</p>
             
@@ -65,8 +106,17 @@ const AM = () => {
                     der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
                     <p><b>Der Schnittpunkt von I und II liegt bei Punkkt P(3|1)</b></p>
+                    </p>
+
+                    &nbsp;
 
                     {/*schwere Aufgabe*/}
+                    <button className="collapsible" onClick={function () {
+                    const inhalt = document.getElementById("inhalt1");
+                    inhalt.style.display = (inhalt.style.display === "none") ? "block" : "none";}}>
+                        Additonsverfahren schweres Beispiel
+                    </button>           
+                    <p id="inhalt1" style={{display: "none"}}>
                     <h2 className="describtion-math">Additonsverfahren schweres Beispiel</h2>    
                     <p className="describtion-math">Hier schauen wir uns ein schweres Beispiel des Additonsverfahrens an.</p>
                 
@@ -111,8 +161,21 @@ const AM = () => {
                     der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
                     <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(2|-3)</b></p>
+                    </p>
               </div>
-              
+            <br></br>
+        </section>
+        <section id="Quiz">
+            <div className="container">
+                <div className="tag-title">
+                    <p>
+                        Quiz
+                    </p>
+                </div>
+                <div className="box">
+                
+                </div>
+            </div>
         </section>
         </div>
         
