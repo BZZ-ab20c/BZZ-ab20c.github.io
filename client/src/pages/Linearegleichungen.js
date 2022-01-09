@@ -41,7 +41,7 @@ const Linearegleichungen = () => {
             <section id="section-txt">
                 <div className="container">
                     <div className="row">
-                        <div className="sb-div-left">
+                        <div className="col">
                             <p>
                                 Das erste was man sich fragt wenn man LGS hört, ist :<strong> Was ist
                                 LGS?</strong><br></br>
@@ -65,8 +65,10 @@ const Linearegleichungen = () => {
                                 Gleichungen korrekt löst.
                             </p>
                         </div>
-                        <div className="sb-div-right-img">
-                            <img className="math-img" src={MathImg} alt={"Math img or something idk"}/>
+                        <div className="col">
+                            
+                                <img className="math-img" src={MathImg} alt={"Math img or something idk"}/>
+                            
                         </div>
                     </div>
                 </div>

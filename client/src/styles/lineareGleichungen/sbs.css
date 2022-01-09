@@ -24,6 +24,7 @@ html, body {
 
 .back-btn{
     padding-left: 5%;
+
 }
 
 .btn {
@@ -32,13 +33,24 @@ html, body {
     width: 55px;
     border-radius: 50%;
     border-color: #fff;
-    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    float: left;
 }
 
 .btn:hover{
         box-shadow: rgb(190, 209, 249) 0px 13px 27px -5px, rgb(190, 209, 249) 0px 8px 16px -8px;
- }
+
+}
+
+/*--------- inhalt ---------*/
+.box{
+    background-color: #fff;
+    box-shadow: rgba(119, 119, 119, 0.25) 0px 13px 27px -5px, rgba(124, 124, 124, 0.3) 0px 8px 16px -8px;
+}
+
+.box-inhalt{
+    padding: 2%;
+}
   
 /*--------- img ---------*/
 
@@ -97,3 +109,23 @@ h2{
 	border-bottom: 3px double;  
 } 
 
+.describtion-math{
+    text-align: left;
+}
+
+.collapsible {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover{
+      background-color: #dde8fc;
+  }
+
+ 
