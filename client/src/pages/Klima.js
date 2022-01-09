@@ -207,7 +207,7 @@ const Klima = () => {
                         <img src={Orbit} alt="ErdWinkel" style={{width: '60%', margin: '10px'}}/>
                         </div>
                         <div style={{height: '840px'}}/>
-                        <div className="myCard">np
+                        <div className="myCard">
                         <div style={{height: '200px'}}/>
                         <p>Treibhauseffekt:</p>
                         <img src={GreenHouseEffect} alt="Treibhauseffekt" style={{width: '100%', margin: '10px'}}/>
