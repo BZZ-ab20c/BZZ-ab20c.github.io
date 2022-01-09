@@ -17,7 +17,7 @@ const SUBM = () => {
 
       const saveFile1 = () => {
         saveAs(
-            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sungen_Ad.pdf?csf=1&web=1&e=sfzTFg",
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sungen_Sv.pdf?csf=1&web=1&e=LOllQ0",
           "Loesung_Sv.pdf.pdf"
         );
       };
