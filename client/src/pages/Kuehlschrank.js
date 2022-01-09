@@ -18,8 +18,6 @@ function openFridge() {
 const Kuehlschrank = () => {
     return (
         <div>
-            <Navigation/>
-
             <div className="container d-flex flex-column align-items-center justify-content-center">
                 <h1>Kühlschrank</h1>
                 <br/>
