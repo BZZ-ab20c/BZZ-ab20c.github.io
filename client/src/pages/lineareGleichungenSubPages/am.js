@@ -95,7 +95,7 @@ const AM = () => {
                     <p className="tag-02">(II) <font color="red">-6x </font> + 8y = -10 </p>
                     <p className="tag-02">17y = 17</p>
 
-                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides geteilt durch 17 zu rechen. Danach bekommen wir y den ersten Schnittpunt von P.<br></br>
+                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides geteilt durch 17 zu rechnen. Danach bekommen wir y den ersten Schnittpunt von P.<br></br>
                     Rechnung: </p>
                     <p className="tag-02 ">17y = 17 |:17</p>
                     <p className="tag-02"><span className="double_underline">y = 1</span></p>
@@ -158,7 +158,7 @@ const AM = () => {
                     <p className="tag-02">(II) 50x + <font color="red">16x </font>= 52 </p>
                     <p className="tag-02">70x = 140</p>
 
-                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nurnoch beides geteilt durch 70 zu renchen. Danach bekommen wir x den ersten Schnittpunkt von P.<br></br>
+                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nurnoch beides geteilt durch 70 zu rechnen. Danach bekommen wir x den ersten Schnittpunkt von P.<br></br>
                     Rechnung: </p>
                     <p className="tag-02">70x = 140 |:70</p>
                     <p className="tag-02"><span className="double_underline">x = 2</span></p>

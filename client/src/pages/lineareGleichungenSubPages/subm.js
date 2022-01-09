@@ -170,7 +170,7 @@ const SUBM = () => {
                     <p className="tag-02">(I) 2x + 4y = 18</p>
                     <p className="tag-02">(II) 4x + 6y = 12</p>
 
-                    <p className="describtion-math"><b>Schritt 2: </b>Diesmal gitb es nichts zum einsetzen. Dafür müssen wir uns zuerst vorebereiten. Dafür nehmen wir den ersten Term.</p>
+                    <p className="describtion-math"><b>Schritt 2: </b>Diesmal gitb es nichts zum einsetzen. Dafür müssen wir uns zuerst vorbereiten. Dafür nehmen wir den ersten Term.</p>
                     <p className="describtion-math"><b>Vorbereitung:</b></p>
                     <p className="tag-02">(I) 2x + 4y = 18 |:2</p>
                     <p className="tag-02">x + 2y = 9 |-2y</p>
@@ -180,7 +180,7 @@ const SUBM = () => {
                     <p className="tag-02">(I) x = 9 - 2y</p>
                     <p className="tag-02">(II) 4x + 6y = 12</p>
 
-                    <p className="describtion-math"><b>Schritt 3: </b>Nun können anfangen y auszurechnen, indem wir nun x eisnetzen können. Da wir das vorher vorbereitet haben.</p>
+                    <p className="describtion-math"><b>Schritt 3: </b>Nun können anfangen y auszurechnen, indem wir nun x einsetzen können. Da wir das vorher vorbereitet haben.</p>
                     <p className="tag-02">4(9 - 2x) + 6y = 12</p>
                     <p className="tag-02">36 - 8y + 6y = 12 | -6y</p>
                     <p className="tag-02">36 - 2y = 12 | -36</p>
@@ -188,7 +188,7 @@ const SUBM = () => {
                     <p className="tag-02"><span className="double_underline">y = 12</span></p>
                     
                     <p className="describtion-math"><b>Schritt 4: </b>Nun müssen wir noch x herausfinden um dem kompletten Schnittpunkt zubekommen. Dafür können wir den
-                    vorbereiteten Term von x nehmen und nurnoch berechenen.</p>
+                    vorbereiteten Term von x nehmen und nurnoch berechnen.</p>
                     <p className="tag-02">x = 9 - 2y</p>
                     <p className="describtion-math">Anstelle von y (Da wir das schon haben) setzten wir nun 12 ein da y = 12 ergeben hat.</p>
                     <p className="tag-02">x = 9 - 2(12)</p>
