@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/klima/style.css'
 import ClimateChange from "../img/klima/climate-change.png";
+import GreenHouseEffect from "../img/klima/greenHouseEffect.png";
 import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Klima = () => {
@@ -14,9 +15,8 @@ const Klima = () => {
             </div>
             <div className="row">
 
-                {/*Blog entries*/}
                 <div className="col-8">
-                    {/*Blog entry*/}
+
                     <div className="myCard" id="wasIstKlima">
                         <div className="container">
                             <h3><b>Was ist Klima?</b></h3>
@@ -43,16 +43,13 @@ const Klima = () => {
                         </div>
 
                         <div className="container">
-                            <p>Das Klima ist das langfristige Muster des Wetters in einem Gebiet, typischerweise
-                                gemittelt über einen Zeitraum von 30 Jahren. <br/>Genauer gesagt, ist es der
-                                Mittelwert
-                                und die Variabilität der meteorologischen Variablen über einen Zeitraum von
-                                Monaten bis zu Millionen von Jahren.</p>
-                            <p>Klima beschreibt, wie das Wetter über einen langen Zeitraum aussieht.
-                                <br/>Wenn es in einer Gegend über viele Jahre regnet, spricht man von einem feuchten
-                                Klima.
-                                <br/>Wenn die Temperaturen sich über viele Jahre verändern, spricht man vom
-                                Klimawandel.</p>
+                            <p>Unser Klima ändert sich regelmäßig
+                                In den letzten 20 Jahren hat sich das Klima drastisch verändert,
+                                und das ist vor allem auf den Menschen zurückzuführen.
+                                Aber es sind nicht nur die Menschen, die sich auf den Wandel auswirken.
+                                Es gibt auch natürliche Ursachen für den Klimawandel</p>
+                            <h5>Beispiele</h5>
+                            <p></p>
                             <br/>
                         </div>
                     </div>
@@ -77,7 +74,7 @@ const Klima = () => {
                         </div>
                     </div>
                     <hr/>
-                    {/*Blog entry*/}
+
                     <div className="myCard" id="klimaWandel">
                         <div className="container">
                             <h3><b>Klima Wandel</b></h3>
@@ -100,7 +97,16 @@ const Klima = () => {
                             <br/>
                         </div>
                     </div>
+                    <hr/>
+                    <div className="myCard" id="quiz">
+                        <div className="container">
+                            <h3><b>Übungsfragen</b></h3>
+                        </div>
 
+                        <div className="container">
+
+                        </div>
+                    </div>
                 </div>
 
                 <div className="col">
@@ -129,11 +135,21 @@ const Klima = () => {
                                     <span style={{fontSize: '18px'}}>Klima Wandel</span><br/>
                                 </li>
                             </a>
+                            <a href="#quiz">
+                                <li className="listPadding">
+                                    <span style={{fontSize: '18px'}}>Übungsfragen</span><br/>
+                                </li>
+                            </a>
                             <br/>
                         </ul>
                     </div>
 
                     <img src={ClimateChange} alt="climate-change" style={{width: '72%', margin: '10px'}}/>
+
+                    <div style={{height: '450px'}}>
+
+                    </div>
+                    <img src={GreenHouseEffect} alt="Treibhauseffekt" style={{width: '100%', margin: '10px'}}/>
                 </div>
             </div>
             <br/>
