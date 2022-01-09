@@ -319,7 +319,7 @@ const VektorenFragen = () => {
             ) : (
                 <>
                     <div>
-                        <Frage title={questionType.name} question={questionText} questionPart1={questionPart1}
+                        <Frage title={questionType} question={questionText} questionPart1={questionPart1}
                                questionPart2={questionPart2} questionPart3={questionPart3}/>
                     </div>
                     {/*<div>*/}
