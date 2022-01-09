@@ -58,51 +58,40 @@ const SUBM = () => {
                     <h2 className="describtion-math">Substitutionsmethode einfaches Beispiel</h2>    
                     <p className="describtion-math">Als erstes schauen wir uns das erstes Beispiel der Substitutionsmethode an.</p>
             
-                    <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei Gleichungen. Auch entscheiden wir uns im <u>ersten Schritt y herauszufinden.</u></p>
-                    <p className="tag-02">(I) 2x + 3y = 9</p>
-                    <p className="tag-02">(II) 3x - 4y = 5</p>
+                    <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei Gleichungen. Auch entscheiden wir uns im <u>ersten Schritt x herauszufinden.</u></p>
+                    <p className="tag-02">(I) 6x + 4y = 4</p>
+                    <p className="tag-02">(II) y = 5 - 2x</p>
 
-                    <p className="describtion-math"><b>Schritt 2: </b>Als nächstes überlegen wir uns, wie wir die Zahlen: (I) 2x und (II) 3x dargestellt bekommen, damit sich diese gegenseitig
-                        addieren un dabei auflösen. Dafür rechnen wir beim Term (I) |x3 und bei Term (II) |x(-2) .</p>
-                    <p className="tag-02">(I) 2x + 3y = 9 |x3</p>
-                    <p className="tag-02">(II) 3x - 4y = 5 |x(-2)</p>
+                    <p className="describtion-math"><b>Schritt 2: </b>Wie wir bei der zweiten Gleichung sehen können ist y schon definiert. Das ist der Vorteil wenn y oder x definiert ist,
+                    dan wir das Einsetzungsverfahren(Substitutionsmethode) verwendet können. Man kann y oder x direkt in den anderen Term einsetzen.</p>
+                    <p className="tag-02">(I) 6x + 4<font color="red">y </font> = 4</p>
+                    <p className="tag-02">(II) <font color="red">y </font> = 5 - 2x</p>
 
-                    <p className="describtion-math"><b>Was das ergibt :</b></p>
-                    <p className="tag-02">(I) 6x + 9y = 27</p>
-                    <p className="tag-02">(II) -6x + 8y = -10 </p>
+                    <p className="describtion-math"><b>Was ergibt:</b></p>
+                    <p className="tag-02">6x + 4(5-2x) = 4</p>
 
-                    <p className="describtion-math"><b>Schritt 3: </b>Nun können wir (I) 6x und (II) -6x <b><font color="red">auflösen </font></b>. Das ist der Sinn des Additionsverfahren, da man jetzt den Rest zusammenfassen kann.</p>
-                    <p className="tag-02">(I) <font color="red">6x </font> + 9y = 27</p> 
-                    <p className="tag-02">(II) <font color="red">-6x </font> + 8y = -10 </p>
-                    <p className="tag-02">17y = 17</p>
-
-                    <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides geteilt durch 17 zu rechen. Danach bekommen wir y den ersten Schnittpunt von P.<br></br>
-                    Rechnung: </p>
-                    <p className="tag-02 ">17y = 17 |:17</p>
-                    <p className="tag-02"><span className="double_underline">y = 1</span></p>
+                    <p className="describtion-math"><b>Schritt 3: </b>Nun können wir anfangen zusammenfassen.</p>
+                    <p className="tag-02">6x + 20 - 8x = 4 | -8x</p>
+                    <p className="tag-02">-2x + 20 = 4 | -20</p>
+                    <p className="tag-02">-2x = - 16 | :(-2)</p>
+                    <p className="tag-02"><span className="double_underline">x = 8</span></p>
 
                     
-                    <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch x herausfinden um dem kompletten Schnittpunkt zubekommen. Dafür können wir eine der beiden Termen (I) oder (II) nehmen. 
-                    In diesem Beispiel werden wir beide durchgehen was als Kontrolle des Ergebnisses dienen kann. Wir nehmen als erstes dafür jetzt den Term (I).</p>
-                    <p className="tag-02">(I) 2x + 3y = 9</p>
-                    <p className="describtion-math">Anstelle von y (Da wir das schon haben) setzten wir nun 1 ein da y = 1 ergeben hat.</p>
-                    <p className="tag-02">(I) 2x + 3(1) = 9</p>
-                    <p className="describtion-math">Nun können wir es wieder berechnen und danach Auflösen. Hierbei wir die Zahl wo vorher y stand mit der Zahl in der Klammer nun Multipliziert.</p>
-                    <p className="tag-02">(I) 2x + 3 = 9</p>
-                    <p className="tag-02">2x + 3 = 9 |-3</p>
-                    <p className="tag-02">2x = 6 |:2</p>
-                    <p className="tag-02"><span className="double_underline">x = 3 </span></p>
+                    <p className="describtion-math"><b>Schritt 4: </b>Nun müssen wir noch y herausfinden um dem kompletten Schnittpunkt zubekommen. Dafür nehmen wir den
+                    zweiten Tern und setzen x ein.</p>
+                    <p className="tag-02">(II) y = 5 - 2x</p>
+                    <p className="describtion-math">Anstelle von x (Da wir das schon haben) setzten wir nun 8 ein da x = 8 ergeben hat.</p>
+                    <p className="tag-02">y = 5 - 2(8)</p>
+                    <p className="describtion-math">Nun können wir es wieder berechnen und danach Auflösen. Hierbei wir die Zahl wo vorher x stand mit der Zahl in der Klammer nun Multipliziert.</p>
+                    <p className="tag-02">y = 5 - 16</p>
+                    <p className="tag-02">y = 5 - 16 | -5</p>
+                    <p className="tag-02"><span className="double_underline">y = -11</span></p>
 
-                    <p className="describtion-math"><b>Überprüfung: </b>Die Überprüfung mit Term II. Hier wir der selbe Durchgang angwendet wie bei <b>Schritt 5 !</b></p>
-                    <p className="tag-02">(II) 3x - 4y = 5</p>
-                    <p className="tag-02">3x - 4(y) = 5 |+4</p>
-                    <p className="tag-02">3x = 9 |:3</p>
-                    <p className="tag-02"><span className="double_underline">x = 3 </span></p>
-                    <p className="text-align: center;">Selbes Ergebniss wie mit Term I.</p>
-                    <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch etwas wichtiges was während
-                    der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
+                   
+                    <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte herausgefunden haben. Als letztes, noch etwas wichtiges was während
+                    der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
-                    <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(3|1)</b></p>
+                    <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(8|-11)</b></p>
                     </p>
 
                     &nbsp;

@@ -85,8 +85,8 @@ const AM = () => {
                     <p className="tag-02"><span className="double_underline">y = 1</span></p>
 
                     
-                    <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch x herausfinden um dem kompletten Schnittpunkt zubekommen. Dafür können wir eine der beiden Termen (I) oder (II) nehmen. 
-                    In diesem Beispiel werden wir beide durchgehen was als Kontrolle des Ergebnisses dienen kann. Wir nehmen als erstes dafür jetzt den Term (I).</p>
+                    <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch x herausfinden um dem kompletten Schnittpunkt zubekommen. Dafür können wir einen der beiden Termen (I) oder (II) nehmen. 
+                    In diesem Beispiel werden wir beide durchgehen was als Kontrolle des Ergebnisses dienen kann. Wir nehmen als erstes dafür den Term (I).</p>
                     <p className="tag-02">(I) 2x + 3y = 9</p>
                     <p className="describtion-math">Anstelle von y (Da wir das schon haben) setzten wir nun 1 ein da y = 1 ergeben hat.</p>
                     <p className="tag-02">(I) 2x + 3(1) = 9</p>
@@ -103,7 +103,7 @@ const AM = () => {
                     <p className="tag-02"><span className="double_underline">x = 3 </span></p>
                     <p className="text-align: center;">Selbes Ergebniss wie mit Term I.</p>
                     <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch etwas wichtiges was während
-                    der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
+                    der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
                     <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(3|1)</b></p>
                     </p>
@@ -158,7 +158,7 @@ const AM = () => {
                     <p className="tag-02"><span className="double_underline">y = -3 </span></p>
 
                     <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch etwas wichtiges was während
-                    der Prüfung evtl. gefragt ist, ist der Schlusssatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
+                    der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und richtig dargestellt.<br></br>
                     Beim Punkt P wird zuerst x geschrieben danach y!</p>
                     <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(2|-3)</b></p>
                     </p>
@@ -186,21 +186,21 @@ const AM = () => {
                                 <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
                                     Übungsblatt mit Aufgaben.
                                 </div>
-                                <div class="columns download">
-                                <p>
-                                    <a href="../../pages/Lösung_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Übungsblatt</a>
-                                </p>
-                            </div>
+                                <div className="button-box">
+                                    <p>
+                                        <a href="files/Aufgaben_Ad.pdf" className="button" download>Download Arbeitsblatt</a>
+                                    </p>
+                                </div>
                             </div>
                             <div className="col">
                                 <div className="btn-txt-1"><b>Additionsverfahren</b><br></br>
                                     Lösungsblatt.
                                 </div>
-                                <div class="columns download">
-                                <p>
-                                    <a href="../../pages/Übungen_Ad.pdf" class="button" download><i class="fa fa-download"></i>Download Lösungsblatt</a>
-                                </p>
-                            </div>
+                                    <div className="button-box">
+                                    <p>
+                                        <a href="files/Lösungen_Ad.pdf" className="button" download>Download Lösungsblatt</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                 <div className="box">
