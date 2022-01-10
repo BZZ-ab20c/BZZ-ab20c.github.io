@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Kuehlschrank/KuehlschrankStyle.css'
@@ -10,21 +10,25 @@ import isobutan from '../img/kuehlschrank/Isobutan.png'
 import emptyRoom from '../img/kuehlschrank/emptyRoom.png'
 import temperaturMesser from '../img/kuehlschrank/TemperaturMesser.gif'
 
-function closeFridge() {
-    document.getElementById('myImage').setAttribute('src', kuehlschrankZu);
-    document.getElementById('myImage').setAttribute('alt', 'Kühlschrank zu');
-
-    document.getElementById("callContainer").style.display = 'none';
-}
-
-function openFridge() {
-    document.getElementById('myImage').setAttribute('src', kuehlschrankOffen);
-    document.getElementById('myImage').setAttribute('alt', 'Kühlschrank offen');
-
-    document.getElementById("callContainer").style.display = 'block';
-}
-
 const Kuehlschrank = () => {
+    const [fridgeClosed, setFridgeClosed] = useState(true);
+    const toggleFridge = () => {
+        // fridgeClosed
+        if (fridgeClosed) {
+            document.getElementById('myImage').setAttribute('src', kuehlschrankOffen);
+            document.getElementById('myImage').setAttribute('alt', 'Kühlschrank offen');
+
+            document.getElementById("callContainer").style.display = 'block';
+        } else {
+            document.getElementById('myImage').setAttribute('src', kuehlschrankZu);
+            document.getElementById('myImage').setAttribute('alt', 'Kühlschrank zu');
+
+            document.getElementById("callContainer").style.display = 'none';
+        }
+
+        setFridgeClosed(!fridgeClosed);
+    }
+
     return (
         <div className="container d-flex flex-column align-items-center justify-content-center">
             <div className="title-section">
@@ -51,18 +55,17 @@ const Kuehlschrank = () => {
 
             <div>
                 <button
-                    onClick={openFridge}>Kühlschrank
-                    öffnen
-                </button>
-                <button
-                    onClick={closeFridge}>Kühlschrank
-                    schliessen
+                    onClick={toggleFridge}>{fridgeClosed ? (
+                    <>Kühlschrank öffnen</>
+                ) : (
+                    <>Kühlschrank schliessen</>
+                )}
                 </button>
             </div>
 
             <br/>
 
-            <div style={{display: "none"} } id="callContainer">
+            <div style={{display: "none"}} id="callContainer">
                 <img className={'image3'} style={{height: "150px"}} id="callGif" src={temperaturMesser} alt={"gif"}/>
                 <br/>
                 <br/>
