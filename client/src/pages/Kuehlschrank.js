@@ -9,8 +9,11 @@ import imagineSelberZeichne from "../img/kuehlschrank/ImagineSelberZeichne.jpg";
 import isobutan from '../img/kuehlschrank/Isobutan.png'
 import emptyRoom from '../img/kuehlschrank/emptyRoom.png'
 import temperaturMesser from '../img/kuehlschrank/TemperaturMesser.gif'
+import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Kuehlschrank = () => {
+    useDocumentTitle('Kühlschrank');
+
     const [fridgeClosed, setFridgeClosed] = useState(true);
     const toggleFridge = () => {
         // fridgeClosed
