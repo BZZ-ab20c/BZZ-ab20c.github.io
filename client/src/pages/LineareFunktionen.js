@@ -36,7 +36,7 @@ const LineareFunktionen = () => {
                     Es handelt sich jedoch immer um eine gerade Linie!
                 </p>
             </div>
-            <div>
+            <div className={"container"}>
                 <h2>Übungen</h2>
                 <p>
                     a) Ohne oben nachzu schauen welche ist die Korrekte Formel der Linearen Funktionen<br/>
