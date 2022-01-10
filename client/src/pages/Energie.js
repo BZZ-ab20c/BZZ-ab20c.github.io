@@ -884,16 +884,7 @@ const Energie = () => {
                     <tr>
                         <th scope="row">3</th>
                         <td>
-                            Primärenergie
-                            =
-                            kommen
-                            in
-                            der
-                            Natur
-                            vor
-                            wie
-                            zum
-                            Beispiel?
+                            Kinetische Energie ist was?
                         </td>
                         <td className="antworten">
                 <span style={{display: "none"}} id="antwort-3">
