@@ -1,5 +1,6 @@
 import useDocumentTitle from "../utils/UseDocumentTitle";
 import theorie from "../img/linearefunktionen/theorie.jpg";
+import aufgabe_d from "../img/linearefunktionen/aufgabe_d.jpg";
 import React from "react";
 
 function togglelosungen() {
@@ -11,7 +12,7 @@ const LineareFunktionen = () => {
     useDocumentTitle('Linearefunktionen');
 
     return (
-        <div>
+        <div className={"alles"}>
             <div className={"container"}>
                 <h1>Theorie Lineare-Funktionen / Geradengleichungen</h1>
                 <h2>Theorie</h2>
@@ -41,12 +42,17 @@ const LineareFunktionen = () => {
                     a) Ohne oben nachzu schauen welche ist die Korrekte Formel der Linearen Funktionen<br/>
                     b) Zeichne eine gerade y = 6x+4<br/>
                     c) Zeichne eine Gerade y= 2x+3 und eine y= -2x+3 an wewlchem punkt schneiden sie sich?<br/>
-                    d) <br/>
-                    e) <br/>
+                    d) Schreiben sie die gleichung auf für diese Gerade: <img id="myImage" src={aufgabe_d} style={{height: "350px", marginRight: 0}} alt={""}/>
+                    <br/>
+                    e) Zeichne eine Gerade y= 1x+2
                 </p>
                 <button id="button" value="Lösungen" onClick={togglelosungen}>Lösungen</button>
                 <div id="losungen" name="losungen" style={{display: 'none'}}>
-                    dwadwadwad
+                    a) f(x)=m*x+n<br/>
+                    b) gib die gleichung unten ein<br/>
+                    c) 3<br/>
+                    d) <br/>
+                    e) gib die gleichung unten ein
                 </div>
             </div>
             <div style={{height: "100vh"}}>
