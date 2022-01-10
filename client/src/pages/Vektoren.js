@@ -233,8 +233,7 @@ const Vektoren = () => {
                                 <div className={"col"}>
                                     <h4>Multiplizieren/Dividieren mit einem Skalar</h4>
                                     <p>
-                                        Beim Multiplizieren und Dividieren gibt es unterschiedliche Möglichkeiten wie.
-                                        Hier schauen wir uns die einfache Möglichkeit an, bei welchem wir einfach eine
+                                        Hier schauen wir uns die Möglichkeit an, bei welchem wir einfach eine
                                         Zahl, einen Skalar, mit einem Vektor multiplizieren oder dividieren.
                                         <br/>
                                         Wenn man einen Vektor mit einer Zahl multiplizieren oder dividieren will, nimmt
