@@ -19,7 +19,7 @@ const AM = () => {
 
     return (<div>
             {/*Banner*/}
-            <LineareGleichungenBanner title={'Additonsverfahren'} backbutton={true} className="btn"/>
+            <LineareGleichungenBanner title={'Additionsverfahren'} backbutton={true} className="btn"/>
             <section className="einleitung">
                 <div className="container">
                     <div className="row">
