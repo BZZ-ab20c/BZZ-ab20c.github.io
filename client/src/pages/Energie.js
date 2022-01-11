@@ -3,7 +3,8 @@ import '../styles/energie/style.css'
 import '../styles/energie/EnergieStyle.css'
 import titleImage from "../img/energie/titleImage.jpg";
 import bewegungsEnergie from "../img/energie/bewegungsEnergieImage.png";
-import verbrennungsProzessImage from "../img/energie/verbrennungsprozesseImage.jpg";
+import kernenergie from "../img/energie/Kernenergie.jfif";
+import strahlungsenergie from "../img/energie/Strahlungsenergie.jfif";
 import visibilityImage from "../img/energie/visibility.svg";
 import visibilityImageOff from "../img/energie/visibility_off.svg";
 import useDocumentTitle from "../utils/UseDocumentTitle";
@@ -24,31 +25,33 @@ const Energie = () => {
                     <h1 className="top-right">Energie</h1>
                     <dl className="top-left">
                         <dt>Worum es geht:</dt>
-                        <dd>Energiearten</dd>
-                        <dd>Energieträger</dd>
-                        <dd>Energieumwandlungen</dd>
-                        <dd>Definition</dd>
+                        <dd>- Bedeutung der Energie</dd>
+                        <dd>- Energieformen</dd>
+                        <dd>- Primärenergie</dd>
+                        <dd>- Sekundärenergie</dd>
+                        <dd>- Nicht erneuerbare und erneuerbare Energie</dd>
+                        <dd>- Fragen & Antworten</dd>
                     </dl>
                 </div>
                 <br/>
                 <h4>Bedeutung</h4>
                 <br/>
-                <p>Der Begriff Energie kommt aus dem Griechischen und bedeutet so viel wie „wirkende Kraft“.
-                    Anschaulich ausgedrückt
-                    ist Energie die Fähigkeit, Arbeit zu verrichten, Wärme abzugeben oder Licht
-                    auszustrahlen.</p>
+                <p>Der Begriff Energie kommt aus dem Griechischen und bedeutet so viel wie „wirkende Kraft“. Energie
+                    findet man überall und ist eine Kraft, die etwas bewirken kann. Auch wenn man sie nicht sehen oder
+                    anfassen kann, wäre ein Leben ohne nicht möglich. Pflanzen, Tiere und Menschen benötigen Energie zum
+                    Überleben.</p>
                 <br/>
                 <br/>
-                <h5>Unterschied Arten & Träger</h5>
                 <br/>
                 <dl>
                     <dt>Energie kommt in verschiedenen Formen vor:</dt>
-                    <dd>Bewegungsenergie (kinetische Energie)</dd>
-                    <dd>Lageenergie (potentielle Energie)</dd>
-                    <dd>Wärmeenergie = Thermische Energie</dd>
+                    <br/>
+                    <dd>Bewegungsenergie / Kinetische Energie</dd>
+                    <dd>Lageenergie / Potentielle Energie</dd>
+                    <dd>Wärmeenergie / Thermische Energie</dd>
                     <dd>Elektrische Energie</dd>
-                    <dd>Atomenergie, Kernenergie</dd>
-                    <dd>Strahlungsenergie (elektromagnetische Wellen, Sonnenenergie)</dd>
+                    <dd>Kernenergie</dd>
+                    <dd>Strahlungsenergie</dd>
                     <dd>Chemische Energie</dd>
                 </dl>
                 <br/>
@@ -59,59 +62,51 @@ const Energie = () => {
                 <br/>
                 <div className="row">
                     <div className="col-6">
-                        <h5>Bewegungsenergie (kinetische Energie)</h5>
+                        <h5>Bewegungsenergie / Kinetische Energie</h5>
                         <p>Diese Energieform liegt immer vor, wenn sich etwas
-                            bewegt, z.B. ein Fahrzeug, die Luft (Windenergie),
-                            Wasser (Energie in Wellen und Flüssen). In Wind- und
-                            Wassermühlen wird die kinetische Energie der Luft
-                            bzw. des strömenden Wassers genutzt. Bewegungsenergie
-                            ist häufig das Ziel von Energieumwandlungen. So
-                            wird z. B. beim Auto die chemische Energie des
-                            Treibstoffs zunächst in Wärme und dann (teilweise) in
-                            Bewegungsenergie des Fahrzeugs umgewandelt.</p>
+                            bewegt. Bewegungsenergie ist häufig das Ziel von Energieumwandlungen. Beim Auto wird die
+                            chemische Energie des
+                            Treibstoffs zunächst in Wärme und dann in
+                            Bewegungsenergie des Fahrzeugs umgewandelt.
+                            <br/>
+                            <br/>
+                            Die Einheit der kinetischen Energie ist das Joule: [Ekin]=1J
+                            <br/>
+                            <br/>
+                            Die kinetische Energie Ekin eines Körpers ist proportional zu seiner Masse m und
+                            proportional zum Quadrat v2 seiner Geschwindigkeit
+                            <br/>
+                            <br/>
+                            Also für die kinetische Energie eines Körpers gilt Ekin=12⋅m⋅v2.</p>
                         <br/>
                         <br/>
                         <img draggable="false" src={bewegungsEnergie} alt={"Darstellung Bewegungsenergie"}
                              style={{width: "650px"}}/>
                     </div>
                     <div className="col-6">
-                        <h5>Mechanische Lageenergie (potentielle Energie)</h5>
-                        <p>Ein ruhender Gegenstand, der sich auf einem Ortsniveau
-                            befindet, das im Vergleich zu einem anderen
-                            Ortsniveau höher liegt, hat eine bestimmte Lageenergie.
-                            Diese kann wieder in Bewegungsenergie
+                        <h5>Mechanische Lageenergie / Potentielle Energie</h5>
+                        <p>Die Energie, die ein Körper aufgrund seiner Höhe besitzt, nennt man Lageenergie. Zum Beispiel
+                            ein Kind auf einem Ast. Diese kann wieder in Bewegungsenergie
                             umgewandelt werden, in dem man den Gegenstand auf ein
-                            niedrigeres Niveau fallen lässt. In
-                            Speicherstauseen speichert man z.B. Energie in Form von
-                            Lageenergie. Bei Bedarf kann man das Wasser
-                            wieder auf ein tieferes Niveau fallen lassen und so die
-                            Lageenergie wieder in mechanische
-                            Bewegungsenergie und schließlich wieder in elektrische
-                            Energie umwandeln. Auch ein mit Gas unter hohem
-                            Druck gefüllter Hohlkörper enthält potenzielle Energie,
-                            die man nach Öffnen des Ausströmventils wieder
-                            gewinnen kann. Man nutzt diese Form der
-                            Energiespeicherung in großen mit Druckluft gefüllten
-                            Salzkavernen.</p>
+                            niedrigeres Niveau fallen lässt.
+                            <br/>
+                            <br/>
+                            Die potentielle Energie Epot "eines Körpers" ist proportional zu seiner Masse m, dem
+                            Ortsfaktor g und zur Höhe h des Körpers über einem definierten Nullniveau
+                            <br/>
+                            <br/>
+                            Für die potentielle Energie gilt Epot=m⋅g⋅h</p>
                     </div>
                 </div>
                 <br/>
                 <br/>
-                <h4>Wärmeenergie</h4>
+                <h4>Wärmeenergie / Thermische Energie</h4>
                 <br/>
-                <p>Die Wärme, die bei der Verbrennung eines
-                    Energieträgers entsteht, geht zum Teil an die
-                    Verbrennungsprodukte über
-                    etwa an die Rauchgase. Heiße Rauchgase besitzen eine
-                    hohe Wärmeenergie. Sie können z.B. in einem
-                    Automotor oder
-                    einer Turbine zur Erzeugung mechanischer Energie
-                    genutzt werden. Der Wert der Wärmeenergie hängt vor
+                <p>Die Definition von Wärmeenergie beschreibt das innere Wärmepotenzial eines Stoffes. Der Wert der
+                    Wärmeenergie hängt vor
                     allem vom
                     Temperaturniveau ab. Je höher die Temperatur ist
-                    (eigentlich: die Temperaturdifferenz zwischen dem
-                    Wärmespeicher
-                    und der Umgebung), desto größer ist der Anteil der
+                    , desto größer ist der Anteil der
                     Wärme, der in kinetische oder elektrische Energie
                     umgewandelt
                     werden kann. Mit Temperaturen von einigen hundert
@@ -120,42 +115,52 @@ const Energie = () => {
                     z.B. das Brennen von Zement oder die
                     Stahlherstellung. Geringe Temperaturen sind nur noch
                     zum Heizen von
-                    Wohnungen geeignet. Wärmeenergie fällt bei fast
-                    allen Energieumwandlungen als "Abfallenergie" an,
-                    d.h., sie wird
-                    oft als nicht weiter nutzbare Energieform zu den
-                    Energieverlusten gezählt.</p>
+                    Wohnungen geeignet.
+                    <br/>
+                    <br/>
+                    Wenn Wärmeenergie oder thermische Energie zu berechnen ist, setzt sich die grundlegende Formel aus vier Variablen zusammen:
+                    <br/>
+                    <br/>
+                    ?Q = Die Energiemenge in Joule
+                    <br/>
+                    <br/>
+                    m = Die Masse des Körpers/Stoffs in Kilogramm
+                    <br/>
+                    <br/>
+                    c = Die im Körper/Stoff vorhandene Wärmekapazität in Joule/kg multipliziert mit Kelvin
+                    <br/>
+                    <br/>
+                    ?T = Die Temperatur in Kelvin
+                    <br/>
+                    <br/>
+                    Die Rechenformel für das Berechnen thermischer Energie lautet ?Q = m x c x ?T</p>
                 <br/>
                 <br/>
                 <h4>Elektrische Energie</h4>
                 <br/>
-                <p>Elektrische Energie ist sehr
-                    praktisch, da sie sich leicht in
-                    kleinen Geräten (Elektromotor,
-                    Heizgerät, Leuchte)
-                    in fast allen anderen Energieformen
-                    umwandeln lässt. Sie lässt sich
-                    außerdem über Kabel einfach über
-                    große
-                    Entfernungen transportieren. Sie hat
-                    aber den Nachteil, dass sie nur mit
+                <p>Elektrische Energie ist Energie, die mit Elektrizität übertragen oder gespeichert wird. Im Grunde
+                    handelt es sich bei elektrischer Energie also um eine Fähigkeit des elektrischen Stroms. Sie hat
+                    den Nachteil, dass sie nur mit
                     großem Aufwand in größeren Mengen
                     gespeichert werden kann und immer
                     zum Zeitpunkt des Verbrauchs erst
                     aus anderen Energieformen
                     hergestellt werden
                     muss. Dabei treten oft große
-                    Umwandlungsverluste auf.</p>
+                    Umwandlungsverluste auf.
+                <br/>
+                    <br/>
+                    P ist die elektrische Leistung in Watt, U die elektrische Spannung in Volt und I die elektrische Stromstärke in Ampere.
+                <br/>
+                    <br/>
+                    Die Rechenformel für das Berechnen elektrischer Energie lautet P = U · I
+                </p>
                 <br/>
                 <br/>
-                <h4>Atomenergie,
-                    Kernenergie</h4>
+                <h4>Kernenergie</h4>
                 <br/>
-                <p>Bei der Nutzung der
-                    Atomenergie kommt es
-                    im Gegensatz zu
-                    allen anderen
-                    Energieformen zu
+                <p>Mit Kernenergie wird die Energie bezeichnet, die in Atomkernen enthalten ist. Bei der Nutzung der
+                    Atomenergie kommt es zu
                     Reaktionen der
                     Atomkerne,
                     wodurch sehr große
@@ -168,13 +173,6 @@ const Energie = () => {
                     der man sich nur mit
                     sehr großem Aufwand
                     schützen kann.
-                    Weiterhin ist das
-                    Problem der
-                    Jahrtausende langen
-                    Endlagerung des
-                    radioaktiven Abfalls
-                    bis heute nirgendwo
-                    auf der Welt gelöst.
                     Bei der
                     Umwandlung in
                     elektrische Energie
@@ -182,611 +180,75 @@ const Energie = () => {
                     Wärmeverluste auf,
                     die zur Aufheizung
                     der Flüsse führen.
-                    Die
-                    Strahlung der Sonne
-                    entsteht durch
-                    Kernreaktionen auf
-                    der Sonne.</p>
+                </p>
+                <br/>
+                <img src={kernenergie} alt={"darstellung von atomkraftwerken"}/>
                 <br/>
                 <br/>
-                <h4>Strahlungsenergie
-                    (Licht,
-                    Sonnenenergie)</h4>
+                <h4>Strahlungsenergie</h4>
                 <br/>
-                <p>Die
-                    Energie
-                    des
-                    Lichts
-                    erkennt
-                    man
-                    bei
-                    einem
-                    Sonnenbrand.
-                    Die
-                    Lichtenergie
-                    der
-                    Sonne
-                    ist
-                    die
-                    Energieform,
-                    die
-                    in
-                    großen
-                    Mengen
-                    von
-                    außen
-                    auf
-                    die
-                    Erde
-                    einströmt.
-                    Die
-                    Menge
-                    der
-                    Energie
-                    pro
-                    Quadratmeter
-                    (Energiedichte)
-                    ist
-                    aber
-                    relativ
-                    gering.
-                    Aus
-                    der
-                    Sonnenenergie
-                    entstehen
-                    durch
-                    Umwandlung
-                    alle
-                    anderen
-                    regenerativen
-                    (erneuerbaren)
-                    Energieformen
-                    mit
-                    Ausnahme
-                    der
-                    geothermischen
-                    Energie.
-                    Das
-                    Auftreten
-                    der
-                    Sonnenenergie
-                    auf
-                    der
-                    Erde
-                    ist
-                    allerdings
-                    insbesondere
-                    in
-                    Deutschland
-                    stark
-                    vom
-                    Wetter,
-                    vom
-                    Tag/
-                    Nacht-Rhythmus
-                    und
-                    von
-                    der
-                    Jahreszeit
-                    abhängig.
-                    Die
-                    Astrophysiker
-                    schätzen,
-                    dass
-                    die
-                    Sonne
-                    noch
-                    etwa
-                    5
-                    Milliarden
-                    Jahre
-                    strahlen
-                    wird.</p>
+                <p>Die Strahlungsenergie bezeichnet die Energie elektromagnetischer Wellen. Als elektromagnetische Welle
+                    bezeichnet man eine Welle aus gekoppelten elektrischen und magnetischen Feldern. Elektromagnetische
+                    Wellen sind unsichtbar und bewegen sich mit Lichtgeschwindigkeit fort. Durch die Anzahl der
+                    Schwingungen pro Sekunde erkennt man bei elektromagnetischen Wellen die Frequenz.Zur Stromerzeugung
+                    wird vor allem die Strahlungsenergie der Sonne ausgenutzt. Die auf die Erdoberfläche auftreffende
+                    Sonnenenergie hängt von den Wetterbedingungen ab. </p>
+                <br/>
+                <img src={strahlungsenergie} alt={"darstellung von sollarenergie"}/>
                 <br/>
                 <br/>
-                <h4>Chemische
-                    Energie</h4>
+                <h4>Primärenergie</h4>
                 <br/>
-                <p>Diese
-                    Energieform
-                    ist
-                    in
-                    allen
-                    Brennstoffen
-                    und
-                    Nahrungsmitteln
-                    enthalten.
-                    Durch
-                    die
-                    Verbrennung
-                    von
-                    Kohle,
-                    Holz,
-                    Öl,
-                    Gas
-                    oder
-                    Verwertung
-                    in
-                    Lebewesen
-                    kann
-                    die
-                    chemisch
-                    gebundene
-                    Energie
-                    in
-                    andere
-                    Energieformen
-                    umgewandelt
-                    werden.
-                    Dabei
-                    wird
-                    in
-                    der
-                    Regel
-                    auch
-                    Wärme
-                    freigesetzt,
-                    die
-                    entweder
-                    unmittelbar
-                    zum
-                    Heizen
-                    verwendet
-                    wird
-                    oder
-                    weiter
-                    in
-                    mechanische
-                    Energie
-                    (Automotor)
-                    oder
-                    elektrische
-                    Energie
-                    umgewandelt
-                    (Kohlekraftwerk)
-                    wird.
-                    In
-                    Form
-                    der
-                    chemischen
-                    Energie
-                    lässt
-                    sich
-                    Energie
-                    besonders
-                    gut
-                    speichern
-                    (geringes
-                    Volumen,
-                    geringes
-                    Gewicht→
-                    hohe
-                    Energiedichte).</p>
+                <p>Als Primärenergie bezeichnet man die Energieträger, die direkt aus der Natur kommen.
+                    Es sind Energieträger in ihrer ursprünglichen Form und nur vermindert als Energiequellen nutzbar.
+                    Die in der Primärenergie enthaltende Energie steckt noch in einer natürlich vorkommenden
+                    Energiequelle und muss erst durch Umwandlungsprozesse nutzbar gemacht werden.
+                    <br/>
+                    <br/>
+                    Zu den Primärenergien gehören vor allem fossile Brennstoffe, zum Beispiel:
+                    <br/>
+                    - Braunkohle
+                    <br/>
+                    - Steinkohle
+                    <br/>
+                    - Erdgas
+                    <br/>
+                    - Erdöl
+                    <br/>
+                    - Holz</p>
+                <h4>Sekundärenergie</h4>
                 <br/>
-                <br/>
-                <h4>Einteilung
-                    nach
-                    Umwandlungsschritten</h4>
-                <br/>
-                <p>Energieformen,
-                    die
-                    in
-                    der
-                    Natur
-                    direkt
-                    vorkommen,
-                    bezeichnet
-                    man
-                    als
-                    Primärenergie.
-                    Durch
-                    die
-                    Energieumwandlung,
-                    evtl.
-                    über
-                    mehrere
-                    Schritte
-                    (Sekundärenergie),
-                    entsteht
-                    die
-                    vom
-                    Menschen
-                    gewünschte
-                    Energieform,
-                    die
-                    Endenergie.
-                    Eigentlich
-                    ist
-                    aber
-                    nicht
-                    die
-                    Energie
-                    selbst
-                    das
-                    Ziel
-                    aller
-                    Aktivitäten,
-                    sondern
-                    der
-                    vom
-                    Menschen
-                    gewünschte
-                    Energienutzen,
-                    z.B.
-                    ein
-                    warmes
-                    Zimmer.
-                    Dieses
-                    kann
-                    man
-                    oft
-                    auch
-                    ohne
-                    Energienutzung,
-                    hier
-                    z.B.
-                    durch
-                    eine
-                    bessere
-                    Wärmedämmung
-                    erreichen.</p>
-                <br/>
-                <br/>
-                <h4>Energiebilanz
-                    der
-                    Erde</h4>
-                <br/>
-                <p>Die
-                    Sonnenenergie
-                    ist
-                    neben
-                    der
-                    Energie
-                    aus
-                    radioaktiven
-                    Zerfällen
-                    im
-                    Erdinnern
-                    die
-                    einzige
-                    Energieform,
-                    die
-                    der
-                    Erdoberfläche
-                    in
-                    großem
-                    Maße
-                    zugeführt
-                    wird.
-                    Ein
-                    Teil
-                    der
-                    in
-                    einigen
-                    Millionen
-                    Jahren
-                    auf
-                    die
-                    Erde
-                    eingeströmten
-                    Energie
-                    ist
-                    in
-                    Form
-                    der
-                    fossilen
-                    Energieträger
-                    (Kohle,
-                    Erdöl,
-                    Erdgas)
-                    in
-                    der
-                    Erdkruste
-                    gespeichert.
-                    Zurzeit
-                    verbraucht
-                    die
-                    Menschheit
-                    diese
-                    Energie
-                    in
-                    rasantem
-                    Tempo.
-                    Sie
-                    ist
-                    in
-                    menschlichen
-                    Zeiträumen
-                    nicht
-                    wieder
-                    herstellbar.
-                    Fast
-                    alle
-                    Energieumwandlungen
-                    führen
-                    zu
-                    Wärmeenergie.
-                    Diese
-                    Wärmeenergie
-                    wird
-                    von
-                    der
-                    Erde
-                    wieder
-                    in
-                    den
-                    Weltraum
-                    abgegeben.
-                    Energieeinstrahlung
-                    durch
-                    die
-                    Sonne
-                    und
-                    Energieabgabe
-                    sind
-                    im
-                    Gleichgewicht,
-                    so
-                    dass
-                    sich
-                    die
-                    Temperatur
-                    auf
-                    der
-                    Erde
-                    nicht
-                    ändert.</p>
-                <br/>
-                <p>Bei
-                    der
-                    Verbrennung
-                    der
-                    fossilen
-                    Energieträger
-                    entsteht
-                    Kohlendioxid.
-                    Dies
-                    ist
-                    nicht
-                    ein
-                    durch
-                    Nebenreaktionen
-                    entstehender
-                    Schadstoff,
-                    den
-                    man
-                    durch
-                    geeignete
-                    Maßnahmen
-                    reduzieren
-                    kann,
-                    sondern
-                    neben
-                    Wasser
-                    das
-                    eigentliche
-                    Produkt
-                    der
-                    Verbrennung
-                    und
-                    damit
-                    nicht
-                    zu
-                    verhindern.</p>
-                <br/>
-                <p>
-                    <b>fossiler
-                        Brennstoff
-                        +
-                        Sauerstoff
-                        der
-                        Luft &#8594; Kohlendioxid
-                        +
-                        Wasser(dampf)</b></p>
-                <br/>
-                <img src={verbrennungsProzessImage} alt={"verbrennungsprozess"}/>
-                <br/>
-                <p>Der
-                    Anstieg
-                    des
-                    Kohlendioxids
-                    in
-                    der
-                    Atmosphäre
-                    führt
-                    wie
-                    ein
-                    Pullover
-                    zu
-                    einer
-                    zusätzlichen
-                    Wärmeisolierung
-                    der
-                    Erde,
-                    wodurch
-                    sich
-                    die
-                    Temperatur
-                    auf
-                    der
-                    Erde
-                    erhöht.
-                    Hierdurch
-                    ergeben
-                    sich
-                    Klimaveränderungen
-                    mit
-                    kaum
-                    überschaubaren
-                    Konsequenzen.</p>
-                <br/>
-                <br/>
-                <h4>Energieträger</h4>
-                <br/>
-                <p>Energieträger
-                    oder
-                    Energiequellen
-                    sind
-                    Körper,
-                    die
-                    Energie
-                    besitzen
-                    oder
-                    gespeichert
-                    haben.
-                    Zu
-                    solchen
-                    Energieträgern
-                    oder
-                    Energiequellen
-                    gehören
-                    Kraftstoffe
-                    und
-                    Heizstoffe
-                    ebenso
-                    wie
-                    die
-                    Nahrung,
-                    fließendes
-                    und
-                    angestautes
-                    Wasser
-                    oder
-                    Batterien,
-                    Solarzellen
-                    und
-                    Sonnenkollektoren,
-                    aber
-                    auch
-                    die
-                    Sonne
-                    selbst.</p>
+                <p>Sekundärenergie umfasst die Arten von Energie, die nicht direkt aus der Natur stammen. So gesehen,
+                    handelt es sich also um umgewandelte Primärenergie. Bei der Umwandlung zu Sekundärenergieträgern
+                    sind Energieverluste hinzunehmen.
+                    <br/>
+                    <br/>
+                    Beispiele für Sekundärenergie:
+                    <br/>
+                    - Erdöl wird zu Heizöl
+                    <br/>
+                    - Benzin und Flüssiggas weiterverarbeitet
+                    <br/>
+                    - Kohlebriketts für Öfen
+                    <br/>
+                    - Kokereigas
+                    <br/>
+                    - Holzkohle zum Grillen</p>
                 <br/>
                 <br/>
                 <h4>Nicht
                     erneuerbare
                     und
                     erneuerbare
-                    Energieträger</h4>
+                    Energien</h4>
                 <br/>
-                <p>In
-                    Deutschland
-                    und
-                    vielen
-                    anderen
-                    Ländern
-                    werden
-                    gegenwärtig
-                    als
-                    wichtigste
-                    Energieträger
-                    Erdöl,
-                    Erdgas,
-                    Braunkohle
-                    und
-                    Steinkohle
-                    genutzt.
-                    Diese
-                    Energieträger
-                    sind
-                    auf
-                    der
-                    Erde
-                    vor
-                    Millionen
-                    von
-                    Jahren
-                    unter
-                    ganz
-                    speziellen
-                    Bedingungen
-                    entstanden.
-                    Sie
-                    können
-                    unter
-                    heutigen
-                    Bedingungen
-                    bzw.
-                    in
-                    überschaubarer
-                    Zeit
-                    auf
-                    der
-                    Erde
-                    nicht
-                    neu
-                    entstehen.
-                    Man
-                    nennt
-                    deshalb
-                    solche
-                    Energieträger
-                    auch
-                    nicht
-                    erneuerbare
-                    Energieträger.
-                    Es
-                    ist
-                    heute
-                    schon
-                    absehbar,
-                    dass
-                    sie
-                    der
-                    Menschheit
-                    nicht
-                    beliebig
-                    lange
-                    in
-                    ausreichender
-                    Menge
-                    zu
-                    Verfügung
-                    stehen.</p>
+                <p>Nicht erneuerbare Energien sind Energien, die aus nicht erneuerbaren Ressourcen erzeugt werden. Eine Gruppe von Ressourcen, die nach ihrer Verwendung nicht wiederhergestellt werden können. Diese Ressourcen umfassen hauptsächlich fossile Brennstoffe (Kohle, Öl, Erdgas), Kernbrennstoffe und Biokraftstoffe.
+                    Derzeit werden nicht erneuerbare fossile Brennstoffe als Hauptenergiequelle vom Menschen genutzt. Seit dem 19. Jahrhundert, mit der Ankunft von Verbrennungsmotoren, sind Öl und andere fossile Brennstoffe ständig gefragt. Der ständige Einsatz fossiler Brennstoffe hat zu einer globalen Erwärmung und einem starken Klimawandel geführt.
                 <br/>
-                <p>Daneben
-                    gibt
-                    es
-                    eine
-                    Reihe
-                    von
-                    Energieträgern,
-                    die
-                    nachwachsen
-                    (Holz,
-                    Biomasse)
-                    oder
-                    die
-                    immer
-                    wieder
-                    von
-                    neuem
-                    nutzbar
-                    sind
-                    (Wind,
-                    Wasser,
-                    Sonnenstrahlung,
-                    Gezeiten,
-                    Erdwärme).
-                    Man
-                    nennt
-                    sie
-                    deshalb
-                    erneuerbare
-                    Energieträger
-                    oder
-                    regenerative
-                    Energieträger.
-                    Auch
-                    die
-                    Bezeichnung
-                    alternative
-                    Energieträger
-                    oder
-                    alternative
-                    Energien
-                    ist
-                    üblich.</p>
+                <br/>
+                </p>
+                <br/>
+                <p>Eine Energieform wird erneuerbar genannt, wenn sich die Ressourcen für ihre Bereitstellung kurzfristig erneuern. Es gibt fünf verschiedene Arten an Erneuerbaren Energiequellen: Solarenergie, Windenergie, Wasserkraft, Biomasse und Erdwärme.</p>
                 <br/>
                 <br/>
                 <h4>Fragen</h4>
@@ -804,16 +266,11 @@ const Energie = () => {
                     <tr>
                         <th scope="row">1</th>
                         <td>
-                            Potenzielle
-                            Energie,
-                            was
-                            genau?
+                            Wie nennt man Wärmeenergie ebenfalls?
                         </td>
                         <td className="antworten">
                             <span style={{display: "none"}} id="antwort-1">
-                                <b>Masse und Höhe &#8594; W pot = m * h * g</b>
-                                <br/>
-                                <b>g = konstante</b>
+                                <b>Thermische Energie</b>
                             </span>
                         </td>
                         <td>
@@ -839,21 +296,11 @@ const Energie = () => {
                     <tr>
                         <th scope="row">2</th>
                         <td>
-                            Wärmeenergie
-                            z.B.
-                            wenn
-                            man
-                            Holz
-                            (Energieträger)
-                            verbrennt
-                            =
-                            Wärmeenergie?
+                            Ist Kohle erneuerbar oder nicht erneuerbar?
                         </td>
                         <td className="antworten">
                 <span style={{display: "none"}} id="antwort-2">
-                    <b>Stoffe unterschiedlich gut aufnehmen, Wärmekapazität c</b>
-                    <br/>
-                    <b>Q Wärmeenergie = m * c * DeltaT</b>
+                    <b>Nicht erneuerbar</b>
                 </span>
                         </td>
                         <td>
@@ -884,11 +331,11 @@ const Energie = () => {
                     <tr>
                         <th scope="row">3</th>
                         <td>
-                            Kinetische Energie ist was?
+                            Was ist die Einheit für die elektrische Spannung in Volt?
                         </td>
                         <td className="antworten">
                 <span style={{display: "none"}} id="antwort-3">
-                    <b>Bewegungsenergie= &#189; * m * v2</b>
+                    <b>U</b>
                 </span>
                         </td>
                         <td>
@@ -951,11 +398,21 @@ const Energie = () => {
                         </td>
                     </tr>
                     <tr>
-                        <td>Verbrennungsprozess
+                        <td>Kernenergie
                             Bild
                         </td>
                         <td>
-                            <a href="https://www.holzpellet.com/verbrennungsprozesse.html"
+                            <a href="https://www.chauvin-arnoux-energy.com/"
+                               target="_blank">Zur
+                                Quelle</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Strahlungsenergie
+                            Bild
+                        </td>
+                        <td>
+                            <a href="https://www.e-dis.de/"
                                target="_blank">Zur
                                 Quelle</a>
                         </td>
