@@ -87,24 +87,24 @@ const Kuehlschrank = () => {
             <br/>
             <div className="row">
                 <div className="col-6">
-                    <p>1. An der inneren Rückwand des Kühlschrankes befindet sich
+                    <p className="kuehlschrankP">1. An der inneren Rückwand des Kühlschrankes befindet sich
                         ein
                         schlangenförmiges Rohr, das von unten nach oben verläuft.
                         Darin
                         befindet sich die Kühlflüssigkeit. (Blau)
                     </p>
-                    <p>2. Sobald im Kühlschrank Wärme entsteht, wird die
+                    <p className="kuehlschrankP">2. Sobald im Kühlschrank Wärme entsteht, wird die
                         Kühlflüssigkeit
                         ebenfalls wärmer, erreicht den Siedepunkt und verdampft. Der
                         Dampf steigt im Rohr nach oben.
                     </p>
-                    <p>3. Wenn der Dampf oben angekommen ist, wird er in den
+                    <p className="kuehlschrankP">3. Wenn der Dampf oben angekommen ist, wird er in den
                         Kompressor
                         geleitet. Darin wird er stark verdichtet. Es entsteht wieder
                         eine Flüssigkeit, die durch den hohen Verdichtungsgrad einen
                         weit höheren Siedepunkt hat.
                     </p>
-                    <p>4. Eine an der Kompressor angeschlossene Pumpe leitet die
+                    <p className="kuehlschrankP">4. Eine an der Kompressor angeschlossene Pumpe leitet die
                         Flüssigkeit
                         in ein schlangenförmiges Rohrsystem auf der hinteren
                         Außenwand des
@@ -112,13 +112,13 @@ const Kuehlschrank = () => {
                         die
                         Wärme, die sie im Inneren aufgenommen hat, nach außen ab.
                     </p>
-                    <p>5. Unten angekommen, gelangt die Flüssigkeit in ein
+                    <p className="kuehlschrankP">5. Unten angekommen, gelangt die Flüssigkeit in ein
                         Drosselventil.
                         Dieses zerstäubt die Flüssigkeit wieder, damit der
                         Siedepunkt
                         wieder sehr niedrig wird.
                     </p>
-                    <p>
+                    <p className="kuehlschrankP">
                         6. Immer wenn im Inneren des Kühlschranks Wärme entsteht,
                         zum Beispiel wenn die Tür geöffnet wird
                         oder wenn etwas Warmes hineingestellt wird, verdampft ein
@@ -131,7 +131,7 @@ const Kuehlschrank = () => {
                 <div className="col-6">
                     <img src={imagineSelberZeichne} style={{height: "500px"}}
                          alt="Kühlschrank_Image1"/>
-                    <p>
+                    <p className="kuehlschrankP">
                         7. Der Kreislauf ist damit abgeschlossen. Erkennen
                         können Sie
                         den Vorgang am Brummen des Kühlschranks, das manchmal
@@ -162,13 +162,13 @@ const Kuehlschrank = () => {
                 </div>
                 <div className="col-6">
                     <h6>Für was braucht man Isobutan?</h6>
-                    <p>Isobutan weist einen sehr niedrigen
+                    <p className="kuehlschrankP">Isobutan weist einen sehr niedrigen
                         Treibhauseffekt auf (GWP 3) und wird
                         deswegen in Kühlschränken als
                         Kältemittel eingesetzt.</p>
                     <br/>
                     <h6>Wo ist der Siedepunkt?</h6>
-                    <p>
+                    <p className="kuehlschrankP">
                         Der Siedepunkt ist bei ca. -30°C.
                         Das Kühlmittel gelangt in flüssiger
                         Form bei ca. 1 bar in den
@@ -185,7 +185,7 @@ const Kuehlschrank = () => {
                     <h6>Warum gibt ein Kühlschrank
                         mehr Wärme als Kälte
                         ab?</h6>
-                    <p>Der Kühlschrank transportiert
+                    <p className="kuehlschrankP">Der Kühlschrank transportiert
                         also nicht nur Wärme nach
                         außen,
                         sondern muss an der
@@ -206,7 +206,7 @@ const Kuehlschrank = () => {
                     <h6>Wie viel arten von
                         Kühlschranke gibt
                         es?</h6>
-                    <p>Es gibt den
+                    <p className="kuehlschrankP">Es gibt den
                         Kompressor
                         Kühlschrank,
                         Absorber Kühlschrank
@@ -220,7 +220,7 @@ const Kuehlschrank = () => {
                 <div className="col-6">
                     <h6>Wie viel wärme gibt ein
                         Kühlschrank ab?</h6>
-                    <p>Die meisten Kühlschränke
+                    <p className="kuehlschrankP">Die meisten Kühlschränke
                         werden von einem
                         Kondensatormotor
                         mit ca. 90 W angetrieben.
@@ -244,7 +244,7 @@ const Kuehlschrank = () => {
                         Kühlschrank
                         offen
                         lässt?</h6>
-                    <p>Wen die Tür des
+                    <p className="kuehlschrankP">Wen die Tür des
                         Kühlschrankes
                         geöffnet ist,
                         wird es im Raum
