@@ -6,7 +6,6 @@ import vectorArrow from '../img/vektoren/vectorArrow.png'
 import vectorList from '../img/vektoren/vectorList.png'
 import VektorenFragen from "./vektorenSubpages/VektorenFragen";
 import Vektor from "./vektorenSubpages/Vektor";
-import {Link} from "react-router-dom";
 
 const Vektoren = () => {
     useDocumentTitle('Vektoren');
@@ -57,6 +56,11 @@ const Vektoren = () => {
                         <li className="listPadding">
                             <a href="#quizStart">
                                 <span style={inhaltStyle}>Übungsaufgaben</span><br/>
+                            </a>
+                        </li>
+                        <li className="listPadding">
+                            <a href="#websiteToLearnMore">
+                                <span style={inhaltStyle}>Webseite um selber zu probieren</span><br/>
                             </a>
                         </li>
                         <li className="listPadding">
@@ -390,7 +394,8 @@ const Vektoren = () => {
                         </div>
 
                         <div className={"container"}>
-                            <a href={"https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_de.html"} target={"_blank"}>Vektor Addition</a>
+                            <a href={"https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_de.html"}
+                               target={"_blank"}>Vektor Addition</a>
                         </div>
                     </div>
 
