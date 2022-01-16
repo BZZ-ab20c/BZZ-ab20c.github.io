@@ -112,7 +112,7 @@ export const Wasserkraftwerk = () => {
                         <img className="ImgLeft" src={daumenRunter} alt={"daemonRunter"}/>
                     </Col>
                     <Col>
-                        <div className="Con">
+                        <div className="TextRight">
                             <li>
                                 Es kann zu grossen Geologischen schäden führen und dadurch grosser
                                 Lebensräume zerströren

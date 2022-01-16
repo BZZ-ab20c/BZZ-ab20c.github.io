@@ -196,6 +196,22 @@
         position: relative;
         max-width: 450px;
         top: 18%;
-        left: 21%;
+        left: 11%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .ImgRight {
+        position: relative;
+        max-width: 450px;
+        top: 20%;
+        left: 15%;
+    }
+
+    .ImgLeft {
+        position: relative;
+        max-width: 450px;
+        top: 18%;
+        left: 5%;
     }
 }
