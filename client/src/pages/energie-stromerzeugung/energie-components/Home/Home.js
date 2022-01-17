@@ -59,7 +59,7 @@ const TitleSeite = () => {
                     <Col>
                         <div className="TextLeft">
                             Kraftwerke werden nach der <strong>Art</strong>, wie in ihnen Strom gewonnen
-                            wird, unterschieden. Es gibt <strong>Wasserkraftwerken</strong>, <strong>Windkraftwerken</strong>,
+                            wird, unterschieden. Es gibt <strong>Wasserkraftwerken</strong>, <strong>Windkraftwerken </strong>,
                             <strong>Solaranlagen</strong>, <strong>Biomassekraftwerken</strong>, <strong>Gasturbinenkraftwerken</strong>, 
                             <strong> Kernenergieanlagen</strong>, <strong>Kohlekraftwerken</strong> und viele andere Arten.
                             Das <strong>Prinzip</strong> bleibt, aber bei allen Kraftwerken das Gleiche.
