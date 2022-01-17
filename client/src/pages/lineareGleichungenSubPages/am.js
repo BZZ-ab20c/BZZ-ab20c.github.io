@@ -71,19 +71,19 @@ const AM = () => {
                         <p className="describtion-math">Als erstes schauen wir uns ein einfaches Beispiel des
                             Additonsverfahrens an.</p>
 
-                        <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei Gleichungen. Auch
-                            entscheiden wir uns im <u>ersten Schritt y herauszufinden.</u></p>
+                        <p className="describtion-math"><b>Schritt 1: </b>Gegeben sind zwei Gleichungen. Wir
+                            entscheiden uns im <u>ersten Schritt y herauszufinden.</u></p>
                         <p className="tag-02">(I) 2x + 3y = 9</p>
                         <p className="tag-02">(II) 3x - 4y = 5</p>
 
                         <p className="describtion-math"><b>Schritt 2: </b>Als nächstes überlegen wir uns, wie wir die
-                            Zahlen: (I) 2x und (II) 3x dargestellt bekommen, damit sich diese gegenseitig
-                            addieren uns dabei auflösen. Dafür rechnen wir beim Term (I) |x3 und bei Term (II) |x(-2) .
+                            Zahlen: (I) 2x und (II) 3x dargestellen, damit sie sich gegenseitig
+                            addieren und dabei auflösen. Dafür rechnen wir beim Term (I) |•3 und bei Term (II) |•(-2) .
                         </p>
-                        <p className="tag-02">(I) 2x + 3y = 9 |x3</p>
-                        <p className="tag-02">(II) 3x - 4y = 5 |x(-2)</p>
+                        <p className="tag-02">(I) 2x + 3y = 9 |•3</p>
+                        <p className="tag-02">(II) 3x - 4y = 5 |•(-2)</p>
 
-                        <p className="describtion-math"><b>Was das ergibt :</b></p>
+                        <p className="describtion-math"><b>Das ergibt :</b></p>
                         <p className="tag-02">(I) 6x + 9y = 27</p>
                         <p className="tag-02">(II) -6x + 8y = -10 </p>
 
@@ -95,35 +95,34 @@ const AM = () => {
                         <p className="tag-02">17y = 17</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-                            geteilt durch 17 zu rechnen. Danach bekommen wir y den ersten Schnittpunt von P.<br/>
+                            geteilt durch 17 rechnen. Danach bekommen wir y, eine Koordinate des Schnittpunts P.<br/>
                             Rechnung: </p>
                         <p className="tag-02 ">17y = 17 |:17</p>
                         <p className="tag-02"><span className="double_underline">y = 1</span></p>
 
 
-                        <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch x herausfinden um dem
-                            kompletten Schnittpunkt zubekommen. Dafür können wir einen der beiden Termen (I) oder (II)
+                        <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch x herausfinden, um den
+                            kompletten Schnittpunkt zu bekommen. Dafür können wir einen der beiden Termen (I) oder (II)
                             nehmen.
-                            In diesem Beispiel werden wir beide durchgehen was als Kontrolle des Ergebnisses dienen
+                            In diesem Beispiel werden wir beide durchgehen, was als Kontrolle des Ergebnisses dienen
                             kann. Wir nehmen als erstes dafür den Term (I).</p>
                         <p className="tag-02">(I) 2x + 3y = 9</p>
-                        <p className="describtion-math">Anstelle von y (Da wir das schon haben) setzten wir nun 1 ein da
-                            y = 1 ergeben hat.</p>
+                        <p className="describtion-math">Anstelle von y setzten wir nun 1 ein, weil y = 1 ergeben hat.</p>
                         <p className="tag-02">(I) 2x + 3(1) = 9</p>
-                        <p className="describtion-math">Nun können wir es wieder berechnen und danach Auflösen. Hierbei
-                            wir die Zahl wo vorher y stand mit der Zahl in der Klammer nun Multipliziert.</p>
+                        <p className="describtion-math">Nun können wir es wieder berechnen und danach auflösen. Hierbei
+                            wird die Zahl welche vorher für y stand mit der Zahl in der Klammer multipliziert.</p>
                         <p className="tag-02">(I) 2x + 3 = 9</p>
                         <p className="tag-02">2x + 3 = 9 |-3</p>
                         <p className="tag-02">2x = 6 |:2</p>
                         <p className="tag-02"><span className="double_underline">x = 3 </span></p>
 
-                        <p className="describtion-math"><b>Überprüfung: </b>Die Überprüfung mit Term II. Hier wir der
-                            selbe Durchgang angwendet wie bei <b>Schritt 5 !</b></p>
+                        <p className="describtion-math"><b>Überprüfung: </b>Die Überprüfung mit Term II. Hier wird der
+                            selbe Durchgang angewendet wie bei <b>Schritt 5 !</b></p>
                         <p className="tag-02">(II) 3x - 4y = 5</p>
                         <p className="tag-02">3x - 4(y) = 5 |+4</p>
                         <p className="tag-02">3x = 9 |:3</p>
                         <p className="tag-02"><span className="double_underline">x = 3 </span></p>
-                        <p className="text-align: center;">Selbes Ergebniss wie mit Term I.</p>
+                        <p className="text-align: center;">Gleiches Ergebnis wie mit Term I.</p>
                         <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte
                             herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
                             etwas wichtiges was während
@@ -148,25 +147,25 @@ const AM = () => {
                             Additonsverfahrens an.</p>
 
                         <p className="describtion-math"><b>Schritt 1: </b>Als erstes braucht man zwei Linearefunktionen.
-                            Auch entscheiden wir uns im <u>ersten Schritt x herauszufinden.</u></p>
+                            Auch hier entscheiden wir uns im <u>ersten Schritt x herauszufinden.</u></p>
                         <p className="tag-02">(I) 20x - 16y = 88</p>
                         <p className="tag-02">(II) 25x - 26 = -8y</p>
 
                         <p className="describtion-math"><b>Schritt 2: </b>Um danach weiter machen zu können, müssen wir
                             die zweite Gleichungen in die richtige Reihenfolge bringen. Dabei lassen wir die erste
-                            unebrührt.
-                            Beim rechnen machen wir in diesem Schritt zwei Rechnungen gleichzeitigt. Als erstes rechnen
+                            unberührt.
+                            Beim Rechnen machen wir in diesem Schritt zwei Rechnungen gleichzeitig. Als erstes rechnen
                             wir |+26 und danach |+(-8y).</p>
                         <p className="tag-02">(I) 20x - 16y = 88</p>
                         <p className="tag-02">(II) 25x - 26 = -8y |+26</p>
                         <p className="tag-02">(II) 25x = -8y + 26 |+(-8y)</p>
 
-                        <p className="describtion-math"><b>Was das ergibt :</b></p>
+                        <p className="describtion-math"><b>Das ergibt :</b></p>
                         <p className="tag-02"><b>(II) 25x + 8y = 26 </b></p>
 
-                        <p className="describtion-math">Und als letztes rechnen wir noch |x2 damit wir nachher zwei
+                        <p className="describtion-math">Und als letztes rechnen wir noch |•2 damit wir nachher zwei
                             Zahlen miteinander auflösen können.</p>
-                        <p className="tag-02">(II) 25x + 8y = 26 |x2</p>
+                        <p className="tag-02">(II) 25x + 8y = 26 |•2</p>
                         <p className="tag-02">(II) 50x + 16y = 52</p>
 
                         <p className="describtion-math"><b>Schritt 3: </b>Nun können wur (I) 16y und (II) -16y <b><font
@@ -176,21 +175,21 @@ const AM = () => {
                         <p className="tag-02">(II) 50x + <font color="red">16x </font>= 52 </p>
                         <p className="tag-02">70x = 140</p>
 
-                        <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nurnoch beides geteilt
-                            durch 70 zu rechnen. Danach bekommen wir x den ersten Schnittpunkt von P.<br/>
+                        <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
+                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt  P.<br/>
                             Rechnung: </p>
                         <p className="tag-02">70x = 140 |:70</p>
                         <p className="tag-02"><span className="double_underline">x = 2</span></p>
 
-                        <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch y herausfinden um dem
-                            kompletten Schnittpunkt zubekommen. Wir nehmen dafür den Term (I).</p>
+                        <p className="describtion-math"><b>Schritt 5: </b>Nun müssen wir noch y herausfinden, um den
+                            kompletten Schnittpunkt zu erhalten. Wir nehmen dafür den Term (I).</p>
                         <p className="tag-02">(I) 20x - 16y = 88</p>
                         <p>Anstelle von x (Da wir das schon haben) setzten wir nun 2 ein da x = 2 ergeben hat.</p>
                         <p className="tag-02">(I) 20(2) - 16y = 88</p>
-                        <p className="describtion-math">Nun können wir es wieder berechnen und danach Auflösen. Hierbei
-                            wir die Zahl wo vorher x stand mit der Zahl in der Klammer nun Multipliziert.</p>
-                        <p className="tag-02">(I) 40x - 16y = 88</p>
-                        <p className="tag-02">(I) 40x - 16y = 88 |-40</p>
+                        <p className="describtion-math">Nun können wir es wieder berechnen und danach auflösen. Hierbei
+                            wir die Zahl, die vorher für x stand, mit der Zahl in der Klammer multipliziert.</p>
+                        <p className="tag-02">(I) 40 - 16y = 88</p>
+                        <p className="tag-02">(I) 40 - 16y = 88 |-40</p>
                         <p className="tag-02">(I) 16y = 48 |:(-16)</p>
                         <p className="tag-02"><span className="double_underline">y = -3 </span></p>
 
