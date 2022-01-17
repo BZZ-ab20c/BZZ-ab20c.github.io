@@ -20,7 +20,6 @@ export const Wasserkraftwerk = () => {
     return (
         <div>
             <Container fluid>
-
                 <h2 className="H2">Wasserkraftwerke</h2>
                 <Row className="div">
                     <p className="introduction">
@@ -38,10 +37,10 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextLeft">
                             Niederdruckkraftwerke sind durch geringere Fallhöhen
-                            bis etwa 15 m und einen relativ großen Durchfluß.
+                            bis etwa 15 m und einen relativ grossen Durchfluss.
                             Sie werden meist als Laufwasserkraftwerke konzipiert,
                             eine nennenswerte Speichermöglichkeit durch Überstauung
-                            weiter Ufergebiete läßt die Topographie in der Regel nicht zu.
+                            weiter Ufergebiete lässt die Topographie in der Regel nicht zu.
                         </div>
                     </Col>
                     <Col>
@@ -70,9 +69,9 @@ export const Wasserkraftwerk = () => {
                 <Row className="BlueRow">
                     <Col>
                         <div className="TextLeft">
-                            Hochdruckkraftwerk sind Wasserkraftanlage mit großer
-                            Fallhöhe über 50 - 2000 metern, jedoch häufig
-                            vergleichsweise geringem Durchfluß. Anders als
+                            Hochdruckkraftwerk sind Wasserkraftanlage mit grosser
+                            Fallhöhe über 50 - 2000 Metern, jedoch häufig
+                            vergleichsweise geringem Durchfluss. Anders als
                             beim Mitteldruckkraftwerk liegt das Hochdruckkraftwerk
                             selten direkt an der Talsperre, sondern ist mit dieser
                             über Freispiegelleitungen oder Druckstollen verbunden.
@@ -114,15 +113,15 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextRight">
                             <li>
-                                Es kann zu grossen Geologischen schäden führen und dadurch grosser
-                                Lebensräume zerströren
+                                Es kann zu grossen geologischen Schäden führen und dadurch viele
+                                Lebensräume zerströren.
                             </li>
                             <li>
-                                Ein Bau eines Staudamskann sehr teuer und aufwendig sein.
+                                Ein Bau eines Staudams kann sehr teuer und aufwendig sein.
                             </li>
                             <li>
-                                Es gibt immer die gefahr einer Überschwemmung, vorallem bei Hochdruckkraftwerk
-                                kann dies schwere volgen von sich ziehen
+                                Es gibt immer die Gefahr einer Überschwemmung, vor allem bei Hochdruckkraftwerken
+                                kann dies schwere Folgen nach sich ziehen.
                             </li>
                         </div>
                     </Col>
@@ -132,14 +131,14 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextLeft">
                             <li>
-                                Die Wasserkraft ist eine Erneuerbare energie.
+                                Die Wasserkraft ist eine erneuerbare Energie.
                             </li>
                             <li>
-                                Es ist auch eine möglichkeit zu kombinieren
-                                mit anderen erneuerbaren Energien, wie zum Beispiel Solar.
+                                Es besteht die Möglichkeit Wasserkraft mit anderen erneuerbaren Energien zu kombinieren.
+                                
                             </li>
                             <li>
-                                Wasserkraft erzeugt keinen Co2 ausstoss und ist dadurch Klimafreundlich.
+                                Wasserkraft erzeugt keinen Co2 Ausstoss und ist dadurch klimafreundlich.
                             </li>
                         </div>
                     </Col>

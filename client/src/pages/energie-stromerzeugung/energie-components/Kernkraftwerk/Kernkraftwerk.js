@@ -39,7 +39,7 @@ export const Kernkraftwerk = () => {
                             Weltweit gibt es verschiedene Reaktorsysteme. Die meisten davon
                             sind Leichtwasserreaktoren. Auch die fünf Kernkraftwerke in der
                             Schweiz –Beznau-1 und -2,Mühleberg, Gösgen und Leibstadt – sind
-                            mit Leichtwasserreaktoren ausgerüstet. Größere Kernkraftwerke
+                            mit Leichtwasserreaktoren ausgerüstet. Grössere Kernkraftwerke
                             bestehen aus mehreren Blöcken, die unabhängig voneinander
                             elektrischen Strom erzeugen. Jeder Block enthält einen Kernreaktor.
                         </div>
@@ -134,10 +134,10 @@ export const Kernkraftwerk = () => {
                     <Col>
                         <div className="TextRight">
                             <li>
-                                Der größte Nachteil der Atomenergie ist die radioaktive Strahlung
+                                Der grösste Nachteil der Atomenergie ist die radioaktive Strahlung
                             </li>
                             <li>
-                                Außerdem ist die Entsorgung von radioaktiven
+                                Ausserdem ist die Entsorgung von radioaktiven
                                 Abfällen sehr kompliziert und gefährlich
                             </li>
                         </div>
@@ -153,7 +153,7 @@ export const Kernkraftwerk = () => {
                             </li>
                             <li>
                                 Es benötigt nur wenig Brennstoff, um
-                                große Mengen Energie zu erzeugen.
+                                grosse Mengen Energie zu erzeugen.
                             </li>
                             <li>
                                 Kernenergie stellt als Alternative zu fossilen Brennstoffen

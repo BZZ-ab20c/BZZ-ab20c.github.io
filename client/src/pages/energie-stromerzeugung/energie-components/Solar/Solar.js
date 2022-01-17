@@ -24,7 +24,7 @@ export const Solar = () => {
                 <h2 className="H2">Solar</h2>
                 <Row className="div">
                     <p className="introduction">
-                        Die Sonne ist der größte natürliche Energielieferant unseres
+                        Die Sonne ist der grösste natürliche Energielieferant unseres
                         Planeten und es bietet sich an, die Energie der Sonnenstrahlen
                         zu nutzen. Die Technologien zur Umwandlung von Solarenergie in
                         Strom und Wärme können in zwei Hauptgruppen unterteilt werden:
@@ -44,7 +44,7 @@ export const Solar = () => {
                             entsteht im Inneren der Sonne durch Kernfusion und gelangt
                             als elektromagnetische Strahlung zur Erde. Hier kann die
                             Strahlung für die Erzeugung von Strom (Photovoltaik) und Wärme
-                            für Heißwasser genutzt werden. Da die meiste Energie tagsüber
+                            für Heisswasser genutzt werden. Da die meiste Energie tagsüber
                             gebraucht wird, passen solare Erzeugung und Energiebedarf gut zusammen.
                         </div>
                     </Col>
@@ -69,10 +69,10 @@ export const Solar = () => {
                         <div className="TextLeft">
                             Fällt Licht auf eine Siliziumscheibe, werden Elektronen freigesetzt.
                             Damit diese genutzt werden können, wird die Zelle auf der Vorder- und
-                            der Rückseite mit unterschiedlichen Fremdatomen. Dadurch wandern die
+                            der Rückseite mit unterschiedlichen Fremdatomen verunreinigt, beziehungsweise dotiert. Dadurch wandern die
                             Elektronen alle auf eine Seite und die positiven Ladungsträger auf
                             die andere. Es entsteht ein Plus- und ein Minuspol wie in einer Batterie.
-                            Wird ein Verbrauchsgerät angeschlossen, fließt Strom.
+                            Wird ein Verbrauchsgerät angeschlossen, fliesst Strom.
                         </div>
                     </Col>
                     <Col>
