@@ -28,10 +28,10 @@ const TitleSeite = () => {
                     <Col>
                         <div className="TextLeft">
                             Elektrische Energie, umgangssprachlich Strom genannt, wird durch
-                            <strong>Umwandlung</strong> aus anderen <strong>Energieformen</strong> erzeugt. Wobei „erzeugt“
+                            <strong> Umwandlung</strong> aus anderen <strong>Energieformen</strong> erzeugt. Wobei „erzeugt“
                             physikalisch genommen nicht richtig ist, denn Energie kann nicht
                             einfach entstehen, sondern nur aus einer <strong>Energieform</strong> in eine andere
-                            <strong>umgewandelt</strong> werden.
+                            <strong> umgewandelt</strong> werden.
                         </div>
                     </Col>
                     <Col>
@@ -60,8 +60,8 @@ const TitleSeite = () => {
                         <div className="TextLeft">
                             Kraftwerke werden nach der <strong>Art</strong>, wie in ihnen Strom gewonnen
                             wird, unterschieden. Es gibt <strong>Wasserkraftwerken</strong>, <strong>Windkraftwerken</strong>,
-                            <strong>Solaranlagen</strong>, <strong>Biomassekraftwerken</strong>, <strong>Gasturbinenkraftwerken</strong>,
-                            <strong>Kernenergieanlagen</strong>, <strong>Kohlekraftwerken</strong> und viele andere Arten.
+                            <strong>Solaranlagen</strong>, <strong>Biomassekraftwerken</strong>, <strong>Gasturbinenkraftwerken</strong>, 
+                            <strong> Kernenergieanlagen</strong>, <strong>Kohlekraftwerken</strong> und viele andere Arten.
                             Das <strong>Prinzip</strong> bleibt, aber bei allen Kraftwerken das Gleiche.
                         </div>
                     </Col>
