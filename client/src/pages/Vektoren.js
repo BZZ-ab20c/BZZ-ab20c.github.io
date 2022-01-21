@@ -59,6 +59,11 @@ const Vektoren = () => {
                             </a>
                         </li>
                         <li className="listPadding">
+                            <a href="#websiteToLearnMore">
+                                <span style={inhaltStyle}>Webseite um selber zu probieren</span><br/>
+                            </a>
+                        </li>
+                        <li className="listPadding">
                             <a href="#videoSources">
                                 <span style={inhaltStyle}>Videos um Vektoren besser zu verstehen</span><br/>
                             </a>
@@ -76,35 +81,36 @@ const Vektoren = () => {
 
                         <div className="container">
                             <p>
-                                Um Vektoren zu verstehen müssen wir zuerst <b>Skalare</b> verstehen.
+                                Um Vektoren zu verstehen, müssen wir zuerst <b>Skalare</b> verstehen.
                                 <br/>
-                                Ein Skalar ist eine Menge mit Betrag. Er sagt uns wie viel von etwas existiert.
+                                Ein Skalar ist eine Menge mit Betrag. Er sagt uns, wie viel von etwas existiert.
                                 <br/>
-                                Die Distanz zwischen dir und einem Baum aber auch das Volumen und die temperatur des
+                                Die Distanz zwischen dir und einem Baum, aber auch das Volumen und die Temperatur des
                                 Getränkes in deinem Glas sind alle mit einem Skalar beschrieben.
                             </p>
                             <p>
-                                Vektorengrössen haben auch eine Menge und eine weitere Information, Richtung.
+                                Vektorengrössen haben auch eine Menge und eine weitere Information: Richtung.
                                 <br/>
-                                Um zu deinem Baum zu gelangen musst du wissen wie weit weg und in welcher Richtung er
-                                ist.
+                                Um zu einem Baum zu gelangen, musst du wissen, wie weit weg und in welcher Richtung er
+                                ist:
                                 <br/>
                                 Nicht nur die Entfernung, sondern auch die Verschiebung.
                             </p>
                             <p>
                                 Was die Vektoren speziell und in vielen verschiedenen Bereichen dadurch nützlich macht
-                                ist, dass sie sich nicht mit der Perspektive ändern. Sondern bleiben unverändert zum
+                                ist, dass sie sich nicht mit der Perspektive ändern. Sondern Sie bleiben unverändert zum
                                 Koordinatensystem.
                             </p>
                             <p>
                                 <b>Was bedeutet das?</b>
                                 <br/>
-                                Sagen wir du und dein Freund wollt zusammen euer Zelt verlegen. Ihr steht gegenüber,
+                                Sagen wir, du und dein Freund wollen zusammen euer Zelt verlegen. Ihr steht gegenüber,
                                 schaut also in gegensätzliche Richtungen.
                                 <br/>
-                                Dein Freund geht zwei Schritte rechts und drei Schritte vorwärts während du zwei
-                                Schritte rechts und 3 Schritte zurück gehst.
-                                Auch wenn es aussieht als würdet ihr unterschiedlich laufen, lauft ihr beide die gleiche
+                                Dein Freund geht zwei Schritte rechts und drei Schritte vorwärts, während du zwei
+                                Schritte rechts und drei Schritte zurück gehst.
+                                Auch wenn es aussieht, als würdet ihr unterschiedlich laufen, läuft ihr beide die
+                                gleiche
                                 Distanz in der gleichen Richtung. Ihr folgt dem gleichen Vektor.
                                 <br/>
                                 Egal in welche Richtung du schaust, oder welches Koordinatensystem ihr verwendet, der
@@ -125,7 +131,8 @@ const Vektoren = () => {
                         <div className={"container"}>
                             <p>
                                 Vektoren können unterschiedlich dargestellt werden. Manche sehen einen Vektor als Pfeil,
-                                andere als Liste von Zahlen. Aber am Ende ist es immer das gleiche.
+                                andere als Liste von Zahlen, auch als Spaltenvektor bezeichnet. Aber am Ende ist es
+                                immer das Gleiche.
                             </p>
                             <div className={"row"}>
                                 <div className={"col"}>
@@ -138,7 +145,7 @@ const Vektoren = () => {
                                 </div>
                             </div>
                             <p>
-                                Wie wir vorhin gelesen haben sind Vektoren immer gleich, unabhängig
+                                Wie wir vorhin gelesen haben, sind Vektoren immer gleich, unabhängig
                                 vom Koordinatensystem oder der Perspektive.
                                 Sie haben immer eine Richtung und eine Entfernung. Im Beispiel vom Zelt vorhin, hat der
                                 Vektor immer nach "oben rechts" gezeigt. Beide Personen sind 2 Schritte nach rechts, und
@@ -146,12 +153,12 @@ const Vektoren = () => {
                                 eine gewissen Entfernung.
                                 <br/>
                                 Wer ein Vektor mit einem Pfeil darstellt würde einfach einen Pfeil machen der nach oben
-                                rechts schaut und entsprechend der Entfernung lang ist.
-                                Wer dafür mit Zahlen in einer Liste arbeitet würde es in etwa wie folgt machen:
+                                rechts schaut und entsprechend der Entfernung lang ist. Wer dafür mit Zahlen in einer
+                                Liste, Spaltenvektoren, arbeitet würde es in etwa wie folgt machen:
                             </p>
                             <Vektor x={2} y={3}/>
                             <p>
-                                Die erste Zahl ist X und das zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
+                                Die erste Zahl ist X und die zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
                                 der X Achse und drei Distanzeinheiten auf der Y Achse gelaufen.
                                 Das ist ein zweidimensionaler Vektor. Die Dimension wird anhand der Zahlen bestimmt. Um
                                 also einen dreidimensionalen Vektor zu haben fügt man einfach eine dritte Zahl, die
@@ -171,7 +178,7 @@ const Vektoren = () => {
                         </div>
                         <div className={"container"}>
                             <p>
-                                Mit Vektoren zu rechnen ist eigentlich ganz einfach. Folgend werden die
+                                Mit Vektoren zu rechnen ist eigentlich ganz einfach. Im folgenden werden die
                                 unterschiedlichen Methoden erklärt.
                                 <br/>
                                 Die Vektoren werden am einfachsten als Liste dargestellt um zu rechnen.
@@ -181,15 +188,15 @@ const Vektoren = () => {
                                 <div className={"col colBorderRight"}>
                                     <h4>Addieren/Subtrahieren</h4>
                                     <p>
-                                        Wie beim normalen Rechnen brauchen wir hier mindestens zwei Vektoren um diese
+                                        Wie beim normalen Rechnen brauchen wir hier mindestens zwei Vektoren, um diese
                                         zusammen addieren oder subtrahieren zu können.
                                         <br/>
                                         Beim Addieren oder Subtrahieren wird jeweils die Zahl beim einen Vektor mit der
                                         Zahl an der selben Stelle beim anderen Vektor zusammen addiert oder subtrahiert.
                                         <br/>
                                         Gehen wir also von zwei zweidimensionalen Vektoren aus. Beide haben also ein X
-                                        und ein Y. Wenn wir beide Vektoren addieren wollen addieren wir jeweils beide X
-                                        und beide Y zusammen, das selbe beim subtrahieren.
+                                        und ein Y. Wenn wir beide Vektoren addieren wollen, addieren wir jeweils beide X
+                                        und beide Y zusammen, dasselbe geschieht beim Subtrahieren.
                                     </p>
 
                                     <div className={"row"}>
@@ -233,8 +240,7 @@ const Vektoren = () => {
                                 <div className={"col"}>
                                     <h4>Multiplizieren/Dividieren mit einem Skalar</h4>
                                     <p>
-                                        Beim Multiplizieren und Dividieren gibt es unterschiedliche Möglichkeiten wie.
-                                        Hier schauen wir uns die einfache Möglichkeit an, bei welchem wir einfach eine
+                                        Hier schauen wir uns die Möglichkeit an, bei welchem wir einfach eine
                                         Zahl, einen Skalar, mit einem Vektor multiplizieren oder dividieren.
                                         <br/>
                                         Wenn man einen Vektor mit einer Zahl multiplizieren oder dividieren will, nimmt
@@ -290,9 +296,12 @@ const Vektoren = () => {
                                         <br/>
                                         Vektor * Vektor ist das sogenannte Skalarprodukt.
                                         <br/>
-                                        Um das Skalarprodukt zu erhalten, multipliziert ein Wert mit dem Wert beim
-                                        anderen Vektor welcher an der selben Stelle liegt und addiert dann alle
+                                        Um das Skalarprodukt zu erhalten, multipliziert man ein Wert mit dem Wert beim
+                                        anderen Vektor, welcher an derselben Stelle liegt und addiert dann alle
                                         zusammen.
+                                        <br/>
+                                        Das Ergebnis bei der Multiplikation zweier Vektoren ist <u>kein</u> Vektor mehr,
+                                        sondern ein Skalar. Daher der Name "Skalarprodukt".
                                     </p>
 
                                     <div className={"row"}>
@@ -324,7 +333,7 @@ const Vektoren = () => {
                                 <div className={"col"}>
                                     <h4>Kreuz- oder Vektorprodukt</h4>
                                     <p>
-                                        Um das sogenannte Kreuz- oder auch Vektorprodukt zu bekommen muss man zwei
+                                        Um das sogenannte Kreuz- oder auch Vektorprodukt zu bekommen, muss man zwei
                                         Vektoren miteinander kreuzen.
                                         <br/>
                                         Wir haben also z.B. folgende zwei Vektoren:
@@ -345,8 +354,8 @@ const Vektoren = () => {
                                     <p>
                                         Diese zwei kreuzen wir jetzt.
                                         <br/>
-                                        Beim Kreuzen multiplizieren wir zwei Werte von beiden Vektoren und subtrahieren
-                                        diese von zwei anderen multiplizierten Werten.
+                                        Beim Kreuzen multiplizieren wir diagonal zwei Werte von beiden Vektoren und
+                                        subtrahieren diese von zwei anderen diagonal multiplizierten Werten.
                                         <br/>
                                         Das sieht dann wie folgt aus:
                                     </p>
@@ -376,6 +385,17 @@ const Vektoren = () => {
 
                         <div className={"container"}>
                             <VektorenFragen/>
+                        </div>
+                    </div>
+
+                    <div className={"myCard"} id={"websiteToLearnMore"}>
+                        <div className={"container"}>
+                            <h3>Webseite um selber zu probieren</h3>
+                        </div>
+
+                        <div className={"container"}>
+                            <a href={"https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_de.html"}
+                               target={"_blank"}>Vektor Addition</a>
                         </div>
                     </div>
 

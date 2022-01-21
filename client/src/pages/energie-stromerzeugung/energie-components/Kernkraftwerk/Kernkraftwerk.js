@@ -24,12 +24,12 @@ export const Kernkraftwerk = () => {
                 <h2 className="H2">Kernkraftwerk</h2>
                 <Row className="div">
                     <p className="introduction">
-                        Ein Kernkraftwerk (KKW), auch Atomkraftwerk (AKW), ist
-                        ein Wärmekraftwerk zur Gewinnung elektrischer Energie
+                        Ein <strong>Kernkraftwerk</strong> (KKW), auch <strong>Atomkraftwerk</strong> (AKW), ist 
+                        ein Wärmekraftwerk zur Gewinnung <strong>elektrischer Energie </strong> 
                         aus Kernenergie durch kontrollierte Kernspaltung
-                        auch Fission genannt. Die Grundlageen von Kernkraftwerken
-                        ist die Energiefreisetzung bei der Spaltung von schweren
-                        Atomkernen.
+                        auch <strong>Fission</strong> genannt. Die Grundlageen von Kernkraftwerken
+                        ist die <strong>Energiefreisetzung</strong> bei der Spaltung von schweren 
+                        <strong> Atomkernen</strong>.
                     </p>
                 </Row>
                 <h4 className='H4'>Reaktortypen</h4>
@@ -37,11 +37,12 @@ export const Kernkraftwerk = () => {
                     <Col>
                         <div className="TextLeft">
                             Weltweit gibt es verschiedene Reaktorsysteme. Die meisten davon
-                            sind Leichtwasserreaktoren. Auch die fünf Kernkraftwerke in der
-                            Schweiz –Beznau-1 und -2,Mühleberg, Gösgen und Leibstadt – sind
-                            mit Leichtwasserreaktoren ausgerüstet. Größere Kernkraftwerke
-                            bestehen aus mehreren Blöcken, die unabhängig voneinander
-                            elektrischen Strom erzeugen. Jeder Block enthält einen Kernreaktor.
+                            sind <strong>Leichtwasserreaktoren</strong>. Auch die vier Kernkraftwerke in der
+                            Schweiz <strong>Beznau</strong>, <strong>Mühleberg</strong>, <strong>Gösgen</strong> und 
+                            <strong>Leibstadt</strong>, sind
+                            mit Leichtwasserreaktoren ausgerüstet. Grössere Kernkraftwerke
+                            bestehen aus mehreren <strong>Blöcken</strong>, die unabhängig voneinander
+                            elektrischen Strom erzeugen. Jeder Block enthält einen <strong>Kernreaktor</strong>.
                         </div>
                     </Col>
                     <Col>
@@ -56,11 +57,11 @@ export const Kernkraftwerk = () => {
                     <Col>
                         <div className="TextRight">
                             In den Leichtwasserreaktoren hat das Wasser zwei Aufgaben:
-                            Einerseits dient es als Kühlmittel und transportiert die
-                            Energie aus dem Reaktor zu den Dampfturbinen. Andererseits
-                            bremst es die bei der Kernspaltung freiwerdenden Neutronen
-                            ab und wirkt so als sogenannter Moderator. Nur wenn sie
-                            gebremst werden, können die Neutronen weitere Kettenreaktion auslösen.
+                            Einerseits dient es als <strong>Kühlmittel</strong> und transportiert die
+                            Energie aus dem Reaktor zu den <strong>Dampfturbinen</strong>. Andererseits
+                            bremst es die bei der Kernspaltung freiwerdenden <strong>Neutronen </strong> 
+                            ab und wirkt so als sogenannter <strong>Moderator</strong>. Nur wenn sie
+                            gebremst werden, können die Neutronen weitere <strong>Kettenreaktion</strong> auslösen.
                         </div>
                     </Col>
                 </Row>
@@ -68,13 +69,13 @@ export const Kernkraftwerk = () => {
                 <Row className="GrayRow">
                     <Col>
                         <div className="TextLeft">
-                            Bei den Druckwasserreaktoren (Beznau-1, Beznau-2 und Gösgen)
-                            wird im Reaktor das Wasser unter hohem Druck erhitzt, ohne dass
+                            Bei den <strong>Druckwasserreaktoren</strong>
+                            wird im Reaktor das Wasser unter hohem <strong>Druck</strong> erhitzt, ohne dass
                             es zu sieden beginnt. Das erhitzte Wasser wird zu Dampferzeugern
-                            ausserhalb des Reaktors geleitet, wo es seine Wärme an einen
+                            ausserhalb des <strong>Reaktors</strong> geleitet, wo es seine Wärme an einen
                             weiteren Wasserkreislauf abgibt. Das Wasser im zweiten Kreislauf
-                            erhitzt sich und verdampft. Dieser Dampf treibt die Turbinen im
-                            konventionellen Teil des Kernkraftwerks an.
+                            <strong> erhitzt</strong> sich und <strong>verdampft</strong>. Dieser Dampf treibt die Turbinen im
+                            konventionellen Teil des <strong>Kernkraftwerks</strong> an.
                         </div>
                     </Col>
                     <Col>
@@ -88,11 +89,11 @@ export const Kernkraftwerk = () => {
                     </Col>
                     <Col>
                         <div className="TextRight">
-                            Bei den Siedewasserreaktoren (Leibstadt und Mühleberg) wird
-                            der Dampf im Reaktordruckbehälter erzeugt und direkt zu den
+                            Bei den <strong>Siedewasserreaktoren</strong> (Leibstadt und Mühleberg) wird
+                            der Dampf im <strong>Reaktordruckbehälter</strong> erzeugt und direkt zu den
                             Turbinen geleitet. Anders als bei den Druckwasserreaktoren
                             enthält der zu den Turbinen gelangende Dampf Spuren kurzlebiger
-                            radioaktiver Stoffe.
+                            radioaktiver <strong>Stoffe</strong>.
                         </div>
                     </Col>
                 </Row>
@@ -100,13 +101,13 @@ export const Kernkraftwerk = () => {
                 <Row className="GrayRow">
                     <Col>
                         <div className="TextLeft">
-                            Einen solchen Kühlturm mit oft von weitem sichtbarer Nebelfahne
+                            Einen solchen Kühlturm mit oft von weitem sichtbarer <strong>Nebelfahne </strong>
                             nennt man Naturzug-Nasskühlturm. Die warme Luft steigt im Turm nach
                             oben. Durch die Verengung in der Mitte und seine grosse Höhe von
-                            140 und mehr Metern entsteht ein starker Luftzug von unten nach oben,
+                            <strong>140</strong> und mehr Metern entsteht ein starker <strong>Luftzug</strong> von unten nach oben,
                             wie in einem Hauskamin: Die warme Luft entweicht nach oben, während von
-                            unten kältere Umgebungsluft nachströmt. Diese kalte Luft kühlt die
-                            fallenden Wasser Tröpfchen, ganz ohne Zufuhr von Energie.
+                            unten kältere <strong>Umgebungsluft</strong> nachströmt. Diese kalte Luft kühlt die
+                            fallenden Wasser Tröpfchen, ganz <strong>ohne Zufuhr</strong> ohne Zufuhr von <strong>Energie</strong>.
                         </div>
                     </Col>
                     <Col>
@@ -117,13 +118,13 @@ export const Kernkraftwerk = () => {
                 <Row className="WhiteRow">
                     <img className="ExtraImgHybrid" src={hybridkuehlturm} alt={"hybridkuehlturm"}/>
                     <div className="ExtraTextHybrid">
-                        Daneben gibt es auch Hybrid-Kühltürme. Sie sind wesentlich
+                        Daneben gibt es auch <strong>Hybrid-Kühltürme</strong>. Sie sind wesentlich
                         niedriger als ein Naturzug-Nasskühlturm und erzeugen praktisch
-                        keine Nebelfahnen, sodass sie das Landschaftsbild kaum
-                        beeinträchtigen. Hingegen benötigt ein Hybridkühlturm Ventilatoren,
-                        die für genügend Luftzug sorgen. Das deutsche Kernkraftwerk
-                        Neckarwestheim hat einen solchen Hybridkühlturm. Er benötigt
-                        rund 1,4 Prozent der Stromproduktion des Kraftwerks.
+                        keine <strong>Nebelfahnen</strong>, sodass sie das Landschaftsbild kaum
+                        beeinträchtigen. Hingegen benötigt ein Hybridkühlturm <strong>Ventilatoren</strong>,
+                        die für genügend <strong>Luftzug</strong> sorgen. Das deutsche Kernkraftwerk
+                        <strong> Neckarwestheim</strong> einen solchen Hybridkühlturm. Er benötigt
+                        rund <strong>1,4</strong> Prozent der <strong>Stromproduktion</strong> des Kraftwerks.
                     </div>
                 </Row>
                 <h4 className='H4'>Nachteile</h4>
@@ -134,11 +135,11 @@ export const Kernkraftwerk = () => {
                     <Col>
                         <div className="TextRight">
                             <li>
-                                Der größte Nachteil der Atomenergie ist die radioaktive Strahlung
+                                Der grösste Nachteil der Atomenergie ist die <strong>radioaktive Strahlung</strong>
                             </li>
                             <li>
-                                Außerdem ist die Entsorgung von radioaktiven
-                                Abfällen sehr kompliziert und gefährlich
+                                Ausserdem ist die <strong>Entsorgung</strong> von radioaktiven
+                                Abfällen sehr <strong>kompliziert</strong> und <strong>gefährlich</strong>.
                             </li>
                         </div>
                     </Col>
@@ -149,16 +150,16 @@ export const Kernkraftwerk = () => {
                         <div className="TextLeft">
                             <li>
                                 Durch die Nutzung von Kernkraft reduziert sich der Verbrauch
-                                an fossilen Brennstoffen wie Kohle und Erdöl.
+                                an fossilen Brennstoffen wie <strong>Kohle</strong> und <strong>Erdöl</strong>.
                             </li>
                             <li>
-                                Es benötigt nur wenig Brennstoff, um
-                                große Mengen Energie zu erzeugen.
+                                Es benötigt nur wenig <strong>Brennstoff</strong>, um
+                                grosse Mengen <strong>Energie</strong> zu erzeugen.
                             </li>
                             <li>
-                                Kernenergie stellt als Alternative zu fossilen Brennstoffen
-                                eine bessere Luftqualität und sie trägt nicht zur globalen
-                                Klimaerwärmung bei.
+                                Kernenergie stellt als <strong>Alternative</strong> zu fossilen Brennstoffen
+                                eine bessere <strong>Luftqualität</strong> und sie trägt nicht zur globalen 
+                                <strong> Klimaerwärmung</strong> bei.
                             </li>
                         </div>
                     </Col>

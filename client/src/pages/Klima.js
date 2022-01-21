@@ -4,6 +4,8 @@ import ClimateChange from "../img/klima/climate-change.png";
 import GreenHouseEffect from "../img/klima/greenHouseEffect.png";
 import WaterCurrent from "../img/klima/waterCurrent.jpg";
 import Orbit from "../img/klima/orbit.jpg";
+import Diagramm1 from "../img/klima/Diagramm1960.jpg"
+import Diagramm2 from "../img/klima/Diagramm1980.jpg"
 import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Klima = () => {
@@ -25,15 +27,23 @@ const Klima = () => {
                         </div>
 
                         <div className="container">
+                            <p style={{fontWeight: 'bold'}}>Kurz definiert:</p>
                             <p>Das Klima ist das langfristige Muster des Wetters in einem Gebiet, typischerweise
                                 gemittelt über einen Zeitraum von 30 Jahren. <br/>Genauer gesagt, ist es der Mittelwert
                                 und die Variabilität der meteorologischen Variablen über einen Zeitraum von
-                                Monaten bis zu Millionen von Jahren.</p>
-                            <p>Klima beschreibt, wie das Wetter über einen langen Zeitraum aussieht.
+                                Monaten bis zu Millionen von Jahren. <br/><br/>
+                            Klima beschreibt, wie das Wetter über einen langen Zeitraum aussieht.
                                 <br/>Wenn es in einer Gegend über viele Jahre regnet, spricht man von einem feuchten
                                 Klima.
                                 <br/>Wenn die Temperaturen sich über viele Jahre verändern, spricht man vom
                                 Klimawandel.</p>
+                            <p style={{fontWeight: 'bold'}}>Beispiel:</p>
+                            <p>
+                               Unten werden zwei Klimadiagramme angezeigt. Die Diagramme zeigen die durchschnittlichen Temperatur von Zürich.
+                               Links ist die Temperatur von 1961 bis 1990 und rechts ist die Temperatur von 1981 bis 2010.
+                            </p>
+                            <img src={Diagramm1} alt="Diagramm1" style={{width: '50%', padding: '5px'}}/>
+                            <img src={Diagramm2} alt="Diagramm2" style={{width: '50%', padding: '5px'}}/>
                             <br/>
                         </div>
                     </div>
@@ -61,12 +71,12 @@ const Klima = () => {
                                 das in Verbindung mit Wasserdampf und Staub in der Atmosphäre Sulfataerosole bildet.
                                 Sulfataerosole reflektieren das Sonnenlicht und sind leichter als Asche.
                                 Das bedeutet, dass sie mehr als ein Jahr lang in der Atmosphäre bleiben können.
-                                <br/>
+                                <br/> 
                                 Der Mount Pinatubo verursachte 1991 einen Rückgang der globalen Temperatur um 0,5 °C.
                             </p>
                             <p style={{fontWeight: 'bold'}}>Meeresströmungen:</p>
-                            <p>Die Meeresströmungen haben ein "globales Förderband", das im Grunde ein großer Strom ist,
-                                der durch die Ozeane fließt. Er umläuft den Globus in einem Zyklus von 1000 Jahren.
+                            <p>Die Meeresströmungen haben ein "globales Förderband", das im Grunde ein grosser Strom ist,
+                                der durch die Ozeane fliesst. Er umläuft den Globus in einem Zyklus von 1000 Jahren.
                                 <br/>
                                 Diese Zirkulation ist das Ergebnis von zwei
                                 gleichzeitig ablaufenden Prozesse: warme Oberflächenströme, die weniger dichtes Wasser
