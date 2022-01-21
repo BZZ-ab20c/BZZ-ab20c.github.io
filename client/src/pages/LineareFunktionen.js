@@ -1,6 +1,7 @@
 import useDocumentTitle from "../utils/UseDocumentTitle";
 import theorie from "../img/linearefunktionen/theorie.jpg";
 import geradensteigung from "../img/linearefunktionen/geradensteigung.jpg";
+import steigunggleichung from "../img/linearefunktionen/steigunggleichung.jpg";
 import aufgabe_d from "../img/linearefunktionen/aufgabe_d.jpg";
 import React from "react";
 
@@ -58,7 +59,14 @@ const LineareFunktionen = () => {
                 </p>
                 <p>
                     Man bestimmt Δy und Δx, also den Unterschied der y-Koordinaten und x-Koordinaten der gegebenen
-                    Punkte …
+                    Punkte …<br/>
+
+                    m=Δy:Δx<br/>
+                    ... und setzt die Längenwerte für Δy und Δx in die Formel ein.<br/>
+                    Δy = yB - yA = 4,6 - 3,5 = 1<br/>
+                    Δx = xB - yA = 3 - 1 = 2<br/>
+
+                    Die Gerade hat also die Steigung:
 
 
                 </p>
