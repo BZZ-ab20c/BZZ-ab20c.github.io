@@ -1,5 +1,6 @@
 import useDocumentTitle from "../utils/UseDocumentTitle";
 import theorie from "../img/linearefunktionen/theorie.jpg";
+import geradensteigung from "../img/linearefunktionen/geradensteigung.jpg";
 import aufgabe_d from "../img/linearefunktionen/aufgabe_d.jpg";
 import React from "react";
 
@@ -39,20 +40,31 @@ const LineareFunktionen = () => {
                     <h3>
                         Die Geradensteigung
                     </h3>
-                    Das m in der Formel( f(x)=m*x+t ) wird Steigung genannt
+                    Die Steigung einer Geraden gibt an, um wie viele Einheiten
+                    sich die y-Koordinate eines<br/>
+                    Punktes verändert, wenn sich seine x-Koordinate um eine Einheit verändert. Anders gesagt:<br/>
+                    Die Steigung einer Geraden misst, wie steil sie ansteigt.<br/><br/>
+
+                    Das m in der Formel( f(x)=m*x+t ) wird Steigung genannt<br/>
                     <h4>
                         Beispiel mit einem Steigungsdreieck
                     </h4>
                     Man bestimme die Steigung der gegebenen Gerade. Hierzu sucht man sich zwei Punkte aus,<br/>
                     beispielweise wie in der Skizze A(1∣3,5) und B(3∣4,5). Dabei nennt man das gezeichnete<br/>
-                    Dreieck Steigungsdreieck
+                    Dreieck Steigungsdreieck<br/>
+                </p>
+                <p>
+                    <img id="myImage" src={geradensteigung} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
+                </p>
+                <p>
+                    Man bestimmt Δy und Δx, also den Unterschied der y-Koordinaten und x-Koordinaten der gegebenen
+                    Punkte …
+
+
                 </p>
                 <p>
                     <h3>
-                        Der y-Achsenabschnitt im einzelnen Die Steigung einer Geraden gibt an, um wie viele Einheiten
-                        sich die y-Koordinate eines<br/>
-                        Punktes verändert, wenn sich seine x-Koordinate um eine Einheit verändert. Anders gesagt:<br/>
-                        Die Steigung einer Geraden misst, wie steil sie ansteigt.
+                        Der y-Achsenabschnitt im einzelnen
                     </h3>
 
                 </p>
@@ -129,7 +141,8 @@ const LineareFunktionen = () => {
                         style={{width: "100%", height: "100%"}}/>
             </div>
         </div>
-    );
+    )
+        ;
 }
 
 export default LineareFunktionen;
