@@ -67,7 +67,9 @@ const LineareFunktionen = () => {
                     Δx = xB - yA = 3 - 1 = 2<br/>
 
                     Die Gerade hat also die Steigung:
-
+                    <p>
+                        <img id="myImage" src={steigunggleichung} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                    </p>
 
                 </p>
                 <p>
@@ -77,7 +79,7 @@ const LineareFunktionen = () => {
 
                 </p>
                 <p>
-                    Beispiel aus dem alltag zum die Theorie einfacher zu machen.<br/>
+                    <h3> Beispiel aus dem alltag zum die Theorie einfacher zu machen</h3><br/>
                     Ein Informatiker verlangt 4 Franken pro Stunde. Ausserdem verlangt er auch noch für die Fahr tzum
                     Arbeitsplatz 3 Franken.<br/>
                     Dies ist ein einfaches Beispiel für Linearefunktionen. Die 3 Franken sind die Fixkosten, da sie
