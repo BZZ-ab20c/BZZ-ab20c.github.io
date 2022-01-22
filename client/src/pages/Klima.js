@@ -90,7 +90,7 @@ const Klima = () => {
                             <p style={{fontWeight: 'bold'}}>Exosphäre</p>
                             <p>Der Bereich oberhalb von etwa 500 km wird Exosphäre genannt. Sie enthält hauptsächlich
                                 Sauerstoff- und Wasserstoffatome, von denen es aber so wenige gibt, dass sie nur selten
-                                zusammenstoßen - sie folgen unter dem Einfluss der Schwerkraft "ballistischen"
+                                zusammenstossen - sie folgen unter dem Einfluss der Schwerkraft "ballistischen"
                                 Flugbahnen, und einige von ihnen entkommen direkt in den Weltraum.</p>
 
                             <br/>
