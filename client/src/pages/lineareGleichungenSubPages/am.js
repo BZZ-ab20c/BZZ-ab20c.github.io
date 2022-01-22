@@ -107,7 +107,8 @@ const AM = () => {
                             In diesem Beispiel werden wir beide durchgehen, was als Kontrolle des Ergebnisses dienen
                             kann. Wir nehmen als erstes dafür den Term (I).</p>
                         <p className="tag-02">(I) 2x + 3y = 9</p>
-                        <p className="describtion-math">Anstelle von y setzten wir nun 1 ein, weil y = 1 ergeben hat.</p>
+                        <p className="describtion-math">Anstelle von y setzten wir nun 1 ein, weil y = 1 ergeben
+                            hat.</p>
                         <p className="tag-02">(I) 2x + 3(1) = 9</p>
                         <p className="describtion-math">Nun können wir es wieder berechnen und danach auflösen. Hierbei
                             wird die Zahl welche vorher für y stand mit der Zahl in der Klammer multipliziert.</p>
@@ -176,7 +177,7 @@ const AM = () => {
                         <p className="tag-02">70x = 140</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt  P.<br/>
+                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt P.<br/>
                             Rechnung: </p>
                         <p className="tag-02">70x = 140 |:70</p>
                         <p className="tag-02"><span className="double_underline">x = 2</span></p>
