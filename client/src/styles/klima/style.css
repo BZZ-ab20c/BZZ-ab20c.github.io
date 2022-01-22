@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, p {
     padding: 10px
 }
 
+#leftTextContainer{
+text-align: left;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -42,3 +46,27 @@ hr {
 .cardList :hover {
     background-color: #ccc
 }
+.KlimaCollapsible {
+    background-color: #cbcbcb;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+}
+
+.KlimaCollapsible:hover {
+    background-color: #b6b6b6;
+}
+
+.KlimaCollapsible:after{
+    content: '\21E9';
+    color: black;
+    float: right;
+}
+
+
