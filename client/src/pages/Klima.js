@@ -288,7 +288,7 @@ const Klima = () => {
                         </ul>
                     </div>
                     <div className="myCard">
-                        <p>Aufbau unser Atmsophären:</p>
+                        <p>Aufbau unser Atmosphären:</p>
                         <img src={Atmosphaere} alt="Atmospheres" style={{width: '90%', padding: '5px'}}/>
                         <div style={{height: '60px'}}/>
                         <p>Meeresströmungen:</p>
