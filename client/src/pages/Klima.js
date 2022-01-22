@@ -68,7 +68,8 @@ const Klima = () => {
                             <p style={{fontWeight: 'bold'}}>Troposphäre:</p>
                             <p>Dies ist der unterste Teil der Atmosphäre - der Teil, in dem wir leben. Hier findet der
                                 Grossteil unseres Wetters statt - Wolken, Regen, Schnee. In diesem Teil der Atmosphäre
-                                wird die Temperatur mit zunehmender Höhe über der Erde kälter.</p>
+                                wird die Temperatur mit zunehmender Höhe über der Erde kälter.
+                                Dies ist die Atmosphäre, in der der Treibhauseffekt stattfindet.</p>
 
                             <p style={{fontWeight: 'bold'}}>Stratosphäre</p>
                             <p>Diese erstreckt sich von der Tropopause bis in etwa 50 km Höhe. Sie enthält einen
@@ -91,7 +92,7 @@ const Klima = () => {
                                 Sauerstoff- und Wasserstoffatome, von denen es aber so wenige gibt, dass sie nur selten
                                 zusammenstoßen - sie folgen unter dem Einfluss der Schwerkraft "ballistischen"
                                 Flugbahnen, und einige von ihnen entkommen direkt in den Weltraum.</p>
-                            <img src={Atmosphaere} alt="Atmospheres" style={{width: '50%', padding: '5px'}}/>
+
                             <br/>
                         </div>
                     </div>
@@ -233,6 +234,18 @@ const Klima = () => {
                         </div>
                     </div>
                     <hr/>
+                    <button className="QuizCollapsible" id="quiz" onClick={function () {
+                        const inhalt = document.getElementById('test')
+                        inhalt.style.display = (inhalt.style.display === "none") ? "block" : "none";
+
+                    }}>Quiz</button>
+                    <div className="myCard" id="test" style={{display: "none"}}>
+
+                        <div className="container">
+                           <h5>Kahoot Quiz (5 Fragen): </h5> <br/>
+                            <a href="https://create.kahoot.it/details/42d2b2ff-a470-4d93-880e-e39dcf40bca1" target="_blank">Hier klicken</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="col">
@@ -261,26 +274,30 @@ const Klima = () => {
                                     <span style={{fontSize: '18px'}}>Menschliche Änderungen</span><br/>
                                 </li>
                             </a>
-                            <a href="#climatechange">
+                            <a href="#climateChange">
                                 <li className="listPadding">
                                     <span style={{fontSize: '18px'}}>Klima Wandel</span><br/>
+                                </li>
+                            </a>
+                            <a href="#quiz">
+                                <li className="listPadding">
+                                    <span style={{fontSize: '18px'}}>Quiz</span><br/>
                                 </li>
                             </a>
                             <br/>
                         </ul>
                     </div>
                     <div className="myCard">
-                        <img src={ClimateChange} alt="climate-change" style={{width: '72%', margin: '10px'}}/>
+                        <p>Aufbau unser Atmsophären:</p>
+                        <img src={Atmosphaere} alt="Atmospheres" style={{width: '90%', padding: '5px'}}/>
                         <div style={{height: '60px'}}/>
                         <p>Meeresströmungen:</p>
                         <img src={WaterCurrent} alt="Conveyor Belt" style={{width: '80%', margin: '10px'}}/>
                         <div style={{height: '60px'}}/>
                         <p>Erdwinkel:</p>
                         <img src={Orbit} alt="ErdWinkel" style={{width: '60%', margin: '10px'}}/>
-                    </div>
-                    <div style={{height: '840px'}}/>
-                    <div className="myCard">
-                        <div style={{height: '200px'}}/>
+                        <div style={{height: '60px'}}/>
+                        <img src={ClimateChange} alt="climate-change" style={{width: '72%', margin: '10px'}}/>
                         <p>Treibhauseffekt:</p>
                         <img src={GreenHouseEffect} alt="Treibhauseffekt" style={{width: '100%', margin: '10px'}}/>
                         <div style={{height: '250px'}}/>
@@ -291,7 +308,6 @@ const Klima = () => {
         </div>
 
     );
-
 }
 
 export default Klima;

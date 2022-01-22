@@ -58,10 +58,31 @@ hr {
     outline: none;
     font-size: 24px;
 }
-
+.QuizCollapsible {
+    background-color: #525252;
+    color: #e0e0e0;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+}
 .KlimaCollapsible:hover {
     background-color: #b6b6b6;
 }
+
+.QuizCollapsible:hover {
+    background-color: #b6b6b6;
+}
+.QuizCollapsible:after {
+    content: '\21E9';
+    color: white;
+    float: right;
+}
+
 
 .KlimaCollapsible:after{
     content: '\21E9';
