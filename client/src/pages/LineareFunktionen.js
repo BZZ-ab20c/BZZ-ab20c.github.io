@@ -74,14 +74,14 @@ const LineareFunktionen = () => {
 
                     Die Gerade hat also die Steigung:
                     <p>
-                        <img id="myImage" src={steigunggleichung} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={steigunggleichung} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
 
                 </p>
                 <p>
                     <h3>Der y-Achsenabschnitt</h3><br/>
                     <p>
-                        <img id="myImage" src={yabschnitt} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={yabschnitt} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Der y-Achsenabschnitt beträgt 1,5. Der dazugehörige x-Wert ist 0.
 
@@ -92,14 +92,14 @@ const LineareFunktionen = () => {
                     Bestimmen der Funktionsgleichung mit dem y-Achsenabschnitt<br/>
 
                     <p>
-                        <img id="myImage" src={y_beispiel} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={y_beispiel} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Dieser Funktion können wir sofort ansehen, dass der y-Achsenabschnitt 4 beträgt,.<br/>
                     da die Funktion die y-Achse an dieser Stelle schneidet.<br/>
                     Auch die Steigung können wir durch bloßes Hinschauen herausfinden. Wenn wir eine Einheit x nach rechts gehen,.<br/>
                     müssen wir eine Einheit in y-Richtung nach oben gehen.<br/>
                     <p>
-                        <img id="myImage" src={y_beispiel2} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={y_beispiel2} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Damit beträgt die Steigung 1.<br/><br/>
 
@@ -114,7 +114,7 @@ const LineareFunktionen = () => {
                     Wie beispielsweise bei dieser Abbildung:<br/>
 
                     <p>
-                        <img id="myImage" src={y_beispiel3} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={y_beispiel3} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Dieser Graph ist gegeben und der y-Achsenabschnitt soll ermittelt werden. Um die komplette Gleichung bestimmen zu können,<br/>
                     fehlt der y-Achsenabschnitt. Dieser ist in unserem Graph nicht eingezeichnet, kann also nicht einfach abgelesen werden.<br/><br/>
@@ -123,26 +123,20 @@ const LineareFunktionen = () => {
                     Sie beträgt m = 1,5. Doch mit dieser Formel können wir jetzt auch den y-Achsenabschnitt ermitteln. Hierfür setzen wir die Koordinaten<br/>
                     eines uns bekannten Punktes und die Steigung der Funktion in die folgende Formel ein:<br/>
                     <p>
-                        <img id="myImage" src={y_beispiel4} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={y_beispiel4} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Wir setzen die Steigung m=1,5 und die Koordinaten des Punktes A(2|1) ein. Die rote 0 ist die x-Koordinate<br/>
                     des y-Achsenabschnittes. Alles in die Formel eingesetzt ergibt sich:<br/>
                     <p>
-                        <img id="myImage" src={y_beispiel5} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={y_beispiel5} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Jetzt müssen wir die Formel nur noch nach y2 umstellen und wir haben den y-Achsenabschnitt.<br/>
-                    Der erste Schritt ist also die Multiplikation mit −2. Es folgt:<br/>
-                    1,5⋅(−2)=y2−1<br/>
+                    Der erste Schritt ist also die Multiplikation mit −2. Es folgt:<br/><br/>
+                    1,5⋅(−2)=y2−1<br/><br/>
                     Im nächsten Schritt addieren wir 1, um den Wert y2 allein auf einer Seite zu haben. Es ergibt sich:<br/>
-
-                    −3+1=y2→y2=−2
+                    <br/>
+                    −3+1=y2→y2=−2<br/><br/>
                     Der y-Achsenabschnitt der Funktion beträgt also −2.
-
-
-
-
-
-
                 </p>
                 <p>
                     <h3> Beispiel aus dem alltag zum die Theorie einfacher zu machen</h3><br/>
@@ -185,15 +179,15 @@ const LineareFunktionen = () => {
                     Dafür setzen wir einfach die gearbeiteten Stunden<br/>
                     für x ein und rechnen anschließend y aus.
                 </p>
-            </div>
-            <div className={"container"}>
+
+
                 <h2>Übungen</h2>
                 <p>
                     a) Ohne oben nach zu schauen welche ist die Korrekte Formel der Linearen Funktionen<br/>
                     b) Zeichne eine gerade y = 6x+4<br/>
                     c) Zeichne eine Gerade y= 2x+3 und eine y= -2x+3 an welchem punkt schneiden sie sich?<br/>
                     d) Schreib die gleichung auf für diese Gerade: <img id="myImage" src={aufgabe_d}
-                                                                        style={{height: "350px", marginRight: 0}}
+                                                                        style={{height: "200px", marginRight: 0}}
                                                                         alt={""}/>
                     <br/>
                     e) Zeichne eine Gerade y= 1x+2
@@ -209,8 +203,10 @@ const LineareFunktionen = () => {
             </div>
             <p>
                 <h3>
-                    Erklärung Geobra
+                    Erklärung GeoGebra
                 </h3>
+                Das GeoGebra benutzt sich ganz einfach man gibt im eingabe Feld einfach die Gleichung ein die man sich anzeigen lassen will.<br/>
+                Wenn man zwei linien haben will muss man auf das plus drücken und dann einfach eine neue Gleichung einschreiben.
             </p>
             <div style={{height: "100vh"}}>
                 <iframe title={"Lineare Funktionen"} src={'https://bzz-ab20c.github.io/'}
