@@ -41,7 +41,7 @@ const LineareFunktionen = () => {
                     Dabei sind alle Variablen, also x und y ( y ist das Gleiche wie f(x) ), m und n, beliebige
                     Zahlen.<br/>
                     Je nach Besonderheit der Zahlen, sehen die Funktionen dann etwas anders aus.<br/>
-                    Es handelt sich jedoch immer um eine gerade Linie!
+                    Der Graph ist hier doch immer eine gerade Linie!
                 </p>
                 <p>
                     <h3>
@@ -67,7 +67,7 @@ const LineareFunktionen = () => {
                     Man bestimmt Δy und Δx, also den Unterschied der y-Koordinaten und x-Koordinaten der gegebenen
                     Punkte …<br/>
 
-                    m=Δy:Δx<br/>
+                    m=Δy : Δx<br/>
                     ... und setzt die Längenwerte für Δy und Δx in die Formel ein.<br/>
                     Δy = yB - yA = 4,6 - 3,5 = 1<br/>
                     Δx = xB - yA = 3 - 1 = 2<br/>
@@ -85,18 +85,18 @@ const LineareFunktionen = () => {
                     </p>
                     Der y-Achsenabschnitt beträgt 1,5. Der dazugehörige x-Wert ist 0.
 
-                    Die Funktion schneidet die y-Achse an dem Punkt, wo der x-Wert null ist. Vorsicht! Die beiden Achsen<br/>
-                    dürfen nicht verwechselt werden: Die x-Achse verläuft von links nach rechts und die y-Achse von unten nach oben.<br/>
-                    Die Funktionsgleichung mit hilfe des y-Achsenabschnitt bestimmen.<br/>
+                    Die Funktion schneidet die y-Achse an dem Punkt, wo der x-Wert null ist.<br/> <b>Vorsicht!</b> Die beiden Achsen
+                    dürfen nicht verwechselt werden: Die x-Achse verläuft von links nach rechts und die y-Achse von unten nach oben.<br/><br/>
 
-                    Bestimmen der Funktionsgleichung mit dem y-Achsenabschnitt<br/>
+
+                    <b>Bestimmen der Funktionsgleichung mit dem y-Achsenabschnitt</b><br/>
 
                     <p>
                         <img id="myImage" src={y_beispiel} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
                     </p>
-                    Dieser Funktion können wir sofort ansehen, dass der y-Achsenabschnitt 4 beträgt,.<br/>
+                    Dieser Funktion können wir sofort ansehen, dass der y-Achsenabschnitt 4 beträgt,<br/>
                     da die Funktion die y-Achse an dieser Stelle schneidet.<br/>
-                    Auch die Steigung können wir durch bloßes Hinschauen herausfinden. Wenn wir eine Einheit x nach rechts gehen,.<br/>
+                    Auch die Steigung können wir durch blosses Hinschauen herausfinden. Wenn wir eine Einheit x nach rechts gehen,.<br/>
                     müssen wir eine Einheit in y-Richtung nach oben gehen.<br/>
                     <p>
                         <img id="myImage" src={y_beispiel2} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
@@ -109,7 +109,7 @@ const LineareFunktionen = () => {
                     f(x) = m ⋅ x + n<br/>
                     f(x) = 1 ⋅ x + 4<br/><br/>
 
-                    y-Achsenabschnitt mit der Steigung bestimmen<br/>
+                    <b>y-Achsenabschnitt mit der Steigung bestimmen</b><br/><b/>
                     Es kann sein, dass eine Abbildung eines Graphen gegeben ist, bei dem der Schnittpunkt mit der y-Achse nicht sichtbar ist.<br/>
                     Wie beispielsweise bei dieser Abbildung:<br/>
 
@@ -139,7 +139,7 @@ const LineareFunktionen = () => {
                     Der y-Achsenabschnitt der Funktion beträgt also −2.
                 </p>
                 <p>
-                    <h3> Beispiel aus dem alltag zum die Theorie einfacher zu machen</h3><br/>
+                    <h3> Beispiel aus dem Alltag um die Theorie einfacher zu machen</h3><br/>
                     Ein Informatiker verlangt 4 Franken pro Stunde. Ausserdem verlangt er auch noch für die Fahr tzum
                     Arbeitsplatz 3 Franken.<br/>
                     Dies ist ein einfaches Beispiel für Linearefunktionen. Die 3 Franken sind die Fixkosten, da sie
