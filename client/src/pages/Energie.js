@@ -7,6 +7,7 @@ import kernenergie from "../img/energie/Kernenergie.jfif";
 import strahlungsenergie from "../img/energie/Strahlungsenergie.jfif";
 import visibilityImage from "../img/energie/visibility.svg";
 import visibilityImageOff from "../img/energie/visibility_off.svg";
+import energiequellen from "../img/energie/energiequellen.webp";
 import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Energie = () => {
@@ -15,6 +16,9 @@ const Energie = () => {
     let button1Visible = false;
     let button2Visible = false;
     let button3Visible = false;
+    let button4Visible = false;
+    let button5Visible = false;
+    let button6Visible = false;
 
     return (
         <div>
@@ -27,8 +31,7 @@ const Energie = () => {
                         <dt>Worum es geht:</dt>
                         <dd>- Bedeutung der Energie</dd>
                         <dd>- Energieformen</dd>
-                        <dd>- Primärenergie</dd>
-                        <dd>- Sekundärenergie</dd>
+                        <dd>- Energieträger</dd>
                         <dd>- Nicht erneuerbare und erneuerbare Energie</dd>
                         <dd>- Fragen & Antworten</dd>
                     </dl>
@@ -70,32 +73,30 @@ const Energie = () => {
                             Bewegungsenergie des Fahrzeugs umgewandelt.
                             <br/>
                             <br/>
-                            Die Einheit der kinetischen Energie ist das Joule: [Ekin]=1J
-                            <br/>
-                            <br/>
                             Die kinetische Energie Ekin eines Körpers ist proportional zu seiner Masse m und
                             proportional zum Quadrat v2 seiner Geschwindigkeit
                             <br/>
                             <br/>
-                            Also für die kinetische Energie eines Körpers gilt Ekin=12⋅m⋅v2.</p>
+                            <h6>Also für die kinetische Energie eines Körpers gilt Ekin=12⋅m⋅v2.</h6>
+                        </p>
                         <br/>
                         <br/>
                         <img draggable="false" src={bewegungsEnergie} alt={"Darstellung Bewegungsenergie"}
                              style={{width: "650px"}}/>
                     </div>
                     <div className="col-6">
-                        <h5>Mechanische Lageenergie / Potentielle Energie</h5>
+                        <h5>Lageenergie / Potentielle Energie</h5>
                         <p>Die Energie, die ein Körper aufgrund seiner Höhe besitzt, nennt man Lageenergie. Zum Beispiel
                             ein Kind auf einem Ast. Diese kann wieder in Bewegungsenergie
                             umgewandelt werden, in dem man den Gegenstand auf ein
                             niedrigeres Niveau fallen lässt.
                             <br/>
                             <br/>
-                            Die potentielle Energie Epot "eines Körpers" ist proportional zu seiner Masse m, dem
-                            Ortsfaktor g und zur Höhe h des Körpers über einem definierten Nullniveau
+                            Die potentielle Energie Epot "eines Körpers" ist proportional zu seiner Masse m und zur Höhe h des Körpers über einem definierten Nullniveau
                             <br/>
                             <br/>
-                            Für die potentielle Energie gilt Epot=m⋅g⋅h</p>
+                            <h6>Für die potentielle Energie gilt Epot=m⋅g⋅h </h6>
+                            </p>
                     </div>
                 </div>
                 <br/>
@@ -106,7 +107,7 @@ const Energie = () => {
                     Wärmeenergie hängt vor
                     allem vom
                     Temperaturniveau ab. Je höher die Temperatur ist
-                    , desto größer ist der Anteil der
+                    , desto grösser ist der Anteil der
                     Wärme, der in kinetische oder elektrische Energie
                     umgewandelt
                     werden kann. Mit Temperaturen von einigen hundert
@@ -121,7 +122,7 @@ const Energie = () => {
                     Wenn Wärmeenergie oder thermische Energie zu berechnen ist, setzt sich die grundlegende Formel aus vier Variablen zusammen:
                     <br/>
                     <br/>
-                    ?Q = Die Energiemenge in Joule
+                    Q = Die Energiemenge in Joule
                     <br/>
                     <br/>
                     m = Die Masse des Körpers/Stoffs in Kilogramm
@@ -130,10 +131,10 @@ const Energie = () => {
                     c = Die im Körper/Stoff vorhandene Wärmekapazität in Joule/kg multipliziert mit Kelvin
                     <br/>
                     <br/>
-                    ?T = Die Temperatur in Kelvin
+                    T = Die Temperatur in Kelvin
                     <br/>
                     <br/>
-                    Die Rechenformel für das Berechnen thermischer Energie lautet ?Q = m x c x ?T</p>
+                    <h6>Die Rechenformel für das Berechnen thermischer Energie lautet Q = m⋅c⋅T</h6></p>
                 <br/>
                 <br/>
                 <h4>Elektrische Energie</h4>
@@ -141,19 +142,19 @@ const Energie = () => {
                 <p>Elektrische Energie ist Energie, die mit Elektrizität übertragen oder gespeichert wird. Im Grunde
                     handelt es sich bei elektrischer Energie also um eine Fähigkeit des elektrischen Stroms. Sie hat
                     den Nachteil, dass sie nur mit
-                    großem Aufwand in größeren Mengen
+                    grossem Aufwand in grösseren Mengen
                     gespeichert werden kann und immer
                     zum Zeitpunkt des Verbrauchs erst
                     aus anderen Energieformen
                     hergestellt werden
-                    muss. Dabei treten oft große
+                    muss. Dabei treten oft grosse
                     Umwandlungsverluste auf.
                 <br/>
                     <br/>
                     P ist die elektrische Leistung in Watt, U die elektrische Spannung in Volt und I die elektrische Stromstärke in Ampere.
                 <br/>
                     <br/>
-                    Die Rechenformel für das Berechnen elektrischer Energie lautet P = U · I
+                    <h6>Die Rechenformel für das Berechnen elektrischer Energie lautet W = E = P ⋅ t = U ⋅ I ⋅ i</h6>
                 </p>
                 <br/>
                 <br/>
@@ -171,7 +172,7 @@ const Energie = () => {
                     schädliche
                     Radioaktivität, vor
                     der man sich nur mit
-                    sehr großem Aufwand
+                    sehr grossem Aufwand
                     schützen kann.
                     Bei der
                     Umwandlung in
@@ -190,12 +191,17 @@ const Energie = () => {
                 <p>Die Strahlungsenergie bezeichnet die Energie elektromagnetischer Wellen. Als elektromagnetische Welle
                     bezeichnet man eine Welle aus gekoppelten elektrischen und magnetischen Feldern. Elektromagnetische
                     Wellen sind unsichtbar und bewegen sich mit Lichtgeschwindigkeit fort. Durch die Anzahl der
-                    Schwingungen pro Sekunde erkennt man bei elektromagnetischen Wellen die Frequenz.Zur Stromerzeugung
+                    Schwingungen pro Sekunde erkennt man bei elektromagnetischen Wellen die Frequenz. Zur Stromerzeugung
                     wird vor allem die Strahlungsenergie der Sonne ausgenutzt. Die auf die Erdoberfläche auftreffende
                     Sonnenenergie hängt von den Wetterbedingungen ab. </p>
                 <br/>
+                <br/>
                 <img src={strahlungsenergie} alt={"darstellung von sollarenergie"}/>
                 <br/>
+                <br/>
+                <h4>Energieträger</h4>
+                <br/>
+                <p>Energieträger sind Stoffe oder Ereignisse, aus denen Energie gewonnen werden kann. Diese werden unterteilt in Primär- und Sekundärenergie.</p>
                 <br/>
                 <h4>Primärenergie</h4>
                 <br/>
@@ -236,6 +242,9 @@ const Energie = () => {
                     - Holzkohle zum Grillen</p>
                 <br/>
                 <br/>
+                <img src={energiequellen} alt={"darstellung von energieträgern"}/>
+                <br/>
+                <br/>
                 <h4>Nicht
                     erneuerbare
                     und
@@ -248,7 +257,7 @@ const Energie = () => {
                 <br/>
                 </p>
                 <br/>
-                <p>Eine Energieform wird erneuerbar genannt, wenn sich die Ressourcen für ihre Bereitstellung kurzfristig erneuern. Es gibt fünf verschiedene Arten an Erneuerbaren Energiequellen: Solarenergie, Windenergie, Wasserkraft, Biomasse und Erdwärme.</p>
+                <p>Eine Energieform wird erneuerbar genannt, wenn sich die Ressourcen für ihre Bereitstellung kurzfristig erneuern. Es gibt fünf verschiedene Arten an erneuerbaren Energiequellen: Solarenergie, Windenergie, Wasserkraft, Biomasse und Erdwärme.</p>
                 <br/>
                 <br/>
                 <h4>Fragen</h4>
@@ -359,6 +368,96 @@ const Energie = () => {
                                     button3Visible = !button3Visible;
                                 }}>
                                 <img id="button3_image" src={visibilityImage} alt="Auge Symbol"/>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>
+                            Was ist zum Beispiel ein fossiler Brennstoff?
+                        </td>
+                        <td className="antworten">
+                            <span style={{display: "none"}} id="antwort-4">
+                                <b>Erdöl</b>
+                            </span>
+                        </td>
+                        <td>
+                            <button id="button-4" type="button" className="btn btn-primary" onClick={function () {
+                                const ANSWER = document.getElementById("antwort-4");
+                                ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                const BUTTON_IMAGE = document.getElementById('button4_image');
+
+                                if (button4Visible) {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
+                                } else {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
+                                }
+                                button4Visible = !button4Visible;
+                            }}>
+                                <img id="button4_image" src={visibilityImage} alt={"Auge Symbol"}/>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>
+                            Wie viel % Wärmeverlust entsteht bei Umwandlung elektrischer Energie?
+                        </td>
+                        <td className="antworten">
+                            <span style={{display: "none"}} id="antwort-5">
+                                <b>70%</b>
+                            </span>
+                        </td>
+                        <td>
+                            <button id="button-5" type="button" className="btn btn-primary" onClick={function () {
+                                const ANSWER = document.getElementById("antwort-5");
+                                ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                const BUTTON_IMAGE = document.getElementById('button5_image');
+
+                                if (button5Visible) {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
+                                } else {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
+                                }
+                                button5Visible = !button5Visible;
+                            }}>
+                                <img id="button5_image" src={visibilityImage} alt={"Auge Symbol"}/>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>
+                            Wie viele verschiedene Arten von erneuerbarer Energie gibt es?
+                        </td>
+                        <td className="antworten">
+                            <span style={{display: "none"}} id="antwort-6">
+                                <b>Fünf (Solarenergie, Windenergie, Wasserkraft, Biomasse und Erdwärme)</b>
+                            </span>
+                        </td>
+                        <td>
+                            <button id="button-6" type="button" className="btn btn-primary" onClick={function () {
+                                const ANSWER = document.getElementById("antwort-6");
+                                ANSWER.style.display = (ANSWER.style.display === 'none') ? "block" : "none";
+
+                                const BUTTON_IMAGE = document.getElementById('button6_image');
+
+                                if (button1Visible) {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImage);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Nicht sichtbar');
+                                } else {
+                                    BUTTON_IMAGE.setAttribute('src', visibilityImageOff);
+                                    BUTTON_IMAGE.setAttribute('alt', 'Sichtbar');
+                                }
+                                button1Visible = !button1Visible;
+                            }}>
+                                <img id="button6_image" src={visibilityImage} alt={"Auge Symbol"}/>
                             </button>
                         </td>
                     </tr>

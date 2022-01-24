@@ -89,13 +89,13 @@ const AM = () => {
 
                         <p className="describtion-math"><b>Schritt 3: </b>Nun können wir (I) 6x und (II) -6x <b><font
                             color="red">auflösen </font></b>. Das ist der Sinn des Additionsverfahren, da man jetzt den
-                            Rest zusammenfassen kann.</p>
+                            Rest zusammenfassen kann, indem man die linken und rechten Sätze der Gleichungen addiert und zusammen fasst.</p>
                         <p className="tag-02">(I) <font color="red">6x </font> + 9y = 27</p>
                         <p className="tag-02">(II) <font color="red">-6x </font> + 8y = -10 </p>
                         <p className="tag-02">17y = 17</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-                            geteilt durch 17 rechnen. Danach bekommen wir y, eine Koordinate des Schnittpunts P.<br/>
+                            geteilt durch 17 rechnen. Danach bekommen wir y, eine Koordinate des Schnittpunkts P.<br/>
                             Rechnung: </p>
                         <p className="tag-02 ">17y = 17 |:17</p>
                         <p className="tag-02"><span className="double_underline">y = 1</span></p>
@@ -107,7 +107,8 @@ const AM = () => {
                             In diesem Beispiel werden wir beide durchgehen, was als Kontrolle des Ergebnisses dienen
                             kann. Wir nehmen als erstes dafür den Term (I).</p>
                         <p className="tag-02">(I) 2x + 3y = 9</p>
-                        <p className="describtion-math">Anstelle von y setzten wir nun 1 ein, weil y = 1 ergeben hat.</p>
+                        <p className="describtion-math">Anstelle von y setzten wir nun 1 ein, weil y = 1 ergeben
+                            hat.</p>
                         <p className="tag-02">(I) 2x + 3(1) = 9</p>
                         <p className="describtion-math">Nun können wir es wieder berechnen und danach auflösen. Hierbei
                             wird die Zahl welche vorher für y stand mit der Zahl in der Klammer multipliziert.</p>
@@ -123,13 +124,15 @@ const AM = () => {
                         <p className="tag-02">3x = 9 |:3</p>
                         <p className="tag-02"><span className="double_underline">x = 3 </span></p>
                         <p className="text-align: center;">Gleiches Ergebnis wie mit Term I.</p>
-                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte
+                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Koordinaten des Schnittpunktes
                             herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
-                            etwas wichtiges was während
-                            der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und
+                            etwas Wichtiges, in einer
+                            Prüfung evtl. gefragt wird, ist der Schlussatz. Dieser soll noch geschrieben werden und
                             richtig dargestellt.<br/>
                             Beim Punkt P wird zuerst x geschrieben danach y!</p>
                         <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(3|1)</b></p>
+                        <p><b>Amerkung:</b> Schnittpunkt deshalb, weil die zwei Gleichungen stellvertretend für zwei Geraden stehen.
+                             Es sind lineare Gleichungen für Geraden.</p>
                     </p>
 
                     &nbsp;
@@ -176,7 +179,7 @@ const AM = () => {
                         <p className="tag-02">70x = 140</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt  P.<br/>
+                            durch 70 teilen. Danach bekommen wir die x-Koordinate des Schnittpunkts P.<br/>
                             Rechnung: </p>
                         <p className="tag-02">70x = 140 |:70</p>
                         <p className="tag-02"><span className="double_underline">x = 2</span></p>
@@ -193,10 +196,10 @@ const AM = () => {
                         <p className="tag-02">(I) 16y = 48 |:(-16)</p>
                         <p className="tag-02"><span className="double_underline">y = -3 </span></p>
 
-                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte
-                            herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
-                            etwas wichtiges was während
-                            der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und
+                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Koordinaten des Schnittpunkts
+                            herausgefunden und x überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
+                            etwas Wichtiges, was in
+                            der Prüfung evtl. gefragt wird, ist der Schlussatz. Dieser soll noch geschrieben werden und
                             richtig dargestellt.<br/>
                             Beim Punkt P wird zuerst x geschrieben danach y!</p>
                         <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(2|-3)</b></p>
