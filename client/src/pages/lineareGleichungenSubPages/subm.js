@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LGS from "../../img/lineargleichungen/lgslf.jpg";
+import LGS2 from "../../img/lineargleichungen/lgslf2.jpg";
 import '../../styles/lineareGleichungen/sbs.css';
 import LineareGleichungenBanner from "./banner";
 import {saveAs} from "file-saver";
@@ -231,6 +233,36 @@ const SUBM = () => {
                     </p>
                 </div>
                 <br/>
+            </section>
+            <section id="schnittpunkt">
+                <div className="container">
+                <div className="tag-title">
+                        <p style={{textAlign: "center"}}>
+                            Graphische Darstellung des Schnittpunktes
+                        </p>
+                    </div>
+                    <div className="row">
+                        <div className="box">
+                            <div className="box-inhalt">
+                                Neben der rechnerischen Darstellung, kann der Schnittpunkt auch grafisch Dargestellt werden.
+                                <br/>
+                                    Das LGS, besteht aus mindestens zwei linearen Gleichungen. Um diese zu lösen, haben wir
+                                    die zwei verschiedenen Lösungsverfahren angeschaut. Nach dem rechnerischen Verfahren können
+                                    wir den Schnittpunkt auch noch <b>grafish darstellen</b>. Dieser Schnittpunkt zeigt, wenn sich
+                                    zwei Graphen von linearen Funktionen schneiden.
+                                <br/>
+                                <br/>
+                                    Wenn wir die beiden Koordinaten x und y berechnet haben, bekommen wir den Schnittpunkt P. <br/>Diesen können 
+                                    wir dann wie unten dargestellt aufzeichnen. Rechts wird nur der Schnittpunkt gezeigt und links sehen wir
+                                    den Schnittpunkt mit zwei eingezeichneten Graphen.
+                                <br/>
+                                <img className="lgs-img" src={LGS2} alt={"LGS2"}/>
+                                <img className="lgs-img" src={LGS} alt={"LGS"}/>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="weiters">
                 <div className="container">
