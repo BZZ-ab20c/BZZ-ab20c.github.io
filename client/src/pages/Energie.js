@@ -134,7 +134,7 @@ const Energie = () => {
                     T = Die Temperatur in Kelvin
                     <br/>
                     <br/>
-                    Die Rechenformel für das Berechnen thermischer Energie lautet Q = m⋅c⋅T</p>
+                    <h6>Die Rechenformel für das Berechnen thermischer Energie lautet Q = m⋅c⋅T</h6></p>
                 <br/>
                 <br/>
                 <h4>Elektrische Energie</h4>
