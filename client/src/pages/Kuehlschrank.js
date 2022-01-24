@@ -15,10 +15,6 @@ import isobutan from '../img/kuehlschrank/Isobutan.png'
 import emptyRoom from '../img/kuehlschrank/emptyRoom.png'
 import temperaturMesser from '../img/kuehlschrank/TemperaturMesser.gif'
 import useDocumentTitle from "../utils/UseDocumentTitle";
-import visibilityImage from "../img/energie/visibility.svg";
-import visibilityImageOff from "../img/energie/visibility_off.svg";
-
-let button1Visible = false;
 
 
 const Kuehlschrank = () => {
@@ -66,7 +62,8 @@ const Kuehlschrank = () => {
                     <img src={eishaus} style={{height: "20%"}}
                          alt="eishaus"/>
                     <h5>1834</h5>
-                    <p className="kuehlschrankP">Der amerikanische Erfinder Jacob Perkins, der zu dieser Zeit in London lebte,
+                    <p className="kuehlschrankP">Der amerikanische Erfinder Jacob Perkins, der zu dieser Zeit in London
+                        lebte,
                         baute das weltweit erste funktionierende Dampfkompressionskühlsystem, bei
                         dem Ether in einem geschlossenen Kreislauf verwendet wurde. Sein Prototyp-System
                         arbeitete und war der erste Schritt zu modernen Kühlschränken, aber es hatte keinen
@@ -75,7 +72,8 @@ const Kuehlschrank = () => {
                 </div>
                 <div className="col-6">
                     <h5>1871</h5>
-                    <p className="kuehlschrankP"> 1871 entwarf Linde seine erste Kältemaschine. Seine Erfindung basiert auf den
+                    <p className="kuehlschrankP"> 1871 entwarf Linde seine erste Kältemaschine. Seine Erfindung basiert
+                        auf den
                         Gesetzen der Wärmelehre. Im Kühlschrank wird ein Kühl- oder Kältemittel durch
                         Metallröhren im Kreis gepumpt. Das Kühlmittel ist eine Flüssigkeit, die bei
                         normalem Druck schon bei niedrigen Temperaturen "kocht", also gasförmig wird.</p>
@@ -110,7 +108,8 @@ const Kuehlschrank = () => {
             </div>
 
             <div className="parent">
-                <p className="kuehlschrankP"> Ein Kühlschrank dient dazu, einen umschlossenen Raum, den Innenraum, abzukühlen.
+                <p className="kuehlschrankP"> Ein Kühlschrank dient dazu, einen umschlossenen Raum, den Innenraum,
+                    abzukühlen.
                     Sein Wirkprinzip entspricht dem der Wärmepumpe: Durch ein Arbeitsmittel wird durch
                     einen Verdampfer der Luft und den im Kühlschrank befindlichen Lebensmitteln Wärme
                     entzogen. ... Sein Wirkprinzip entspricht dem der Wärmepumpe.
@@ -204,6 +203,12 @@ const Kuehlschrank = () => {
 
             <div className="row">
                 <div className="col-6">
+                    <h6>Für was braucht man Isobutan?</h6>
+                    <p className="kuehlschrankP">Isobutan weist einen sehr niedrigen
+                        Treibhauseffekt auf und wird
+                        deswegen in Kühlschränken als
+                        Kältemittel eingesetzt.</p>
+                    <br/>
                     <img src={isobutan} style={{height: "20%"}}
                          alt="Kühlschrank_Image2"/>
                     <br/>
@@ -217,19 +222,42 @@ const Kuehlschrank = () => {
                     </p>
                 </div>
                 <div className="col-6">
-                    <h6>Für was braucht man Isobutan?</h6>
-                    <p className="kuehlschrankP">Isobutan weist einen sehr niedrigen
-                        Treibhauseffekt auf (GWP 3) und wird
-                        deswegen in Kühlschränken als
-                        Kältemittel eingesetzt.</p>
-                    <br/>
                     <h6>Ammoniak</h6>
                     <p className="kuehlschrankP">
                         Vor 80 Jahren, hiess das Kühlmittel Ammoniak, Schwefeldioxid oder Methylchlorid.
                     </p>
-                    <img src={ammoniak} style={{height: "300px"}}
+
+
+                    <img src={ammoniak} style={{height: "200px"}}
                          alt="Kühlschrank_Image2"/>
 
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <h6>
+                        Warum ist Ammoniak giftig
+                    </h6>
+                    <p>
+                        Ammoniak ist ein Gas, das aus Stickstoffverbindungen besteht. Beim Einatmen geringer
+                        Konzentrationen wirkt es reizend, bei hohen Konzentrationen ätzend und es besteht
+                        Lebensgefahr. Es ist ein stechend riechendes, farbloses, wasserlösliches und giftiges Gas.
+                    </p>
+                    <br/>
+                    <h6>
+                        Wie das Ammoniak im Kühlschrank gebraucht wurde
+                    </h6>
+                    <p>
+                        Das gasförmige Ammoniak kondensiert im Kondensator durch Abkühlung. Hier gibt der
+                        Kühlschrank Wärme an die Umgebung ab. Das nunmehr flüssige Ammoniak fliesst über
+                        ein dünnes Rohr in den Verdampfer im Innenraum, üblicherweise im Eisfach.
+                    </p>
+                    <h6>
+                        Wo ist der Siedepunkt?
+                    </h6>
+                    <p>
+                        Der siedepunkt ist bei -33.34 °C
+                    </p>
                 </div>
             </div>
 
@@ -266,14 +294,14 @@ const Kuehlschrank = () => {
                     <br/>
                     <br/>
                     <h6>Warum wird der
-                        Raum wärmer wen
+                        Raum wärmer, wenn
                         man den
                         Kühlschrank
                         offen
                         lässt?
                     </h6>
                     <p className="kuehlschrankP">
-                        Wen die Tür des
+                        Wenn die Tür des
                         Kühlschrankes
                         geöffnet ist,
                         wird es im Raum
@@ -285,18 +313,19 @@ const Kuehlschrank = () => {
                         Aufgabe eines
                         Kühlschranks
                         ist es, die
-                        wärme aus dem
+                        Wärme aus dem
                         Kühlschrank zu
                         entfernen. Somit
-                        wird der
-                        Raum gewärmt von
-                        dem Kühlschrank.
+                        wird der Raum
+                        mit der Wärme
+                        die ausgestossen
+                        wird gewärmt.
                     </p>
                     <br/>
                     <br/>
                 </div>
                 <div className="col-6">
-                    <h6>Wie viel wärme gibt ein
+                    <h6>Wie viel Wärme gibt ein
                         Kühlschrank ab?</h6>
                     <p className="kuehlschrankP">
                         Im Idealfall ist der Kühlschrank von mittlerer Grösse der
@@ -309,9 +338,9 @@ const Kuehlschrank = () => {
                         Innenraum kann leicht doppelt soviel Wärme abgeben.
                     </p>
                     <br/>
-                    <h6>Wie viel arten von
-                        Kühlschranke gibt
-                        es?</h6>
+                    <h6>
+                        Wie viel Kühlschrankarten gibt es?
+                    </h6>
                     <p className="kuehlschrankP">Es gibt den
                         Kompressor
                         Kühlschrank,
@@ -323,8 +352,8 @@ const Kuehlschrank = () => {
                 </div>
             </div>
 
-        <br/>
-        <br/>
+            <br/>
+            <br/>
 
             <div className="parent">
                 <h5>Wichtiges</h5>
@@ -333,7 +362,8 @@ const Kuehlschrank = () => {
             <div className="parent">
                 <h6>Wo ist es am Wärmsten im Kühlschrank?</h6>
                 <p className="kuehlschrankP">
-                    Gemäss der physikalischen Erklärung, steigt wärmere Luft nach oben, und daher liegen in den beiden oberen Fächern im Kühlschrank die Zonen mit den höheren Temperaturen.
+                    Gemäss der physikalischen Erklärung, steigt wärmere Luft nach oben, und daher liegen in den beiden
+                    oberen Fächern im Kühlschrank die Zonen mit den höheren Temperaturen.
                 </p>
             </div>
 
@@ -345,7 +375,7 @@ const Kuehlschrank = () => {
                     Da moderne Kühlschränke aufgrund ihrer ausgeklügelten Technik
                     (z.B. die verschiedenen Kühlzonen) und der guten Energieeffizienz
                     mitunter ziemlich teuer sein können, ist es ratsam, vor dem Kauf
-                    die Preise verschiedenener Kühlschränke genau zu vergleichen. Mit
+                    die Preise verschiedenerer Kühlschränke genau zu vergleichen. Mit
                     dem gesparten Geld können dann Lebensmittel gekauft und der neue
                     Kühlschrank eingeweiht werden.
                 </p>
@@ -413,11 +443,11 @@ const Kuehlschrank = () => {
                 <tr>
                     <th scope="row">3</th>
                     <td>
-                        Warum wird der Raum wärmer wen man den Kühlschrank offen lässt?
+                        Warum wird der Raum wärmer, wenn man den Kühlschrank offen lässt?
                     </td>
                     <td className="antworten">
                 <span style={{display: "none"}} id="antwort-3">
-                    <b>Die Aufgabe eines Kühlschranks ist es, die wärme aus dem Kühlschrank zu entfernen. Somit wird der Raum gewärmt von dem Kühlschrank.</b>
+                    <b>Die Aufgabe eines Kühlschranks ist es, die Wärme aus dem Kühlschrank zu entfernen. Somit wird der Raum gewärmt von dem Kühlschrank.</b>
                 </span>
                     </td>
                     <td>
@@ -455,7 +485,7 @@ const Kuehlschrank = () => {
                 <tr>
                     <th scope="row">5</th>
                     <td>
-                        Wie viel wärme gibt ein Kühlschrank gewöhnlich ab?
+                        Wie viel Wärme gibt ein Kühlschrank gewöhnlich ab?
                     </td>
                     <td className="antworten">
                 <span style={{display: "none"}} id="antwort-5">
@@ -484,7 +514,7 @@ const Kuehlschrank = () => {
 
             <div>
                 <h4>
-                    Wird der Raum kälter wen man den Kühlschrank offen lässt?
+                    Wird der Raum kälter wenn man den Kühlschrank offen lässt?
                 </h4>
             </div>
 
