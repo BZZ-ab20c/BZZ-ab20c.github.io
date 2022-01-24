@@ -213,7 +213,7 @@ const AM = () => {
                 <div className="container">
                 <div className="tag-title">
                         <p style={{textAlign: "center"}}>
-                            Graphische Darstellung des Schnittpunktes
+                            Grafische Darstellung des Schnittpunktes
                         </p>
                     </div>
                     <div className="row">
@@ -227,7 +227,7 @@ const AM = () => {
                                     zwei Graphen von linearen Funktionen schneiden.
                                 <br/>
                                 <br/>
-                                    Wenn wir die beiden Koordinaten x und y berechnet haben bekommen wir den Schnittpunkt P. <br/>Diesen können 
+                                    Wenn wir die beiden Koordinaten x und y berechnet haben, bekommen wir den Schnittpunkt P. <br/>Diesen können 
                                     wir dann wie unten dargestellt aufzeichnen. Rechts wird nur der Schnittpunkt gezeigt und links sehen wir
                                     den Schnittpunkt mit zwei eingezeichneten Graphen.
                                 <br/>

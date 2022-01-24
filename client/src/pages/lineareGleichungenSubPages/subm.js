@@ -238,7 +238,7 @@ const SUBM = () => {
                 <div className="container">
                 <div className="tag-title">
                         <p style={{textAlign: "center"}}>
-                            Graphische Darstellung des Schnittpunktes
+                            Grafische Darstellung des Schnittpunktes
                         </p>
                     </div>
                     <div className="row">
