@@ -1,6 +1,13 @@
 .vektorenP {
     font-size: 20px;
+}
+
+.vektorenLeft {
     text-align: left;
+}
+
+.vektorenCenter {
+    text-align: center;
 }
 
 .colBorderRight {

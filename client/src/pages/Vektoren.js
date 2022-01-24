@@ -23,10 +23,10 @@ const Vektoren = () => {
             <div className={"col"}>
                 <div className={"myCard"}>
                     <div className={"container"}>
-                        <p className={"vektorenP"}>
+                        <p className={"vektorenP vektorenCenter"}>
                             Physiker, Fluglotsen und Spieleentwickler haben alle mindestens etwas gemeinsam.
                             <br/>
-                            <span style={{fontSize: "28px"}}><b>Vektoren</b></span>
+                            <span className={""} style={{fontSize: "28px"}}><b>Vektoren</b></span>
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Vektoren = () => {
                         </div>
 
                         <div className="container">
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 Um Vektoren zu verstehen, müssen wir zuerst <b>Skalare</b> verstehen.
                                 <br/>
                                 Ein Skalar ist eine Menge mit Betrag. Er sagt uns, wie viel von etwas existiert.
@@ -88,7 +88,7 @@ const Vektoren = () => {
                                 Die Distanz zwischen dir und einem Baum, aber auch das Volumen und die Temperatur des
                                 Getränkes in deinem Glas sind alle mit einem Skalar beschrieben.
                             </p>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 Vektorengrössen haben auch eine Menge und eine weitere Information: Richtung.
                                 <br/>
                                 Um zu einem Baum zu gelangen, musst du wissen, wie weit weg und in welcher Richtung er
@@ -96,12 +96,12 @@ const Vektoren = () => {
                                 <br/>
                                 Nicht nur die Entfernung, sondern auch die Verschiebung.
                             </p>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 Was die Vektoren speziell und in vielen verschiedenen Bereichen dadurch nützlich macht
                                 ist, dass sie sich nicht mit der Perspektive ändern. Sondern Sie bleiben unverändert zum
                                 Koordinatensystem.
                             </p>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 <b>Was bedeutet das?</b>
                                 <br/>
                                 Sagen wir, du und dein Freund wollen zusammen euer Zelt verlegen. Ihr steht gegenüber,
@@ -129,7 +129,7 @@ const Vektoren = () => {
                             </h3>
                         </div>
                         <div className={"container"}>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 Vektoren können unterschiedlich dargestellt werden. Manche sehen einen Vektor als Pfeil,
                                 andere als Liste von Zahlen, auch als Spaltenvektor bezeichnet. Aber am Ende ist es
                                 immer das Gleiche.
@@ -144,7 +144,7 @@ const Vektoren = () => {
                                          alt={"Vektor als Liste dargestellt"}/>
                                 </div>
                             </div>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP  vektorenLeft"}>
                                 Wie wir vorhin gelesen haben, sind Vektoren immer gleich, unabhängig
                                 vom Koordinatensystem oder der Perspektive.
                                 Sie haben immer eine Richtung und eine Entfernung. Im Beispiel vom Zelt vorhin, hat der
@@ -157,7 +157,7 @@ const Vektoren = () => {
                                 Liste, Spaltenvektoren, arbeitet würde es in etwa wie folgt machen:
                             </p>
                             <Vektor x={2} y={3}/>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP  vektorenLeft"}>
                                 Die erste Zahl ist X und die zweite ist Y. Beide Personen sind zwei Distanzeinheiten auf
                                 der X Achse und drei Distanzeinheiten auf der Y Achse gelaufen.
                                 Das ist ein zweidimensionaler Vektor. Die Dimension wird anhand der Zahlen bestimmt. Um
@@ -177,7 +177,7 @@ const Vektoren = () => {
                             </h3>
                         </div>
                         <div className={"container"}>
-                            <p className={"vektorenP"}>
+                            <p className={"vektorenP vektorenLeft"}>
                                 Mit Vektoren zu rechnen ist eigentlich ganz einfach. Im folgenden werden die
                                 unterschiedlichen Methoden erklärt.
                                 <br/>
@@ -187,7 +187,7 @@ const Vektoren = () => {
                             <div className={"row"}>
                                 <div className={"col colBorderRight"}>
                                     <h4>Addieren/Subtrahieren</h4>
-                                    <p className={"vektorenP"}>
+                                    <p className={"vektorenP vektorenLeft"}>
                                         Wie beim normalen Rechnen brauchen wir hier mindestens zwei Vektoren, um diese
                                         zusammen addieren oder subtrahieren zu können.
                                         <br/>
@@ -239,7 +239,7 @@ const Vektoren = () => {
                                 </div>
                                 <div className={"col"}>
                                     <h4>Multiplizieren/Dividieren mit einem Skalar</h4>
-                                    <p className={"vektorenP"}>
+                                    <p className={"vektorenP vektorenLeft"}>
                                         Hier schauen wir uns die Möglichkeit an, bei welchem wir einfach eine
                                         Zahl, einen Skalar, mit einem Vektor multiplizieren oder dividieren.
                                         <br/>
@@ -291,7 +291,7 @@ const Vektoren = () => {
                             <div className={"row rowBorderUp"}>
                                 <div className={"col colBorderRight"}>
                                     <h4>Skalarprodukt</h4>
-                                    <p className={"vektorenP"}>
+                                    <p className={"vektorenP vektorenLeft"}>
                                         Man kann auch einen Vektor mit einem anderen Vektor multiplizieren.
                                         <br/>
                                         Vektor * Vektor ist das sogenannte Skalarprodukt.
@@ -332,7 +332,7 @@ const Vektoren = () => {
                                 </div>
                                 <div className={"col"}>
                                     <h4>Kreuz- oder Vektorprodukt</h4>
-                                    <p className={"vektorenP"}>
+                                    <p className={"vektorenP vektorenLeft"}>
                                         Um das sogenannte Kreuz- oder auch Vektorprodukt zu bekommen, muss man zwei
                                         Vektoren miteinander kreuzen.
                                         <br/>
@@ -351,7 +351,7 @@ const Vektoren = () => {
                                         </div>
                                     </div>
 
-                                    <p className={"vektorenP"}>
+                                    <p className={"vektorenP vektorenLeft"}>
                                         Diese zwei kreuzen wir jetzt.
                                         <br/>
                                         Beim Kreuzen multiplizieren wir diagonal zwei Werte von beiden Vektoren und
@@ -408,14 +408,15 @@ const Vektoren = () => {
                         <h4>Deutsch</h4>
                         <div className={"row"}>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Vektor, Vektoren, Definition</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Vektor, Vektoren, Definition</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/9C1OOlLng2Q"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Rechnen mit Vektoren, Grundlagen, Basics</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Rechnen mit Vektoren, Grundlagen, Basics</b>
+                                </p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/XKr6Qe9_trY"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -424,14 +425,18 @@ const Vektoren = () => {
                         </div>
                         <div className={"row"}>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Skalarprodukt und Länge (Betrag) eines Vektors, Vektorgeometrie</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Skalarprodukt und Länge (Betrag) eines
+                                    Vektors,
+                                    Vektorgeometrie</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/4O8-1zdXkEw"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Vektorprodukt, Kreuzprodukt, vektorielles, äußeres Produkt, Formel</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Vektorprodukt, Kreuzprodukt, vektorielles,
+                                    äußeres
+                                    Produkt, Formel</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/63FWetdwNb8"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -442,14 +447,15 @@ const Vektoren = () => {
                         <h4 className={"rowBorderUp"} style={{paddingTop: "20px"}}>Englisch</h4>
                         <div className={"row"}>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Was ist ein Vektor?</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Was ist ein Vektor?</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/ml4NSzCQobk"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
                             <div className={"col"}>
-                                <p className={"vektorenP"}><b>Was sind Vektoren? Die Essenz der Linearen Algebra</b></p>
+                                <p className={"vektorenP vektorenLeft"}><b>Was sind Vektoren? Die Essenz der Linearen
+                                    Algebra</b></p>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/fNk_zzaMoSs"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
