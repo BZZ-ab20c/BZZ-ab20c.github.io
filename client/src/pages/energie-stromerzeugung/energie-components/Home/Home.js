@@ -46,9 +46,9 @@ const TitleSeite = () => {
                     <Col>
                         <div className="TextRight">
                             Ein einfaches Beispiel ist der <strong>Fahrraddynamo</strong>.
-                            Durch die Bewegung des Rades dreht sich eine im <strong>Dynamo</strong>
+                            Durch die Bewegung des Rades dreht sich eine im <strong>Dynamo </strong>
                             enthaltener <strong>Permanentmagnet</strong> in einer feststehenden
-                            <strong>Induktionsspule</strong>. Dadurch wird ein <strong>Stromfluss</strong> erzeugt, der
+                            <strong> Induktionsspule</strong>. Dadurch wird ein <strong>Stromfluss</strong> erzeugt, der
                             die <strong>Fahrradlampe</strong> zum Leuchten bringt. Ein ähnliches Prinzip
                             verwendet auch ein <strong>Kraftwerksgenerator</strong>.
                         </div>
@@ -60,7 +60,7 @@ const TitleSeite = () => {
                         <div className="TextLeft">
                             Kraftwerke werden nach der <strong>Art</strong>, wie in ihnen Strom gewonnen
                             wird, unterschieden. Es gibt <strong>Wasserkraftwerken</strong>, <strong>Windkraftwerken </strong>,
-                            <strong>Solaranlagen</strong>, <strong>Biomassekraftwerken</strong>, <strong>Gasturbinenkraftwerken</strong>, 
+                            <strong> Solaranlagen</strong>, <strong>Biomassekraftwerken</strong>, <strong>Gasturbinenkraftwerken</strong>, 
                             <strong> Kernenergieanlagen</strong>, <strong>Kohlekraftwerken</strong> und viele andere Arten.
                             Das <strong>Prinzip</strong> bleibt, aber bei allen Kraftwerken das Gleiche.
                         </div>

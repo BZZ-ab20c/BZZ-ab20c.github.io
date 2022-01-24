@@ -39,7 +39,7 @@ export const Kernkraftwerk = () => {
                             Weltweit gibt es verschiedene Reaktorsysteme. Die meisten davon
                             sind <strong>Leichtwasserreaktoren</strong>. Auch die vier Kernkraftwerke in der
                             Schweiz <strong>Beznau</strong>, <strong>Mühleberg</strong>, <strong>Gösgen</strong> und 
-                            <strong>Leibstadt</strong>, sind
+                            <strong> Leibstadt</strong>, sind
                             mit Leichtwasserreaktoren ausgerüstet. Grössere Kernkraftwerke
                             bestehen aus mehreren <strong>Blöcken</strong>, die unabhängig voneinander
                             elektrischen Strom erzeugen. Jeder Block enthält einen <strong>Kernreaktor</strong>.
@@ -69,7 +69,7 @@ export const Kernkraftwerk = () => {
                 <Row className="GrayRow">
                     <Col>
                         <div className="TextLeft">
-                            Bei den <strong>Druckwasserreaktoren</strong>
+                            Bei den <strong>Druckwasserreaktoren </strong>
                             wird im Reaktor das Wasser unter hohem <strong>Druck</strong> erhitzt, ohne dass
                             es zu sieden beginnt. Das erhitzte Wasser wird zu Dampferzeugern
                             ausserhalb des <strong>Reaktors</strong> geleitet, wo es seine Wärme an einen
@@ -104,7 +104,7 @@ export const Kernkraftwerk = () => {
                             Einen solchen Kühlturm mit oft von weitem sichtbarer <strong>Nebelfahne </strong>
                             nennt man Naturzug-Nasskühlturm. Die warme Luft steigt im Turm nach
                             oben. Durch die Verengung in der Mitte und seine grosse Höhe von
-                            <strong>140</strong> und mehr Metern entsteht ein starker <strong>Luftzug</strong> von unten nach oben,
+                            <strong> 140</strong> und mehr Metern entsteht ein starker <strong>Luftzug</strong> von unten nach oben,
                             wie in einem Hauskamin: Die warme Luft entweicht nach oben, während von
                             unten kältere <strong>Umgebungsluft</strong> nachströmt. Diese kalte Luft kühlt die
                             fallenden Wasser Tröpfchen, ganz <strong>ohne Zufuhr</strong> ohne Zufuhr von <strong>Energie</strong>.
