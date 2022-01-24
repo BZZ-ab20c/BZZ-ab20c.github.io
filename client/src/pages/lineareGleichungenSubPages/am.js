@@ -177,11 +177,7 @@ const AM = () => {
                         <p className="tag-02">70x = 140</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-<<<<<<< Updated upstream
-                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt P.<br/>
-=======
                             durch 70 teilen. Danach bekommen wir die x-Koordinate des Schnittpunkt  P.<br/>
->>>>>>> Stashed changes
                             Rechnung: </p>
                         <p className="tag-02">70x = 140 |:70</p>
                         <p className="tag-02"><span className="double_underline">x = 2</span></p>
