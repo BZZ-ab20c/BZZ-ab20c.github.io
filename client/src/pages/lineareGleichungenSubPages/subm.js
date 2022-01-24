@@ -101,7 +101,7 @@ const SUBM = () => {
                             kompletten Schnittpunkt zu bekommen. Dafür nehmen wir den
                             zweiten Tern und setzen in diesen x ein.</p>
                         <p className="tag-02">(II) y = 5 - 2x</p>
-                        <p className="describtion-math">Anstelle von x (Da wir das schon haben) setzten wir nun 8 ein da
+                        <p className="describtion-math">Anstelle von x (Da wir das schon haben) setzten wir nun 8 ein, da
                             x = 8 ergeben hat.</p>
                         <p className="tag-02">y = 5 - 2(8)</p>
                         <p className="describtion-math">Nun können wir y berechnen und danach auflösen. Hierbei
