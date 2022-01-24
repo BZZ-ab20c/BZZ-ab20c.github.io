@@ -81,7 +81,7 @@ const LineareFunktionen = () => {
                 <p>
                     <h3>Der y-Achsenabschnitt</h3><br/>
                     <p>
-                        <img id="myImage" src={y_abscnitt} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={yabschnitt} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Der y-Achsenabschnitt beträgt 1,5. Der dazugehörige x-Wert ist 0.
 
