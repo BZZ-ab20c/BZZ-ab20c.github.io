@@ -73,9 +73,16 @@ const LineareFunktionen = () => {
 
                 </p>
                 <p>
-                    <h3>
-                        Der y-Achsenabschnitt im einzelnen
-                    </h3>
+                    <h3>Der y-Achsenabschnitt</h3><br/>
+                    <p>
+                        <img id="myImage" src={} style={{height: "100px", marginRight: 0}} alt={""}/><br/>
+                    </p>
+                    Der y-Achsenabschnitt beträgt 1,5. Der dazugehörige x-Wert ist 0.
+
+                    Die Funktion schneidet die y-Achse an dem Punkt, wo der x-Wert null ist. Vorsicht! Die beiden Achsen<br/>
+                    dürfen nicht verwechselt werden: Die x-Achse verläuft von links nach rechts und die y-Achse von unten nach oben.<br/>
+                    Die Funktionsgleichung mit hilfe des y-Achsenabschnitt bestimmen.<br/>
+
 
                 </p>
                 <p>

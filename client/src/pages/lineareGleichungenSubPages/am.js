@@ -177,7 +177,7 @@ const AM = () => {
                         <p className="tag-02">70x = 140</p>
 
                         <p className="describtion-math"><b>Schritt 4: </b> Als letztes müssen wir nur noch beides
-                            durch 70 zu rechnen. Danach bekommen wir die x-Koordinate des Schnittpunkt P.<br/>
+                            durch 70 teilen. Danach bekommen wir die x-Koordinate des Schnittpunkt  P.<br/>
                             Rechnung: </p>
                         <p className="tag-02">70x = 140 |:70</p>
                         <p className="tag-02"><span className="double_underline">x = 2</span></p>
@@ -194,10 +194,10 @@ const AM = () => {
                         <p className="tag-02">(I) 16y = 48 |:(-16)</p>
                         <p className="tag-02"><span className="double_underline">y = -3 </span></p>
 
-                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Schnittpunkte
-                            herausgefunden und x noch überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
-                            etwas wichtiges was während
-                            der Prüfung evtl. gefragt ist, ist der Schlussatz. Dieses soll noch geschrieben werden und
+                        <p className="describtion-math"><b>Schritt 6: </b>Nun haben wir beide Koordinaten des Schnittpunkts
+                            herausgefunden und x überprüft (Was im übrigen nicht notwenig ist). Als letztes, noch
+                            etwas Wichtiges, was in
+                            der Prüfung evtl. gefragt wird, ist der Schlussatz. Dieser soll noch geschrieben werden und
                             richtig dargestellt.<br/>
                             Beim Punkt P wird zuerst x geschrieben danach y!</p>
                         <p><b>Der Schnittpunkt von I und II liegt bei Punkt P(2|-3)</b></p>
