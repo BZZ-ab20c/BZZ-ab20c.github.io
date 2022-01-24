@@ -51,6 +51,9 @@ const VektorenFragen = () => {
             allowedOperators: [
                 {
                     operator: '*'
+                },
+                {
+                    operator: '*'
                 }
             ]
         },

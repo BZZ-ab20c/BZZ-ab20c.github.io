@@ -20,17 +20,15 @@ export const Wasserkraftwerk = () => {
     return (
         <div>
             <Container fluid>
-
                 <h2 className="H2">Wasserkraftwerke</h2>
                 <Row className="div">
                     <p className="introduction">
-                        Wasserkraftwerke werden in 2 Kategorien eingeteilt es gibt
-                        Laufwasserkraftwerke und Speicherwasserkraftwerke. Die Fallhöhe
-                        des Wassers spielt auch eine Rolle. Bei einer Höhe zwischen 1 –
-                        25 Metern spricht man von einem Niederdruckkraftwerk. Bei einer
-                        Höhe von 26 – 100 Metern spricht man von einem Mitteldruckkraftwerk
-                        und ab einer Fallhöhe von 100 Metern aufwärts wird es Hochdruckkraftwerk
-                        genannt.
+                        Wasserkraftwerke werden in 2 Kategorien eingeteilt es gibt 
+                         <strong> Laufwasserkraftwerke</strong> und <strong>Speicherwasserkraftwerke</strong> Speicherwasserkraftwerke. Die Fallhöhe
+                        des Wassers spielt auch eine Rolle. Bei einer Höhe zwischen <strong>1 –
+                        25 Metern</strong> spricht man von einem <strong>Niederdruckkraftwerk</strong>. Bei einer 
+                        Höhe von <strong>26 – 100 Metern</strong> spricht man von einem <strong>Mitteldruckkraftwerk </strong> 
+                        und ab einer Fallhöhe <strong>von 100 Metern</strong> aufwärts wird es <strong>Hochdruckkraftwerk</strong> genannt.
                     </p>
                 </Row>
                 <h4 className='H4'>Niederdruckkraftwerke</h4>
@@ -38,10 +36,10 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextLeft">
                             Niederdruckkraftwerke sind durch geringere Fallhöhen
-                            bis etwa 15 m und einen relativ großen Durchfluß.
-                            Sie werden meist als Laufwasserkraftwerke konzipiert,
+                            bis etwa 15 m und einen relativ <strong>grossen Durchfluss</strong>. 
+                            Sie werden meist als <strong>Laufwasserkraftwerke</strong> konzipiert,
                             eine nennenswerte Speichermöglichkeit durch Überstauung
-                            weiter Ufergebiete läßt die Topographie in der Regel nicht zu.
+                            weiter Ufergebiete lässt die <strong>Topographie</strong> in der Regel nicht zu.
                         </div>
                     </Col>
                     <Col>
@@ -56,13 +54,13 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextRight">
                             Mitteldruckkraftwerk sind Wasserkraftanlage mit einer Fallhöhe
-                            von 15-50 m, meist im Zusammenhang mit einer Talsperre als
+                            von 15-50 m, meist im Zusammenhang mit einer <strong>Talsperre</strong> als 
                             Speicherkraftwerk oder auch an höheren Wehren als
-                            Laufwasserkraftwerk. Mitteldruckkraftwerke sind
-                            häufig Teil einer Mehrzweckanlage, die neben
+                            <strong> Laufwasserkraftwerk</strong>. Mitteldruckkraftwerke sind
+                            häufig Teil einer <strong>Mehrzweckanlage</strong>, die neben
                             der Stromerzeugung noch anderen Zwecken dient
-                            wie z.B. Niedrigwasseraufhöhung, Hochwasserschutz,
-                            Trinkwasserversorgung oder Freizeit und Erholung.
+                            wie z.B. <strong>Niedrigwasseraufhöhung</strong>, <strong>Hochwasserschutz</strong>, 
+                            <strong>Trinkwasserversorgung</strong> oder Freizeit und Erholung.
                         </div>
                     </Col>
                 </Row>
@@ -70,12 +68,12 @@ export const Wasserkraftwerk = () => {
                 <Row className="BlueRow">
                     <Col>
                         <div className="TextLeft">
-                            Hochdruckkraftwerk sind Wasserkraftanlage mit großer
-                            Fallhöhe über 50 - 2000 metern, jedoch häufig
-                            vergleichsweise geringem Durchfluß. Anders als
+                            Hochdruckkraftwerk sind Wasserkraftanlage mit grosser
+                            Fallhöhe über 50 - 2000 Metern, jedoch häufig
+                            vergleichsweise <strong>geringem Durchfluss</strong>. Anders als
                             beim Mitteldruckkraftwerk liegt das Hochdruckkraftwerk
                             selten direkt an der Talsperre, sondern ist mit dieser
-                            über Freispiegelleitungen oder Druckstollen verbunden.
+                            über <strong>Freispiegelleitungen</strong> oder <strong>Druckstollen</strong> verbunden.
                         </div>
                     </Col>
                     <Col>
@@ -87,20 +85,20 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <img className="ImgLeft" src={funktionsweise1} alt={"funktionsweise1"}/>
                         <div className="ExtraTextLeft">
-                            Weil desto schneller das Wasser schlussendlich auf die Turbine trifft,
+                            Weil desto schneller das Wasser schlussendlich auf die <strong>Turbine</strong> trifft,
                             desto schneller dreht sich diese und erzeugt so viel mehr
-                            Strom, als wenn Wasser mit einer weniger hohen Geschwindigkeit
+                            Strom, als wenn Wasser mit einer weniger hohen <strong>Geschwindigkeit </strong>
                             auf die Turbine trifft. Nach dem das Wasser durch die Turbine
-                            gelaufen ist, wird es durch einen weiteren Gang gelassen, der
-                            meistens in einem Fluss endet.
+                            gelaufen ist, wird es durch einen weiteren <strong>Gang</strong> gelassen, der
+                            meistens in einem <strong>Fluss</strong> endet.
                         </div>
                     </Col>
                     <Col>
                         <div className="TextRight">
-                            Das Wasser wird wie gezeigt von einer Staumauer aufgehalten.
-                            Die Staumauer muss enorm viel Kraft aushalten können, denn
-                            Millionen von Kiloliter drücken die ganze Zeit gegen die
-                            Mauer und erzeugen einen unendlich grossen Druck.
+                            Das Wasser wird wie gezeigt von einer <strong>Staumauer</strong> aufgehalten.
+                            Die Staumauer muss enorm viel <strong>Kraft</strong> aushalten können, denn
+                            Millionen von <strong>Kiloliter</strong> drücken die ganze Zeit gegen die
+                            <strong> Mauer</strong> und erzeugen einen unendlich grossen <strong>Druck</strong>.
                             Mit diesem Druck kann jedoch Strom erzeugt werden.
                         </div>
                         <img className="ExtraImgRight" src={funktionsweise2} alt={"funktionsweise2"}/>
@@ -112,17 +110,17 @@ export const Wasserkraftwerk = () => {
                         <img className="ImgLeft" src={daumenRunter} alt={"daemonRunter"}/>
                     </Col>
                     <Col>
-                        <div className="Con">
+                        <div className="TextRight">
                             <li>
-                                Es kann zu grossen Geologischen schäden führen und dadurch grosser
-                                Lebensräume zerströren
+                                Es kann zu grossen geologischen <strong>Schäden</strong> führen und dadurch viele 
+                                <strong>Lebensräume</strong> zerströren.
                             </li>
                             <li>
-                                Ein Bau eines Staudamskann sehr teuer und aufwendig sein.
+                                Ein <strong>Bau</strong> eines <strong>Staudams</strong> kann sehr teuer und aufwendig sein.
                             </li>
                             <li>
-                                Es gibt immer die gefahr einer Überschwemmung, vorallem bei Hochdruckkraftwerk
-                                kann dies schwere volgen von sich ziehen
+                                Es gibt immer die <strong>Gefahr</strong> einer <strong>Überschwemmung</strong>, vor allem bei <strong>Hochdruckkraftwerken </strong> 
+                                kann dies schwere <strong>Folgen</strong> nach sich ziehen.
                             </li>
                         </div>
                     </Col>
@@ -132,14 +130,14 @@ export const Wasserkraftwerk = () => {
                     <Col>
                         <div className="TextLeft">
                             <li>
-                                Die Wasserkraft ist eine Erneuerbare energie.
+                                Die Wasserkraft ist eine <strong>erneuerbare Energie</strong>.
                             </li>
                             <li>
-                                Es ist auch eine möglichkeit zu kombinieren
-                                mit anderen erneuerbaren Energien, wie zum Beispiel Solar.
+                                Es besteht die Möglichkeit Wasserkraft mit anderen erneuerbaren <strong>Energien</strong> zu <strong>kombinieren</strong>.
+                                
                             </li>
                             <li>
-                                Wasserkraft erzeugt keinen Co2 ausstoss und ist dadurch Klimafreundlich.
+                                Wasserkraft erzeugt <strong>keinen Co2</strong> Ausstoss und ist dadurch <strong>klimafreundlich</strong>.
                             </li>
                         </div>
                     </Col>

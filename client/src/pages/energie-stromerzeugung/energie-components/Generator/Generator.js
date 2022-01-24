@@ -16,19 +16,19 @@ export const Generator = () => {
                 <h2 className="H2">Generator</h2>
                 <Row className="div">
                     <p className="introduction">
-                        Jetzt wisst ihr zwar, wie der Ablauf läuft bei der "Stromerzeugung",
-                        aber wie der Generator den Strom "erzeugt" schauen wir uns jetzt an.
+                        Jetzt wisst ihr zwar, wie der Ablauf läuft bei der <strong>Stromerzeugung</strong>,
+                        aber wie der <strong>Generator</strong> den Strom <strong>erzeugt</strong> schauen wir uns jetzt an.
                     </p>
                 </Row>
                 <h4 className="H4"> Drehgenerator</h4>
                 <Row className="RedRow">
                     <Col>
                         <div className="TextLeft">
-                            Die häufigste Generatoren Art ist der Drehgenerator. Er besteht
-                            hauptsächlich aus zwei Teilen: einem festen Teil dem Stator und
-                            einem beweglichen Teil dem Rotor. Auf der Antriebswelle des Rotors
-                            ist ein Magnet befestigt, der sich von aussen zugeführter mechanischer
-                            Energie dreht. Im Stator sind mehrere Spulen mit einem Eisenkern befestigt.
+                            Die häufigste Generatoren Art ist der <strong>Drehgenerator</strong>. Er besteht
+                            hauptsächlich aus zwei Teilen: einem festen Teil dem <strong>Stator</strong> und
+                            einem beweglichen Teil dem <strong>Rotor</strong>. Auf der Antriebswelle des Rotors
+                            ist ein <strong>Magnet</strong> befestigt, der sich von aussen zugeführter <strong>mechanischer Energie </strong>
+                            dreht. Im Stator sind mehrere Spulen mit einem <strong>Eisenkern</strong> befestigt.
                         </div>
                     </Col>
                     <Col>
@@ -41,11 +41,11 @@ export const Generator = () => {
                     </Col>
                     <Col>
                         <div className="TextRight">
-                            An den Spulen befinden sich die elektrischen Anschlüsse. Dreht sich der
-                            Magnet im Generator, wirkt die Lorentzkraft auf die Ladungen und bringt
-                            diese in Bewegung. Durch diese Ladungsverschiebung wird eine Potentialdifferenz
-                            bewirkt und eine elektrische Spannung erzeugt: Es wird Wechselstrom erzeugt.
-                            Dieser Wechselstrom kann dann in das Stromnetz eingespeist werden.
+                            An den Spulen befinden sich die elektrischen <strong>Anschlüsse</strong>. Dreht sich der
+                            Magnet im Generator, wirkt die <strong>Lorentzkraft</strong> auf die Ladungen und bringt
+                            diese in <strong>Bewegung</strong>. Durch diese Ladungsverschiebung wird eine <strong>Potentialdifferenz </strong>
+                            bewirkt und eine elektrische Spannung erzeugt: Es wird <strong>Wechselstrom</strong> erzeugt.
+                            Dieser Wechselstrom kann dann in das <strong>Stromnetz</strong> eingespeist werden.
                         </div>
                     </Col>
                 </Row>
@@ -54,11 +54,11 @@ export const Generator = () => {
                     <Col>
                         <div className="TextLeft">
                             In den meisten Kraftwerken entsteht elektrische Energie in einem
-                            oder mehreren Generatoren aus mechanischer Energie. Insbesondere gilt
-                            dies für Wasserkraftwerke, Windenergieanlagen und alle Arten von
-                            Wärmekraftwerken Kraftwerke, gleichgültig ob die Wärme durch Verbrennung
-                            von Brennstoffen oder in einem Kernreaktor hergestellt wird. Im Falle
-                            von Wärmekraftwerken werden praktisch immer Turbogeneratoren eingesetzt.
+                            oder mehreren <strong>Generatoren</strong> aus mechanischer <strong>Energie</strong>. Insbesondere gilt
+                            dies für <strong>Wasserkraftwerke</strong>, <strong>Windenergieanlagen</strong> und alle anderen Arten von
+                            Wärmekraftwerken gleichgültig, ob die Wärme durch Verbrennung
+                            von <strong>Brennstoffen</strong> oder in einem <strong>Kernreaktor</strong> hergestellt wird. Im Falle
+                            von Wärmekraftwerken werden praktisch immer <strong>Turbogeneratoren</strong> eingesetzt.
                         </div>
                     </Col>
                     <Col>
