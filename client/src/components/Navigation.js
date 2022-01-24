@@ -14,7 +14,7 @@ import {Solar} from "../pages/energie-stromerzeugung/energie-components/Solar/So
 import {Wasserkraftwerk} from "../pages/energie-stromerzeugung/energie-components/Wasserkraftwerk/Wasserkraftwerk";
 import {Generator} from "../pages/energie-stromerzeugung/energie-components/Generator/Generator";
 import MainPage from "../pages/MainPage";
-import Temperatur from "../pages/Temperatur";
+import Temperatur from "../pages/temperatur/pages/Home";
 
 const Navigation = () => {
     const style = {

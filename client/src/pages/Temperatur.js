@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import thermometer from '../img/temperatur/thermometer.png'
 import Lottie from 'react-lottie-player'
 import {useState} from "react";
-import "../styles/temperatur/style.css"
 import lottieJson from './temperatur/lottie.json'
 import useDocumentTitle from "../utils/UseDocumentTitle";
+import '../styles/temperatur/style.css'
 
 const Temperatur = () => {
     useDocumentTitle('Temperatur');
@@ -329,56 +329,101 @@ const Temperatur = () => {
                     <div className="container">
                         <div id="intro">
                             <div className="counter">
-                                <p className="perfix">Fragen:</p>
+                                <p className="prefix">Fragen:</p>
                                 <h1 id="counter">{currentQuestion + 1}/{questions.length}</h1>
                             </div>
-                            <div className="punkte">
-                                <p className="perfix">Punkte:</p>
-                                <h1 id="punkte">{score}</h1>
+                            <div className="score">
+                                <p className="prefix">Punkte:</p>
+                                <h1 id="score">{score}</h1>
                             </div>
                         </div>
 
-                        <div className="fragen-haelter row">
+                        <div className="question-holder row">
                             <div className="col_12">
                                 <h1 id="frage">{questions[currentQuestion].frage}</h1>
                             </div>
                         </div>
                         {questions[currentQuestion].antwortOptionen.map((answerOption) => (
-                            <div className="fragen-container card"
+                            <div className="answer-container card"
                                  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>
-                                <p className={"antwort-prefix"}>{answerOption.char}</p>
-                                <p className="antwort-text">{answerOption.text}</p>
+                                <p className={"answer-prefix"}>{answerOption.char}</p>
+                                <p className="answer-text">{answerOption.text}</p>
                             </div>
                         ))}
                     </div>
                 </section>
-            </main>
+                <section >
+      <div class="signup-form">
+        <form action="" method="">
+        <h2>Konverter</h2>
+        <hr/>
+            <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius"/>
+          </div>
+            </div>
+            <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit"/>
+          </div>
+            </div>
+         <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin"/>
+          </div>
+          </div>
+          </form>
+         </div>
+    </section>
+    <br/>
+    
+    
+    <section>
+      <div
+      class="modal fade"
+      id="endGameModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ende Quiz</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-mdb-dismiss="modal"
+            >
+            Schliessen
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-mdb-dismiss="modal"
+              id="restart"
+            >
+              Restart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </main>
             {/*End #main */}
-
-            {/*======= Footer ======= */}
-            <footer id="footer">
-
-                <div className="footer-top">
-                    <div className="container">
-                        <div className="row">
-
-                            <div className="col-lg-3 col-md-6 footer-contact">
-                                <h3>Ntw</h3>
-                                <p>
-                                    <br/>
-                                    <br/>
-                                    <br/><br/>
-                                    <strong/><br/>
-                                    <strong/><br/>
-                                </p>
-                            </div>
-                            <div id="preloader"/>
-                            <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i
-                                className="bi bi-arrow-up-short"/></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }
