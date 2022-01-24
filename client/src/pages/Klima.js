@@ -7,6 +7,9 @@ import Orbit from "../img/klima/orbit.jpg";
 import Diagramm1 from "../img/klima/Diagramm1960.jpg"
 import Diagramm2 from "../img/klima/Diagramm1980.jpg"
 import Atmosphaere from "../img/klima/atmosphere.jpg"
+import TierHandel from "../img/klima/tierHandel.jpg"
+import Abholzung from "../img/klima/abholzung.jpg"
+import Brennstoffe from "../img/klima/verbrennungFossilien.jpg"
 import useDocumentTitle from "../utils/UseDocumentTitle";
 
 const Klima = () => {
@@ -191,7 +194,30 @@ const Klima = () => {
                                 werden mit fossilen Brennstoffen betrieben.
                                 Bei der Verbrennung fossiler Brennstoffe werden Kohlenstoff und andere Arten von
                                 Schadstoffen in die Atmosphäre freigesetzt. Aber dies kann durch Elektrofahrzeugen
-                                verringert werden
+                                verringert werden.
+                                <br/>
+                                <br/>
+                                Kraftfahrzeugemissionen sind eine wichtige Quelle der Umweltverschmutzung. Autos und
+                                Lastwagen stossen zwanzig Prozent aller Treibhausgase in den Vereinigten Staaten aus,
+                                die damit der zweitgrösste Treibhausgasemittent der Welt sind. Jahrzehntelang waren sie
+                                der grösste Emittent. Damit sind die Kraftfahrzeugemissionen in den Vereinigten Staaten
+                                einer der grössten Treibhausgasemittenten der Welt.
+                            </p>
+                            <p style={{fontWeight: 'bold'}}>Viehhandel:</p>
+                            <p>
+                                Wir alle haben schon gehört, dass die Viehzucht eine Rolle beim Klimawandel spielt. 
+                                Vor allem Rinder werden häufig als Hauptverursacher genannt, da sie starkes Methan 
+                                ausstossen, das zur globalen Erwärmung beiträgt.
+                                <br/>
+                                <br/>
+                                Ein Grossteil der Emissionen aus der Viehhaltung entsteht in Form von Methan, das sowohl
+                                von Rindern als auch von Milchkühen stammt. Während alle Treibhausgase
+                                (Methan, Kohlendioxid, Distickstoffoxid etc...) das Potenzial haben,
+                                unseren Planeten zu erwärmen und die Ozonschicht zu zerstören, ist Methan bei der
+                                Speicherung von Wärme effektiver als CO2, was es zu einem der stärksten Treibhausgase
+                                macht. Laut dem Fünften Bewertungsbericht des Zwischenstaatlichen Ausschusses für
+                                Klimaänderungen ist die Wirkung von Methan über einen Zeitraum von 100 Jahren 28 Mal
+                                grösser als die von Kohlendioxid.
 
                             </p>
                             <br/>
@@ -201,7 +227,6 @@ const Klima = () => {
                     <button className="KlimaCollapsible" id="climateChange" onClick={function () {
                         const inhalt = document.getElementById('klimaWandel')
                         inhalt.style.display = (inhalt.style.display === "none") ? "block" : "none";
-
                     }}>Klima Wandel</button>
                     <div className="myCard" id="klimaWandel" style={{display: "none"}}>
 
@@ -243,7 +268,8 @@ const Klima = () => {
 
                         <div className="container">
                            <h5>Kahoot Quiz (5 Fragen): </h5> <br/>
-                            <a href="https://create.kahoot.it/details/42d2b2ff-a470-4d93-880e-e39dcf40bca1" target="_blank">Hier klicken</a>
+                            <a href="https://create.kahoot.it/details/42d2b2ff-a470-4d93-880e-e39dcf40bca1"
+                               target="_blank">Hier klicken</a>
                         </div>
                     </div>
                 </div>
@@ -288,19 +314,30 @@ const Klima = () => {
                         </ul>
                     </div>
                     <div className="myCard">
+                        <div className="container">
+                            <h4>Bilder:</h4>
+                        </div>
+
                         <p>Aufbau unser Atmosphären:</p>
                         <img src={Atmosphaere} alt="Atmospheres" style={{width: '90%', padding: '5px'}}/>
                         <div style={{height: '60px'}}/>
                         <p>Meeresströmungen:</p>
-                        <img src={WaterCurrent} alt="Conveyor Belt" style={{width: '80%', margin: '10px'}}/>
+                        <img src={WaterCurrent} alt="Conveyor Belt" style={{width: '90%', margin: '10px'}}/>
                         <div style={{height: '60px'}}/>
                         <p>Erdwinkel:</p>
                         <img src={Orbit} alt="ErdWinkel" style={{width: '60%', margin: '10px'}}/>
                         <div style={{height: '60px'}}/>
-                        <img src={ClimateChange} alt="climate-change" style={{width: '72%', margin: '10px'}}/>
+                        <p>Verbrennung fossiler Brennstoffe:</p>
+                        <img src={Brennstoffe} alt="Brennstoffe" style={{width: '80%', margin: '10px'}}/>
+                        <div style={{height: '60px'}}/>
+                        <p>Abholzung Amazonas:</p>
+                        <img src={Abholzung} alt="Abholzung" style={{width: '80%', margin: '10px'}}/>
+                        <div style={{height: '60px'}}/>
+                        <p>Methanemissionen aus der Viehhaltung:</p>
+                        <img src={TierHandel} alt="Vieh Handel" style={{width: '80%', margin: '10px'}}/>
+                        <div style={{height: '60px'}}/>
                         <p>Treibhauseffekt:</p>
                         <img src={GreenHouseEffect} alt="Treibhauseffekt" style={{width: '100%', margin: '10px'}}/>
-                        <div style={{height: '250px'}}/>
                     </div>
                 </div>
             </div>
