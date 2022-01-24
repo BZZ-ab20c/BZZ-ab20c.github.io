@@ -22,7 +22,7 @@ const Navigation = () => {
         textDecoration: 'underline'
     }
 
-    const { pathname } = useLocation();
+    const {pathname} = useLocation();
 
     return (
         <div>
@@ -42,20 +42,20 @@ const Navigation = () => {
                             activeStyle={style}>Klima</NavLink></li>
                         <li><NavLink
                             to="/energie-stromerzeugung"
-                            isActive={() => ['kernkraft/','solar/','wasserkraftwerk/','generator/'].includes(pathname)}
+                            isActive={() => ['kernkraft/', 'solar/', 'wasserkraftwerk/', 'generator/'].includes(pathname)}
                             activeStyle={style}>Energie-Stromerzeugung</NavLink>
                         </li>
                         <li><NavLink
                             to="/linearegeleichungen"
-                            activeStyle={style}>Linearegleichungen</NavLink>
+                            activeStyle={style}>Lineare Gleichungen</NavLink>
                         </li>
                         <li><NavLink
                             to="/linearefunktionen"
-                            activeStyle={style}>Linearefunktionen</NavLink>
+                            activeStyle={style}>Lineare Funktionen</NavLink>
                         </li>
                         <li><NavLink
                             to="/energie"
-                            activeStyle={style}>Energie</NavLink>
+                            activeStyle={style}>Energiearten</NavLink>
                         </li>
                         <li><NavLink
                             to="/kuehlschrank"
