@@ -353,26 +353,26 @@ const Temperatur = () => {
                     </div>
                 </section>
                 <section >
-      <div class="signup-form">
+      <div className="signup-form">
         <form action="" method="">
         <h2>Konverter</h2>
         <hr/>
-            <div class="form-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-            <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius"/>
+            <div className="form-group">
+          <div className="input-group">
+            <span className="input-group-addon"><i className="fa fa-user"></i></span>
+            <input type="number" name="celcius" id="celcius" className="input" placeholder="Celcius"/>
           </div>
             </div>
-            <div class="form-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
-            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit"/>
+            <div className="form-group">
+          <div className="input-group">
+            <span className="input-group-addon"><i className="fa fa-paper-plane"></i></span>
+            <input type="number" name="fahrenheit" id="fahrenheit" className="input" placeholder="Fahrenheit"/>
           </div>
             </div>
-         <div class="form-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin"/>
+         <div className="form-group">
+          <div className="input-group">
+            <span className="input-group-addon"><i className="fa fa-lock"></i></span>
+            <input type="number" name="kelvin" id="kelvin" className="input" placeholder="Kelvin"/>
           </div>
           </div>
           </form>
@@ -383,35 +383,35 @@ const Temperatur = () => {
     
     <section>
       <div
-      class="modal fade"
+      className="modal fade"
       id="endGameModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ende Quiz</h5>
+      <div className="modal-dialog">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLabel">Ende Quiz</h5>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-mdb-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body" id="modal-body">...</div>
-          <div class="modal-footer">
+          <div className="modal-body" id="modal-body">...</div>
+          <div className="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               data-mdb-dismiss="modal"
             >
             Schliessen
             </button>
             <button
               type="button"
-              class="btn btn-primary"
+              className="btn btn-primary"
               data-mdb-dismiss="modal"
               id="restart"
             >
