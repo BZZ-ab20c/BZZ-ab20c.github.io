@@ -69,12 +69,13 @@ const LineareFunktionen = () => {
 
                     m=Δy : Δx<br/>
                     ... und setzt die Längenwerte für Δy und Δx in die Formel ein.<br/>
-                    Δy = yB - yA = 4,6 - 3,5 = 1<br/>
-                    Δx = xB - yA = 3 - 1 = 2<br/>
+                    Δy = yB - yA = 4,5 - 3,5 = 1<br/>
+                    Δx = xB - xA = 3 - 1 = 2<br/>
 
                     Die Gerade hat also die Steigung:
                     <p>
-                        <img id="myImage" src={steigunggleichung} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
+                        <img id="myImage" src={steigunggleichung} style={{height: "50px", marginRight: 0}}
+                             alt={""}/><br/>
                     </p>
 
                 </p>
@@ -85,8 +86,10 @@ const LineareFunktionen = () => {
                     </p>
                     Der y-Achsenabschnitt beträgt 1,5. Der dazugehörige x-Wert ist 0.
 
-                    Die Funktion schneidet die y-Achse an dem Punkt, wo der x-Wert null ist.<br/> <b>Vorsicht!</b> Die beiden Achsen
-                    dürfen nicht verwechselt werden: Die x-Achse verläuft von links nach rechts und die y-Achse von unten nach oben.<br/><br/>
+                    Die Funktion schneidet die y-Achse an dem Punkt, wo der x-Wert null ist.<br/> <b>Vorsicht!</b> Die
+                    beiden Achsen
+                    dürfen nicht verwechselt werden: Die x-Achse verläuft von links nach rechts und die y-Achse von
+                    unten nach oben.<br/><br/>
 
 
                     <b>Bestimmen der Funktionsgleichung mit dem y-Achsenabschnitt</b><br/>
@@ -96,36 +99,44 @@ const LineareFunktionen = () => {
                     </p>
                     Dieser Funktion können wir sofort ansehen, dass der y-Achsenabschnitt 4 beträgt,<br/>
                     da die Funktion die y-Achse an dieser Stelle schneidet.<br/>
-                    Auch die Steigung können wir durch blosses Hinschauen herausfinden. Wenn wir eine Einheit x nach rechts gehen,.<br/>
+                    Auch die Steigung können wir durch blosses Hinschauen herausfinden. Wenn wir eine Einheit x nach
+                    rechts gehen,.<br/>
                     müssen wir eine Einheit in y-Richtung nach oben gehen.<br/>
                     <p>
                         <img id="myImage" src={y_beispiel2} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
                     Damit beträgt die Steigung 1.<br/><br/>
 
-                    Wir müssen die vollständige Funktionsgleichung bestimmen. Dafür setzen wir die beiden ermittelten Werte in die Gleichung ein.<br/>
+                    Wir müssen die vollständige Funktionsgleichung bestimmen. Dafür setzen wir die beiden ermittelten
+                    Werte in die Gleichung ein.<br/>
                     m = 1<br/>
                     n = 4<br/>
                     f(x) = m ⋅ x + n<br/>
                     f(x) = 1 ⋅ x + 4<br/><br/>
 
                     <b>y-Achsenabschnitt mit der Steigung bestimmen</b><br/><b/>
-                    Es kann sein, dass eine Abbildung eines Graphen gegeben ist, bei dem der Schnittpunkt mit der y-Achse nicht sichtbar ist.<br/>
+                    Es kann sein, dass eine Abbildung eines Graphen gegeben ist, bei dem der Schnittpunkt mit der
+                    y-Achse nicht sichtbar ist.<br/>
                     Wie beispielsweise bei dieser Abbildung:<br/>
 
                     <p>
                         <img id="myImage" src={y_beispiel3} style={{height: "350px", marginRight: 0}} alt={""}/><br/>
                     </p>
-                    Dieser Graph ist gegeben und der y-Achsenabschnitt soll ermittelt werden. Um die komplette Gleichung bestimmen zu können,<br/>
-                    fehlt der y-Achsenabschnitt. Dieser ist in unserem Graph nicht eingezeichnet, kann also nicht einfach abgelesen werden.<br/><br/>
+                    Dieser Graph ist gegeben und der y-Achsenabschnitt soll ermittelt werden. Um die komplette Gleichung
+                    bestimmen zu können,<br/>
+                    fehlt der y-Achsenabschnitt. Dieser ist in unserem Graph nicht eingezeichnet, kann also nicht
+                    einfach abgelesen werden.<br/><br/>
 
-                    Um den Ordinatenabschnitt berechnen zu können, nutzen wir die Formel zur Berechnung der Steigung. Die Steigung errechnen wir als erstes.<br/>
-                    Sie beträgt m = 1,5. Doch mit dieser Formel können wir jetzt auch den y-Achsenabschnitt ermitteln. Hierfür setzen wir die Koordinaten<br/>
+                    Um den Ordinatenabschnitt berechnen zu können, nutzen wir die Formel zur Berechnung der Steigung.
+                    Die Steigung errechnen wir als erstes.<br/>
+                    Sie beträgt m = 1,5. Doch mit dieser Formel können wir jetzt auch den y-Achsenabschnitt ermitteln.
+                    Hierfür setzen wir die Koordinaten<br/>
                     eines uns bekannten Punktes und die Steigung der Funktion in die folgende Formel ein:<br/>
                     <p>
                         <img id="myImage" src={y_beispiel4} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
                     </p>
-                    Wir setzen die Steigung m=1,5 und die Koordinaten des Punktes A(2|1) ein. Die rote 0 ist die x-Koordinate<br/>
+                    Wir setzen die Steigung m=1,5 und die Koordinaten des Punktes A(2|1) ein. Die rote 0 ist die
+                    x-Koordinate<br/>
                     des y-Achsenabschnittes. Alles in die Formel eingesetzt ergibt sich:<br/>
                     <p>
                         <img id="myImage" src={y_beispiel5} style={{height: "50px", marginRight: 0}} alt={""}/><br/>
@@ -133,7 +144,8 @@ const LineareFunktionen = () => {
                     Jetzt müssen wir die Formel nur noch nach y2 umstellen und wir haben den y-Achsenabschnitt.<br/>
                     Der erste Schritt ist also die Multiplikation mit −2. Es folgt:<br/><br/>
                     1,5⋅(−2)=y2−1<br/><br/>
-                    Im nächsten Schritt addieren wir 1, um den Wert y2 allein auf einer Seite zu haben. Es ergibt sich:<br/>
+                    Im nächsten Schritt addieren wir 1, um den Wert y2 allein auf einer Seite zu haben. Es ergibt
+                    sich:<br/>
                     <br/>
                     −3+1=y2→y2=−2<br/><br/>
                     Der y-Achsenabschnitt der Funktion beträgt also −2.
@@ -180,33 +192,37 @@ const LineareFunktionen = () => {
                     für x ein und rechnen anschließend y aus.
                 </p>
 
-
-                <h2>Übungen</h2>
+            </div>
+            <h2>Übungen</h2>
+            <div id="uebungen" name="uebungen" style={{display: 'left'}}>
                 <p>
                     a) Ohne oben nach zu schauen welche ist die Korrekte Formel der Linearen Funktionen<br/>
                     b) Zeichne eine gerade y = 6x+4<br/>
                     c) Zeichne eine Gerade y= 2x+3 und eine y= -2x+3 an welchem punkt schneiden sie sich?<br/>
-                    d) Schreib die gleichung auf für diese Gerade: <img id="myImage" src={aufgabe_d}
+                    <br/>
+                    d) Zeichne eine Gerade y= 1x+2 <br/> <br/>
+                    e) Schreib die gleichung auf für diese Gerade: <img id="myImage" src={aufgabe_d}
                                                                         style={{height: "200px", marginRight: 0}}
                                                                         alt={""}/>
-                    <br/>
-                    e) Zeichne eine Gerade y= 1x+2
                 </p>
-                <button id="button" value="Lösungen" onClick={togglelosungen}>Lösungen</button>
-                <div id="losungen" name="losungen" style={{display: 'none'}}>
-                    a) f(x)=m*x+n<br/>
-                    b) gib die gleichung unten ein<br/>
-                    c) 3<br/>
-                    d) <br/>
-                    e) gib die gleichung unten ein
-                </div>
             </div>
+            <button id="button" value="Lösungen" onClick={togglelosungen}>Lösungen</button>
+            <div id="losungen" name="losungen" style={{display: 'left'}}>
+                a) f(x)=m*x+n<br/>
+                b) gib die gleichung unten ein<br/>
+                c) 3<br/>
+                d) y= 1.5x + (-3)<br/>
+                e) gib die gleichung unten ein
+            </div>
+
             <p>
                 <h3>
                     Erklärung GeoGebra
                 </h3>
-                Das GeoGebra benutzt sich ganz einfach man gibt im eingabe Feld einfach die Gleichung ein die man sich anzeigen lassen will.<br/>
-                Wenn man zwei linien haben will muss man auf das plus drücken und dann einfach eine neue Gleichung einschreiben.
+                Das GeoGebra benutzt sich ganz einfach man gibt im eingabe Feld einfach die Gleichung ein die man sich
+                anzeigen lassen will.<br/>
+                Wenn man zwei linien haben will muss man auf das plus drücken und dann einfach eine neue Gleichung
+                einschreiben.
             </p>
             <div style={{height: "100vh"}}>
                 <iframe title={"Lineare Funktionen"} src={'https://bzz-ab20c.github.io/'}
