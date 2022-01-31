@@ -86,6 +86,14 @@
     margin: auto;
 }
 
+@media (min-width: 1250px) {
+    .introduction {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+    }
+ }
+
 .div {
     margin: 10%;
     position: relative;
@@ -153,6 +161,26 @@
     margin-right: 3%;
     text-align: left;
 }
+
+@media (min-width: 1250px) {
+    .TextLeft {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .TextRight {
+        position: relative;
+        top: 25%;
+        left: 0%;
+        margin-right: 3%;
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
 
 .ImgRight {
     position: relative;

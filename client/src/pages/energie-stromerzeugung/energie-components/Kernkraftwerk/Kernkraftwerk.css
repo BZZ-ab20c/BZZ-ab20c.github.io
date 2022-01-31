@@ -5,6 +5,15 @@
    max-width: 650px;
 }
 
+@media (min-width: 1250px) {
+   .ExtraTextHybrid {
+      position: relative;
+      text-align: center;
+      top: 50px;
+      font-size: 20px;
+   }
+}
+
 .ExtraTextHybrid {
    position: relative;
    text-align: center;
