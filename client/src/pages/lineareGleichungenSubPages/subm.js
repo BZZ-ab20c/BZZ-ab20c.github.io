@@ -18,8 +18,8 @@ const SUBM = () => {
 
     const saveFile1 = () => {
         saveAs(
-            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sungen_Sv.pdf?csf=1&web=1&e=LOllQ0",
-            "Loesung_Sv.pdf.pdf"
+            "https://bzzch.sharepoint.com/:b:/r/teams/ABU20-Fachunterricht/Freigegebene%20Dokumente/Mathematik/WebseiteDateien/NadinaWebsite/L%C3%B6sung_SV.pdf?csf=1&web=1&e=s7FYre",
+            "Lösung_Sv.pdf.pdf"
         );
     };
 
@@ -248,7 +248,7 @@ const SUBM = () => {
                                 <br/>
                                     Das LGS, besteht aus mindestens zwei linearen Gleichungen. Um diese zu lösen, haben wir
                                     die zwei verschiedenen Lösungsverfahren angeschaut. Nach dem rechnerischen Verfahren können
-                                    wir den Schnittpunkt auch noch <b>grafish darstellen</b>. Dieser Schnittpunkt zeigt, wenn sich
+                                    wir den Schnittpunkt auch noch <b>grafisch darstellen</b>. Dieser Schnittpunkt zeigt, wenn sich
                                     zwei Graphen von linearen Funktionen schneiden.
                                 <br/>
                                 <br/>
