@@ -217,7 +217,7 @@ const VektorenFragen = () => {
                 }
                 case '*': {
                     if (questionType === 'Kreuzprodukt' || questionType === 'Kreuzprodukt') {
-                        setSolution((x1 * y2) - (x2 - y1));
+                        setSolution((x1 * y2) - (x2 * y1));
                     } else {
                         if (simpleNumber) {
                             setSolution((x1 * x2) + (y1 * y2));
